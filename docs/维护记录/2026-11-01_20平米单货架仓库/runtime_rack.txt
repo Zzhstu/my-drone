@@ -1,0 +1,268 @@
+name: "shelf_aruco"
+id: 34
+is_static: true
+pose {
+  position {
+    x: 0
+    y: 0
+    z: 0
+  }
+  orientation {
+    x: 0
+    y: 0
+    z: 0
+    w: 1
+  }
+}
+link {
+  id: 35
+  name: "shelf_aruco::shelf_base"
+  self_collide: false
+  gravity: false
+  kinematic: false
+  enabled: true
+  inertial {
+    mass: 0
+    pose {
+      position {
+        x: 0
+        y: 0
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+      }
+    }
+    ixx: 0
+    ixy: 0
+    ixz: 0
+    iyy: 0
+    iyz: 0
+    izz: 0
+  }
+  pose {
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+    orientation {
+      x: 0
+      y: 0
+      z: 0
+      w: 1
+    }
+  }
+  visual {
+    name: "shelf_aruco::shelf_base"
+    id: 35
+    parent_name: "shelf_aruco"
+    parent_id: 34
+    pose {
+      position {
+        x: 0
+        y: 0
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+      }
+    }
+    type: LINK
+  }
+  visual {
+    name: "shelf_aruco::shelf_base::shelf_chassi_visual"
+    id: 36
+    parent_name: "shelf_aruco::shelf_base"
+    parent_id: 35
+    pose {
+      position {
+        x: 0
+        y: 0
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+      }
+    }
+    geometry {
+      type: MESH
+      mesh {
+        filename: "model://Shelf_with_ARUco_boxes/meshes/shelf_big_movai.dae"
+        scale {
+          x: 0.2
+          y: 0.3
+          z: 0.3
+        }
+      }
+    }
+    is_static: true
+    scale {
+      x: 1
+      y: 1
+      z: 1
+    }
+    type: VISUAL
+  }
+  collision {
+    id: 37
+    name: "shelf_aruco::shelf_base::shelf_chassi_collision"
+    laser_retro: 0
+    pose {
+      position {
+        x: 0
+        y: 0
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+      }
+    }
+    geometry {
+      type: MESH
+      mesh {
+        filename: "model://Shelf_with_ARUco_boxes/meshes/shelf_big_movai.dae"
+        scale {
+          x: 0.2
+          y: 0.3
+          z: 0.3
+        }
+      }
+    }
+    surface {
+      friction {
+        mu: 1
+        mu2: 1
+        fdir1 {
+          x: 0
+          y: 0
+          z: 0
+        }
+        slip1: 0
+        slip2: 0
+        torsional {
+          coefficient: 1
+          use_patch_radius: true
+          patch_radius: 0
+          surface_radius: 0
+          ode {
+            slip: 0
+          }
+        }
+      }
+      restitution_coefficient: 0
+      bounce_threshold: 100000
+      soft_cfm: 0
+      soft_erp: 0.2
+      kp: 1000000000000
+      kd: 1
+      max_vel: 0
+      min_depth: 0
+      collide_without_contact: false
+      collide_without_contact_bitmask: 1
+      collide_bitmask: 65535
+      elastic_modulus: 0
+    }
+    visual {
+      name: "shelf_aruco::shelf_base::shelf_chassi_collision"
+      id: 37
+      parent_name: "shelf_aruco::shelf_base"
+      parent_id: 35
+      pose {
+        position {
+          x: 0
+          y: 0
+          z: 0
+        }
+        orientation {
+          x: 0
+          y: 0
+          z: 0
+          w: 1
+        }
+      }
+      type: COLLISION
+    }
+    visual {
+      name: "shelf_aruco::shelf_base::shelf_chassi_collision__COLLISION_VISUAL__"
+      id: 38
+      parent_name: "shelf_aruco::shelf_base"
+      parent_id: 35
+      cast_shadows: false
+      pose {
+        position {
+          x: 0
+          y: 0
+          z: 0
+        }
+        orientation {
+          x: 0
+          y: 0
+          z: 0
+          w: 1
+        }
+      }
+      geometry {
+        type: MESH
+        mesh {
+          filename: "model://Shelf_with_ARUco_boxes/meshes/shelf_big_movai.dae"
+          scale {
+            x: 0.2
+            y: 0.3
+            z: 0.3
+          }
+        }
+      }
+      material {
+        script {
+          uri: "file://media/materials/scripts/gazebo.material"
+          name: "Gazebo/OrangeTransparent"
+        }
+      }
+      is_static: true
+      type: COLLISION
+    }
+  }
+  canonical: true
+  enable_wind: false
+}
+visual {
+  name: "shelf_aruco"
+  id: 34
+  parent_name: "cangku_20sqm"
+  parent_id: 1
+  pose {
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+    orientation {
+      x: 0
+      y: 0
+      z: 0
+      w: 1
+    }
+  }
+  type: MODEL
+}
+scale {
+  x: 1
+  y: 1
+  z: 1
+}
+self_collide: false
+enable_wind: false
+

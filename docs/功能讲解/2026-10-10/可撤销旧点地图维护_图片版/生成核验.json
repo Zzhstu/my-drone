@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "pages": 16,
+  "png_size": [
+    3840,
+    2160
+  ],
+  "text_lines": 344,
+  "rule_checks": 29,
+  "unchanged_sources": 12,
+  "arrows": 86,
+  "pptx_created": false,
+  "scope": "图文来源核验，非ROS/飞行测试",
+  "visual_review": "生成后另外检查并记录"
+}

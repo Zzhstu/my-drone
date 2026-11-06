@@ -1,0 +1,492 @@
+{
+  "source": "/home/a/AstraDroneOpen/simulation/astra_gazebo_worlds/cangku.world",
+  "source_sha256": "2ea8635e9f1cf6e50e7cb7238eb98e4abcec2e2523683a5304a1307b39736f11",
+  "generated_world": "simulation/astra_gazebo_worlds/cangku_half.world",
+  "original_nominal_size_m": [
+    50.5,
+    27.0
+  ],
+  "nominal_size_m": [
+    25.25,
+    27.0
+  ],
+  "original_nominal_area_m2": 1363.5,
+  "nominal_area_m2": 681.75,
+  "area_ratio": 0.5,
+  "bounds_world": [
+    -9.796199000000001,
+    -16.00054,
+    15.453800999999999,
+    10.99946
+  ],
+  "spawn_world": [
+    -6.0,
+    -4.0,
+    0.06
+  ],
+  "kept_shelves": [
+    "shelf_aruco",
+    "shelf_aruco_clone",
+    "shelf_aruco_clone_clone",
+    "shelf_aruco_clone_clone_0",
+    "shelf_aruco_clone_1",
+    "shelf_aruco_clone_1_clone",
+    "shelf_aruco_clone_1_clone_0",
+    "shelf_aruco_clone_1_clone_1",
+    "shelf_aruco_clone_1_clone_2",
+    "shelf_aruco_clone_clone_0_clone",
+    "shelf_aruco_clone_clone_0_clone_0",
+    "shelf_aruco_clone_clone_0_clone_1",
+    "shelf_aruco_clone_clone_0_clone_2",
+    "shelf_aruco_clone_clone_0_clone_3",
+    "shelf_aruco_clone_clone_0_clone_0_clone",
+    "shelf_aruco_clone_clone_0_clone_0_clone_0",
+    "shelf_aruco_clone_clone_0_clone_0_clone_1",
+    "shelf_aruco_clone_clone_0_clone_0_clone_2",
+    "shelf_aruco_clone_clone_0_clone_0_clone_3",
+    "shelf_aruco_clone_clone_0_clone_0_clone_11",
+    "shelf_aruco_clone_clone_0_clone_0_clone_12",
+    "shelf_aruco_clone_clone_0_clone_0_clone_13",
+    "shelf_aruco_clone_clone_0_clone_0_clone_14",
+    "shelf_aruco_clone_clone_0_clone_0_clone_15"
+  ],
+  "omitted_shelves": [
+    "shelf_aruco_clone_1_clone_3",
+    "shelf_aruco_clone_1_clone_4",
+    "shelf_aruco_clone_1_clone_5",
+    "shelf_aruco_clone_1_clone_6",
+    "shelf_aruco_clone_1_clone_7",
+    "shelf_aruco_clone_1_clone_8",
+    "shelf_aruco_clone_1_clone_9",
+    "shelf_aruco_clone_clone_0_clone_4",
+    "shelf_aruco_clone_clone_0_clone_5",
+    "shelf_aruco_clone_clone_0_clone_6",
+    "shelf_aruco_clone_clone_0_clone_7",
+    "shelf_aruco_clone_clone_0_clone_8",
+    "shelf_aruco_clone_clone_0_clone_9",
+    "shelf_aruco_clone_clone_0_clone_10",
+    "shelf_aruco_clone_clone_0_clone_0_clone_4",
+    "shelf_aruco_clone_clone_0_clone_0_clone_5",
+    "shelf_aruco_clone_clone_0_clone_0_clone_6",
+    "shelf_aruco_clone_clone_0_clone_0_clone_7",
+    "shelf_aruco_clone_clone_0_clone_0_clone_8",
+    "shelf_aruco_clone_clone_0_clone_0_clone_9",
+    "shelf_aruco_clone_clone_0_clone_0_clone_10",
+    "shelf_aruco_clone_clone_0_clone_0_clone_16",
+    "shelf_aruco_clone_clone_0_clone_0_clone_17",
+    "shelf_aruco_clone_clone_0_clone_0_clone_18",
+    "shelf_aruco_clone_clone_0_clone_0_clone_19",
+    "shelf_aruco_clone_clone_0_clone_0_clone_20",
+    "shelf_aruco_clone_clone_0_clone_0_clone_21",
+    "shelf_aruco_clone_clone_0_clone_0_clone_22"
+  ],
+  "boxes": [
+    {
+      "name": "Untitled/Wall_0",
+      "center": [
+        -9.721200000000001,
+        -5.62554,
+        1.25
+      ],
+      "yaw": -1.5708,
+      "size": [
+        20.75,
+        0.15,
+        6.5
+      ]
+    },
+    {
+      "name": "Untitled/Wall_1",
+      "center": [
+        2.8287999999999993,
+        -15.925540000000002,
+        1.25
+      ],
+      "yaw": 0.0,
+      "size": [
+        25.25,
+        0.15,
+        6.5
+      ]
+    },
+    {
+      "name": "Untitled/Wall_2",
+      "center": [
+        15.3788,
+        -2.50054,
+        1.25
+      ],
+      "yaw": 1.5708,
+      "size": [
+        27.0,
+        0.15,
+        6.5
+      ]
+    },
+    {
+      "name": "Untitled/Wall_3",
+      "center": [
+        2.9537999999999993,
+        10.92446,
+        1.25
+      ],
+      "yaw": 3.14159,
+      "size": [
+        25.0,
+        0.15,
+        6.5
+      ]
+    },
+    {
+      "name": "Untitled/Wall_4",
+      "center": [
+        -9.471200000000001,
+        8.74946,
+        1.25
+      ],
+      "yaw": -1.5708,
+      "size": [
+        4.5,
+        0.15,
+        6.5
+      ]
+    },
+    {
+      "name": "shelf_aruco/shelf_base",
+      "center": [
+        -2.79273,
+        -8.21492,
+        0.9
+      ],
+      "yaw": 0.0,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone/shelf_base",
+      "center": [
+        -2.259103163831679,
+        -3.828389248594493,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone/shelf_base",
+      "center": [
+        -2.223763163831679,
+        1.1772707514055074,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0/shelf_base",
+      "center": [
+        -2.176223163831679,
+        6.590500751405507,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_1/shelf_base",
+      "center": [
+        0.891756836168321,
+        6.681600751405508,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_1_clone/shelf_base",
+      "center": [
+        3.955216836168321,
+        6.721400751405508,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_1_clone_0/shelf_base",
+      "center": [
+        6.699476836168322,
+        6.8246807514055075,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_1_clone_1/shelf_base",
+      "center": [
+        9.85611683616832,
+        6.715800751405507,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_1_clone_2/shelf_base",
+      "center": [
+        12.920466836168321,
+        6.611190751405507,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone/shelf_base",
+      "center": [
+        0.6748498361683211,
+        0.9061907514055074,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0/shelf_base",
+      "center": [
+        3.629366836168321,
+        0.9024407514055073,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_1/shelf_base",
+      "center": [
+        6.4001268361683215,
+        0.8909407514055074,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_2/shelf_base",
+      "center": [
+        9.77211683616832,
+        0.7591407514055073,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_3/shelf_base",
+      "center": [
+        12.91246683616832,
+        0.5734207514055074,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone/shelf_base",
+      "center": [
+        0.4534068361683211,
+        -3.919119248594493,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_0/shelf_base",
+      "center": [
+        3.6338968361683213,
+        -4.0726092485944925,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_1/shelf_base",
+      "center": [
+        6.332476836168322,
+        -4.0017792485944925,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_2/shelf_base",
+      "center": [
+        9.53658683616832,
+        -4.070939248594493,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_3/shelf_base",
+      "center": [
+        12.88576683616832,
+        -4.2710892485944925,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_11/shelf_base",
+      "center": [
+        0.632038836168321,
+        -8.820329248594494,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_12/shelf_base",
+      "center": [
+        3.682256836168321,
+        -8.668509248594493,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_13/shelf_base",
+      "center": [
+        6.0008668361683215,
+        -8.499999248594493,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_14/shelf_base",
+      "center": [
+        8.86375683616832,
+        -8.433949248594493,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_15/shelf_base",
+      "center": [
+        12.00086683616832,
+        -8.499999248594493,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    }
+  ],
+  "note": "Nominal area is roof XY rectangle, not navigable free area. Retained rack poses/dimensions, left entrance, wall thickness and roof height unchanged. Roof/long walls shortened and right wall moved; no uniform scaling. Scene/evaluation geometry only; not an Explorer input."
+}

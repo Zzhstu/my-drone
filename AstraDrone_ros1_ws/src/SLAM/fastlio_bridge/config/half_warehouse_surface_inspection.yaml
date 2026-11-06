@@ -1,0 +1,64 @@
+# Experimental indoor/unseen-surface inspection. Per-face measured-map and
+# safe-return audits determine acceptance; enabling this file is not a claim.
+warehouse_explorer:
+  joint_surface_inspection_enabled: true
+  joint_unseen_geometry_enabled: true
+  # Freeze an actually observed ground plane; preserve initial perpendicular
+  # body height instead of climbing toward the roof in a tilted map frame.
+  ground_relative_navigation: true
+  joint_viewpoint_sweep_enabled: true
+  # Body-neighborhood visitation only boosts views of actual geometry requests.
+  joint_bind_sweep_to_geometry: true
+  joint_stop_low_gain_surface: true
+  joint_surface_min_new_voxels: 8
+  joint_surface_low_gain_limit: 2
+  # Productive, affordable unknown frontiers take precedence over refinement.
+  joint_surface_frontier_gate_m2: 5.0
+  # No dedicated home ghost trip in ANY phase; keep real obstacles/evidence.
+  joint_home_ghost_reward_scale: 0.0
+  # These legacy review settings apply only if home ghost utility is enabled.
+  joint_defer_home_review: true
+  joint_home_review_radius_m: 5.0
+  joint_return_review_seconds: 15.0
+  joint_return_review_max_detour_m: 2.0
+  # Actual body passages, separate from lidar coverage and return-time safety.
+  joint_route_memory_enabled: true
+  joint_route_tile_size_m: 0.8
+  joint_route_repeat_weight: 0.6
+  joint_route_reverse_seconds: 6.0
+  joint_route_region_size_m: 6.0
+  joint_route_region_switch_seconds: 6.0
+  # Keep missing-floor/back utility unchanged while favoring new observations.
+  joint_unknown_gain_multiplier: 1.25
+  # A bounded chain of reachable views through observed opposing structure.
+  # No warehouse coordinates, world model, unknown traversal or margin change.
+  joint_corridor_progress_enabled: true
+  joint_corridor_entry_enabled: true
+  joint_corridor_task_seconds: 100.0
+  joint_corridor_step_m: 4.5
+  joint_corridor_max_width_m: 4.5
+  joint_region_feedback_enabled: true
+  joint_region_feedback_cooldown_s: 60.0
+  joint_region_low_yield_limit: 2
+  joint_tail_min_area_per_extra_s: 0.10
+  joint_tail_min_extra_s: 5.0
+  joint_surface_dwell_seconds: 4.0
+  joint_indoor_structure_focus: true
+  joint_outside_ceiling_gain_scale: 0.02
+  joint_surface_candidate_limit: 6
+  joint_surface_gain_scale: 80.0
+  # Prefer acquiring absent geometry before repeated multiview refinement.
+  joint_measured_refinement_scale: 0.15
+  joint_surface_start_seconds: 180.0
+  # Upper cap only: every proposed view still passes the independent return
+  # ETA and 600/60s flight budget. Use available time for known blind aisles.
+  joint_surface_action_budget_seconds: 240.0
+  # Calibrated against a recorded 90.6s return: prediction remains 157.6s.
+  # This is a time estimator, not an increase of the 0.60m/s velocity cap.
+  flight_return_speed_mps: 0.50
+  # Include floor returns despite the initial map-axis tilt. This changes the
+  # observed-surface quality denominator, not flight altitude or safety.
+  surface_height_below: 2.20
+
+online_loop_mapper:
+  full_height_free_space: true

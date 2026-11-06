@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+<rect x="0" y="0" width="1920" height="1080" fill="white" stroke="none" stroke-width="1.5"/>
+<text x="65" y="93.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="47" font-weight="700" fill="#15334C" text-anchor="start">路线要稳定，也要随真实变化及时调整</text>
+<text x="68" y="147.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="25" font-weight="400" fill="#657585" text-anchor="start">仓库规则：保留有效旧路、检查实际直飞段；即时安全仍有最终决定权</text>
+<polyline points="65.00,181.00 1855.00,181.00" fill="none" stroke="#DCE5EB" stroke-width="1"/>
+<text x="65" y="1048.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="21" font-weight="700" fill="#137B7E" text-anchor="start">机制示意｜这些规则是工程约束，不是任意未知场景、三维扫掠体或动态轨迹的安全证明。</text>
+<text x="1764" y="1050.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="20" font-weight="400" fill="#657585" text-anchor="start">05 / 07</text>
+<rect x="75" y="225" width="840" height="337" fill="#EDF8F0" stroke="#A6D2BD" stroke-width="2"/>
+<text x="95" y="267.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="27" font-weight="700" fill="#15334C" text-anchor="start">换路规则：不要每次扫描都左右摇摆</text>
+<text x="95" y="309.18" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">旧路线逐段仍可走：新路要缩短超过约25%才换；</text>
+<text x="95" y="341.34000000000003" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">旧路遇到新占用：不受长度门限限制，立即作废。</text>
+<rect x="437.15" y="398.24" width="131.1" height="100.32000000000001" fill="#E8DCE8" stroke="#D3BCCC" stroke-width="1" stroke-dasharray="8 6"/>
+<rect x="461.29999999999995" y="408.88" width="82.8" height="79.04" fill="#DACBAD" stroke="#A7916C" stroke-width="1.5"/>
+<polyline points="461.30,428.64 544.10,428.64" fill="none" stroke="#A7916C" stroke-width="1"/>
+<polyline points="461.30,448.40 544.10,448.40" fill="none" stroke="#A7916C" stroke-width="1"/>
+<polyline points="461.30,468.16 544.10,468.16" fill="none" stroke="#A7916C" stroke-width="1"/>
+<polyline points="247.40,459.04 350.90,513.76 647.60,513.76 709.70,459.04" fill="none" stroke="#137B7E" stroke-width="3"/>
+<polygon points="709.70,459.04 704.60,469.13 699.05,462.83" fill="#137B7E" stroke="none" stroke-width="1"/>
+<polyline points="247.40,459.04 344.00,386.08 654.50,386.08 709.70,459.04" fill="none" stroke="#D49B45" stroke-width="2" stroke-dasharray="7 5"/>
+<polygon points="709.70,459.04 702.32,454.59 707.43,450.73" fill="#D49B45" stroke="none" stroke-width="1"/>
+<polyline points="247.40,459.04 225.30,449.69" fill="none" stroke="#15334C" stroke-width="2.55"/>
+<circle cx="225.3" cy="449.69" r="7.6499999999999995" fill="#E5F0FA" stroke="#24618A" stroke-width="1"/>
+<polyline points="247.40,459.04 269.50,449.69" fill="none" stroke="#15334C" stroke-width="2.55"/>
+<circle cx="269.5" cy="449.69" r="7.6499999999999995" fill="#E5F0FA" stroke="#24618A" stroke-width="1"/>
+<polyline points="247.40,459.04 225.30,468.39" fill="none" stroke="#15334C" stroke-width="2.55"/>
+<circle cx="225.3" cy="468.39000000000004" r="7.6499999999999995" fill="#E5F0FA" stroke="#24618A" stroke-width="1"/>
+<polyline points="247.40,459.04 269.50,468.39" fill="none" stroke="#15334C" stroke-width="2.55"/>
+<circle cx="269.5" cy="468.39000000000004" r="7.6499999999999995" fill="#E5F0FA" stroke="#24618A" stroke-width="1"/>
+<polygon points="238.05,453.09 256.75,453.09 259.30,463.29 247.40,468.39 235.50,463.29" fill="#24618A" stroke="#15334C" stroke-width="1"/>
+<circle cx="247.4" cy="457.34000000000003" r="3.4" fill="#A6E3D6" stroke="none" stroke-width="1"/>
+<circle cx="709.6999999999999" cy="459.04" r="9" fill="#D49B45" stroke="#15334C" stroke-width="1"/>
+<rect x="1000" y="225" width="845" height="337" fill="#EDF5FF" stroke="#A8C8E7" stroke-width="2"/>
+<text x="1020" y="267.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="27" font-weight="700" fill="#15334C" text-anchor="start">执行规则：不能隔着拐角追前视点</text>
+<text x="1020" y="309.18" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">前视距离沿折线取点，但飞机实际直飞；</text>
+<text x="1020" y="341.34000000000003" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">直飞段被挡住，就先追最近的可见拐点。</text>
+<rect x="1370.1499999999999" y="398.24" width="131.1" height="100.32000000000001" fill="#E8DCE8" stroke="#D3BCCC" stroke-width="1" stroke-dasharray="8 6"/>
+<rect x="1394.3" y="408.88" width="82.8" height="79.04" fill="#DACBAD" stroke="#A7916C" stroke-width="1.5"/>
+<polyline points="1394.30,428.64 1477.10,428.64" fill="none" stroke="#A7916C" stroke-width="1"/>
+<polyline points="1394.30,448.40 1477.10,448.40" fill="none" stroke="#A7916C" stroke-width="1"/>
+<polyline points="1394.30,468.16 1477.10,468.16" fill="none" stroke="#A7916C" stroke-width="1"/>
+<polyline points="1180.40,459.04 1297.70,513.76 1559.90,513.76 1642.70,459.04" fill="none" stroke="#137B7E" stroke-width="3"/>
+<polygon points="1642.70,459.04 1636.26,468.33 1631.62,461.33" fill="#137B7E" stroke="none" stroke-width="1"/>
+<polyline points="1180.40,459.04 1511.60,513.76" fill="none" stroke="#CB5263" stroke-width="2" stroke-dasharray="7 5"/>
+<polygon points="1511.60,513.76 1503.19,515.61 1504.23,509.30" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="1297.7" cy="513.76" r="7" fill="#24618A" stroke="none" stroke-width="1"/>
+<polyline points="1180.40,459.04 1158.30,449.69" fill="none" stroke="#15334C" stroke-width="2.55"/>
+<circle cx="1158.3000000000002" cy="449.69" r="7.6499999999999995" fill="#E5F0FA" stroke="#24618A" stroke-width="1"/>
+<polyline points="1180.40,459.04 1202.50,449.69" fill="none" stroke="#15334C" stroke-width="2.55"/>
+<circle cx="1202.5" cy="449.69" r="7.6499999999999995" fill="#E5F0FA" stroke="#24618A" stroke-width="1"/>
+<polyline points="1180.40,459.04 1158.30,468.39" fill="none" stroke="#15334C" stroke-width="2.55"/>
+<circle cx="1158.3000000000002" cy="468.39000000000004" r="7.6499999999999995" fill="#E5F0FA" stroke="#24618A" stroke-width="1"/>
+<polyline points="1180.40,459.04 1202.50,468.39" fill="none" stroke="#15334C" stroke-width="2.55"/>
+<circle cx="1202.5" cy="468.39000000000004" r="7.6499999999999995" fill="#E5F0FA" stroke="#24618A" stroke-width="1"/>
+<polygon points="1171.05,453.09 1189.75,453.09 1192.30,463.29 1180.40,468.39 1168.50,463.29" fill="#24618A" stroke="#15334C" stroke-width="1"/>
+<circle cx="1180.4" cy="457.34000000000003" r="3.4" fill="#A6E3D6" stroke="none" stroke-width="1"/>
+<circle cx="1642.6999999999998" cy="459.04" r="9" fill="#D49B45" stroke="#15334C" stroke-width="1"/>
+<rect x="75" y="609" width="540" height="315" fill="#FFF3E5" stroke="#E9C291" stroke-width="2"/>
+<text x="95" y="651.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="27" font-weight="700" fill="#15334C" text-anchor="start">仓库规划参数</text>
+<text x="95" y="692.18" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="400" fill="#15334C" text-anchor="start">格子边长0.10米；障碍膨胀0.80米</text>
+<text x="95" y="723.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="400" fill="#15334C" text-anchor="start">已含机体半径，另加约0.071米离散余量。</text>
+<text x="95" y="753.8199999999999" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="400" fill="#15334C" text-anchor="start">高度带：目标高度下0.45米、上0.55米。</text>
+<text x="95" y="784.64" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="400" fill="#15334C" text-anchor="start">前视0.60米；导航限速0.25米/秒。</text>
+<rect x="690" y="609" width="540" height="315" fill="#EFF0FF" stroke="#B7C2EB" stroke-width="2"/>
+<text x="710" y="651.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="27" font-weight="700" fill="#15334C" text-anchor="start">到达与时效规则</text>
+<text x="710" y="692.18" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="400" fill="#15334C" text-anchor="start">中间航点容差0.03米；最终控制容差0.25米。</text>
+<text x="710" y="723.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="400" fill="#15334C" text-anchor="start">规划器距终点0.30米内仍发最终目标。</text>
+<text x="710" y="753.8199999999999" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="400" fill="#15334C" text-anchor="start">航点超过1.5秒未更新，水平导航置零。</text>
+<text x="710" y="784.64" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="400" fill="#15334C" text-anchor="start">风险动作优先，不是“有路就强行飞”。</text>
+<rect x="1305" y="609" width="540" height="315" fill="#FFF0F5" stroke="#DFB3C9" stroke-width="2"/>
+<text x="1325" y="651.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="27" font-weight="700" fill="#15334C" text-anchor="start">当前实现的边界</text>
+<text x="1325" y="692.18" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="400" fill="#15334C" text-anchor="start">只有占用格，未观测空白不严格禁行。</text>
+<text x="1325" y="723.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="400" fill="#15334C" text-anchor="start">起点有0.20米小范围清除例外。</text>
+<text x="1325" y="753.8199999999999" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="400" fill="#15334C" text-anchor="start">目标被占用时可改找邻近空格，</text>
+<text x="1325" y="784.64" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="400" fill="#15334C" text-anchor="start">不保证原目标到达；地图自身无年龄门控。</text>
+<text x="78" y="974.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="26" font-weight="700" fill="#24618A" text-anchor="start">此页为指定目标导航；自主探索另有“未知不能走”的栅格与任务规则。</text>
+</svg>

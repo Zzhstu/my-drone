@@ -1,0 +1,15 @@
+<launch>
+    <arg name="uav_id" default="1" />
+    <arg name="waypoints_file" default="$(find p450_book_qr_mission)/config/book_qr_patrol_waypoints.example.yaml" />
+
+    <rosparam command="load" file="$(arg waypoints_file)" ns="book_qr_patrol_mission" />
+
+    <include file="$(find p450_book_qr_mission)/launch/book_qr_path_visualization.launch">
+        <arg name="uav_id" value="$(arg uav_id)" />
+        <arg name="fixed_frame" value="world" />
+    </include>
+
+    <node pkg="p450_book_qr_mission" type="book_qr_patrol_mission.py" name="book_qr_patrol_mission" output="screen">
+        <param name="uav_id" value="$(arg uav_id)" />
+    </node>
+</launch>

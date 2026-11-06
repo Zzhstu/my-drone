@@ -1,0 +1,60 @@
+{
+  "termination": "returned_home_and_saved",
+  "failed": false,
+  "task_success": true,
+  "map_saved": true,
+  "wall_elapsed_seconds": 183.57957711500057,
+  "mission": {
+    "state": "COMPLETE",
+    "stamp": 87.885,
+    "wall_seconds": 122.14649918899522,
+    "known_free_area_m2": 86.24000000000002,
+    "known_cells": 2174,
+    "map_points": 11998,
+    "goals_selected": 2,
+    "goals_reached": 2,
+    "stalled_goals": 0,
+    "travel_xy_m": 8.67020630369134,
+    "mission_phase": "COMPLETE",
+    "finish_reason": "explicit_goal_limit_partial",
+    "home_map_xy": [
+      -0.013612995215325331,
+      0.02197717899610946
+    ],
+    "home_confirmed": true,
+    "home_error_xy_m": 0.16044919862157248,
+    "inspection_cells": 0,
+    "coverage_complete": false,
+    "exploration_complete": false,
+    "grid_capacity_limited": false,
+    "completion_scope": "observed reachable fixed-altitude space; NOT all 3D surfaces",
+    "raw_frontier_candidates": 402,
+    "useful_frontier_candidates": 24,
+    "remaining_inspection_candidates": 0,
+    "surface_quality": {
+      "observed_surface_voxels": 995,
+      "qualified_surface_voxels": 485,
+      "observed_surface_quality_ratio": 0.48743718592964824,
+      "surface_evidence_capacity_limited": false
+    },
+    "progress": {
+      "window_ready": false,
+      "new_free_area_m2": 2.6800000000000006,
+      "new_surface_voxels": 193,
+      "observation_goals": 1,
+      "low_gain": false
+    },
+    "compute_ms": 31.719129998236895,
+    "compute_p95_ms": 36.81994115759153,
+    "search_backend": "native",
+    "mission_sim_seconds": 42.438,
+    "estimated_rtf": 0.5137611023115243,
+    "target_map_xy": [
+      -0.09999999999999964,
+      0.10000000000000142
+    ],
+    "frontier_candidates": 0,
+    "note": "Observed 2D area, not 3D completeness. No backend. Ghost removal needs reobservation."
+  },
+  "note": "SITL only; successful return/save is separate from exploration/3D completeness. No collision-contact or physical-aircraft landing claim."
+}

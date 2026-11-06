@@ -1,0 +1,23 @@
+{
+  "mode": "ours",
+  "bag": "/home/a/AstraDroneOpen/dynamic_demo_runs/ours_20260923_200322.bag",
+  "model": "iris_mid360",
+  "duration_s": 68.586,
+  "goal_published": true,
+  "goal_reached_odom": true,
+  "time_to_goal_s": 37.37699999999998,
+  "final_goal_error_odom_xy_m": 0.17076103304932935,
+  "gazebo_route_length_after_goal_xy_m": 12.423375200962091,
+  "min_uav_pedestrian_center_xy_m": 0.9650169588153087,
+  "risk_active_after_goal_s": 2.9509999999999934,
+  "fastlio_aligned_ate_3d_rmse_m": 0.016274659387800053,
+  "pedestrian_displacement_xy_m": {
+    "0": 6.739,
+    "1": 6.45
+  },
+  "vacated_start_map_points": 0,
+  "vacated_start_stable_map_points": 0,
+  "navigation_map_total_points": 139600,
+  "stable_map_total_points": 54783,
+  "last_local_path_poses": 2
+}

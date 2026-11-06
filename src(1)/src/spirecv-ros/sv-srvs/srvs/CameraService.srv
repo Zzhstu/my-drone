@@ -1,0 +1,8 @@
+# camera action; 0:none; 
+# 1:take photo(gimbal); 2:take photo(local);
+# 3:start record(gimbal); 4:start record(local);
+# 5:stop record(gimbal); 6:stop record(local);
+uint8 action
+---
+# result 
+bool stateResponse

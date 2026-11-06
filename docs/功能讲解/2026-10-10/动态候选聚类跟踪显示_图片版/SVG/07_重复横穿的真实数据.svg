@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+<rect x="0" y="0" width="1920" height="1080" fill="white" stroke="none" stroke-width="1.5"/>
+<text x="65" y="93.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="47" font-weight="700" fill="#15334C" text-anchor="start">暂停后再运动：历史回归数据</text>
+<text x="68" y="147.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="25" font-weight="400" fill="#657585" text-anchor="start">按保存的测试数据重绘；计数是匹配到行人附近的对象消息，不是逐点分割准确率。</text>
+<polyline points="65.00,181.00 1855.00,181.00" fill="none" stroke="#DCE5EB" stroke-width="1"/>
+<text x="65" y="1048.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="21" font-weight="700" fill="#137B7E" text-anchor="start">历史功能证据｜本轮未重飞；不同场景和日期不作公平性能排名，当前参数变化须单独复测。</text>
+<text x="1764" y="1050.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="20" font-weight="400" fill="#657585" text-anchor="start">07 / 07</text>
+<rect x="70" y="230" width="1050" height="717" fill="#F7FAFC" stroke="#B4C9D6" stroke-width="1.5"/>
+<text x="102" y="279.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="29" font-weight="700" fill="#15334C" text-anchor="start">仓库：首次横穿与暂停后的反向横穿</text>
+<rect x="115" y="313" width="22" height="22" fill="#137B7E" stroke="none" stroke-width="1.5"/>
+<text x="148" y="329.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="22" font-weight="400" fill="#137B7E" text-anchor="start">本帧观测到</text>
+<rect x="407" y="313" width="22" height="22" fill="#D49B45" stroke="none" stroke-width="1.5"/>
+<text x="440" y="329.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="22" font-weight="400" fill="#D49B45" text-anchor="start">仅短时预测</text>
+<rect x="703" y="313" width="22" height="22" fill="#E3E8ED" stroke="none" stroke-width="1.5"/>
+<text x="736" y="329.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="22" font-weight="400" fill="#657585" text-anchor="start">未匹配到对象</text>
+<text x="113" y="432.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="27" font-weight="700" fill="#15334C" text-anchor="start">首次横穿</text>
+<rect x="116" y="455" width="545.4545454545455" height="44" fill="#137B7E" stroke="none" stroke-width="1.5"/>
+<rect x="661.4545454545455" y="455" width="354.54545454545456" height="44" fill="#E3E8ED" stroke="none" stroke-width="1.5"/>
+<text x="115" y="531.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">观测 40　预测 0　未匹配 26　共 66 条消息</text>
+<text x="113" y="599.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="27" font-weight="700" fill="#15334C" text-anchor="start">暂停后反向横穿</text>
+<rect x="116" y="622" width="548.4375" height="44" fill="#137B7E" stroke="none" stroke-width="1.5"/>
+<rect x="664.4375" y="622" width="56.25" height="44" fill="#D49B45" stroke="none" stroke-width="1.5"/>
+<rect x="720.6875" y="622" width="295.3125" height="44" fill="#E3E8ED" stroke="none" stroke-width="1.5"/>
+<text x="115" y="698.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">观测 39　预测 4　未匹配 21　共 64 条消息</text>
+<text x="110" y="801.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="27" font-weight="700" fill="#137B7E" text-anchor="start">两阶段都有实际观测输出，但检测并不连续。</text>
+<text x="110" y="848.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="400" fill="#657585" text-anchor="start">附近0.9米的中心关联仅是评估代理；没有逐点真值，不能据此计算分割召回率。</text>
+<rect x="1165" y="230" width="675" height="341" fill="#EFF0FF" stroke="#B7C2EB" stroke-width="2"/>
+<text x="1185" y="272.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="27" font-weight="700" fill="#15334C" text-anchor="start">另一场景：9月24日重复横穿</text>
+<text x="1185" y="314.18" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">首次 / 反向横穿实际观测：50 / 42 条</text>
+<text x="1185" y="346.34000000000003" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">匹配中心水平误差中位数：0.081 / 0.142 米</text>
+<text x="1185" y="378.5" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">消息时间戳年龄95分位：0.02695 / 0.026 秒</text>
+<text x="1185" y="410.66" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">来自9月24日示例场景，不是仓库数据。</text>
+<rect x="1165" y="605" width="675" height="342" fill="#FFF3E5" stroke="#E9C291" stroke-width="2"/>
+<text x="1185" y="647.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="27" font-weight="700" fill="#15334C" text-anchor="start">这些结果说明什么</text>
+<text x="1185" y="689.18" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">支持：初期展示后，目标暂停再运动仍有确认输出。</text>
+<text x="1185" y="721.3399999999999" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">不足：检测有间断；消息计数不是精确率。仿真时间戳年龄</text>
+<text x="1185" y="753.5" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">不是计算耗时或首次确认时延。</text>
+</svg>

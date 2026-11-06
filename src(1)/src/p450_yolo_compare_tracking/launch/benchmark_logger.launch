@@ -1,0 +1,10 @@
+<launch>
+  <arg name="uav_id" default="1"/>
+  <arg name="model_name" default="yolo11"/>
+  <arg name="output_dir" default="/home/amov/p450_yolo_logs"/>
+  <node pkg="p450_yolo_compare_tracking" type="benchmark_logger.py" name="benchmark_logger" output="screen">
+    <param name="uav_id" value="$(arg uav_id)"/>
+    <param name="model_name" value="$(arg model_name)"/>
+    <param name="output_dir" value="$(arg output_dir)"/>
+  </node>
+</launch>

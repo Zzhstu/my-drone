@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect x="0" y="0" width="1600" height="900" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1.5"/>
+<text x="60" y="87.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="47" font-weight="700" fill="#15334C" text-anchor="start">风险融合：保留更严重的危险</text>
+<text x="62" y="129.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#657585" text-anchor="start">先统一风险等级，再按具体情形组合建议方向；并不是所有情况都按固定比例。</text>
+<polyline points="60,151 1540,151" fill="none" stroke="#D5E0E6" stroke-width="1.5"/>
+<rect x="60" y="774" width="1480" height="70" rx="0" fill="#EFF5F8" stroke="none" stroke-width="1.5"/>
+<text x="80" y="818.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="700" fill="#24618A" text-anchor="start">核心规则</text>
+<text x="210" y="818.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">危险等级不能被平均降低；融合建议也不能直接绕过控制器。</text>
+<text x="60" y="880.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="17" font-weight="400" fill="#657585" text-anchor="start">现有实现讲解 · 参数不是实验结果 · 源码对应见配套说明</text>
+<text x="1400" y="880.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="18" font-weight="400" fill="#657585" text-anchor="start">06 / 10</text>
+<rect x="60" y="205" width="294" height="140" rx="0" fill="#F4F9FB" stroke="#24618A" stroke-width="1.5"/>
+<text x="207.0" y="249.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#24618A" text-anchor="middle">静态风险</text>
+<text x="207.0" y="285.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#657585" text-anchor="middle">等级 + 建议速度</text>
+<rect x="60" y="424" width="294" height="140" rx="0" fill="#F4F9FB" stroke="#137B7E" stroke-width="1.5"/>
+<text x="207.0" y="468.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#137B7E" text-anchor="middle">动态风险</text>
+<text x="207.0" y="504.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#657585" text-anchor="middle">等级 + 建议速度</text>
+<polyline points="357,275 399,275 399,380 434,380" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="434.00,380.00 424.00,384.80 424.00,375.20" fill="#24618A"/>
+<polyline points="357,494 399,494 399,420 434,420" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="434.00,420.00 424.00,424.80 424.00,415.20" fill="#24618A"/>
+<rect x="443" y="335" width="300" height="144" rx="0" fill="#F4F9FB" stroke="#137B7E" stroke-width="1.5"/>
+<text x="593.0" y="379.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#137B7E" text-anchor="middle">等级取较高者</text>
+<text x="593.0" y="415.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#657585" text-anchor="middle">任一二级，融合就是二级</text>
+<polyline points="746,403 784,403" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="784.00,403.00 774.00,407.80 774.00,398.20" fill="#24618A"/>
+<rect x="794" y="209" width="746" height="100" rx="0" fill="#EFF5F8" stroke="#D5E0E6" stroke-width="1.5"/>
+<text x="816" y="251.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="700" fill="#24618A" text-anchor="start">一侧二级</text>
+<text x="816" y="288.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">采用该侧的紧急建议方向</text>
+<rect x="794" y="328" width="746" height="100" rx="0" fill="#EFF5F8" stroke="#D5E0E6" stroke-width="1.5"/>
+<text x="816" y="370.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="700" fill="#137B7E" text-anchor="start">两侧一级</text>
+<text x="816" y="407.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">两个建议向量相加，再限制速度</text>
+<rect x="794" y="447" width="746" height="100" rx="0" fill="#EFF5F8" stroke="#D5E0E6" stroke-width="1.5"/>
+<text x="816" y="489.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="700" fill="#24618A" text-anchor="start">两侧二级</text>
+<text x="816" y="526.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">仅此情形：静态 60% + 动态 40%</text>
+<rect x="794" y="566" width="746" height="100" rx="0" fill="#EFF5F8" stroke="#D5E0E6" stroke-width="1.5"/>
+<text x="816" y="608.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="700" fill="#137B7E" text-anchor="start">双紧急几乎抵消</text>
+<text x="816" y="645.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">组合速度 &lt; 0.05 米/秒，改选静态方向</text>
+<rect x="60" y="642" width="684" height="95" rx="0" fill="#F7FAFC" stroke="#D5E0E6" stroke-width="1.5"/>
+<text x="81" y="683.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">来源接收时效 0.40 秒；输出建议限速 0.80 米/秒。</text>
+<text x="815" y="722.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="700" fill="#24618A" text-anchor="start">最后输出：等级、建议速度、风险来源。</text>
+</svg>

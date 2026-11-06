@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "interior_area_m2": 20,
+  "shelf_count": 1,
+  "structural_models": 1,
+  "actors": 0,
+  "original_world_sha256": "2ea8635e9f1cf6e50e7cb7238eb98e4abcec2e2523683a5304a1307b39736f11",
+  "original_world_unchanged": true,
+  "mesh_visual_collision_identical": true,
+  "mesh_size_m": [
+    3.612,
+    0.642000078680475,
+    1.8187947140313594
+  ],
+  "sdf_check": "Check complete",
+  "mapping_or_training_executed": false,
+  "world_sha256": "a07f04fddc479545b488b5ad8d252f20bc101db6ffa5fcfdd052b1ff3f28befc",
+  "generation_reproducible": true,
+  "python_syntax": true,
+  "shell_syntax": true,
+  "gazebo_gui_verified": true,
+  "runtime_mesh_info_verified": true,
+  "currently_running": false
+}

@@ -1,0 +1,3 @@
+运行监测观察定位、扫描、目标、风险及速度建议是否持续到达，统计消息数量、频率和最新消息距现在多久。先检查有没有持续更新，再看消息内容。如果目标列表持续更新但为空，可能只是当前没有目标；如果长时间没有任何更新，才应检查上游节点、连接和日志。
+
+监测输出给人诊断，不直接接管飞行，真正的数据过期停车在控制器内。诊断正常也不能证明地图完整或没有碰撞，任务效果还要用对应证据评价。源码是/home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/system_watchdog.cpp，装配和参数可查launch/astra_dynamic_avoidance.launch与launch/warehouse_exploration.launch。

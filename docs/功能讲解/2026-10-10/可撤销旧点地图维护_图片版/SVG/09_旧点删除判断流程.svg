@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect x="0" y="0" width="1600" height="900" fill="#FFFFFF" stroke="none" stroke-width="1.6"/>
+<text x="60" y="80.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="46" font-weight="700" fill="#15334C" text-anchor="start">一个旧格子，到底能不能删除？</text>
+<text x="63" y="125.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#657585" text-anchor="start">先过几何与表面保护，再过时间与次数；不满足就保留。</text>
+<polyline points="60,151 1540,151" fill="none" stroke="#D5E0E6" stroke-width="1.2"/>
+<rect x="60" y="784" width="1480" height="62" fill="#EFF5F8" stroke="none" stroke-width="1.6"/>
+<text x="78" y="823.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="700" fill="#137B7E" text-anchor="start">核心规则</text>
+<text x="210" y="822.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">“当前没扫到”只是缺测，不是直接删除条件。</text>
+<text x="60" y="878.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="17" font-weight="400" fill="#657585" text-anchor="start">现有源码规则 · 所有点云与场景小图为示意 · 非新增实验结果</text>
+<text x="1400" y="879.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="18" font-weight="400" fill="#657585" text-anchor="start">09 / 16</text>
+<rect x="70" y="235" width="330" height="153" fill="#F0F0FF" stroke="#B3BFEA" stroke-width="1.6"/>
+<text x="86" y="271.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="700" fill="#15334C" text-anchor="start">旧格与新射线</text>
+<text x="88" y="305.02" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#15334C" text-anchor="start">得到候选，不是立即删除</text>
+<polyline points="404,311 476,311" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="476.00,311.00 466.00,315.80 466.00,306.20" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<polygon points="670.00,218.00 850.00,311.00 670.00,404.00 490.00,311.00" fill="#FFF2BF" stroke="#24618A" stroke-width="1.6"/>
+<text x="670" y="296.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="700" fill="#15334C" text-anchor="middle">几何和表面</text>
+<text x="670" y="331.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="700" fill="#15334C" text-anchor="middle">保护通过？</text>
+<polyline points="854,311 935,311" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="935.00,311.00 925.00,315.80 925.00,306.20" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<text x="875" y="292.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#137B7E" text-anchor="start">是</text>
+<rect x="939" y="236" width="560" height="152" fill="#FFF3E7" stroke="#E6B988" stroke-width="1.6"/>
+<text x="955" y="272.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="700" fill="#15334C" text-anchor="start">检查最近命中与证据间隔</text>
+<text x="957" y="306.02" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#15334C" text-anchor="start">刚被扫到则不计数；旧证据过期则重算。</text>
+<polyline points="1219,392 1219,474" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="1219.00,474.00 1214.20,464.00 1223.80,464.00" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<polygon points="1219.00,478.00 1398.00,568.00 1219.00,658.00 1040.00,568.00" fill="#E5F1E4" stroke="#137B7E" stroke-width="1.6"/>
+<text x="1219" y="562.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="700" fill="#15334C" text-anchor="middle">次数达到</text>
+<text x="1219" y="597.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="700" fill="#15334C" text-anchor="middle">3次或6次？</text>
+<polyline points="1036,568 944,568" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="944.00,568.00 954.00,563.20 954.00,572.80" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<text x="969" y="547.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#137B7E" text-anchor="start">是</text>
+<rect x="555" y="493" width="385" height="150" fill="#EEF8F1" stroke="#A6CCB7" stroke-width="1.6"/>
+<text x="571" y="529.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="700" fill="#15334C" text-anchor="start">撤销共享存储旧格</text>
+<text x="573" y="563.02" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#15334C" text-anchor="start">下一次地图发布反映删除</text>
+<rect x="70" y="497" width="330" height="150" fill="#EDF5FF" stroke="#A7C6E3" stroke-width="1.6"/>
+<text x="86" y="533.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="700" fill="#15334C" text-anchor="start">保留旧占用</text>
+<text x="88" y="567.02" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#15334C" text-anchor="start">缺证据、受保护或次数不足</text>
+<polyline points="670,408 670,451 235,451 235,493" fill="none" stroke="#657585" stroke-width="2"/>
+<polygon points="235.00,493.00 230.20,483.00 239.80,483.00" fill="#657585" stroke="none" stroke-width="1.6"/>
+<text x="548" y="433.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#657585" text-anchor="start">否：保留</text>
+<polyline points="1219,662 1219,713 235,713 235,651" fill="none" stroke="#657585" stroke-width="2"/>
+<polygon points="235.00,651.00 239.80,661.00 230.20,661.00" fill="#657585" stroke="none" stroke-width="1.6"/>
+<text x="940" y="739.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="21" font-weight="400" fill="#657585" text-anchor="start">否：继续等待</text>
+</svg>

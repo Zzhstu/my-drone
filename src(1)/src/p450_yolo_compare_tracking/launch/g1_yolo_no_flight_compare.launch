@@ -1,0 +1,50 @@
+<launch>
+  <!-- YOLO11/YOLO26/自训练YOLOv5 地面检测跟踪；只让G1吊舱跟随目标，不发布无人机飞控指令。 -->
+  <arg name="uav_id" default="1"/>
+  <arg name="start_gimbal_server" default="true"/>
+  <arg name="start_video_streaming" default="false"/>
+  <arg name="start_logger" default="true"/>
+  <arg name="model_name" default="yolo11n"/>
+  <arg name="model_path" default="/home/amov/SpireCV/models/yolo11n.pt"/>
+  <arg name="backend" default="auto"/>
+  <arg name="yolov5_repo" default="/home/amov/yolov5"/>
+  <arg name="device" default="0"/>
+  <arg name="imgsz" default="640"/>
+  <arg name="conf" default="0.50"/>
+  <arg name="iou" default="0.45"/>
+  <arg name="classes" default="all"/>
+  <arg name="auto_select" default="false"/>
+  <arg name="auto_select_policy" default="highest_score"/>
+  <arg name="tracker_type" default="KCF"/>
+  <arg name="lost_threshold" default="5"/>
+  <arg name="output_dir" default="/home/amov/p450_yolo_logs"/>
+  <arg name="manual_override_topic" default="/uav1/p450/manual_override"/>
+  <arg name="manual_override_empty_period" default="0.5"/>
+
+
+  <include if="$(arg start_gimbal_server)" file="$(find p450_experiment)/launch_spirecv/gimbal_server.launch"/>
+
+  <include file="$(find p450_yolo_compare_tracking)/launch/g1_yolo_detect_track.launch">
+    <arg name="uav_id" value="$(arg uav_id)"/>
+    <arg name="model_name" value="$(arg model_name)"/>
+    <arg name="model_path" value="$(arg model_path)"/>
+    <arg name="backend" value="$(arg backend)"/>
+    <arg name="yolov5_repo" value="$(arg yolov5_repo)"/>
+    <arg name="device" value="$(arg device)"/>
+    <arg name="imgsz" value="$(arg imgsz)"/>
+    <arg name="conf" value="$(arg conf)"/>
+    <arg name="iou" value="$(arg iou)"/>
+    <arg name="classes" value="$(arg classes)"/>
+    <arg name="auto_select" value="$(arg auto_select)"/>
+    <arg name="auto_select_policy" value="$(arg auto_select_policy)"/>
+    <arg name="tracker_type" value="$(arg tracker_type)"/>
+  </include>
+
+  <include if="$(arg start_video_streaming)" file="$(find p450_experiment)/launch_spirecv/video_streaming.launch"/>
+
+  <node if="$(arg start_logger)" pkg="p450_yolo_compare_tracking" type="benchmark_logger.py" name="benchmark_logger" output="screen">
+    <param name="uav_id" value="$(arg uav_id)"/>
+    <param name="model_name" value="$(arg model_name)"/>
+    <param name="output_dir" value="$(arg output_dir)"/>
+  </node>
+</launch>

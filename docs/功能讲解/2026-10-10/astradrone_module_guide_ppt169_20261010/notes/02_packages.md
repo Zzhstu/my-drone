@@ -1,0 +1,3 @@
+功能包可以理解为一个工具箱，内部文件则是不同工具。上次列出的动态检测、跟踪、风险判断、地图、路径和控制文件，大部分都在同一个fastlio_bridge包里，不是八个独立包。FAST_LIO负责估计位置并提供整理后的扫描；fastlio_bridge把它们接到动态环境的地图、规划和控制链；offboard保留键盘、指定位置和预设航线的独立飞行示例；仿真相关包提供仓库、无人机、雷达和行人。世界有真实布局，不等于探索器拿真实布局来选路。
+
+独立飞行示例和主演示不能同时抢同一架无人机的指令。当前主链装配看/home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/launch/astra_dynamic_avoidance.launch及launch/warehouse_exploration.launch。示例源码在/home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/MissionControl/astra_uavoffbard_frame/offboard/src。

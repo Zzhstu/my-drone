@@ -1,0 +1,35 @@
+<launch>
+    <arg name="uav_id" default="1" />
+    <arg name="waypoints_file" default="$(find p450_book_qr_mission)/config/book_qr_patrol_waypoints.example.yaml" />
+    <arg name="pcd_save_interval" default="-1" />
+
+    <!-- 1. 飞控控制 + MAVROS -->
+    <include file="$(find p450_experiment)/launch_basic/p450_onboard_mid360.launch">
+        <arg name="uav_id" value="$(arg uav_id)" />
+    </include>
+
+    <!-- 2. MID360 驱动 -->
+    <include file="$(find p450_experiment)/launch_mid360/msg_MID360.launch" />
+
+    <!-- 3. FAST_LIO 建图，并在退出时保存 PCD -->
+    <include file="$(find p450_book_qr_mission)/launch/mid360_mapping_save.launch">
+        <arg name="uav_id" value="$(arg uav_id)" />
+        <arg name="pcd_save_interval" value="$(arg pcd_save_interval)" />
+    </include>
+
+    <!-- 4. G1 吊舱 -->
+    <include file="$(find p450_experiment)/launch_spirecv/gimbal_server.launch" />
+
+    <!-- 5. 固定航线二维码巡检任务 -->
+    <rosparam command="load" file="$(arg waypoints_file)" ns="book_qr_patrol_mission" />
+
+    <!-- 6. 实际飞行轨迹 /book_qr_path 与计划航点路线可视化 -->
+    <include file="$(find p450_book_qr_mission)/launch/book_qr_path_visualization.launch">
+        <arg name="uav_id" value="$(arg uav_id)" />
+        <arg name="fixed_frame" value="world" />
+    </include>
+
+    <node pkg="p450_book_qr_mission" type="book_qr_patrol_mission.py" name="book_qr_patrol_mission" output="screen">
+        <param name="uav_id" value="$(arg uav_id)" />
+    </node>
+</launch>

@@ -1,0 +1,57 @@
+<launch>
+  <arg name="uav_id" default="1"/>
+  <arg name="start_gimbal_server" default="false"/>
+  <arg name="start_video_streaming" default="false"/>
+  <arg name="model_name" default="yolo11"/>
+  <arg name="model_path" default="/home/amov/SpireCV/models/yolo11n.pt"/>
+  <arg name="device" default="0"/>
+  <arg name="imgsz" default="640"/>
+  <arg name="conf" default="0.35"/>
+  <arg name="iou" default="0.45"/>
+  <arg name="classes" default="all"/>
+  <arg name="auto_select" default="false"/>
+  <arg name="enable_ui" default="false"/>
+  <arg name="tracker_type" default="CSRT"/>
+  <arg name="tracking_distance" default="10.0"/>
+  <arg name="max_velocity" default="1.0"/>
+  <arg name="dry_run" default="true"/>
+
+  <node if="$(arg start_gimbal_server)" pkg="spirecv_ros" type="gimbal_server" name="gimbal_server" output="screen">
+    <param name="uav_id" type="int" value="$(arg uav_id)" />
+    <param name="Type" type="string" value="G1" />
+    <param name="Port" type="string" value="/dev/ttyTHS1" />
+    <param name="camera" type="string" value="192.168.1.12" />
+    <param name="FPS" type="int" value="30" />
+    <param name="H" type="int" value="720" />
+    <param name="W" type="int" value="1280" />
+  </node>
+
+  <include file="$(find p450_yolo_compare_tracking)/launch/g1_yolo_detect_track.launch">
+    <arg name="uav_id" value="$(arg uav_id)"/>
+    <arg name="model_name" value="$(arg model_name)"/>
+    <arg name="model_path" value="$(arg model_path)"/>
+    <arg name="device" value="$(arg device)"/>
+    <arg name="imgsz" value="$(arg imgsz)"/>
+    <arg name="conf" value="$(arg conf)"/>
+    <arg name="iou" value="$(arg iou)"/>
+    <arg name="classes" value="$(arg classes)"/>
+    <arg name="auto_select" value="$(arg auto_select)"/>
+    <arg name="enable_ui" value="$(arg enable_ui)"/>
+    <arg name="tracker_type" value="$(arg tracker_type)"/>
+  </include>
+
+  <include file="$(find p450_yolo_compare_tracking)/launch/gimbal_target_controller.launch">
+    <arg name="uav_id" value="$(arg uav_id)"/>
+    <arg name="tracking_distance" value="$(arg tracking_distance)"/>
+    <arg name="max_velocity" value="$(arg max_velocity)"/>
+    <arg name="dry_run" value="$(arg dry_run)"/>
+  </include>
+
+  <node if="$(arg start_video_streaming)" pkg="spirecv_ros" type="video_streaming" name="video_streaming" output="screen">
+    <param name="input_original_image_topic" type="string" value="/uav$(arg uav_id)/gimbal/image_original" />
+    <param name="input_process_image_topic" type="string" value="/uav$(arg uav_id)/spirecv/image_det" />
+    <param name="mode" type="int" value="0" />
+    <param name="video_streamer_width" type="int" value="1280" />
+    <param name="video_streamer_height" type="int" value="720" />
+  </node>
+</launch>

@@ -1,0 +1,14 @@
+# Gazebo iris_mid360 only; real MID360 calibration stays in mid360.yaml.
+# Vehicle -> lidar link z=.08; laser sensor z=.05 inside that link.
+# IMU in link=[-.011,-.02329,.04412]. FAST-LIO expects lidar IN IMU:
+# T_I_L = inverse(T_B_I) * T_B_L = [.011,.02329,.00588].
+mapping:
+    extrinsic_T: [0.011, 0.02329, 0.00588]
+    extrinsic_R: [1, 0, 0, 0, 1, 0, 0, 0, 1]
+# Keep standalone sim_lidar launches consistent with the demo runner.
+fastlio_bridge:
+    imu_origin_in_body: [-0.011, -0.02329, 0.12412]
+fastlio_cloud_bridge:
+    imu_origin_in_body: [-0.011, -0.02329, 0.12412]
+static_map_builder:
+    lidar_origin_in_odom: [0.0, 0.0, 0.13]

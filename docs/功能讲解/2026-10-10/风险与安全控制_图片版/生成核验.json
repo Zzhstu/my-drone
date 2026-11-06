@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "pages": 10,
+  "png_size": [
+    3840,
+    2160
+  ],
+  "text_lines_checked": 279,
+  "parameter_and_interface_checks": 33,
+  "source_files_unchanged": 15,
+  "svg_xml_valid": true,
+  "reference_sha256": "ff606e6fc9c89b7af2e8b8cc6672e27ef9579e4d058fba89ed9600baa76e2345",
+  "pptx_created": false,
+  "validation_scope": "来源/配置/图像格式/文字边界；非ROS编译或飞行安全实验",
+  "visual_review": "待人工查看图片后另行记录"
+}

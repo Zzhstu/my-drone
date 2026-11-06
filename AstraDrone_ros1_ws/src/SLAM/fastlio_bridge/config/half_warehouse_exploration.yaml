@@ -1,0 +1,11 @@
+# Half-scene demo acceptance only; safety and scan evidence remain unchanged.
+warehouse_explorer:
+  surface_quality_target: 0.90
+  observed_map_acceptance: true
+  lookahead: 2.0          # swept safe segment; cruise is separately capped at 0.60 m/s
+  planning_hz: 3.0
+  settle_seconds: 1.0    # ten lidar scans nominally; actual evidence still required
+  max_mission_seconds: 550.0
+  max_mission_wall_seconds: 1200.0
+  inspection_budget_seconds: 240.0
+  return_timeout: 600.0

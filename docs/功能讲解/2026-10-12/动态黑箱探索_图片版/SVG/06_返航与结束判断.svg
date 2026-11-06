@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+<rect x="0" y="0" width="1920" height="1080" fill="white" stroke="none" stroke-width="1.5"/>
+<text x="65" y="93.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="47" font-weight="700" fill="#15334C" text-anchor="start">返航与结束：返回保存，和完整探索分开判断</text>
+<text x="68" y="147.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="25" font-weight="400" fill="#657585" text-anchor="start">没有有效新目标不等于全仓扫完；每次收尾必须保留真实原因</text>
+<polyline points="65.00,181.00 1855.00,181.00" fill="none" stroke="#DCE5EB" stroke-width="1"/>
+<text x="65" y="1048.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="21" font-weight="700" fill="#137B7E" text-anchor="start">机制示意｜默认完成后关闭本次仿真；可显式保留展示。不声称真机自动降落或完全建图。</text>
+<text x="1764" y="1050.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="20" font-weight="400" fill="#657585" text-anchor="start">06 / 08</text>
+<rect x="75" y="232" width="852" height="251" fill="#EDF8F0" stroke="#A6D2BD" stroke-width="2"/>
+<text x="95" y="274.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="27" font-weight="700" fill="#15334C" text-anchor="start">观测范围收敛：多项条件同时成立</text>
+<text x="95" y="314.18" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="22" font-weight="400" fill="#15334C" text-anchor="start">完整增益窗口变小；已看表面质量至少95%；</text>
+<text x="95" y="343.66" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="22" font-weight="400" fill="#15334C" text-anchor="start">无有用前沿、无剩余补扫候选、无目标失败记录，</text>
+<text x="95" y="373.14" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="22" font-weight="400" fill="#15334C" text-anchor="start">观测格与表面证据没有容量不足。</text>
+<text x="95" y="402.62" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="22" font-weight="400" fill="#15334C" text-anchor="start">只能认证当前已观测可达范围，仍不等于全三维完整。</text>
+<rect x="975" y="232" width="870" height="251" fill="#FFF3E5" stroke="#E9C291" stroke-width="2"/>
+<text x="995" y="274.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="27" font-weight="700" fill="#15334C" text-anchor="start">部分结果：预算、限制或人工请求</text>
+<text x="995" y="314.18" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="22" font-weight="400" fill="#15334C" text-anchor="start">探索3600仿真秒 / 3600真实秒预算；</text>
+<text x="995" y="343.66" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="22" font-weight="400" fill="#15334C" text-anchor="start">补扫600仿真秒预算；容量不足、视点耗尽、</text>
+<text x="995" y="373.14" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="22" font-weight="400" fill="#15334C" text-anchor="start">人工请求或显式目标数上限，均需写明结束原因。</text>
+<text x="995" y="402.62" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="22" font-weight="400" fill="#15334C" text-anchor="start">部分探索可以返航保存，但完整性不能改成成功。</text>
+<polyline points="501.00,483.00 501.00,516.00 948.00,516.00" fill="none" stroke="#24618A" stroke-width="2.5"/>
+<polyline points="1405.00,483.00 1405.00,516.00 948.00,516.00 948.00,531.00 263.00,531.00 263.00,562.00" fill="none" stroke="#24618A" stroke-width="2.5"/>
+<polygon points="263.00,562.00 259.50,553.25 266.50,553.25" fill="#24618A" stroke="none" stroke-width="1"/>
+<rect x="75" y="562" width="390" height="217" fill="#EDF5FF" stroke="#A8C8E7" stroke-width="2"/>
+<text x="95" y="604.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="27" font-weight="700" fill="#15334C" text-anchor="start">按已知安全路返航</text>
+<text x="95" y="643.18" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="21" font-weight="400" fill="#15334C" text-anchor="start">无路就报告受阻，</text>
+<text x="95" y="671.3199999999999" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="21" font-weight="400" fill="#15334C" text-anchor="start">不直接穿未知。</text>
+<polygon points="162.88,687.76 176.87,673.77 240.47,673.77 226.48,687.76" fill="#DEEAE6" stroke="#8DA9AB" stroke-width="1"/>
+<polyline points="162.88,687.76 162.88,722.07" fill="none" stroke="#65888B" stroke-width="3"/>
+<polyline points="226.48,687.76 226.48,722.07" fill="none" stroke="#65888B" stroke-width="3"/>
+<polygon points="162.88,687.76 226.48,687.76 240.47,673.77 176.87,673.77" fill="#D2E7E1" stroke="#789D98" stroke-width="1"/>
+<rect x="171.148" y="695.76" width="15.264" height="7.891299999999999" fill="#D8C9AA" stroke="#B5A68A" stroke-width="1"/>
+<rect x="200.404" y="695.76" width="15.264" height="7.891299999999999" fill="#D8C9AA" stroke="#B5A68A" stroke-width="1"/>
+<polygon points="162.88,699.43 226.48,699.43 240.47,685.43 176.87,685.43" fill="#D2E7E1" stroke="#789D98" stroke-width="1"/>
+<rect x="171.148" y="707.4254" width="15.264" height="7.891299999999999" fill="#D8C9AA" stroke="#B5A68A" stroke-width="1"/>
+<rect x="200.404" y="707.4254" width="15.264" height="7.891299999999999" fill="#D8C9AA" stroke="#B5A68A" stroke-width="1"/>
+<polygon points="162.88,711.09 226.48,711.09 240.47,697.10 176.87,697.10" fill="#D2E7E1" stroke="#789D98" stroke-width="1"/>
+<rect x="171.148" y="719.0908" width="15.264" height="7.891299999999999" fill="#D8C9AA" stroke="#B5A68A" stroke-width="1"/>
+<rect x="200.404" y="719.0908" width="15.264" height="7.891299999999999" fill="#D8C9AA" stroke="#B5A68A" stroke-width="1"/>
+<polygon points="162.88,722.07 226.48,722.07 240.47,708.08 176.87,708.08" fill="#D2E7E1" stroke="#789D98" stroke-width="1"/>
+<polygon points="331.42,687.76 344.01,675.17 401.25,675.17 388.66,687.76" fill="#DEEAE6" stroke="#8DA9AB" stroke-width="1"/>
+<polyline points="331.42,687.76 331.42,722.07" fill="none" stroke="#65888B" stroke-width="3"/>
+<polyline points="388.66,687.76 388.66,722.07" fill="none" stroke="#65888B" stroke-width="3"/>
+<polygon points="331.42,687.76 388.66,687.76 401.25,675.17 344.01,675.17" fill="#D2E7E1" stroke="#789D98" stroke-width="1"/>
+<rect x="338.86119999999994" y="695.76" width="13.737599999999999" height="7.891299999999999" fill="#D8C9AA" stroke="#B5A68A" stroke-width="1"/>
+<rect x="365.19159999999994" y="695.76" width="13.737599999999999" height="7.891299999999999" fill="#D8C9AA" stroke="#B5A68A" stroke-width="1"/>
+<polygon points="331.42,699.43 388.66,699.43 401.25,686.83 344.01,686.83" fill="#D2E7E1" stroke="#789D98" stroke-width="1"/>
+<rect x="338.86119999999994" y="707.4254" width="13.737599999999999" height="7.891299999999999" fill="#D8C9AA" stroke="#B5A68A" stroke-width="1"/>
+<rect x="365.19159999999994" y="707.4254" width="13.737599999999999" height="7.891299999999999" fill="#D8C9AA" stroke="#B5A68A" stroke-width="1"/>
+<polygon points="331.42,711.09 388.66,711.09 401.25,698.50 344.01,698.50" fill="#D2E7E1" stroke="#789D98" stroke-width="1"/>
+<rect x="338.86119999999994" y="719.0908" width="13.737599999999999" height="7.891299999999999" fill="#D8C9AA" stroke="#B5A68A" stroke-width="1"/>
+<rect x="365.19159999999994" y="719.0908" width="13.737599999999999" height="7.891299999999999" fill="#D8C9AA" stroke="#B5A68A" stroke-width="1"/>
+<polygon points="331.42,722.07 388.66,722.07 401.25,709.48 344.01,709.48" fill="#D2E7E1" stroke="#789D98" stroke-width="1"/>
+<polyline points="181.96,735.21 163.76,727.51" fill="none" stroke="#15334C" stroke-width="2.0999999999999996"/>
+<circle cx="163.76" cy="727.51" r="6.3" fill="#E5F0FA" stroke="#24618A" stroke-width="1"/>
+<polyline points="181.96,735.21 200.16,727.51" fill="none" stroke="#15334C" stroke-width="2.0999999999999996"/>
+<circle cx="200.15999999999997" cy="727.51" r="6.3" fill="#E5F0FA" stroke="#24618A" stroke-width="1"/>
+<polyline points="181.96,735.21 163.76,742.91" fill="none" stroke="#15334C" stroke-width="2.0999999999999996"/>
+<circle cx="163.76" cy="742.9100000000001" r="6.3" fill="#E5F0FA" stroke="#24618A" stroke-width="1"/>
+<polyline points="181.96,735.21 200.16,742.91" fill="none" stroke="#15334C" stroke-width="2.0999999999999996"/>
+<circle cx="200.15999999999997" cy="742.9100000000001" r="6.3" fill="#E5F0FA" stroke="#24618A" stroke-width="1"/>
+<polygon points="174.26,730.31 189.66,730.31 191.76,738.71 181.96,742.91 172.16,738.71" fill="#24618A" stroke="#15334C" stroke-width="1"/>
+<circle cx="181.95999999999998" cy="733.8100000000001" r="2.8" fill="#A6E3D6" stroke="none" stroke-width="1"/>
+<circle cx="181.95999999999998" cy="735.21" r="14.600000000000001" fill="none" stroke="#137B7E" stroke-width="2"/>
+<polyline points="366.40,733.75 277.36,744.70 181.96,735.21" fill="none" stroke="#137B7E" stroke-width="2.8"/>
+<polygon points="181.96,735.21 192.10,732.28 191.32,740.08" fill="#137B7E" stroke="none" stroke-width="1"/>
+<polyline points="465.00,645.00 535.00,645.00" fill="none" stroke="#24618A" stroke-width="2.5"/>
+<polygon points="535.00,645.00 526.25,648.50 526.25,641.50" fill="#24618A" stroke="none" stroke-width="1"/>
+<rect x="535" y="562" width="390" height="217" fill="#F3EFFC" stroke="#C4B5E0" stroke-width="2"/>
+<text x="555" y="604.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="27" font-weight="700" fill="#15334C" text-anchor="start">起点附近连续驻留</text>
+<text x="555" y="643.18" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="21" font-weight="400" fill="#15334C" text-anchor="start">平面误差≤0.30米，</text>
+<text x="555" y="671.3199999999999" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="21" font-weight="400" fill="#15334C" text-anchor="start">持续5仿真秒。</text>
+<polyline points="631.00,723.00 611.50,714.75" fill="none" stroke="#15334C" stroke-width="2.25"/>
+<circle cx="611.5" cy="714.75" r="6.75" fill="#E5F0FA" stroke="#24618A" stroke-width="1"/>
+<polyline points="631.00,723.00 650.50,714.75" fill="none" stroke="#15334C" stroke-width="2.25"/>
+<circle cx="650.5" cy="714.75" r="6.75" fill="#E5F0FA" stroke="#24618A" stroke-width="1"/>
+<polyline points="631.00,723.00 611.50,731.25" fill="none" stroke="#15334C" stroke-width="2.25"/>
+<circle cx="611.5" cy="731.25" r="6.75" fill="#E5F0FA" stroke="#24618A" stroke-width="1"/>
+<polyline points="631.00,723.00 650.50,731.25" fill="none" stroke="#15334C" stroke-width="2.25"/>
+<circle cx="650.5" cy="731.25" r="6.75" fill="#E5F0FA" stroke="#24618A" stroke-width="1"/>
+<polygon points="622.75,717.75 639.25,717.75 641.50,726.75 631.00,731.25 620.50,726.75" fill="#24618A" stroke="#15334C" stroke-width="1"/>
+<circle cx="631" cy="721.5" r="3.0" fill="#A6E3D6" stroke="none" stroke-width="1"/>
+<circle cx="631" cy="723" r="43" fill="none" stroke="#137B7E" stroke-width="2"/>
+<polyline points="925.00,645.00 995.00,645.00" fill="none" stroke="#24618A" stroke-width="2.5"/>
+<polygon points="995.00,645.00 986.25,648.50 986.25,641.50" fill="#24618A" stroke="none" stroke-width="1"/>
+<rect x="995" y="562" width="390" height="217" fill="#EFF0FF" stroke="#B7C2EB" stroke-width="2"/>
+<text x="1015" y="604.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="27" font-weight="700" fill="#15334C" text-anchor="start">取得地图保存回执</text>
+<text x="1015" y="643.18" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="21" font-weight="400" fill="#15334C" text-anchor="start">失败则保持并重试，</text>
+<text x="1015" y="671.3199999999999" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="21" font-weight="400" fill="#15334C" text-anchor="start">不是只看文件名。</text>
+<rect x="1034" y="698" width="86" height="48" fill="#ECF7F0" stroke="#137B7E" stroke-width="1.5"/>
+<text x="1039" y="731.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="20" font-weight="700" fill="#137B7E" text-anchor="start">已保存</text>
+<polyline points="1385.00,645.00 1455.00,645.00" fill="none" stroke="#24618A" stroke-width="2.5"/>
+<polygon points="1455.00,645.00 1446.25,648.50 1446.25,641.50" fill="#24618A" stroke="none" stroke-width="1"/>
+<rect x="1455" y="562" width="390" height="217" fill="#FFF3E5" stroke="#E9C291" stroke-width="2"/>
+<text x="1475" y="604.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="27" font-weight="700" fill="#15334C" text-anchor="start">任务结束并记录</text>
+<text x="1475" y="643.18" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="21" font-weight="400" fill="#15334C" text-anchor="start">返回、保存与完整性</text>
+<text x="1475" y="671.3199999999999" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="21" font-weight="400" fill="#15334C" text-anchor="start">分别记录。</text>
+<text x="1480" y="729.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="27" font-weight="700" fill="#CB5263" text-anchor="start">结束 ≠ 全图完整</text>
+<rect x="75" y="824" width="852" height="157" fill="#EFF0FF" stroke="#B7C2EB" stroke-width="2"/>
+<text x="95" y="866.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="27" font-weight="700" fill="#15334C" text-anchor="start">连续驻留必须是真实有效状态</text>
+<text x="95" y="906.18" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="22" font-weight="400" fill="#15334C" text-anchor="start">离开起点、暂停、过期输入或机位不安全，驻留重新计时。</text>
+<text x="95" y="935.66" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="22" font-weight="400" fill="#15334C" text-anchor="start">断流不继续发布新的探索航点；保存失败不能假报完成。</text>
+<rect x="975" y="824" width="870" height="157" fill="#FFF0F5" stroke="#DFB3C9" stroke-width="2"/>
+<text x="995" y="866.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="27" font-weight="700" fill="#15334C" text-anchor="start">异常有明确出口，保留部分地图</text>
+<text x="995" y="906.18" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="22" font-weight="400" fill="#15334C" text-anchor="start">返航1200仿真秒超时；运行器4800真实秒硬保护。</text>
+<text x="995" y="935.66" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="22" font-weight="400" fill="#15334C" text-anchor="start">受阻、超时或人工中断不是成功探索，不能隐藏失败。</text>
+</svg>

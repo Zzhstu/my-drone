@@ -1,0 +1,9430 @@
+{
+  "passed": true,
+  "pages": 57,
+  "checks": 1803,
+  "errors": [],
+  "native_shapes": 1042,
+  "image_only_slides": 0,
+  "presentation_sha256": "9f85d0125c7a6048765ea4c859c8c09308df4fe11ad14bb282bf3e8a991800d3",
+  "pdf_sha256": "79a233ce30376d53974c92b5fee042513a020bc3f69173167047bbb34ece153b",
+  "source_files": 54,
+  "page_results": [
+    {
+      "page": 1,
+      "title": "无人机建图、避障与探索：详细功能讲解",
+      "text_chars": 412,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_01.png"
+    },
+    {
+      "page": 2,
+      "title": "先分清：功能包、内部模块与演示脚本",
+      "text_chars": 413,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_02.png"
+    },
+    {
+      "page": 3,
+      "title": "整个任务由两条并行的信息链共同决定",
+      "text_chars": 405,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_03.png"
+    },
+    {
+      "page": 4,
+      "title": "FAST-LIO2的作用：先知道无人机在哪里",
+      "text_chars": 390,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_04.png"
+    },
+    {
+      "page": 5,
+      "title": "FAST-LIO2怎样用环境把误差拉回来",
+      "text_chars": 394,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_05.png"
+    },
+    {
+      "page": 6,
+      "title": "坐标衔接：位置和点云必须一起转换",
+      "text_chars": 375,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_06.png"
+    },
+    {
+      "page": 7,
+      "title": "当前扫描、累积地图和航迹不是同一种数据",
+      "text_chars": 381,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_07.png"
+    },
+    {
+      "page": 8,
+      "title": "前景候选：先找出与初始环境不同的点",
+      "text_chars": 374,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_08.png"
+    },
+    {
+      "page": 9,
+      "title": "前景参数改变的是候选范围，不是最终识别率",
+      "text_chars": 405,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_09.png"
+    },
+    {
+      "page": 10,
+      "title": "聚类与编号：把散点组成可以持续观察的目标",
+      "text_chars": 402,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_10.png"
+    },
+    {
+      "page": 11,
+      "title": "确认运动：不是中心动了一下就判为动态",
+      "text_chars": 382,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_11.png"
+    },
+    {
+      "page": 12,
+      "title": "地图支持与两种平滑：减少假运动，也有代价",
+      "text_chars": 394,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_12.png"
+    },
+    {
+      "page": 13,
+      "title": "预测与类别接口：有接口不代表部署了人体网络",
+      "text_chars": 377,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_13.png"
+    },
+    {
+      "page": 14,
+      "title": "动态风险：看双方会不会朝同一个位置靠近",
+      "text_chars": 383,
+      "body_bottom_pt": 354.61859130859375,
+      "image": "page_14.png"
+    },
+    {
+      "page": 15,
+      "title": "动态判断的具体例子：横穿、远离与同向",
+      "text_chars": 383,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_15.png"
+    },
+    {
+      "page": 16,
+      "title": "风险保持与解除：为什么人走远后还会等一下",
+      "text_chars": 398,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_16.png"
+    },
+    {
+      "page": 17,
+      "title": "静态风险：用最新扫描看附近是不是太挤",
+      "text_chars": 375,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_17.png"
+    },
+    {
+      "page": 18,
+      "title": "机体半径、预警净空与规划距离要分清",
+      "text_chars": 412,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_18.png"
+    },
+    {
+      "page": 19,
+      "title": "风险融合：等级取较高，速度另按规则组合",
+      "text_chars": 378,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_19.png"
+    },
+    {
+      "page": 20,
+      "title": "一个共同存储，派生全局、稳定和局部视图",
+      "text_chars": 395,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_20.png"
+    },
+    {
+      "page": 21,
+      "title": "入图门限：同一帧很多点不等于多次确认",
+      "text_chars": 372,
+      "body_bottom_pt": 354.61859130859375,
+      "image": "page_21.png"
+    },
+    {
+      "page": 22,
+      "title": "为什么“人先不动，后来走了”是关键场景",
+      "text_chars": 385,
+      "body_bottom_pt": 354.61859130859375,
+      "image": "page_22.png"
+    },
+    {
+      "page": 23,
+      "title": "两种删图方式：普通演示与仓库探索不同",
+      "text_chars": 413,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_23.png"
+    },
+    {
+      "page": 24,
+      "title": "保守清理第一步：射线必须来自正确的时间和位置",
+      "text_chars": 402,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_24.png"
+    },
+    {
+      "page": 25,
+      "title": "保守清理第二步：保护当前回波，再累计为空证据",
+      "text_chars": 391,
+      "body_bottom_pt": 354.61859130859375,
+      "image": "page_25.png"
+    },
+    {
+      "page": 26,
+      "title": "缺点云时：先分清漏扫、没入图和误清理",
+      "text_chars": 379,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_26.png"
+    },
+    {
+      "page": 27,
+      "title": "指定目标规划：在地图中找一条绕行路线",
+      "text_chars": 369,
+      "body_bottom_pt": 354.61859130859375,
+      "image": "page_27.png"
+    },
+    {
+      "page": 28,
+      "title": "局部地图怎样改变全局路线：先撤旧，再加新",
+      "text_chars": 382,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_28.png"
+    },
+    {
+      "page": 29,
+      "title": "扩大搜索与保持旧路：避免无路和来回换边",
+      "text_chars": 406,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_29.png"
+    },
+    {
+      "page": 30,
+      "title": "黑箱探索：下一站来自传感器，不来自货架真值",
+      "text_chars": 394,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_30.png"
+    },
+    {
+      "page": 31,
+      "title": "可达空间：先保证能过去，再谈哪里信息多",
+      "text_chars": 373,
+      "body_bottom_pt": 354.61859130859375,
+      "image": "page_31.png"
+    },
+    {
+      "page": 32,
+      "title": "前沿选点：选能看见新区域又到得了的观察位置",
+      "text_chars": 384,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_32.png"
+    },
+    {
+      "page": 33,
+      "title": "为什么会慢：限速、比例控制、观察和仿真时间",
+      "text_chars": 412,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_33.png"
+    },
+    {
+      "page": 34,
+      "title": "新障碍把起点挤进膨胀区：只允许受检查的短恢复",
+      "text_chars": 413,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_34.png"
+    },
+    {
+      "page": 35,
+      "title": "补扫：已知自由面积大，不代表货架表面看完整",
+      "text_chars": 400,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_35.png"
+    },
+    {
+      "page": 36,
+      "title": "结束的三个问题：收敛、返航完成、地图覆盖",
+      "text_chars": 393,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_36.png"
+    },
+    {
+      "page": 37,
+      "title": "独立地图审计：用参考表面找缺口，不偷偷补点",
+      "text_chars": 425,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_37.png"
+    },
+    {
+      "page": 38,
+      "title": "起飞状态：先稳定地面坐标，再确认真正离地",
+      "text_chars": 398,
+      "body_bottom_pt": 354.61859130859375,
+      "image": "page_38.png"
+    },
+    {
+      "page": 39,
+      "title": "航点变成速度：方向、大小与高度分别控制",
+      "text_chars": 394,
+      "body_bottom_pt": 354.61859130859375,
+      "image": "page_39.png"
+    },
+    {
+      "page": 40,
+      "title": "控制优先级：路线不能压过即时安全",
+      "text_chars": 404,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_40.png"
+    },
+    {
+      "page": 41,
+      "title": "可视化要看对对象：地图、球、青点和路线",
+      "text_chars": 390,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_41.png"
+    },
+    {
+      "page": 42,
+      "title": "运行监测：区分没有目标、数据过期和节点失效",
+      "text_chars": 414,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_42.png"
+    },
+    {
+      "page": 43,
+      "title": "保存真实维护图：不靠额外删人或真值补点",
+      "text_chars": 397,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_43.png"
+    },
+    {
+      "page": 44,
+      "title": "产物在哪里：普通演示与探索演示要分开找",
+      "text_chars": 457,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_44.png"
+    },
+    {
+      "page": 45,
+      "title": "三个主要演示：任务不同，共用安全和定位链",
+      "text_chars": 413,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_45.png"
+    },
+    {
+      "page": 46,
+      "title": "键盘移动行人：改变测试环境，不抢无人机控制",
+      "text_chars": 409,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_46.png"
+    },
+    {
+      "page": 47,
+      "title": "offboard/src：7个源文件，不是7个避障模块",
+      "text_chars": 475,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_47.png"
+    },
+    {
+      "page": 48,
+      "title": "无人机键盘：改的是位置目标，不是直接电机速度",
+      "text_chars": 389,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_48.png"
+    },
+    {
+      "page": 49,
+      "title": "自动航线：模式、解锁、起飞、巡航与降落",
+      "text_chars": 384,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_49.png"
+    },
+    {
+      "page": 50,
+      "title": "指定位置转发与地理原点：简单接口也有边界",
+      "text_chars": 449,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_50.png"
+    },
+    {
+      "page": 51,
+      "title": "走廊与回环航线：重复实验轨迹，不是自动探索",
+      "text_chars": 391,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_51.png"
+    },
+    {
+      "page": 52,
+      "title": "FreeDOM与回环：可选模块不等于当前主链",
+      "text_chars": 412,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_52.png"
+    },
+    {
+      "page": 53,
+      "title": "总关系图：地图规划与即时安全，汇入同一个控制器",
+      "text_chars": 387,
+      "body_bottom_pt": 354.61859130859375,
+      "image": "page_53.png"
+    },
+    {
+      "page": 54,
+      "title": "系统总关系图（可直接编辑）",
+      "text_chars": 156,
+      "body_bottom_pt": 0.0,
+      "image": "page_54.png"
+    },
+    {
+      "page": 55,
+      "title": "完整例子：人离开后，地图和路线怎样恢复",
+      "text_chars": 369,
+      "body_bottom_pt": 354.61859130859375,
+      "image": "page_55.png"
+    },
+    {
+      "page": 56,
+      "title": "四类常见问题：不要把所有现象都归为动态误检",
+      "text_chars": 379,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_56.png"
+    },
+    {
+      "page": 57,
+      "title": "可以怎样介绍我们的工作：具体能力与限制都说清",
+      "text_chars": 407,
+      "body_bottom_pt": 380.611572265625,
+      "image": "page_57.png"
+    }
+  ],
+  "details": [
+    {
+      "label": "PPTX ZIP完整性",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide15.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide18.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide6.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide11.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide30.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide3.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide17.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide52.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide35.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide50.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide4.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide55.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideMasters/slideMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide19.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide38.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide8.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout2.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout3.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout4.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout5.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout6.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout8.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout9.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout10.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout11.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/theme/theme1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide21.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideMasters/slideMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide51.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide26.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide53.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide15.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideMasters/slideMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide42.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide57.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide23.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide45.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideMasters/slideMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideMasters/slideMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide41.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide16.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide44.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideMasters/slideMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/theme/theme2.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide13.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide23.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideMasters/slideMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide22.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide28.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide14.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideMasters/slideMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide19.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide2.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide10.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide33.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide16.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide45.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide17.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide25.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide57.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide21.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide56.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide37.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide48.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide32.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide46.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide36.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide49.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide10.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideMasters/slideMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide38.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide56.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide43.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide30.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide33.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide12.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide25.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide22.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideMasters/slideMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/printerSettings/printerSettings1.bin",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/presProps.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/viewProps.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/theme/theme1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/tableStyles.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide2.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide3.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide4.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide5.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide6.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide8.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide9.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide10.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide11.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide12.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide13.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide14.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide15.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide16.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide17.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide18.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide19.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide20.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide21.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide22.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide23.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide24.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide25.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide26.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide27.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide28.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide29.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide30.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide31.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide32.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide33.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide34.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide35.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide36.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide37.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide38.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide39.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide40.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide41.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide42.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide43.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide44.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide45.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide46.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide47.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide48.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide49.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide50.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide51.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide52.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide53.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide54.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide55.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide56.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide57.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide55.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide37.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide46.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide20.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide32.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide14.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide29.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide41.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide44.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideMasters/slideMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideMasters/slideMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide47.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide50.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide4.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide26.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/presentation.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:docProps/thumbnail.jpeg",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:docProps/core.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:docProps/app.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide35.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide42.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide28.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide6.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide49.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide39.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide52.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide47.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide8.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide40.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide43.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide53.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide9.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide18.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide34.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide13.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide27.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide51.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide20.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide5.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide12.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide24.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide5.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide24.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide29.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide2.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide27.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide40.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide54.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide31.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide9.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide31.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide39.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide48.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide34.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide3.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide11.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesMasters/notesMaster1.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slides/slide36.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/slideLayouts/slideLayout7.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "关系目标存在:ppt/notesSlides/notesSlide54.xml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "PPTX页数",
+      "passed": true,
+      "detail": "57"
+    },
+    {
+      "label": "每页都有讲稿",
+      "passed": true,
+      "detail": "57"
+    },
+    {
+      "label": "没有用整页图片代替编辑对象",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第1页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第1页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第1页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第1页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第1页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第1页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第1页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第1页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第1页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第1页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第1页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第1页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第1页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第1页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第1页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第1页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第1页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第1页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第2页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第2页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第2页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第2页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第2页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第2页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第2页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第2页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第2页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第2页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第2页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第2页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第2页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第2页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第2页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第2页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第2页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第2页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第3页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第3页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第3页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第3页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第3页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第3页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第3页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第3页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第3页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第3页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第3页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第3页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第3页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第3页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第3页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第3页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第3页对象15边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第3页对象18边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第3页对象19边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第4页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第4页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第4页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第4页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第4页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第4页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第4页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第4页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第4页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第4页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第4页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第4页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第4页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第4页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第4页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第4页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第4页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第4页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第5页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第5页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第5页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第5页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第5页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第5页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第5页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第5页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第5页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第5页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第5页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第5页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第5页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第5页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第5页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第5页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第5页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第5页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第6页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第6页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第6页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第6页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第6页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第6页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第6页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第6页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第6页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第6页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第6页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第6页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第6页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第6页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第6页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第6页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第6页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第6页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第7页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第7页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第7页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第7页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第7页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第7页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第7页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第7页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第7页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第7页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第7页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第7页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第7页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第7页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第7页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第7页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第7页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第7页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第8页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第8页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第8页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第8页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第8页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第8页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第8页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第8页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第8页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第8页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第8页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第8页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第8页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第8页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第8页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第8页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第8页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第8页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第9页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第9页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第9页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第9页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第9页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第9页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第9页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第9页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第9页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第9页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第9页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第9页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第9页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第9页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第9页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第9页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第9页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第9页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第10页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第10页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第10页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第10页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第10页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第10页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第10页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第10页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第10页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第10页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第10页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第10页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第10页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第10页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第10页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第10页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第10页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第10页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第11页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第11页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第11页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第11页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第11页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第11页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第11页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第11页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第11页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第11页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第11页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第11页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第11页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第11页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第11页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第11页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第11页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第11页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第12页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第12页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第12页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第12页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第12页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第12页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第12页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第12页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第12页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第12页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第12页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第12页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第12页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第12页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第12页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第12页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第12页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第12页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第13页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第13页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第13页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第13页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第13页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第13页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第13页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第13页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第13页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第13页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第13页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第13页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第13页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第13页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第13页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第13页对象14边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第13页对象15边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第14页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第14页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第14页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第14页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第14页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第14页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第14页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第14页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第14页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第14页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第14页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第14页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第14页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第14页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第14页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第14页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第14页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第14页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第15页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第15页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第15页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第15页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第15页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第15页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第15页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第15页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第15页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第15页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第15页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第15页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第15页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第15页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第15页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第15页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第15页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第15页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第16页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第16页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第16页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第16页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第16页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第16页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第16页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第16页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第16页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第16页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第16页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第16页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第16页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第16页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第16页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第16页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第16页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第16页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第17页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第17页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第17页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第17页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第17页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第17页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第17页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第17页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第17页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第17页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第17页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第17页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第17页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第17页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第17页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第17页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第17页对象15边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第17页对象18边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第17页对象19边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第18页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第18页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第18页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第18页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第18页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第18页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第18页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第18页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第18页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第18页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第18页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第18页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第18页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第18页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第18页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第18页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第18页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第18页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第19页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第19页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第19页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第19页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第19页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第19页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第19页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第19页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第19页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第19页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第19页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第19页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第19页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第19页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第19页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第19页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第19页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第19页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第20页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第20页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第20页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第20页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第20页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第20页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第20页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第20页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第20页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第20页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第20页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第20页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第20页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第20页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第20页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第20页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第20页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第20页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第21页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第21页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第21页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第21页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第21页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第21页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第21页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第21页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第21页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第21页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第21页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第21页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第21页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第21页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第21页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第21页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第21页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第21页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第22页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第22页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第22页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第22页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第22页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第22页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第22页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第22页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第22页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第22页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第22页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第22页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第22页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第22页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第22页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第22页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第22页对象15边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第22页对象18边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第22页对象19边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第23页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第23页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第23页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第23页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第23页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第23页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第23页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第23页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第23页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第23页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第23页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第23页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第23页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第23页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第23页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第23页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第23页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第23页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第24页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第24页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第24页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第24页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第24页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第24页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第24页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第24页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第24页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第24页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第24页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第24页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第24页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第24页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第24页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第24页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第24页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第24页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第25页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第25页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第25页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第25页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第25页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第25页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第25页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第25页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第25页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第25页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第25页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第25页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第25页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第25页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第25页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第25页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第25页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第25页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第26页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第26页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第26页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第26页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第26页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第26页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第26页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第26页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第26页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第26页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第26页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第26页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第26页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第26页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第26页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第26页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第26页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第26页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第27页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第27页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第27页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第27页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第27页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第27页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第27页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第27页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第27页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第27页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第27页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第27页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第27页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第27页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第27页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第27页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第27页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第27页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第28页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第28页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第28页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第28页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第28页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第28页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第28页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第28页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第28页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第28页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第28页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第28页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第28页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第28页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第28页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第28页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第28页对象15边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第28页对象18边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第28页对象19边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第29页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第29页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第29页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第29页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第29页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第29页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第29页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第29页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第29页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第29页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第29页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第29页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第29页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第29页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第29页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第29页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第29页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第29页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第30页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第30页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第30页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第30页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第30页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第30页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第30页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第30页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第30页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第30页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第30页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第30页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第30页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第30页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第30页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第30页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第30页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第30页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第31页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第31页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第31页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第31页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第31页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第31页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第31页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第31页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第31页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第31页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第31页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第31页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第31页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第31页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第31页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第31页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第31页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第31页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第32页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第32页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第32页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第32页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第32页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第32页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第32页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第32页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第32页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第32页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第32页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第32页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第32页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第32页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第32页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第32页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第32页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第32页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第33页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第33页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第33页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第33页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第33页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第33页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第33页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第33页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第33页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第33页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第33页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第33页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第33页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第33页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第33页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第33页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第33页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第33页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第34页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第34页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第34页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第34页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第34页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第34页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第34页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第34页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第34页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第34页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第34页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第34页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第34页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第34页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第34页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第34页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第34页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第34页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第35页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第35页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第35页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第35页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第35页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第35页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第35页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第35页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第35页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第35页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第35页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第35页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第35页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第35页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第35页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第35页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第35页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第35页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第36页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第36页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第36页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第36页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第36页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第36页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第36页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第36页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第36页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第36页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第36页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第36页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第36页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第36页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第36页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第36页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第36页对象15边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第36页对象18边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第36页对象19边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第37页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第37页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第37页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第37页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第37页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第37页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第37页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第37页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第37页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第37页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第37页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第37页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第37页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第37页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第37页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第37页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第37页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第37页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第38页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第38页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第38页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第38页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第38页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第38页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第38页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第38页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第38页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第38页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第38页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第38页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第38页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第38页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第38页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第38页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第38页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第38页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第39页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第39页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第39页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第39页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第39页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第39页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第39页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第39页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第39页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第39页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第39页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第39页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第39页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第39页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第39页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第39页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第39页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第39页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第40页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第40页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第40页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第40页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第40页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第40页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第40页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第40页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第40页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第40页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第40页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第40页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第40页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第40页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第40页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第40页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第40页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第40页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第41页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第41页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第41页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第41页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第41页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第41页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第41页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第41页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第41页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第41页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第41页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第41页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第41页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第41页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第41页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第41页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第41页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第41页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第42页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第42页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第42页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第42页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第42页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第42页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第42页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第42页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第42页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第42页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第42页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第42页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第42页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第42页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第42页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第42页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第42页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第42页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第43页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第43页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第43页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第43页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第43页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第43页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第43页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第43页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第43页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第43页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第43页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第43页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第43页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第43页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第43页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第43页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第43页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第43页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第44页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第44页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第44页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第44页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第44页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第44页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第44页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第44页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第44页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第44页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第44页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第44页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第44页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第44页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第44页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第44页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第44页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第44页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第45页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第45页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第45页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第45页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第45页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第45页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第45页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第45页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第45页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第45页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第45页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第45页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第45页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第45页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第45页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第45页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第45页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第45页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第46页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第46页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第46页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第46页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第46页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第46页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第46页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第46页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第46页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第46页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第46页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第46页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第46页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第46页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第46页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第46页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第46页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第46页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第47页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第47页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第47页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第47页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第47页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第47页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第47页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第47页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第47页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第47页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第47页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第47页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第47页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第47页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第47页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第47页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第47页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第47页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第48页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第48页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第48页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第48页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第48页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第48页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第48页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第48页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第48页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第48页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第48页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第48页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第48页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第48页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第48页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第48页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第48页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第48页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第49页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第49页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第49页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第49页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第49页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第49页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第49页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第49页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第49页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第49页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第49页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第49页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第49页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第49页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第49页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第49页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第49页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第49页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第50页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第50页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第50页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第50页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第50页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第50页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第50页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第50页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第50页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第50页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第50页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第50页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第50页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第50页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第50页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第50页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第50页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第50页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第51页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第51页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第51页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第51页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第51页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第51页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第51页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第51页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第51页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第51页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第51页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第51页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第51页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第51页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第51页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第51页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第51页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第51页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第52页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第52页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第52页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第52页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第52页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第52页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第52页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第52页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第52页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第52页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第52页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第52页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第52页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第52页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第52页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第52页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第52页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第52页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第53页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第53页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第53页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第53页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第53页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第53页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第53页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第53页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第53页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第53页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第53页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第53页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第53页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第53页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第53页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第53页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第53页对象15边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第53页对象18边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第53页对象19边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第54页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第54页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第54页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第54页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第54页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第54页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第54页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第54页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第54页对象7边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第54页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第54页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第54页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第54页对象18边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第54页对象20边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第54页对象21边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第55页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第55页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第55页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第55页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第55页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第55页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第55页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第55页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第55页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第55页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第55页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第55页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第55页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第55页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第55页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第55页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第55页对象15边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第55页对象18边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第55页对象19边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第56页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第56页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第56页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第56页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第56页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第56页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第56页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第56页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第56页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第56页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第56页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第56页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第56页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第56页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第56页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第56页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第56页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第56页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第57页标题",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第57页原生正文1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第57页原生正文2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第57页原生正文3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第57页原生正文4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第57页补充讲稿",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第57页对象0边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第57页对象1边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第57页对象3边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第57页对象4边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第57页对象5边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第57页对象6边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第57页对象8边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第57页对象9边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第57页对象11边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第57页对象13边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第57页对象16边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第57页对象17边界",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "实际导出PDF页数",
+      "passed": true,
+      "detail": "57"
+    },
+    {
+      "label": "第1页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第1页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第1页PDF正文完整1",
+      "passed": true,
+      "detail": "我们把定位、动态判断、地图更新、路线规划和飞行控制连成了一套"
+    },
+    {
+      "label": "第1页PDF正文完整2",
+      "passed": true,
+      "detail": "不只列出算法名称，而是把每个主要模块拆成用途、处理顺序、具体"
+    },
+    {
+      "label": "第1页PDF正文完整3",
+      "passed": true,
+      "detail": "正文尽量用中文。必须保留的文件名、参数名和消息名放在讲稿与配"
+    },
+    {
+      "label": "第1页PDF正文完整4",
+      "passed": true,
+      "detail": "带数值的规则来自当前文件配置，仍可能被启动参数覆盖。文中的假"
+    },
+    {
+      "label": "第1页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "第2页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第2页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第2页PDF正文完整1",
+      "passed": true,
+      "detail": "FAST_LIO目录中的定位程序负责估计位置和姿态，并输出当"
+    },
+    {
+      "label": "第2页PDF正文完整2",
+      "passed": true,
+      "detail": "因此“动态检测”和“静态风险”是同一个包内的不同模块，不是两"
+    },
+    {
+      "label": "第2页PDF正文完整3",
+      "passed": true,
+      "detail": "offboard包保存键盘飞行、位置转发和预设航线示例；仿真"
+    },
+    {
+      "label": "第2页PDF正文完整4",
+      "passed": true,
+      "detail": "演示脚本负责启动、等待、记录、收尾和产物路径。它本身不是新的"
+    },
+    {
+      "label": "第2页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "第3页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第3页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第3页PDF正文完整1",
+      "passed": true,
+      "detail": "定位结果把不同时间的扫描对齐。地图维护记录环境、撤销有新证据"
+    },
+    {
+      "label": "第3页PDF正文完整2",
+      "passed": true,
+      "detail": "这条链解决“目的地在货架后面，应该从哪侧绕过去”“旧位置已经"
+    },
+    {
+      "label": "第3页PDF正文完整3",
+      "passed": true,
+      "detail": "最新扫描检查附近表面距离；连续跟踪的动态目标提供相对运动风险"
+    },
+    {
+      "label": "第3页PDF正文完整4",
+      "passed": true,
+      "detail": "一旦位置、风险或必需扫描过期，控制器不应沿着旧路线盲飞。飞行"
+    },
+    {
+      "label": "第3页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "第4页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第4页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第4页PDF正文完整1",
+      "passed": true,
+      "detail": "惯性测量给出转动和加速度。程序根据上一时刻的状态，预测接下来"
+    },
+    {
+      "label": "第4页PDF正文完整2",
+      "passed": true,
+      "detail": "只靠惯性积分会逐渐产生误差。我们的动态判断需要在统一地图里比"
+    },
+    {
+      "label": "第4页PDF正文完整3",
+      "passed": true,
+      "detail": "新的扫描与已有环境表面进行比较。如果预测位置下的扫描与墙面、"
+    },
+    {
+      "label": "第4页PDF正文完整4",
+      "passed": true,
+      "detail": "FAST-LIO2是这套演示的定位基础，不直接替我们决定下一"
+    },
+    {
+      "label": "第4页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "第5页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第5页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第5页PDF正文完整1",
+      "passed": true,
+      "detail": "先把扫描点按预测姿态转换到地图中，在已有地图中查找附近点，判"
+    },
+    {
+      "label": "第5页PDF正文完整2",
+      "passed": true,
+      "detail": "足够有效的点共同参与修正，而不是只用一个点决定位置。修正后重"
+    },
+    {
+      "label": "第5页PDF正文完整3",
+      "passed": true,
+      "detail": "长走廊、重复货架或缺少结构变化的区域，可能让某些方向不容易分"
+    },
+    {
+      "label": "第5页PDF正文完整4",
+      "passed": true,
+      "detail": "当前主演示走模拟雷达分支，点中没有可用于真实逐点补偿的采集时"
+    },
+    {
+      "label": "第5页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "第6页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第6页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第6页PDF正文完整1",
+      "passed": true,
+      "detail": "定位系统从自己的初始坐标开始，飞控也有自己的局部坐标。若原点"
+    },
+    {
+      "label": "第6页PDF正文完整2",
+      "passed": true,
+      "detail": "衔接模块在开头建立一次旋转和平移关系，之后把定位位置和注册点"
+    },
+    {
+      "label": "第6页PDF正文完整3",
+      "passed": true,
+      "detail": "主演示利用飞控的初始位置完成一次对齐，随后由每帧激光定位结果"
+    },
+    {
+      "label": "第6页PDF正文完整4",
+      "passed": true,
+      "detail": "当前关闭把已对齐位置再送回飞控的视觉位置反馈，避免相互依赖。"
+    },
+    {
+      "label": "第6页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "第7页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第7页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第7页PDF正文完整1",
+      "passed": true,
+      "detail": "当前扫描只描述最近一次看到了什么，适合近场安全检查和新旧对比"
+    },
+    {
+      "label": "第7页PDF正文完整2",
+      "passed": true,
+      "detail": "动态检测必须读取当前扫描，不能把累积地图当成新扫描反复处理。"
+    },
+    {
+      "label": "第7页PDF正文完整3",
+      "passed": true,
+      "detail": "飞过的航迹来自已发生的位置，是回顾“无人机实际上去了哪里”。"
+    },
+    {
+      "label": "第7页PDF正文完整4",
+      "passed": true,
+      "detail": "三者可能不重合，因为遇到人、扫描过期、跟踪误差或新障碍时，控"
+    },
+    {
+      "label": "第7页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "第8页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第8页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第8页PDF正文完整1",
+      "passed": true,
+      "detail": "程序先收集40帧扫描，把当时看到的空间位置记下来。空间按0."
+    },
+    {
+      "label": "第8页PDF正文完整2",
+      "passed": true,
+      "detail": "新点如果所在格子或邻近格已有背景支持，就不输出为候选；与开头"
+    },
+    {
+      "label": "第8页PDF正文完整3",
+      "passed": true,
+      "detail": "无人机走到货架背面，原先看不到的静止表面也可能成为前景。非重"
+    },
+    {
+      "label": "第8页PDF正文完整4",
+      "passed": true,
+      "detail": "开头不动的人可能被记进背景；当前又关闭永久在线吸收，避免后来"
+    },
+    {
+      "label": "第8页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "第9页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第9页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第9页PDF正文完整1",
+      "passed": true,
+      "detail": "背景帧数影响开头记录得多完整。帧数少可能遗漏初始表面；帧数多"
+    },
+    {
+      "label": "第9页PDF正文完整2",
+      "passed": true,
+      "detail": "小格尺寸决定空间比较的细致程度。格子过大可能把人和货架合成背"
+    },
+    {
+      "label": "第9页PDF正文完整3",
+      "passed": true,
+      "detail": "规则示例：无人机绕过树木，叶子新露出一面，此时产生候选是可能"
+    },
+    {
+      "label": "第9页PDF正文完整4",
+      "passed": true,
+      "detail": "所以不能为了让候选点更多，就同时放松全部范围与运动门限。应分"
+    },
+    {
+      "label": "第9页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "第10页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第10页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第10页PDF正文完整1",
+      "passed": true,
+      "detail": "候选点很零散，程序把距离足够近的点归成一组，再计算组的中心。"
+    },
+    {
+      "label": "第10页PDF正文完整2",
+      "passed": true,
+      "detail": "中心让后续程序可以用位置、速度和编号描述目标，但它不是人体真"
+    },
+    {
+      "label": "第10页PDF正文完整3",
+      "passed": true,
+      "detail": "当前组与历史目标比较位置、合理位移和允许速度，把可能是同一个"
+    },
+    {
+      "label": "第10页PDF正文完整4",
+      "passed": true,
+      "detail": "匹配过松会把不同人或货架边缘串成一条轨迹；匹配过紧会把同一个"
+    },
+    {
+      "label": "第10页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "第11页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第11页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第11页PDF正文完整1",
+      "passed": true,
+      "detail": "普通目标至少有0.50秒历史，代表位置移动超过0.20米，估"
+    },
+    {
+      "label": "第11页PDF正文完整2",
+      "passed": true,
+      "detail": "还要检查走向是否稳定，以及拟合轨迹与实际观测的差距。来回抖动"
+    },
+    {
+      "label": "第11页PDF正文完整3",
+      "passed": true,
+      "detail": "上述运动条件需要连续4次成立，才确认动态。某次条件不成立，运"
+    },
+    {
+      "label": "第11页PDF正文完整4",
+      "passed": true,
+      "detail": "近场也保留完整的连续检查，并非一靠近就直接认定会动。这样能降"
+    },
+    {
+      "label": "第11页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "第12页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第12页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第12页PDF正文完整1",
+      "passed": true,
+      "detail": "如果候选点有较多稳定地图邻近支持，程序会认为它可能属于长期静"
+    },
+    {
+      "label": "第12页PDF正文完整2",
+      "passed": true,
+      "detail": "这有助于抑制树冠、栅栏和货架边缘的采样漂移，但不是绝对真值。"
+    },
+    {
+      "label": "第12页PDF正文完整3",
+      "passed": true,
+      "detail": "显示位置采用较快平滑，方便球形标记跟随目标；运动判断使用更保"
+    },
+    {
+      "label": "第12页PDF正文完整4",
+      "passed": true,
+      "detail": "如果后期球更新慢，要分别查看输入扫描、目标消息、发布队列和显"
+    },
+    {
+      "label": "第12页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "第13页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第13页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第13页PDF正文完整1",
+      "passed": true,
+      "detail": "预测程序假设目标短时间保持当前速度，向前推算0.5秒的位置。"
+    },
+    {
+      "label": "第13页PDF正文完整2",
+      "passed": true,
+      "detail": "主要动态风险程序直接读取目标当前位置和速度，自己判断双方接近"
+    },
+    {
+      "label": "第13页PDF正文完整3",
+      "passed": true,
+      "detail": "类别接口关闭时，把已跟踪目标原样转发。开启后，还需要有效相机"
+    },
+    {
+      "label": "第13页PDF正文完整4",
+      "passed": true,
+      "detail": "接口本身不运行人体识别网络，当前主演示默认关闭类别融合。不能"
+    },
+    {
+      "label": "第13页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "第14页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第14页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第14页PDF正文完整1",
+      "passed": true,
+      "detail": "程序读取目标的位置和速度，也读取无人机的位置和速度。目标速度"
+    },
+    {
+      "label": "第14页PDF正文完整2",
+      "passed": true,
+      "detail": "当前预测范围1.50秒，同时检查高度差。两者水平上很近但高度"
+    },
+    {
+      "label": "第14页PDF正文完整3",
+      "passed": true,
+      "detail": "一种是现在已经非常近：水平中心距离小于0.75米且高度接近。"
+    },
+    {
+      "label": "第14页PDF正文完整4",
+      "passed": true,
+      "detail": "普通威胁还看预计最近水平距离是否小于1.35米。输出只是风险"
+    },
+    {
+      "label": "第14页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=354.62pt"
+    },
+    {
+      "label": "第15页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第15页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第15页PDF正文完整1",
+      "passed": true,
+      "detail": "规则示例：人在无人机前方横穿，双方当前还不算很近，但按现有速"
+    },
+    {
+      "label": "第15页PDF正文完整2",
+      "passed": true,
+      "detail": "若人在旁边朝远处走，距离虽然不大，但并不持续缩小，普通接近威"
+    },
+    {
+      "label": "第15页PDF正文完整3",
+      "passed": true,
+      "detail": "双方以相似速度同向走时，相对速度很小，程序避免用接近零的分母"
+    },
+    {
+      "label": "第15页PDF正文完整4",
+      "passed": true,
+      "detail": "人可能突然转弯、停下，估计速度也可能因遮挡变差。因此短时推算"
+    },
+    {
+      "label": "第15页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "第16页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第16页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第16页PDF正文完整1",
+      "passed": true,
+      "detail": "如果进入和退出使用同一个距离，目标在边界稍微抖动就会让风险一"
+    },
+    {
+      "label": "第16页PDF正文完整2",
+      "passed": true,
+      "detail": "主要威胁目标也会短时锁定，避免两个人交替出现时，每一帧把避让"
+    },
+    {
+      "label": "第16页PDF正文完整3",
+      "passed": true,
+      "detail": "普通安全距离、紧急距离、预计接近时间、解除距离和速度上限共同"
+    },
+    {
+      "label": "第16页PDF正文完整4",
+      "passed": true,
+      "detail": "建议小步修改普通门限并做同条件回归，不先缩紧急门限，也不关闭"
+    },
+    {
+      "label": "第16页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "第17页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第17页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第17页PDF正文完整1",
+      "passed": true,
+      "detail": "累积地图可能发布较慢，也可能有历史障碍。静态风险直接看最新注"
+    },
+    {
+      "label": "第17页PDF正文完整2",
+      "passed": true,
+      "detail": "为了不被单个噪点触发，程序在近点周围寻找多个支持点，并用支持"
+    },
+    {
+      "label": "第17页PDF正文完整3",
+      "passed": true,
+      "detail": "已确认动态目标附近有短时掩膜，减少同一目标被动静两路重复解释"
+    },
+    {
+      "label": "第17页PDF正文完整4",
+      "passed": true,
+      "detail": "当前扫描仍进入探索占用和控制器额外检查。即使一个目标被当成动"
+    },
+    {
+      "label": "第17页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "第18页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第18页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第18页PDF正文完整1",
+      "passed": true,
+      "detail": "设置的水平机体半径是0.40米。点云表面到机心的距离减去这个"
+    },
+    {
+      "label": "第18页PDF正文完整2",
+      "passed": true,
+      "detail": "仓库预警净空0.30米、紧急0.25米、解除0.35米，因此"
+    },
+    {
+      "label": "第18页PDF正文完整3",
+      "passed": true,
+      "detail": "仓库规划膨胀0.80米已经包含机体，不再额外加一次0.40米"
+    },
+    {
+      "label": "第18页PDF正文完整4",
+      "passed": true,
+      "detail": "规划距离大于近场停车距离，有利于预留执行误差。自主探索的0."
+    },
+    {
+      "label": "第18页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "第19页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第19页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第19页PDF正文完整1",
+      "passed": true,
+      "detail": "静态和动态风险先检查消息时效，再取较高的等级作为统一风险。只"
+    },
+    {
+      "label": "第19页PDF正文完整2",
+      "passed": true,
+      "detail": "当前配置同时紧急的静态权重0.60、动态0.40。若建议几乎"
+    },
+    {
+      "label": "第19页PDF正文完整3",
+      "passed": true,
+      "detail": "融合程序不知道目标在货架后面应该绕哪边，它只处理当前风险建议"
+    },
+    {
+      "label": "第19页PDF正文完整4",
+      "passed": true,
+      "detail": "过期来源不参与本次选择，但“剔除过期”本身不是完整断流安全策"
+    },
+    {
+      "label": "第19页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "第20页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第20页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第20页PDF正文完整1",
+      "passed": true,
+      "detail": "地图按0.15米空间格保存点的代表位置、被不同帧命中的次数、"
+    },
+    {
+      "label": "第20页PDF正文完整2",
+      "passed": true,
+      "detail": "全局视图主要用于整体显示和导航参考；稳定视图要求更多跨帧支持"
+    },
+    {
+      "label": "第20页PDF正文完整3",
+      "passed": true,
+      "detail": "自由空间来自真实回波前面的射线路段，用于表达这次看见哪些位置"
+    },
+    {
+      "label": "第20页PDF正文完整4",
+      "passed": true,
+      "detail": "这个包发布的全局导航地图可以更新，但不是直接修改FAST-L"
+    },
+    {
+      "label": "第20页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "第21页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第21页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第21页PDF正文完整1",
+      "passed": true,
+      "detail": "全局默认要求至少2个不同扫描帧命中，稳定层至少8帧。局部层可"
+    },
+    {
+      "label": "第21页PDF正文完整2",
+      "passed": true,
+      "detail": "同一帧中的大量点在同一个格子里，只提供这一次扫描的命中，不会"
+    },
+    {
+      "label": "第21页PDF正文完整3",
+      "passed": true,
+      "detail": "局部默认半径6米、最近15个输入帧。旧点离开局部范围或帧龄变"
+    },
+    {
+      "label": "第21页PDF正文完整4",
+      "passed": true,
+      "detail": "因此“双地图”不是把局部图覆盖到大图就结束了。撤销持久旧占用"
+    },
+    {
+      "label": "第21页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=354.62pt"
+    },
+    {
+      "label": "第22页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第22页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第22页PDF正文完整1",
+      "passed": true,
+      "detail": "人在开头站着不动，可能进入背景和稳定地图。此时无人机把它当障"
+    },
+    {
+      "label": "第22页PDF正文完整2",
+      "passed": true,
+      "detail": "人开始走之后，仅仅在新扫描里识别到运动，也不会自动删除他原先"
+    },
+    {
+      "label": "第22页PDF正文完整3",
+      "passed": true,
+      "detail": "如果无人机后来从有效角度看到旧位置已空，地图维护应逐步撤销那"
+    },
+    {
+      "label": "第22页PDF正文完整4",
+      "passed": true,
+      "detail": "目标不是把人的所有点都从当前扫描拿走，而是让长期地图不过度记"
+    },
+    {
+      "label": "第22页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=354.62pt"
+    },
+    {
+      "label": "第23页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第23页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第23页PDF正文完整1",
+      "passed": true,
+      "detail": "确认目标运动后，可以沿目标过去的轨迹清理附近空间，同时利用自"
+    },
+    {
+      "label": "第23页PDF正文完整2",
+      "passed": true,
+      "detail": "例如行人从货架旁走过，若直接清空较粗的轨迹圆柱，可能让货架中"
+    },
+    {
+      "label": "第23页PDF正文完整3",
+      "passed": true,
+      "detail": "仓库探索启动时开启只按观测证据清理，不用轨迹圆柱直接擦除，也"
+    },
+    {
+      "label": "第23页PDF正文完整4",
+      "passed": true,
+      "detail": "因此两个演示的清理速度、结构保留和参数效果可能不同。不能把普"
+    },
+    {
+      "label": "第23页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "第24页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第24页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第24页PDF正文完整1",
+      "passed": true,
+      "detail": "程序从位置历史中寻找与扫描采集时刻最接近的记录。时间差超过0"
+    },
+    {
+      "label": "第24页PDF正文完整2",
+      "passed": true,
+      "detail": "射线起点是无人机位置加上经姿态旋转的雷达安装偏移，不是固定向"
+    },
+    {
+      "label": "第24页PDF正文完整3",
+      "passed": true,
+      "detail": "有效路段最多6米，并在回波末端前保留0.30米余量。旧点要真"
+    },
+    {
+      "label": "第24页PDF正文完整4",
+      "passed": true,
+      "detail": "没有返回的角度、遮挡物后方和从未重访的区域不自动算空。MID"
+    },
+    {
+      "label": "第24页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "第25页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第25页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第25页PDF正文完整1",
+      "passed": true,
+      "detail": "当前回波所在格和附近27格用于保护边界附近的表面。若旧点附近"
+    },
+    {
+      "label": "第25页PDF正文完整2",
+      "passed": true,
+      "detail": "旧点刚被看到也暂不撤销，当前要求距最后命中至少0.50秒。当"
+    },
+    {
+      "label": "第25页PDF正文完整3",
+      "passed": true,
+      "detail": "普通旧点累计3次有效为空证据，稳定点需6次。两次证据间隔超过"
+    },
+    {
+      "label": "第25页PDF正文完整4",
+      "passed": true,
+      "detail": "满足门限后从共同存储删除，后续全局和稳定视图随之更新。没有删"
+    },
+    {
+      "label": "第25页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=354.62pt"
+    },
+    {
+      "label": "第26页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第26页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第26页PDF正文完整1",
+      "passed": true,
+      "detail": "漏扫：无人机从未以有效角度看到那一块，可能是货架挡住或飞行高"
+    },
+    {
+      "label": "第26页PDF正文完整2",
+      "passed": true,
+      "detail": "误清理：曾经有地图点，后来删除规则撤销了它。三者在最终俯视图"
+    },
+    {
+      "label": "第26页PDF正文完整3",
+      "passed": true,
+      "detail": "把同一位置的原始注册扫描、维护图、稳定图与删除日志对比，先确"
+    },
+    {
+      "label": "第26页PDF正文完整4",
+      "passed": true,
+      "detail": "同时看人体旧位置残余和货架静态表面支持。若只追求旧位置点数为"
+    },
+    {
+      "label": "第26页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "第27页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第27页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第27页PDF正文完整1",
+      "passed": true,
+      "detail": "规划器从无人机巡航高度附近选取障碍点，投到二维栅格；再给障碍"
+    },
+    {
+      "label": "第27页PDF正文完整2",
+      "passed": true,
+      "detail": "仓库切片相对高度为-0.45至+0.55米，避免把安全上方屋"
+    },
+    {
+      "label": "第27页PDF正文完整3",
+      "passed": true,
+      "detail": "A*在允许通过的格子中寻找绕行路线，不是只朝目标方向躲一下。"
+    },
+    {
+      "label": "第27页PDF正文完整4",
+      "passed": true,
+      "detail": "中间拐点与最终目标使用不同到达容差，避免离拐点还较远就提前停"
+    },
+    {
+      "label": "第27页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=354.62pt"
+    },
+    {
+      "label": "第28页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第28页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第28页PDF正文完整1",
+      "passed": true,
+      "detail": "先用稳定地图计算参考路线，再用局部自由空间核验旧占用。自由证"
+    },
+    {
+      "label": "第28页PDF正文完整2",
+      "passed": true,
+      "detail": "不能把二维膨胀区域随便擦出一个大洞，因为邻近的空区不证明整片"
+    },
+    {
+      "label": "第28页PDF正文完整3",
+      "passed": true,
+      "detail": "最后叠加当前局部障碍再搜索，让“这里现在站着人”比旧自由记录"
+    },
+    {
+      "label": "第28页PDF正文完整4",
+      "passed": true,
+      "detail": "全局初步搜索失败时，有有效局部自由证据仍可尝试修复，而不是直"
+    },
+    {
+      "label": "第28页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "第29页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第29页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第29页PDF正文完整1",
+      "passed": true,
+      "detail": "货架很长，4米搜索窗口可能截断绕到端部的路线。仓库允许逐级扩"
+    },
+    {
+      "label": "第29页PDF正文完整2",
+      "passed": true,
+      "detail": "对同一目标保留已扩大的范围，避免这一帧找到远端绕行、下一帧又"
+    },
+    {
+      "label": "第29页PDF正文完整3",
+      "passed": true,
+      "detail": "旧路线仍有效时，新路线通常要至少缩短25%才切换，减少等价路"
+    },
+    {
+      "label": "第29页PDF正文完整4",
+      "passed": true,
+      "detail": "控制航点还要检查直线可见性，不可跨过折线直接切角。若飞机停住"
+    },
+    {
+      "label": "第29页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "第30页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第30页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第30页PDF正文完整1",
+      "passed": true,
+      "detail": "探索器只有地图原点附近的有限计算窗口，不提前得到仓库矩形轮廓"
+    },
+    {
+      "label": "第30页PDF正文完整2",
+      "passed": true,
+      "detail": "激光逐渐形成已知空闲、占用和未知三种格子。只有传感器确实提供"
+    },
+    {
+      "label": "第30页PDF正文完整3",
+      "passed": true,
+      "detail": "当前初始窗口半径12米，真实位置或自由观测靠近边缘时按规则增"
+    },
+    {
+      "label": "第30页PDF正文完整4",
+      "passed": true,
+      "detail": "最多20万个格子；达到上限要报告容量限制，而不是宣称探索完成"
+    },
+    {
+      "label": "第30页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "第31页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第31页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第31页PDF正文完整1",
+      "passed": true,
+      "detail": "路线只在已经观测到的自由空间里搜索，并考虑0.40米机体包络"
+    },
+    {
+      "label": "第31页PDF正文完整2",
+      "passed": true,
+      "detail": "障碍按正常0.80米安全距离膨胀；0.20米栅格还包含离散余"
+    },
+    {
+      "label": "第31页PDF正文完整3",
+      "passed": true,
+      "detail": "探索使用可达搜索计算到候选位置的路线与代价。靠近不安全格的路"
+    },
+    {
+      "label": "第31页PDF正文完整4",
+      "passed": true,
+      "detail": "软代价改变偏好，不缩小硬安全范围。计算的加权代价距离也不等于"
+    },
+    {
+      "label": "第31页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=354.62pt"
+    },
+    {
+      "label": "第32页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第32页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第32页PDF正文完整1",
+      "passed": true,
+      "detail": "前沿是已知空闲与未知区域的边界附近。程序从可达前沿中选代表位"
+    },
+    {
+      "label": "第32页PDF正文完整2",
+      "passed": true,
+      "detail": "信息增益计算考虑已测墙体遮挡，观察范围约6米；不是站在货架前"
+    },
+    {
+      "label": "第32页PDF正文完整3",
+      "passed": true,
+      "detail": "候选评分综合可见未知量和到达路线代价，优先选有收获又不太远的"
+    },
+    {
+      "label": "第32页PDF正文完整4",
+      "passed": true,
+      "detail": "选中后保持目标并执行安全前视航点，到达后观察2秒。长时间没有"
+    },
+    {
+      "label": "第32页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "第33页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第33页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第33页PDF正文完整1",
+      "passed": true,
+      "detail": "当前探索启动文件把导航上限覆盖为0.30米/秒。控制器根据到"
+    },
+    {
+      "label": "第33页PDF正文完整2",
+      "passed": true,
+      "detail": "探索前视距离1.20米，但前视线段仍必须安全。到达后有观察驻"
+    },
+    {
+      "label": "第33页PDF正文完整3",
+      "passed": true,
+      "detail": "若仿真每一秒要消耗两秒真实时间，屏幕上的飞行就会很慢；这与单"
+    },
+    {
+      "label": "第33页PDF正文完整4",
+      "passed": true,
+      "detail": "应分别统计仿真推进速度、逐节点墙钟耗时、消息年龄与实际前进状"
+    },
+    {
+      "label": "第33页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "第34页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第34页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第34页PDF正文完整1",
+      "passed": true,
+      "detail": "新扫描补全货架以后，当前位置可能落进正常规划膨胀区。规划器不"
+    },
+    {
+      "label": "第34页PDF正文完整2",
+      "passed": true,
+      "detail": "解决不能是把全部净空调小或忽略新障碍。探索器尝试在已知空间寻"
+    },
+    {
+      "label": "第34页PDF正文完整3",
+      "passed": true,
+      "detail": "恢复最低机心距离0.45米，仅为机体0.40米加小余量的特殊"
+    },
+    {
+      "label": "第34页PDF正文完整4",
+      "passed": true,
+      "detail": "没有合格退路就保持或报告失败，不能为了看起来在探索而硬飞。连"
+    },
+    {
+      "label": "第34页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "第35页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第35页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第35页PDF正文完整1",
+      "passed": true,
+      "detail": "绕完通道后，平面自由面积可能不再明显增加，但货架侧面仍可能因"
+    },
+    {
+      "label": "第35页PDF正文完整2",
+      "passed": true,
+      "detail": "90秒进展窗口里，新自由面积少于1平方米、新表面格少于25且"
+    },
+    {
+      "label": "第35页PDF正文完整3",
+      "passed": true,
+      "detail": "当前表面按0.40米格统计，要求至少3个不同采集时刻、2个观"
+    },
+    {
+      "label": "第35页PDF正文完整4",
+      "passed": true,
+      "detail": "补扫优先处理已发现但证据不足的表面，目标有冷却和预算。若发现"
+    },
+    {
+      "label": "第35页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "第36页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第36页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第36页PDF正文完整1",
+      "passed": true,
+      "detail": "收敛需要无有效前沿、无有用可达补扫目标、进展足够低、已测表面"
+    },
+    {
+      "label": "第36页PDF正文完整2",
+      "passed": true,
+      "detail": "任务完成还需要沿安全路线回到起点，在0.30米范围内连续驻留"
+    },
+    {
+      "label": "第36页PDF正文完整3",
+      "passed": true,
+      "detail": "在线表面质量的分母只包含已经看过的表面。完全没扫到的货架不在"
+    },
+    {
+      "label": "第36页PDF正文完整4",
+      "passed": true,
+      "detail": "当前报告保持完整三维覆盖标记为假。预算到期、显式限制目标数或"
+    },
+    {
+      "label": "第36页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "第37页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第37页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第37页PDF正文完整1",
+      "passed": true,
+      "detail": "离线审计读取仓库货架参考几何，生成暴露侧面的采样点，再检查地"
+    },
+    {
+      "label": "第37页PDF正文完整2",
+      "passed": true,
+      "detail": "当前参考包含52个货架，侧面高度0.25至1.90米、采样间"
+    },
+    {
+      "label": "第37页PDF正文完整3",
+      "passed": true,
+      "detail": "它能定位哪些参考侧面缺少点云支持，但不是完整视觉模型的全三维"
+    },
+    {
+      "label": "第37页PDF正文完整4",
+      "passed": true,
+      "detail": "因此还要单独检查人体旧位置、静态结构保留、路径成功和实际安全"
+    },
+    {
+      "label": "第37页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "第38页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第38页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第38页PDF正文完整1",
+      "passed": true,
+      "detail": "控制器等待位置与地面高度连续稳定，持续发送控制设定，再申请外"
+    },
+    {
+      "label": "第38页PDF正文完整2",
+      "passed": true,
+      "detail": "起飞目标是稳定基准上的相对增高，不应该把不同坐标系的高度混在"
+    },
+    {
+      "label": "第38页PDF正文完整3",
+      "passed": true,
+      "detail": "确认结合实际空中状态、已飞行时间和高度驻留。控制器发布持续心"
+    },
+    {
+      "label": "第38页PDF正文完整4",
+      "passed": true,
+      "detail": "若位置陈旧、局部坐标复位或模式异常，按控制规则保持，不能反复"
+    },
+    {
+      "label": "第38页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=354.62pt"
+    },
+    {
+      "label": "第39页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第39页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第39页PDF正文完整1",
+      "passed": true,
+      "detail": "控制器比较航点与当前地图位置，按照位置差乘比例系数产生水平速"
+    },
+    {
+      "label": "第39页PDF正文完整2",
+      "passed": true,
+      "detail": "高度由对应坐标中的目标高度差单独控制，再限垂直速度。中间航点"
+    },
+    {
+      "label": "第39页PDF正文完整3",
+      "passed": true,
+      "detail": "航点必须由唯一规划器发布，控制器不负责替代地图搜索。指定目标"
+    },
+    {
+      "label": "第39页PDF正文完整4",
+      "passed": true,
+      "detail": "最终命令经MAVROS发送给PX4，由飞控执行姿态和电机控制"
+    },
+    {
+      "label": "第39页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=354.62pt"
+    },
+    {
+      "label": "第40页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第40页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第40页PDF正文完整1",
+      "passed": true,
+      "detail": "正常时按航点前进，但自主探索仍需新鲜扫描核验前向净空。预警时"
+    },
+    {
+      "label": "第40页PDF正文完整2",
+      "passed": true,
+      "detail": "普通导航紧急时可按融合建议避让；仓库探索开启紧急水平停车，再"
+    },
+    {
+      "label": "第40页PDF正文完整3",
+      "passed": true,
+      "detail": "位置、风险或要求的扫描过期时保持。恢复运动还需检查目标对应、"
+    },
+    {
+      "label": "第40页PDF正文完整4",
+      "passed": true,
+      "detail": "监测节点只告警，真正限制速度和停车的是控制器。因此查看故障时"
+    },
+    {
+      "label": "第40页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "第41页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第41页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第41页PDF正文完整1",
+      "passed": true,
+      "detail": "当前扫描显示此刻看到的环境，维护地图显示累计并修订的结构。动"
+    },
+    {
+      "label": "第41页PDF正文完整2",
+      "passed": true,
+      "detail": "目标按编号和短生命周期显示，消失后删除或到期。球还留着不一定"
+    },
+    {
+      "label": "第41页PDF正文完整3",
+      "passed": true,
+      "detail": "青色的大点通常是候选观察位置，不是补出来的地图点。飞过的轨迹"
+    },
+    {
+      "label": "第41页PDF正文完整4",
+      "passed": true,
+      "detail": "查看地图缺口时不要只用俯视视角，可以关闭候选点、调整点大小并"
+    },
+    {
+      "label": "第41页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "第42页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第42页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第42页PDF正文完整1",
+      "passed": true,
+      "detail": "监测位置、当前扫描、动态目标、风险和建议速度等消息的到达情况"
+    },
+    {
+      "label": "第42页PDF正文完整2",
+      "passed": true,
+      "detail": "目标消息持续到达但列表为空，可能表示当前没有确认动态目标；不"
+    },
+    {
+      "label": "第42页PDF正文完整3",
+      "passed": true,
+      "detail": "先看传感器和位置，再看候选与目标，再看地图与路线，最后看风险"
+    },
+    {
+      "label": "第42页PDF正文完整4",
+      "passed": true,
+      "detail": "把日志、消息时间和现场状态对齐。仿真时间年龄很小不等于算法墙"
+    },
+    {
+      "label": "第42页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "第43页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第43页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第43页PDF正文完整1",
+      "passed": true,
+      "detail": "保存器订阅当前维护地图，检查地图非空、数值有限，并确认当前扫"
+    },
+    {
+      "label": "第43页PDF正文完整2",
+      "passed": true,
+      "detail": "提取有效三维坐标后，先写临时文件，再替换正式点云文件，减少中"
+    },
+    {
+      "label": "第43页PDF正文完整3",
+      "passed": true,
+      "detail": "配套说明记录来源消息、参考系、采集时间、点数和文件校验值。它"
+    },
+    {
+      "label": "第43页PDF正文完整4",
+      "passed": true,
+      "detail": "保存时不按人体真值额外裁剪，也不把参考货架缺口点塞进地图。因"
+    },
+    {
+      "label": "第43页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "第44页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第44页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第44页PDF正文完整1",
+      "passed": true,
+      "detail": "普通演示和仓库指定目标的产物放在项目dynamic_demo"
+    },
+    {
+      "label": "第44页PDF正文完整2",
+      "passed": true,
+      "detail": "默认ours有维护地图保存流程，badcase不能假定也自动"
+    },
+    {
+      "label": "第44页PDF正文完整3",
+      "passed": true,
+      "detail": "自主探索产物放在exploration_demo_runs，"
+    },
+    {
+      "label": "第44页PDF正文完整4",
+      "passed": true,
+      "detail": "查看时先核对运行时间与配套说明，再用点云查看器打开PCD或发"
+    },
+    {
+      "label": "第44页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "第45页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第45页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第45页PDF正文完整1",
+      "passed": true,
+      "detail": "example中的badcase与ours用来展示旧占用和局"
+    },
+    {
+      "label": "第45页PDF正文完整2",
+      "passed": true,
+      "detail": "cangku仓库目标导航把系统迁入有货架、低顶棚和窄通道的封"
+    },
+    {
+      "label": "第45页PDF正文完整3",
+      "passed": true,
+      "detail": "探索演示不要求用户逐个指定目的地，自己从观测前沿选择位置，之"
+    },
+    {
+      "label": "第45页PDF正文完整4",
+      "passed": true,
+      "detail": "可选择并行FreeDOM地图作为对照，但FreeDOM不指挥"
+    },
+    {
+      "label": "第45页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "第46页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第46页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第46页PDF正文完整1",
+      "passed": true,
+      "detail": "行人控制程序选择场景里已有的人，不临时生成多个重复模型。自动"
+    },
+    {
+      "label": "第46页PDF正文完整2",
+      "passed": true,
+      "detail": "按0或1选择已有编号，W/S沿世界Y方向、A/D沿世界X方向"
+    },
+    {
+      "label": "第46页PDF正文完整3",
+      "passed": true,
+      "detail": "自动脚本与手动输入经同一个转发控制，不让两个位置写者反复把行"
+    },
+    {
+      "label": "第46页PDF正文完整4",
+      "passed": true,
+      "detail": "不要把人操纵穿过货架，再用穿模画面评价避障效果。探索可用手动"
+    },
+    {
+      "label": "第46页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "第47页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第47页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第47页PDF正文完整1",
+      "passed": true,
+      "detail": "keyboard_control.cpp处理无人机键盘目标；"
+    },
+    {
+      "label": "第47页PDF正文完整2",
+      "passed": true,
+      "detail": "position_control_lib.cpp保存入口调用"
+    },
+    {
+      "label": "第47页PDF正文完整3",
+      "passed": true,
+      "detail": "long_corridor_baseline_flight."
+    },
+    {
+      "label": "第47页PDF正文完整4",
+      "passed": true,
+      "detail": "这些文件适合讲接口和专项评估，不应与主避障控制器并行给飞控发"
+    },
+    {
+      "label": "第47页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "第48页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第48页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第48页PDF正文完整1",
+      "passed": true,
+      "detail": "程序读取飞控连接和当前位置，把初始位置作为目标，先以20Hz"
+    },
+    {
+      "label": "第48页PDF正文完整2",
+      "passed": true,
+      "detail": "W/S增减X，A/D增减Y，R/F升降；默认步长0.20米。"
+    },
+    {
+      "label": "第48页PDF正文完整3",
+      "passed": true,
+      "detail": "这是位置控制示例，没有自动检查货架地图、人体风险和沿途净空。"
+    },
+    {
+      "label": "第48页PDF正文完整4",
+      "passed": true,
+      "detail": "参数min_height虽然被读取，当前实际高度下限仍按初始"
+    },
+    {
+      "label": "第48页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "第49页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第49页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第49页PDF正文完整1",
+      "passed": true,
+      "detail": "自动程序先等待飞控连接，以20Hz发送初始保持设定，再申请外"
+    },
+    {
+      "label": "第49页PDF正文完整2",
+      "passed": true,
+      "detail": "轨迹参数决定边长、半径和圈数。目标推进还看当前位置与当前目标"
+    },
+    {
+      "label": "第49页PDF正文完整3",
+      "passed": true,
+      "detail": "它不读取我们的导航地图和风险等级，也不根据仓库未知空间改路线"
+    },
+    {
+      "label": "第49页PDF正文完整4",
+      "passed": true,
+      "detail": "源码参数高度拼写为hight，起飞使用指定Z值并将XY设在原"
+    },
+    {
+      "label": "第49页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "第50页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第50页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第50页PDF正文完整1",
+      "passed": true,
+      "detail": "position_control.cpp创建位置控制对象，主"
+    },
+    {
+      "label": "第50页PDF正文完整2",
+      "passed": true,
+      "detail": "这个转发器没有自动规划绕行、自动解锁或我们的风险仲裁。当前循"
+    },
+    {
+      "label": "第50页PDF正文完整3",
+      "passed": true,
+      "detail": "pub_origin.cpp读取纬度、经度和高度，以10Hz"
+    },
+    {
+      "label": "第50页PDF正文完整4",
+      "passed": true,
+      "detail": "两个工具都不是“只要启动就能安全自主飞行”的完整系统。本轮只"
+    },
+    {
+      "label": "第50页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "第51页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第51页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第51页PDF正文完整1",
+      "passed": true,
+      "detail": "走廊程序以当前起点为基准，起飞、稳定、沿X轴外出、端部停留，"
+    },
+    {
+      "label": "第51页PDF正文完整2",
+      "passed": true,
+      "detail": "误差过大进入保持，不继续推进或冒然自动降落。它用于比较走廊退"
+    },
+    {
+      "label": "第51页PDF正文完整3",
+      "passed": true,
+      "detail": "回环航线从起飞点走方形再回到同一水平位置，转角和最后回访都停"
+    },
+    {
+      "label": "第51页PDF正文完整4",
+      "passed": true,
+      "detail": "这只提供重复访问条件。回环是否检测正确、优化后误差有没有变小"
+    },
+    {
+      "label": "第51页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "第52页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第52页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第52页PDF正文完整1",
+      "passed": true,
+      "detail": "接入的FreeDOM基于保守自由空间估计，包含扫描去动态和历"
+    },
+    {
+      "label": "第52页PDF正文完整2",
+      "passed": true,
+      "detail": "当前对模拟MID360使用较保守配置，关闭未校准的射线增强。"
+    },
+    {
+      "label": "第52页PDF正文完整3",
+      "passed": true,
+      "detail": "回环尝试识别旧地点并优化历史位置，主要针对累计漂移；人体旧点"
+    },
+    {
+      "label": "第52页PDF正文完整4",
+      "passed": true,
+      "detail": "当前主演示默认关闭回环，保留独立专项。历史原始关键帧重新拼图"
+    },
+    {
+      "label": "第52页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "第53页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第53页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第53页PDF正文完整1",
+      "passed": true,
+      "detail": "扫描和位置统一坐标后进入地图维护，生成稳定占用、局部占用和自"
+    },
+    {
+      "label": "第53页PDF正文完整2",
+      "passed": true,
+      "detail": "飞行带来新角度、新空区和新的占用证据，持续改变地图与下一段路"
+    },
+    {
+      "label": "第53页PDF正文完整3",
+      "passed": true,
+      "detail": "同一份最新扫描检查静态净空；连续跟踪目标检查相对运动。两路风"
+    },
+    {
+      "label": "第53页PDF正文完整4",
+      "passed": true,
+      "detail": "监测负责报告失效，不是第二个飞控写者。行人键盘只改变仿真环境"
+    },
+    {
+      "label": "第53页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=354.62pt"
+    },
+    {
+      "label": "第54页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第54页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第54页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=0.00pt"
+    },
+    {
+      "label": "第55页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第55页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第55页PDF正文完整1",
+      "passed": true,
+      "detail": "第一步，人站在通道里。扫描把他当作当前占用，跨帧后也可能进入"
+    },
+    {
+      "label": "第55页PDF正文完整2",
+      "passed": true,
+      "detail": "第二步，人开始走。连续轨迹满足条件后输出动态目标，风险判断限"
+    },
+    {
+      "label": "第55页PDF正文完整3",
+      "passed": true,
+      "detail": "第三步，无人机看到旧位置后面的回波，时间配对射线给出旧位置已"
+    },
+    {
+      "label": "第55页PDF正文完整4",
+      "passed": true,
+      "detail": "第四步，规划融合新自由证据和当前障碍，检查能否改走通道。控制"
+    },
+    {
+      "label": "第55页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=354.62pt"
+    },
+    {
+      "label": "第56页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第56页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第56页PDF正文完整1",
+      "passed": true,
+      "detail": "树叶或货架边缘被认成运动：检查坐标、自运动对齐、候选范围、轨"
+    },
+    {
+      "label": "第56页PDF正文完整2",
+      "passed": true,
+      "detail": "人离开仍有假墙：检查旧位置是否真正再次可见、为空计数是否重置"
+    },
+    {
+      "label": "第56页PDF正文完整3",
+      "passed": true,
+      "detail": "目标在货架后但停住：检查搜索域、高度带、膨胀和路线有效性，也"
+    },
+    {
+      "label": "第56页PDF正文完整4",
+      "passed": true,
+      "detail": "地图有缺口或一直不结束：检查扫描覆盖、补扫证据、有效前沿、预"
+    },
+    {
+      "label": "第56页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "第57页PDF无替代字符",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第57页PDF标题完整",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "第57页PDF正文完整1",
+      "passed": true,
+      "detail": "我们搭建了从激光惯性定位到动态目标观察、可修订导航地图、路线"
+    },
+    {
+      "label": "第57页PDF正文完整2",
+      "passed": true,
+      "detail": "关键工程思想是区分“现在真的有障碍”和“过去曾经有障碍”，利"
+    },
+    {
+      "label": "第57页PDF正文完整3",
+      "passed": true,
+      "detail": "不能说已经准确识别所有人体、全图绝无鬼影、任何窄通道都可安全"
+    },
+    {
+      "label": "第57页PDF正文完整4",
+      "passed": true,
+      "detail": "当前大部分方法是已有算法的工程集成。后续研究要在统一数据与预"
+    },
+    {
+      "label": "第57页正文未碰流程图",
+      "passed": true,
+      "detail": "bottom=380.61pt"
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/launch/astra_dynamic_avoidance.launch",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/launch/warehouse_exploration.launch",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/launch/perception.launch",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/MissionControl/astra_uavoffbard_frame/offboard/CMakeLists.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:scripts/run_sh/warehouse_exploration_demo.sh",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/static_map_builder.cpp",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/mavros_avoidance_controller.cpp",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/SLAM/FAST_LIO/src/laserMapping.cpp",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/SLAM/FAST_LIO/src/IMU_Processing.hpp",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/SLAM/FAST_LIO/src/preprocess.cpp",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/fastlio_bridge.cpp",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/cloud_bridge.cpp",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/static_map.yaml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/static_path_planner.cpp",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/dynamic_detector.cpp",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/dynamic_detector.yaml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/dynamic_cluster.cpp",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/dynamic_cluster.yaml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/dynamic_marker.cpp",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/dynamic_predictor.cpp",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/semantic_fusion.cpp",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/collision_risk.cpp",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/dynamic_risk.yaml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/static_collision_risk.cpp",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/static_risk.yaml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/warehouse_navigation.yaml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/warehouse_exploration.yaml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/avoidance_fusion.cpp",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/avoidance.yaml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/warehouse_map_audit.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/path_planner.yaml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/warehouse_explorer.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/exploration_grid.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/exploration_search.cpp",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/exploration_coverage.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/run_warehouse_exploration.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/astra_mavros_controller.yaml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/rviz/astra_dynamic_avoidance.rviz",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/rviz/warehouse_exploration.rviz",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/system_watchdog.cpp",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/save_navigation_map.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/run_dynamic_comparison.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:scripts/run_sh/dynamic_comparison_demo.sh",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:scripts/run_sh/warehouse_dynamic_demo.sh",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/pedestrian_control.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/MissionControl/astra_uavoffbard_frame/offboard/src/position_control.cpp",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/MissionControl/astra_uavoffbard_frame/offboard/src/position_control_lib.cpp",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/MissionControl/astra_uavoffbard_frame/offboard/src/keyboard_control.cpp",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/MissionControl/astra_uavoffbard_frame/offboard/src/autoarming_control.cpp",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/MissionControl/astra_uavoffbard_frame/offboard/src/pub_origin.cpp",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/MissionControl/astra_uavoffbard_frame/offboard/src/long_corridor_baseline_flight.cpp",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/MissionControl/astra_uavoffbard_frame/offboard/src/loop_closure_demo_flight.cpp",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/SLAM/freedom/README.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "当前引用源码未变化:AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/launch/loop_closure.launch",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "validation_scope": "结构、备注、源码路径、实际PDF文字与页内布局；非ROS/飞行验证"
+}

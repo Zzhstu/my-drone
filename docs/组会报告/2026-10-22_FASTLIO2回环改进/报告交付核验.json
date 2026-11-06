@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "created": "2026-10-22T15:21:45.885716+08:00",
+  "report_pages": 11,
+  "checks": {
+    "all_sections_start_on_new_page": true,
+    "key_numbers_and_scope_in_pdf": true,
+    "docx_images_embedded_and_equal_source": true,
+    "image_aspect_ratios_preserved": true,
+    "no_real_flight_claim": true,
+    "artificial_drift_labeled": true
+  },
+  "empirical_scope": "Existing simulation recording and prior semi-synthetic stress tests; no new flight or algorithm validation.",
+  "source_recorded_report_sha256": "04ec04398c6a328c9a2ae544214bad0e3441dbb4872ceca94ba102c4390ce73c",
+  "figures": [
+    "assets/trajectory_original.png",
+    "assets/trajectory_stress.png",
+    "assets/motion_playback.gif"
+  ],
+  "deliverables": [
+    {
+      "path": "回环改进与真机接入方案_组会报告.docx",
+      "sha256": "76a7a77d9ce1a17ddd1aa6155786c75e286d5ca02be3937e7d7613da5a78eac0",
+      "bytes": 787630
+    },
+    {
+      "path": "回环改进与真机接入方案_组会报告.pdf",
+      "sha256": "39eb821e9550a38cd4c4ea4f236abf7430bb399064da474bf156a09946b435cf",
+      "bytes": 803510
+    },
+    {
+      "path": "回环改进与真机接入方案_组会报告.md",
+      "sha256": "5c426a2e0c63e31eecfec647bfde853fd2ad7117c466c3f0c885bf34b3d800c2",
+      "bytes": 22456
+    },
+    {
+      "path": "回环改进与真机接入方案_组会报告.html",
+      "sha256": "6aeb48f7f376ed66e98a55916180b901311202732b9ca1587c9b0f52cbb93575",
+      "bytes": 26551
+    }
+  ]
+}

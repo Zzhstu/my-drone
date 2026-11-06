@@ -1,0 +1,5 @@
+{
+  "simulation/astra_gazebo_worlds/cangku.world": "2ea8635e9f1cf6e50e7cb7238eb98e4abcec2e2523683a5304a1307b39736f11",
+  "scripts/run_sh/warehouse_exploration_demo.sh": "74996e6415b37f8a76672ab5947c85c6d9b56ad3e09d96a3b7e8c7fa944457a0",
+  "scripts/run_sh/small_indoor_exploration_demo.sh": "2be2ece062d463b92c32a105ff0b5f4ec932bc8c26e71e77d7206f224f0f287e"
+}

@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "pdf_pages": 3,
+  "template_unchanged": true,
+  "page_and_table_format_preserved": true,
+  "editable_word": true,
+  "content_and_render_complete": true,
+  "docx_sha256": "296de6dbbbfedcfedad3d67f6274b880fed8984cd3e5aed309dd43c048234615",
+  "pdf_sha256": "38ab2e47f63f339be650582230f5156ec197ac9e826590c83a66e527049c4adf",
+  "evidence": {
+    "evaluation/shelf_surface_guard_20261026/REPORT.md": "3c0f1b7a875f9c61234e027caebf7b1ddffa625ad2dda3501ccb3f9fb745abb1",
+    "evaluation/region_feedback_20261028/REPORT.md": "05632e0c6d64e8e1338fb60795c0b46219ee030eca916d455f3b1822e67fa94c",
+    "evaluation/corridor_entry_20261029/REPORT.md": "c090811cbeee2ddde8b2af35e02eb441ce7d59855b36485af8ca177df78e7aa1",
+    "evaluation/ghost_score_trial_20261029/REPORT.md": "77b7977c531e6a9e4acda5d47f1c0493e73568a988c691c6284967e0ed33de7d",
+    "half_warehouse_dual_map_runs/warehouse_half_dual_map_20261030_175002_dual_map.json": "d745e2fe785b3ee5bf55ff384cbcdc2ada63a920dab42086c2c435229504c792",
+    "evaluation/office50_20261030/final/summary.json": "8a2c8fe32de366a7645ff4d3483f796ff2d9b67c809fd8822bfadaac1d4a7629",
+    "r3live_demo_runs/20261031_133755/result.json": "053d5baa563128bbd8e66eb6c53943acb91b6cbb18d7e1288bc4113ca6e95dcd",
+    "docs/research/MID360_单目_IMU_去动态3DSLAM开源与论文调研_20261031.md": "e89661dc556f40354b8664a2163e87d4fa9d1a5d9efb33800fe405f8a33f97bf"
+  }
+}

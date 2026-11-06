@@ -1,0 +1,116 @@
+# FAST-LIO2 loop backend: distance candidate -> Scan Context -> ICP -> pose graph.
+odom_topic: /uav1/fastlio/odom
+cloud_topic: /uav1/fastlio/registered_scan
+world_frame: loop_map
+optimized_odom_topic: /uav1/loop_closure/odom
+corrected_scan_topic: /uav1/loop_closure/registered_scan
+optimized_map_topic: /uav1/loop_closure/map
+optimized_path_topic: /uav1/loop_closure/path
+raw_keyframe_path_topic: /uav1/loop_closure/raw_path
+
+# Dense keyframes improve ICP but increase RAM and optimization cost.
+keyframe_distance: 1.0
+keyframe_angle_deg: 10.0
+keyframe_voxel_size: 0.15
+min_keyframe_points: 250
+max_keyframe_points: 18000
+max_keyframes: 3000
+
+loop_detection_rate: 0.5
+# IMPORTANT: adjacent frames are not loops. Do not reduce both guards merely
+# to make loop edges appear sooner.
+min_loop_time: 20.0
+min_loop_keyframe_gap: 25
+# Once a revisit is accepted, nearby keyframes observe the same place. Keep
+# only one constraint per revisit region to avoid redundant correlated loops.
+loop_cooldown_keyframes: 10
+# A similar view from across the warehouse is not a positional revisit.
+loop_search_radius: 2.0
+# UAV-specific safety gate: never match a takeoff/landing scan against a
+# cruising-altitude revisit merely because the horizontal structure is alike.
+max_loop_vertical_separation: 1.0
+max_spatial_candidates: 15
+scan_context_rings: 20
+scan_context_sectors: 60
+scan_context_max_radius: 30.0
+scan_context_lidar_height: 2.0
+# UAV altitude is not constant. Estimate a robust local height reference
+# instead of assuming that every scan was acquired exactly 2 m above ground.
+scan_context_normalize_height: true
+scan_context_ground_percentile: 0.10
+scan_context_max_height: 15.0
+# Aggregate consecutive non-repeating MID360 sweeps before descriptor creation.
+descriptor_submap_keyframes: 4
+descriptor_voxel_size: 0.35
+descriptor_max_points: 40000
+# Lower is stricter. The first threshold is a confident descriptor match.
+scan_context_threshold: 0.22
+# A nearby odometry candidate may enter strict geometric verification even
+# when its sparse Scan Context is in this gray zone. ICP/overlap/correction
+# gates still have to pass; this value alone never accepts a loop.
+scan_context_geometric_threshold: 0.55
+geometric_fallback_radius: 2.0
+max_icp_candidates: 5
+use_scan_context_yaw_seeds: true
+
+submap_neighbors: 5
+icp_voxel_size: 0.30
+icp_max_correspondence_distance: 1.20
+icp_max_iterations: 60
+icp_fitness_threshold: 0.02
+# Prevent a tiny matching patch from reporting a deceptively low ICP score.
+icp_min_overlap: 0.35
+# Hard gates against catastrophic graph deformation after a false candidate.
+max_loop_translation_correction: 1.5
+max_loop_rotation_correction_deg: 15.0
+
+# The 1.2 m coarse ICP search radius is NOT an acceptance tolerance.
+# A second ICP stage and independent 25 cm validation decide acceptance.
+max_sync_time_difference: 0.02
+fine_icp_voxel_size: 0.12
+fine_icp_correspondence_distance: 0.40
+verification_distance: 0.25
+verification_min_overlap: 0.60
+verification_max_rmse: 0.14
+verification_min_gain: 0.01
+# Reject unobservable alignment (e.g. a floor alone). Normalized 6DOF Hessian.
+verification_min_eigen_ratio: 0.0001
+# The preceding keyframe is held out of fitting and must independently pass.
+# Residual-scale corrections need independent evidence, not unconditional rejection.
+min_loop_translation_correction: 0.04
+min_loop_rotation_correction_deg: 0.30
+# Heuristic deadband tied to point-registration residuals; not a confidence
+# interval. A 5 cm voxel-sampling correction is not evidence of true drift.
+correction_noise_multiplier: 1.0
+# EXPERIMENTAL: full SITL 20261023_204525 showed localization regression
+# despite passing geometric/temporal checks. Keep this false in the demo.
+# A/B/C residual-multiplier/gain ablations and negative results are in
+# evaluation/small_loop; do not enable merely to obtain more loop edges.
+allow_verified_small_loops: false
+small_loop_min_holdout_gain: 0.005
+small_loop_confirmation_keyframes: 3
+small_loop_confirmation_translation: 0.03
+small_loop_confirmation_rotation_deg: 0.3
+small_loop_weight_scale: 0.5
+# Evaluate a trial graph before atomically committing its optimized poses.
+validate_graph_geometry: true
+graph_geometry_max_regression: 0.01
+graph_max_loop_residual_translation: 0.25
+graph_max_loop_residual_rotation_deg: 3.0
+loop_confirmation_keyframes: 2
+loop_confirmation_translation: 0.10
+loop_confirmation_rotation_deg: 1.0
+# The front end supplies roll/pitch from IMU gravity; this graph has no IMU
+# factors and must not bend gravity independently at every keyframe.
+gravity_aligned_graph: true
+deterministic_replay: false
+
+optimizer_iterations: 8
+optimizer_huber_delta: 2.5
+odom_translation_weight: 30.0
+odom_rotation_weight: 400.0
+loop_translation_weight: 12.0
+loop_rotation_weight: 100.0
+map_publish_rate: 0.2
+map_voxel_size: 0.20
+publish_corrected_scan: true

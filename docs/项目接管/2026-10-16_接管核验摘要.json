@@ -1,0 +1,214 @@
+{
+  "date": "2026-10-16",
+  "scope": "read-only source/config review and existing-result verification; no new algorithm experiments",
+  "head": "8808ad52558a9f1f4005a847e1d4ec6a63b8649d",
+  "index_sha256_before_final_record": "00c6fb577015b76434700e3c2072c01dc13c3caffb46f5e463512ee6616dff2a",
+  "source_sha256": {
+    "AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/static_map_builder.cpp": "0331a1851a0daf74e6f62fb363b02fc183e130e6e7e063b4bebd7a0e4b4e56bf",
+    "AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/static_path_planner.cpp": "027ee688f4eca3276235090d524090edc8a7c23b84fdff1ecb7987a85b488d50",
+    "AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/dynamic_detector.cpp": "6946b50a7bfaef00a04fff2f6394445180f3774fa3829a1e72b42f9d85597c3e",
+    "AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/dynamic_cluster.cpp": "077f2487887d545fe4e01ad8f1afd5c1fa6e359e4749b1aafb5b1a08d984d771",
+    "AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/collision_risk.cpp": "ad759e49941f7df3f0f7aec62570c22e61b0409ee89bb5d64bb826fcc0f5e9fe",
+    "AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/static_collision_risk.cpp": "1fa71c5751f451ecbf2cc1db0f4e2ae799df179859e18e5f739eda63e06f2baf",
+    "AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/avoidance_fusion.cpp": "28103c1f6be6c4aee320c70b74b91f4e1cb6cd5ece327ed9a99bb7f7a6b03975",
+    "AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/mavros_avoidance_controller.cpp": "d1822daac1890297c9c7445248aa74a06d5aac99f078ec5cbc3d5115cb2738a9",
+    "AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/system_watchdog.cpp": "ed9999da044b851eabdc7582f3814077bd4ac866b7c73fa803ca09e6e997ff84",
+    "AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/warehouse_explorer.py": "3effd02691d3597c3411c088ee28a983427a8eff630892c50730444d43ccbcac",
+    "AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/exploration_grid.py": "45c973760461aa82d2646db03a398ea44a469014ef955e21e8843ec3db295b3c",
+    "AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/exploration_coverage.py": "c4aa074c9ca891849aaefb37c68e7e26f854206ca8668b6c76e7e70d03f4faff",
+    "AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/run_warehouse_exploration.py": "b2cdd62bb935dd4df5737206161aaa2f0cd2f99476b9f48a555ddc86271b24ec",
+    "AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/launch/warehouse_exploration.launch": "3618006f0dfd19c1ec7075319b397079dbee75c5181398a7d0b3958010f9c659",
+    "AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/launch/astra_dynamic_avoidance.launch": "0ae5efd1640dde1c99e6ac042cdc7dcef889efd6b7b8adcf4c4b6e25acacb892",
+    "AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/launch/perception.launch": "291a95b937f8d36d90181e7641b42222a8277ef8715296acb0060728814f0c38",
+    "AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/warehouse_exploration.yaml": "e96664c39bbd8a62d09ae88103f5d09d4931625d9c45ff964a1bc451ab1a0a68",
+    "AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/warehouse_navigation.yaml": "0c2d488c3f8df79cdc3f367b4848f413fa78165459aa41dce1d8661ac2d1089e"
+  },
+  "existing_results": {
+    "exploration_demo_runs/warehouse_20261003_222021_result.json": {
+      "sha256": "2fcf0abc8dccef8f79cd50b29746729f780163024dcc8381084c31ff5a441805",
+      "termination": "returned_home_and_saved",
+      "failed": false,
+      "mission": {
+        "state": "COMPLETE",
+        "finish_reason": "wall_budget_partial",
+        "goals_selected": 97,
+        "goals_reached": 93,
+        "stalled_goals": 3,
+        "travel_xy_m": 547.8823530006512,
+        "home_confirmed": true,
+        "home_error_xy_m": 0.12256225128667773,
+        "coverage_complete": false,
+        "exploration_complete": false,
+        "compute_p95_ms": 184.35780945001167,
+        "estimated_rtf": 0.5722439174873502
+      }
+    },
+    "exploration_demo_runs/warehouse_20261005_120756_result.json": {
+      "sha256": "84499fa5ab94f4ee63af810214780864b6a530c719bb50b8ef1d24386686c2eb",
+      "termination": "stalled_unsafe",
+      "failed": true,
+      "mission": {
+        "state": "STALLED_UNSAFE",
+        "finish_reason": "unsafe_start_no_progress",
+        "goals_selected": 1,
+        "goals_reached": 0,
+        "stalled_goals": 0,
+        "travel_xy_m": 11.711964788624346,
+        "home_confirmed": false,
+        "home_error_xy_m": 3.4927714148464357,
+        "coverage_complete": false,
+        "exploration_complete": false,
+        "compute_p95_ms": 71.39309679332655,
+        "estimated_rtf": 0.47054143037523705
+      }
+    },
+    "exploration_demo_runs/warehouse_20261014_200842_result.json": {
+      "sha256": "92e960d31e450b286d435244ab6961cc5f1fb6ccb4b6db5b85cb50a6474d77d5",
+      "termination": "interrupted",
+      "failed": false,
+      "mission": {
+        "state": "EXPLORING",
+        "finish_reason": "",
+        "goals_selected": 9,
+        "goals_reached": 5,
+        "stalled_goals": 3,
+        "travel_xy_m": 40.17294008710733,
+        "home_confirmed": false,
+        "home_error_xy_m": 29.43622265291795,
+        "coverage_complete": false,
+        "exploration_complete": false,
+        "compute_p95_ms": 131.87786349999726,
+        "estimated_rtf": 0.5409310368529466
+      }
+    },
+    "exploration_demo_runs/warehouse_20261014_205420_result.json": {
+      "sha256": "68487718674f3c5549e9106626003e36d2193a9af25ffa0e3cd04af603c6762f",
+      "termination": "interrupted",
+      "failed": false,
+      "mission": {
+        "state": "EXPLORING",
+        "finish_reason": "",
+        "goals_selected": 5,
+        "goals_reached": 4,
+        "stalled_goals": 0,
+        "travel_xy_m": 26.502403999978576,
+        "home_confirmed": false,
+        "home_error_xy_m": 18.498257808083725,
+        "coverage_complete": false,
+        "exploration_complete": false,
+        "compute_p95_ms": 117.33631675015204,
+        "estimated_rtf": 0.4514149810700613
+      }
+    },
+    "exploration_demo_runs/warehouse_20261003_222021_coverage.json": {
+      "sha256": "b19995aa155dd913641908fe3d076c4590160a385a4ca298734433799f574fb6",
+      "scope": "exposed collision-box SHELF SIDE surfaces in declared world height band; not full visual mesh, unreachable/occluded sides stay in denominator",
+      "reference_samples": 10192,
+      "supported_samples": 9267,
+      "shelf_side_coverage": 0.9092425431711146,
+      "minimum_rack_coverage": 0.29591836734693877,
+      "shelf_side_acceptance": false,
+      "full_3d_map_complete": false,
+      "map_points": 284418
+    },
+    "exploration_demo_runs/warehouse_20261003_222021_freedom_coverage.json": {
+      "sha256": "e2bbc910e6b6d82c48c213a490b1e0c3790834478465e713f3b123a1308fd84a",
+      "scope": "exposed collision-box SHELF SIDE surfaces in declared world height band; not full visual mesh, unreachable/occluded sides stay in denominator",
+      "reference_samples": 10192,
+      "supported_samples": 10091,
+      "shelf_side_coverage": 0.9900902668759811,
+      "minimum_rack_coverage": 0.8571428571428571,
+      "shelf_side_acceptance": false,
+      "full_3d_map_complete": false,
+      "map_points": 756031
+    },
+    "exploration_demo_runs/warehouse_20261014_200842_coverage.json": {
+      "sha256": "0b06570c61715a831c6377bbd5874f813faf3a3dc93e475cef8f39e5d79e1a55",
+      "scope": "exposed collision-box SHELF SIDE surfaces in declared world height band; not full visual mesh, unreachable/occluded sides stay in denominator",
+      "reference_samples": 10192,
+      "supported_samples": 6708,
+      "shelf_side_coverage": 0.6581632653061225,
+      "minimum_rack_coverage": 0.0,
+      "shelf_side_acceptance": false,
+      "full_3d_map_complete": false,
+      "map_points": 126658
+    },
+    "exploration_demo_runs/warehouse_20261014_205420_coverage.json": {
+      "sha256": "064fe7a1e45ff2b6d65cbfef92d26d31eaaab83ad0147c8115a30bf0dd80e8f5",
+      "scope": "exposed collision-box SHELF SIDE surfaces in declared world height band; not full visual mesh, unreachable/occluded sides stay in denominator",
+      "reference_samples": 10192,
+      "supported_samples": 4363,
+      "shelf_side_coverage": 0.42808084772370486,
+      "minimum_rack_coverage": 0.0,
+      "shelf_side_acceptance": false,
+      "full_3d_map_complete": false,
+      "map_points": 103095
+    },
+    "dynamic_demo_runs/badcase_20260923_201211_metrics.json": {
+      "sha256": "1f1b4afd0dbcf7027611cbc1e0b9d124fd402b330d00eed0b1e9c0e4339d367a",
+      "goal_reached_odom": true,
+      "time_to_goal_s": 61.69799999999998,
+      "gazebo_route_length_after_goal_xy_m": 20.29634069894762,
+      "final_goal_error_odom_xy_m": 0.1322224453544743,
+      "vacated_start_stable_map_points": 128,
+      "min_uav_pedestrian_center_xy_m": 0.9790500606032922
+    },
+    "dynamic_demo_runs/ours_20260923_200322_metrics.json": {
+      "sha256": "2c804bfff08357263c11aa26805319dedc2dcf2476859946b404758a7babb68f",
+      "goal_reached_odom": true,
+      "time_to_goal_s": 37.37699999999998,
+      "gazebo_route_length_after_goal_xy_m": 12.423375200962091,
+      "final_goal_error_odom_xy_m": 0.17076103304932935,
+      "vacated_start_stable_map_points": 0,
+      "min_uav_pedestrian_center_xy_m": 0.9650169588153087
+    },
+    "dynamic_demo_runs/ours_cangku_20261011_194618_metrics.json": {
+      "sha256": "6376de49c536f3529c0315fac59db4c52ba978745ade396dce9b00f1e8ce56b2",
+      "goal_reached_odom": true,
+      "time_to_goal_s": 40.27,
+      "gazebo_route_length_after_goal_xy_m": 9.933005973261572,
+      "final_goal_error_odom_xy_m": 0.06314965231039914,
+      "vacated_start_stable_map_points": null,
+      "min_uav_pedestrian_center_xy_m": 1.8078280478228859
+    }
+  },
+  "pcd_checks": {
+    "warehouse_20261003_222021": {
+      "sha_matches_metadata": true,
+      "points_match_metadata": true,
+      "binary_xyz_payload_length_matches": true,
+      "points": 284418
+    },
+    "warehouse_20261005_120756": {
+      "sha_matches_metadata": true,
+      "points_match_metadata": true,
+      "binary_xyz_payload_length_matches": true,
+      "points": 48529
+    },
+    "warehouse_20261014_200842": {
+      "sha_matches_metadata": true,
+      "points_match_metadata": true,
+      "binary_xyz_payload_length_matches": true,
+      "points": 126658
+    },
+    "warehouse_20261014_205420": {
+      "sha_matches_metadata": true,
+      "points_match_metadata": true,
+      "binary_xyz_payload_length_matches": true,
+      "points": 103095
+    }
+  },
+  "backup_directory_exists": false,
+  "report_sha256": "58de3fd562ded2ff90f705811960da8c4ab99953cc23ecf2b2387bbad16eef74",
+  "report_lines": 174,
+  "report_characters": 7775,
+  "external_reading_scope": "author READMEs and official lifecycle notices only; not full reproduction or exhaustive novelty review",
+  "external_sources": [
+    "https://github.com/LC-Robotics/FreeDOM",
+    "https://github.com/KTH-RPL/dufomap",
+    "https://github.com/hku-mars/ROG-Map",
+    "https://discourse.ros.org/t/ros-noetic-end-of-life-may-31-2025/43160",
+    "https://classic.gazebosim.org/"
+  ],
+  "checks_passed": true
+}

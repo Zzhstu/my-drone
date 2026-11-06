@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect x="0" y="0" width="1600" height="900" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1.5"/>
+<text x="60" y="87.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="47" font-weight="700" fill="#15334C" text-anchor="start">安全控制的完整执行流程</text>
+<text x="62" y="129.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#657585" text-anchor="start">先确认飞行状态与数据，再决定跟踪、让行或停止；风险检查不能被“已经到位”跳过。</text>
+<polyline points="60,151 1540,151" fill="none" stroke="#D5E0E6" stroke-width="1.5"/>
+<rect x="60" y="774" width="1480" height="70" rx="0" fill="#EFF5F8" stroke="none" stroke-width="1.5"/>
+<text x="80" y="818.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="700" fill="#24618A" text-anchor="start">核心规则</text>
+<text x="210" y="818.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">有效航点和新鲜数据只是执行前提，最终速度仍受风险规则约束。</text>
+<text x="60" y="880.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="17" font-weight="400" fill="#657585" text-anchor="start">现有实现讲解 · 参数不是实验结果 · 源码对应见配套说明</text>
+<text x="1400" y="880.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="18" font-weight="400" fill="#657585" text-anchor="start">08 / 10</text>
+<rect x="60" y="229" width="346" height="151" rx="0" fill="#F4F9FB" stroke="#24618A" stroke-width="1.5"/>
+<text x="233.0" y="273.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#24618A" text-anchor="middle">1  稳定初始化</text>
+<text x="233.0" y="309.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#657585" text-anchor="middle">有效地面位姿</text>
+<text x="233.0" y="340.24" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#657585" text-anchor="middle">重新确定起飞基准</text>
+<polyline points="409,305 435,305" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="435.00,305.00 425.00,309.80 425.00,300.20" fill="#24618A"/>
+<rect x="438" y="229" width="346" height="151" rx="0" fill="#F4F9FB" stroke="#137B7E" stroke-width="1.5"/>
+<text x="611.0" y="273.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#137B7E" text-anchor="middle">2  起飞确认</text>
+<text x="611.0" y="309.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#657585" text-anchor="middle">预发指令、请求飞行</text>
+<text x="611.0" y="340.24" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#657585" text-anchor="middle">实际离地并高度驻留</text>
+<polyline points="787,305 813,305" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="813.00,305.00 803.00,309.80 803.00,300.20" fill="#24618A"/>
+<rect x="816" y="229" width="346" height="151" rx="0" fill="#F4F9FB" stroke="#24618A" stroke-width="1.5"/>
+<text x="989.0" y="273.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#24618A" text-anchor="middle">3  导航数据检查</text>
+<text x="989.0" y="309.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#657585" text-anchor="middle">航点、位姿、风险</text>
+<text x="989.0" y="340.24" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#657585" text-anchor="middle">探索还需新鲜扫描</text>
+<polyline points="1165,305 1191,305" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="1191.00,305.00 1181.00,309.80 1181.00,300.20" fill="#24618A"/>
+<rect x="1194" y="229" width="346" height="151" rx="0" fill="#F4F9FB" stroke="#137B7E" stroke-width="1.5"/>
+<text x="1367.0" y="273.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#137B7E" text-anchor="middle">4  风险动作裁决</text>
+<text x="1367.0" y="309.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#657585" text-anchor="middle">零级跟踪、一级让行</text>
+<text x="1367.0" y="340.24" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#657585" text-anchor="middle">二级按演示策略执行</text>
+<polyline points="1378,383 1378,480 1135,480" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="1135.00,480.00 1145.00,475.20 1145.00,484.80" fill="#24618A"/>
+<rect x="845" y="422" width="285" height="128" rx="0" fill="#F4F9FB" stroke="#137B7E" stroke-width="1.5"/>
+<text x="987.5" y="466.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#137B7E" text-anchor="middle">5  限速与发送</text>
+<text x="987.5" y="502.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#657585" text-anchor="middle">高度／水平分别限幅</text>
+<polyline points="842,485 751,485" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="751.00,485.00 761.00,480.20 761.00,489.80" fill="#24618A"/>
+<rect x="430" y="422" width="315" height="128" rx="0" fill="#F4F9FB" stroke="#24618A" stroke-width="1.5"/>
+<text x="587.5" y="466.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#24618A" text-anchor="middle">6  下一周期</text>
+<text x="587.5" y="502.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#657585" text-anchor="middle">继续追踪航点与检查风险</text>
+<polyline points="430,485 40,485 40,191 988,191 988,222" fill="none" stroke="#24618A" stroke-width="2" stroke-dasharray="7 5"/>
+<polygon points="988.00,222.00 983.20,212.00 992.80,212.00" fill="#24618A"/>
+<text x="70" y="467.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#657585" text-anchor="start">下一周期继续检查</text>
+<rect x="60" y="591" width="720" height="145" rx="0" fill="#F6FAFC" stroke="#D5E0E6" stroke-width="1.5"/>
+<rect x="60" y="591" width="720" height="69" rx="0" fill="#24618A" stroke="none" stroke-width="1.5"/>
+<text x="78" y="636.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#FFFFFF" text-anchor="start">数据与命令的时效规则</text>
+<text x="83" y="701.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">位姿 0.35 秒；融合消息 0.45 秒；航点 1.50 秒。</text>
+<rect x="813" y="591" width="727" height="145" rx="0" fill="#F6FAFC" stroke="#D5E0E6" stroke-width="1.5"/>
+<rect x="813" y="591" width="727" height="69" rx="0" fill="#137B7E" stroke="none" stroke-width="1.5"/>
+<text x="831" y="636.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#FFFFFF" text-anchor="start">探索额外保护与到达容差</text>
+<text x="836" y="701.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">扫描 0.30 秒；中间点 0.03 米；终点 0.25 米。</text>
+</svg>

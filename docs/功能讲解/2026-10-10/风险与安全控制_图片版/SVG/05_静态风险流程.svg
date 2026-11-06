@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect x="0" y="0" width="1600" height="900" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1.5"/>
+<text x="60" y="87.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="47" font-weight="700" fill="#15334C" text-anchor="start">静态风险：从当前扫描中找可靠障碍</text>
+<text x="62" y="129.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#657585" text-anchor="start">不直接用整张历史地图紧急刹车，而是检查机身附近的新扫描。</text>
+<polyline points="60,151 1540,151" fill="none" stroke="#D5E0E6" stroke-width="1.5"/>
+<rect x="60" y="774" width="1480" height="70" rx="0" fill="#EFF5F8" stroke="none" stroke-width="1.5"/>
+<text x="80" y="818.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="700" fill="#24618A" text-anchor="start">核心规则</text>
+<text x="210" y="818.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">静止人体仍可能是即时障碍；“静态风险”并不等于只判断永久建筑。</text>
+<text x="60" y="880.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="17" font-weight="400" fill="#657585" text-anchor="start">现有实现讲解 · 参数不是实验结果 · 源码对应见配套说明</text>
+<text x="1400" y="880.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="18" font-weight="400" fill="#657585" text-anchor="start">05 / 10</text>
+<rect x="60" y="212" width="346" height="420" rx="0" fill="#F6FAFC" stroke="#D5E0E6" stroke-width="1.5"/>
+<rect x="60" y="212" width="346" height="69" rx="0" fill="#24618A" stroke="none" stroke-width="1.5"/>
+<text x="78" y="257.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#FFFFFF" text-anchor="start">1  筛选相关点</text>
+<text x="83" y="322.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">确认点云坐标和位姿。</text>
+<text x="83" y="370.5" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">只保留相对机身高度 −0.35</text>
+<text x="83" y="405.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">到 +0.45 米的点。</text>
+<text x="83" y="453.5" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">只检查水平 2.0 米内，去掉</text>
+<text x="83" y="488.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">无效和过近点。</text>
+<polyline points="409,425 435,425" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="435.00,425.00 425.00,429.80 425.00,420.20" fill="#24618A"/>
+<rect x="438" y="212" width="346" height="420" rx="0" fill="#F6FAFC" stroke="#D5E0E6" stroke-width="1.5"/>
+<rect x="438" y="212" width="346" height="69" rx="0" fill="#137B7E" stroke="none" stroke-width="1.5"/>
+<text x="456" y="257.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#FFFFFF" text-anchor="start">2  避免重复判断</text>
+<text x="461" y="322.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">已确认运动目标由动态分支</text>
+<text x="461" y="356.5" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">处理。</text>
+<text x="461" y="405.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">静态分支屏蔽目标附近圆柱</text>
+<text x="461" y="439.5" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">区域。</text>
+<text x="461" y="488.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">短漏检保留掩膜，最长 0.6</text>
+<text x="461" y="522.5" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">0 秒。</text>
+<polyline points="787,425 813,425" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="813.00,425.00 803.00,429.80 803.00,420.20" fill="#24618A"/>
+<rect x="816" y="212" width="346" height="420" rx="0" fill="#F6FAFC" stroke="#D5E0E6" stroke-width="1.5"/>
+<rect x="816" y="212" width="346" height="69" rx="0" fill="#24618A" stroke="none" stroke-width="1.5"/>
+<text x="834" y="257.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#FFFFFF" text-anchor="start">3  检查障碍支持</text>
+<text x="839" y="322.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">找到剩余点里的最近原始</text>
+<text x="839" y="356.5" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">点。</text>
+<text x="839" y="405.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">其 0.30 米邻域至少需要 4</text>
+<text x="839" y="439.5" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">个支持点。</text>
+<text x="839" y="488.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">取支持点距离的中位数，降</text>
+<text x="839" y="522.5" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">低孤立噪点影响。</text>
+<polyline points="1165,425 1191,425" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="1191.00,425.00 1181.00,429.80 1181.00,420.20" fill="#24618A"/>
+<rect x="1194" y="212" width="346" height="420" rx="0" fill="#F6FAFC" stroke="#D5E0E6" stroke-width="1.5"/>
+<rect x="1194" y="212" width="346" height="69" rx="0" fill="#137B7E" stroke="none" stroke-width="1.5"/>
+<text x="1212" y="257.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#FFFFFF" text-anchor="start">4  扣除半径并分级</text>
+<text x="1217" y="322.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">从表面距离扣除机体半径，</text>
+<text x="1217" y="356.5" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">得到外缘间隙。</text>
+<text x="1217" y="405.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">按紧急、预警、解除缓冲确</text>
+<text x="1217" y="439.5" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">定等级。</text>
+<text x="1217" y="488.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">输出风险、净空和远离障碍</text>
+<text x="1217" y="522.5" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">的建议速度。</text>
+<text x="70" y="692.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">支持不足会使测量无效，不等于环境安全；已有预警需到解除距离才退回零级。</text>
+</svg>

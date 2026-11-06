@@ -1,0 +1,78 @@
+{
+  "phases": {
+    "cross_first": {
+      "messages": 66,
+      "detected": 40,
+      "observed": 40,
+      "dynamic_risk_frames": 14,
+      "age_p95_sim_s": 0.029,
+      "min_center_xy_m": 1.4419946544484283
+    },
+    "cross_repeat": {
+      "messages": 64,
+      "detected": 43,
+      "observed": 39,
+      "dynamic_risk_frames": 19,
+      "age_p95_sim_s": 0.030849999999999995,
+      "min_center_xy_m": 0.9326359566420024
+    },
+    "final_observation": {
+      "messages": 25,
+      "detected": 0,
+      "observed": 0,
+      "dynamic_risk_frames": 1,
+      "age_p95_sim_s": 0.029799999999999997,
+      "min_center_xy_m": 2.012995436373422
+    },
+    "leave_initial": {
+      "messages": 52,
+      "detected": 34,
+      "observed": 34,
+      "dynamic_risk_frames": 0,
+      "age_p95_sim_s": 0.028449999999999996,
+      "min_center_xy_m": 1.7810246896835182
+    },
+    "pause": {
+      "messages": 26,
+      "detected": 5,
+      "observed": 5,
+      "dynamic_risk_frames": 0,
+      "age_p95_sim_s": 0.028,
+      "min_center_xy_m": 1.7792354898926657
+    },
+    "return_from_wall": {
+      "messages": 36,
+      "detected": 21,
+      "observed": 21,
+      "dynamic_risk_frames": 14,
+      "age_p95_sim_s": 0.031,
+      "min_center_xy_m": 1.9948999012469626
+    },
+    "waiting": {
+      "messages": 216,
+      "detected": 0,
+      "observed": 0,
+      "dynamic_risk_frames": 0,
+      "age_p95_sim_s": 0.031,
+      "min_center_xy_m": 3.1329260108068455
+    },
+    "wall_guard": {
+      "messages": 36,
+      "detected": 28,
+      "observed": 28,
+      "dynamic_risk_frames": 0,
+      "age_p95_sim_s": 0.02925,
+      "min_center_xy_m": 1.8356239720299712
+    }
+  },
+  "wall_guard_stopped": true,
+  "wall_guard_x": -9.476788420251106,
+  "deadman_drift_m": 3.1868397073947956e-07,
+  "export_equals_topic": true,
+  "tested_map": "dynamic_demo_runs/ours_cangku_20260927_121518_inflight_test_map.pcd",
+  "points": 62560,
+  "vacated_pause_roi_points": 0,
+  "vacated_initial_roi_points": 1,
+  "real_time_factor": 0.5067891678169886,
+  "uav_goal_error_world_xy_m": 0.0804996899390316
+}

@@ -1,0 +1,220 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect x="0" y="0" width="1600" height="900" fill="#FFFFFF" stroke="none" stroke-width="1.6"/>
+<text x="60" y="80.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="46" font-weight="700" fill="#15334C" text-anchor="start">为什么只过滤新点还不够？</text>
+<text x="63" y="125.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#657585" text-anchor="start">人先站着、后来离开：留下的问题在旧地图，不只在当前这一帧。</text>
+<polyline points="60,151 1540,151" fill="none" stroke="#D5E0E6" stroke-width="1.2"/>
+<rect x="60" y="784" width="1480" height="62" fill="#EFF5F8" stroke="none" stroke-width="1.6"/>
+<text x="78" y="823.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="700" fill="#137B7E" text-anchor="start">核心规则</text>
+<text x="210" y="822.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">不再加入新的人体点，并不等于旧的人体点已经消失。</text>
+<text x="60" y="878.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="17" font-weight="400" fill="#657585" text-anchor="start">现有源码规则 · 所有点云与场景小图为示意 · 非新增实验结果</text>
+<text x="1400" y="879.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="18" font-weight="400" fill="#657585" text-anchor="start">02 / 16</text>
+<rect x="60.0" y="214" width="341.5" height="420" fill="#F0F0FF" stroke="#B3BFEA" stroke-width="1.6"/>
+<text x="76.0" y="258.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="28" font-weight="700" fill="#15334C" text-anchor="start">1 人原本不动</text>
+<text x="78.0" y="300.64" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">反复扫到人体，旧位置进入</text>
+<text x="78.0" y="333.76" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">地图。</text>
+<polyline points="404.5,424.0 436.5,424.0" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="436.50,424.00 426.50,428.80 426.50,419.20" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<rect x="439.5" y="214" width="341.5" height="420" fill="#FFF3E7" stroke="#E6B988" stroke-width="1.6"/>
+<text x="455.5" y="258.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="28" font-weight="700" fill="#15334C" text-anchor="start">2 人已经离开</text>
+<text x="457.5" y="300.64" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">当前扫描改变，历史点还留</text>
+<text x="457.5" y="333.76" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">在原处。</text>
+<polyline points="784.0,424.0 816.0,424.0" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="816.00,424.00 806.00,428.80 806.00,419.20" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<rect x="819.0" y="214" width="341.5" height="420" fill="#EEF8F1" stroke="#A6CCB7" stroke-width="1.6"/>
+<text x="835.0" y="258.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="28" font-weight="700" fill="#15334C" text-anchor="start">3 新观测来核实</text>
+<text x="837.0" y="300.64" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">不是凭空删除，而是观察旧</text>
+<text x="837.0" y="333.76" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">位置是否已经空了。</text>
+<polyline points="1163.5,424.0 1195.5,424.0" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="1195.50,424.00 1185.50,428.80 1185.50,419.20" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<rect x="1198.5" y="214" width="341.5" height="420" fill="#FFF0F5" stroke="#DCB0C3" stroke-width="1.6"/>
+<text x="1214.5" y="258.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="28" font-weight="700" fill="#15334C" text-anchor="start">4 地图与路线更新</text>
+<text x="1216.5" y="300.64" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">撤销满足条件的旧格子，再</text>
+<text x="1216.5" y="333.76" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">重新评估路线。</text>
+<circle cx="93.0" cy="562.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="93.0" cy="576.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="93.0" cy="591.6" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="93.0" cy="606.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="116.07692307692308" cy="562.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="116.07692307692308" cy="576.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="116.07692307692308" cy="591.6" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="116.07692307692308" cy="606.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="139.15384615384616" cy="562.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="139.15384615384616" cy="576.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="139.15384615384616" cy="591.6" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="139.15384615384616" cy="606.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="162.23076923076923" cy="562.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="162.23076923076923" cy="576.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="162.23076923076923" cy="591.6" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="162.23076923076923" cy="606.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="185.30769230769232" cy="562.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="185.30769230769232" cy="576.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="185.30769230769232" cy="591.6" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="185.30769230769232" cy="606.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="208.3846153846154" cy="562.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="208.3846153846154" cy="576.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="208.3846153846154" cy="591.6" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="208.3846153846154" cy="606.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="231.46153846153845" cy="562.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="231.46153846153845" cy="576.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="231.46153846153845" cy="591.6" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="231.46153846153845" cy="606.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="254.53846153846155" cy="562.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="254.53846153846155" cy="576.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="254.53846153846155" cy="591.6" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="254.53846153846155" cy="606.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="277.61538461538464" cy="562.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="277.61538461538464" cy="576.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="277.61538461538464" cy="591.6" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="277.61538461538464" cy="606.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="300.6923076923077" cy="562.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="300.6923076923077" cy="576.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="300.6923076923077" cy="591.6" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="300.6923076923077" cy="606.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="323.7692307692308" cy="562.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="323.7692307692308" cy="576.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="323.7692307692308" cy="591.6" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="323.7692307692308" cy="606.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="346.8461538461538" cy="562.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="346.8461538461538" cy="576.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="346.8461538461538" cy="591.6" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="346.8461538461538" cy="606.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="471.0" cy="562.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="471.0" cy="576.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="471.0" cy="591.6" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="471.0" cy="606.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="494.0769230769231" cy="562.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="494.0769230769231" cy="576.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="494.0769230769231" cy="591.6" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="494.0769230769231" cy="606.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="517.1538461538462" cy="562.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="517.1538461538462" cy="576.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="517.1538461538462" cy="591.6" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="517.1538461538462" cy="606.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="540.2307692307693" cy="562.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="540.2307692307693" cy="576.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="540.2307692307693" cy="591.6" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="540.2307692307693" cy="606.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="563.3076923076923" cy="562.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="563.3076923076923" cy="576.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="563.3076923076923" cy="591.6" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="563.3076923076923" cy="606.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="586.3846153846154" cy="562.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="586.3846153846154" cy="576.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="586.3846153846154" cy="591.6" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="586.3846153846154" cy="606.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="609.4615384615385" cy="562.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="609.4615384615385" cy="576.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="609.4615384615385" cy="591.6" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="609.4615384615385" cy="606.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="632.5384615384615" cy="562.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="632.5384615384615" cy="576.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="632.5384615384615" cy="591.6" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="632.5384615384615" cy="606.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="655.6153846153846" cy="562.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="655.6153846153846" cy="576.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="655.6153846153846" cy="591.6" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="655.6153846153846" cy="606.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="678.6923076923076" cy="562.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="678.6923076923076" cy="576.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="678.6923076923076" cy="591.6" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="678.6923076923076" cy="606.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="701.7692307692307" cy="562.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="701.7692307692307" cy="576.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="701.7692307692307" cy="591.6" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="701.7692307692307" cy="606.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="724.8461538461538" cy="562.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="724.8461538461538" cy="576.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="724.8461538461538" cy="591.6" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="724.8461538461538" cy="606.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="595.0" cy="564" r="3.1" fill="#B94343" stroke="none" stroke-width="1.6"/>
+<circle cx="595.0" cy="576" r="3.1" fill="#B94343" stroke="none" stroke-width="1.6"/>
+<circle cx="595.0" cy="588" r="3.1" fill="#B94343" stroke="none" stroke-width="1.6"/>
+<circle cx="595.0" cy="600" r="3.1" fill="#B94343" stroke="none" stroke-width="1.6"/>
+<circle cx="604.0" cy="564" r="3.1" fill="#B94343" stroke="none" stroke-width="1.6"/>
+<circle cx="604.0" cy="576" r="3.1" fill="#B94343" stroke="none" stroke-width="1.6"/>
+<circle cx="604.0" cy="588" r="3.1" fill="#B94343" stroke="none" stroke-width="1.6"/>
+<circle cx="604.0" cy="600" r="3.1" fill="#B94343" stroke="none" stroke-width="1.6"/>
+<circle cx="613.0" cy="564" r="3.1" fill="#B94343" stroke="none" stroke-width="1.6"/>
+<circle cx="613.0" cy="576" r="3.1" fill="#B94343" stroke="none" stroke-width="1.6"/>
+<circle cx="613.0" cy="588" r="3.1" fill="#B94343" stroke="none" stroke-width="1.6"/>
+<circle cx="613.0" cy="600" r="3.1" fill="#B94343" stroke="none" stroke-width="1.6"/>
+<circle cx="622.0" cy="564" r="3.1" fill="#B94343" stroke="none" stroke-width="1.6"/>
+<circle cx="622.0" cy="576" r="3.1" fill="#B94343" stroke="none" stroke-width="1.6"/>
+<circle cx="622.0" cy="588" r="3.1" fill="#B94343" stroke="none" stroke-width="1.6"/>
+<circle cx="622.0" cy="600" r="3.1" fill="#B94343" stroke="none" stroke-width="1.6"/>
+<circle cx="851" cy="592.0" r="8" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<polyline points="865,592.0 1126,570" fill="none" stroke="#137B7E" stroke-width="1.8"/>
+<polygon points="1126.00,570.00 1116.44,575.62 1115.63,566.06" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<polyline points="865,592.0 1126,593" fill="none" stroke="#137B7E" stroke-width="1.8"/>
+<polygon points="1126.00,593.00 1115.98,597.76 1116.02,588.16" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<polyline points="865,592.0 1126,616" fill="none" stroke="#137B7E" stroke-width="1.8"/>
+<polygon points="1126.00,616.00 1115.60,619.86 1116.48,610.30" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1132" cy="570" r="4" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<circle cx="1132" cy="593" r="4" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<circle cx="1132" cy="616" r="4" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<circle cx="1227.0" cy="562.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1227.0" cy="576.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1227.0" cy="591.6" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1227.0" cy="606.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1250.076923076923" cy="562.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1250.076923076923" cy="576.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1250.076923076923" cy="591.6" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1250.076923076923" cy="606.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1273.1538461538462" cy="562.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1273.1538461538462" cy="576.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1273.1538461538462" cy="591.6" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1273.1538461538462" cy="606.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1296.2307692307693" cy="562.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1296.2307692307693" cy="576.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1296.2307692307693" cy="591.6" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1296.2307692307693" cy="606.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1319.3076923076924" cy="562.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1319.3076923076924" cy="576.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1319.3076923076924" cy="591.6" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1319.3076923076924" cy="606.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1342.3846153846155" cy="562.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1342.3846153846155" cy="576.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1342.3846153846155" cy="591.6" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1342.3846153846155" cy="606.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1365.4615384615386" cy="562.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1365.4615384615386" cy="576.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1365.4615384615386" cy="591.6" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1365.4615384615386" cy="606.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1388.5384615384614" cy="562.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1388.5384615384614" cy="576.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1388.5384615384614" cy="591.6" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1388.5384615384614" cy="606.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1411.6153846153845" cy="562.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1411.6153846153845" cy="576.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1411.6153846153845" cy="591.6" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1411.6153846153845" cy="606.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1434.6923076923076" cy="562.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1434.6923076923076" cy="576.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1434.6923076923076" cy="591.6" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1434.6923076923076" cy="606.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1457.7692307692307" cy="562.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1457.7692307692307" cy="576.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1457.7692307692307" cy="591.6" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1457.7692307692307" cy="606.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1480.8461538461538" cy="562.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1480.8461538461538" cy="576.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1480.8461538461538" cy="591.6" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1480.8461538461538" cy="606.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1351.0" cy="564" r="3.1" fill="#FFFFFF" stroke="#D7E0E3" stroke-width="1.6"/>
+<circle cx="1351.0" cy="576" r="3.1" fill="#FFFFFF" stroke="#D7E0E3" stroke-width="1.6"/>
+<circle cx="1351.0" cy="588" r="3.1" fill="#FFFFFF" stroke="#D7E0E3" stroke-width="1.6"/>
+<circle cx="1351.0" cy="600" r="3.1" fill="#FFFFFF" stroke="#D7E0E3" stroke-width="1.6"/>
+<circle cx="1360.0" cy="564" r="3.1" fill="#FFFFFF" stroke="#D7E0E3" stroke-width="1.6"/>
+<circle cx="1360.0" cy="576" r="3.1" fill="#FFFFFF" stroke="#D7E0E3" stroke-width="1.6"/>
+<circle cx="1360.0" cy="588" r="3.1" fill="#FFFFFF" stroke="#D7E0E3" stroke-width="1.6"/>
+<circle cx="1360.0" cy="600" r="3.1" fill="#FFFFFF" stroke="#D7E0E3" stroke-width="1.6"/>
+<circle cx="1369.0" cy="564" r="3.1" fill="#FFFFFF" stroke="#D7E0E3" stroke-width="1.6"/>
+<circle cx="1369.0" cy="576" r="3.1" fill="#FFFFFF" stroke="#D7E0E3" stroke-width="1.6"/>
+<circle cx="1369.0" cy="588" r="3.1" fill="#FFFFFF" stroke="#D7E0E3" stroke-width="1.6"/>
+<circle cx="1369.0" cy="600" r="3.1" fill="#FFFFFF" stroke="#D7E0E3" stroke-width="1.6"/>
+<circle cx="1378.0" cy="564" r="3.1" fill="#FFFFFF" stroke="#D7E0E3" stroke-width="1.6"/>
+<circle cx="1378.0" cy="576" r="3.1" fill="#FFFFFF" stroke="#D7E0E3" stroke-width="1.6"/>
+<circle cx="1378.0" cy="588" r="3.1" fill="#FFFFFF" stroke="#D7E0E3" stroke-width="1.6"/>
+<circle cx="1378.0" cy="600" r="3.1" fill="#FFFFFF" stroke="#D7E0E3" stroke-width="1.6"/>
+<text x="76" y="715.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#657585" text-anchor="start">绿点：环境结构    红点：旧占用    空心点：已撤销的位置（示意）</text>
+</svg>

@@ -1,0 +1,1017 @@
+{
+  "pages": 57,
+  "font": "Noto Sans CJK SC",
+  "body_font_points": 19.5,
+  "visible_body_characters": 15449,
+  "sources": 54,
+  "estimates": [
+    {
+      "page": 1,
+      "heading": "这份材料要讲清楚什么",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 1,
+      "heading": "本版的阅读约定",
+      "lines": [
+        3,
+        4
+      ],
+      "estimate_pt": 197
+    },
+    {
+      "page": 2,
+      "heading": "功能包像工具箱",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 2,
+      "heading": "不要混淆另外两类文件",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 3,
+      "heading": "长期链：应该往哪里走",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 3,
+      "heading": "即时链：现在能不能继续走",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 4,
+      "heading": "惯性测量提供短时预测",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 4,
+      "heading": "激光观测对预测进行修正",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 5,
+      "heading": "核心处理顺序",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 5,
+      "heading": "条件不好时会发生什么",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 6,
+      "heading": "为什么要对齐",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 6,
+      "heading": "目前怎样避免循环依赖",
+      "lines": [
+        3,
+        4
+      ],
+      "estimate_pt": 197
+    },
+    {
+      "page": 7,
+      "heading": "扫描与地图",
+      "lines": [
+        4,
+        3
+      ],
+      "estimate_pt": 197
+    },
+    {
+      "page": 7,
+      "heading": "航迹与规划路线",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 8,
+      "heading": "怎样形成开头的背景",
+      "lines": [
+        4,
+        3
+      ],
+      "estimate_pt": 197
+    },
+    {
+      "page": 8,
+      "heading": "前景不等于运动",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 9,
+      "heading": "三个参数各管什么",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 9,
+      "heading": "怎样理解错误候选",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 10,
+      "heading": "先把邻近点组成一组",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 10,
+      "heading": "再与过去的组配对",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 11,
+      "heading": "看一小段轨迹是否可信",
+      "lines": [
+        4,
+        3
+      ],
+      "estimate_pt": 197
+    },
+    {
+      "page": 11,
+      "heading": "多次成立才确认",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 12,
+      "heading": "稳定地图提供反对证据",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 12,
+      "heading": "显示跟随与运动证据分开",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 13,
+      "heading": "短时预测是辅助支路",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 13,
+      "heading": "类别节点默认原样转发",
+      "lines": [
+        3,
+        3
+      ],
+      "estimate_pt": 171
+    },
+    {
+      "page": 14,
+      "heading": "位置近不一定在接近",
+      "lines": [
+        4,
+        3
+      ],
+      "estimate_pt": 197
+    },
+    {
+      "page": 14,
+      "heading": "两种情况可以成为紧急",
+      "lines": [
+        3,
+        4
+      ],
+      "estimate_pt": 197
+    },
+    {
+      "page": 15,
+      "heading": "横穿与远离要分开",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 15,
+      "heading": "同向运动与模型限制",
+      "lines": [
+        4,
+        3
+      ],
+      "estimate_pt": 197
+    },
+    {
+      "page": 16,
+      "heading": "避免风险在边界反复跳变",
+      "lines": [
+        4,
+        3
+      ],
+      "estimate_pt": 197
+    },
+    {
+      "page": 16,
+      "heading": "调距离时不能只改一个数",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 17,
+      "heading": "为何不只看累积地图",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 17,
+      "heading": "动态掩膜与它的边界",
+      "lines": [
+        3,
+        4
+      ],
+      "estimate_pt": 197
+    },
+    {
+      "page": 18,
+      "heading": "仓库近场风险的距离口径",
+      "lines": [
+        4,
+        3
+      ],
+      "estimate_pt": 197
+    },
+    {
+      "page": 18,
+      "heading": "规划使用另外一组限制",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 19,
+      "heading": "两路结果怎样合并",
+      "lines": [
+        4,
+        3
+      ],
+      "estimate_pt": 197
+    },
+    {
+      "page": 19,
+      "heading": "它没有替代规划和控制",
+      "lines": [
+        3,
+        4
+      ],
+      "estimate_pt": 197
+    },
+    {
+      "page": 20,
+      "heading": "共同存储记录什么",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 20,
+      "heading": "还有当前自由空间输出",
+      "lines": [
+        3,
+        4
+      ],
+      "estimate_pt": 197
+    },
+    {
+      "page": 21,
+      "heading": "不同视图接受条件不同",
+      "lines": [
+        4,
+        3
+      ],
+      "estimate_pt": 197
+    },
+    {
+      "page": 21,
+      "heading": "局部过期不是全局删除",
+      "lines": [
+        3,
+        3
+      ],
+      "estimate_pt": 171
+    },
+    {
+      "page": 22,
+      "heading": "静止时它确实占着空间",
+      "lines": [
+        4,
+        3
+      ],
+      "estimate_pt": 197
+    },
+    {
+      "page": 22,
+      "heading": "走后要用新观测撤销旧占用",
+      "lines": [
+        4,
+        3
+      ],
+      "estimate_pt": 197
+    },
+    {
+      "page": 23,
+      "heading": "普通演示可以用轨迹清理",
+      "lines": [
+        4,
+        3
+      ],
+      "estimate_pt": 197
+    },
+    {
+      "page": 23,
+      "heading": "探索使用较保守的证据模式",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 24,
+      "heading": "扫描与位置先配对",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 24,
+      "heading": "只看回波前面的有效路段",
+      "lines": [
+        4,
+        3
+      ],
+      "estimate_pt": 197
+    },
+    {
+      "page": 25,
+      "heading": "先保护仍看得到的表面",
+      "lines": [
+        3,
+        3
+      ],
+      "estimate_pt": 171
+    },
+    {
+      "page": 25,
+      "heading": "多次有效证据才删除",
+      "lines": [
+        3,
+        4
+      ],
+      "estimate_pt": 197
+    },
+    {
+      "page": 26,
+      "heading": "三个不同原因",
+      "lines": [
+        3,
+        4
+      ],
+      "estimate_pt": 197
+    },
+    {
+      "page": 26,
+      "heading": "应该怎样检查",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 27,
+      "heading": "先建立能搜索的平面地图",
+      "lines": [
+        3,
+        3
+      ],
+      "estimate_pt": 171
+    },
+    {
+      "page": 27,
+      "heading": "再从起点搜索到目标",
+      "lines": [
+        3,
+        4
+      ],
+      "estimate_pt": 197
+    },
+    {
+      "page": 28,
+      "heading": "旧占用与新自由证据",
+      "lines": [
+        3,
+        3
+      ],
+      "estimate_pt": 171
+    },
+    {
+      "page": 28,
+      "heading": "当前占用具有优先权",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 29,
+      "heading": "有时无路只是搜索范围太小",
+      "lines": [
+        4,
+        3
+      ],
+      "estimate_pt": 197
+    },
+    {
+      "page": 29,
+      "heading": "安全旧路不要轻易反复换边",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 30,
+      "heading": "开始时不知道仓库布局",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 30,
+      "heading": "窗口随观测扩大",
+      "lines": [
+        3,
+        4
+      ],
+      "estimate_pt": 197
+    },
+    {
+      "page": 31,
+      "heading": "未知不是捷径",
+      "lines": [
+        3,
+        4
+      ],
+      "estimate_pt": 197
+    },
+    {
+      "page": 31,
+      "heading": "给贴边路线增加软代价",
+      "lines": [
+        3,
+        3
+      ],
+      "estimate_pt": 171
+    },
+    {
+      "page": 32,
+      "heading": "候选位置怎样产生",
+      "lines": [
+        4,
+        3
+      ],
+      "estimate_pt": 197
+    },
+    {
+      "page": 32,
+      "heading": "评分与任务保持",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 33,
+      "heading": "上限不等于一直以该速度飞",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 33,
+      "heading": "仿真慢与算法慢要分开",
+      "lines": [
+        4,
+        3
+      ],
+      "estimate_pt": 197
+    },
+    {
+      "page": 34,
+      "heading": "为什么有地图却可能停住",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 34,
+      "heading": "恢复授权不是日常通行许可",
+      "lines": [
+        4,
+        3
+      ],
+      "estimate_pt": 197
+    },
+    {
+      "page": 35,
+      "heading": "为什么需要第二阶段",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 35,
+      "heading": "补扫看的是观测质量",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 36,
+      "heading": "收敛与任务完成",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 36,
+      "heading": "覆盖完整性要单独回答",
+      "lines": [
+        3,
+        4
+      ],
+      "estimate_pt": 197
+    },
+    {
+      "page": 37,
+      "heading": "评估器怎样比较",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 37,
+      "heading": "这个指标能说明什么",
+      "lines": [
+        4,
+        3
+      ],
+      "estimate_pt": 197
+    },
+    {
+      "page": 38,
+      "heading": "启动之前先建立可靠基准",
+      "lines": [
+        4,
+        3
+      ],
+      "estimate_pt": 197
+    },
+    {
+      "page": 38,
+      "heading": "起飞完成需要持续的新鲜确认",
+      "lines": [
+        4,
+        3
+      ],
+      "estimate_pt": 197
+    },
+    {
+      "page": 39,
+      "heading": "正常前进如何计算",
+      "lines": [
+        4,
+        3
+      ],
+      "estimate_pt": 197
+    },
+    {
+      "page": 39,
+      "heading": "航点只是当前段目标",
+      "lines": [
+        4,
+        3
+      ],
+      "estimate_pt": 197
+    },
+    {
+      "page": 40,
+      "heading": "不同风险等级怎样处理",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 40,
+      "heading": "数据断流时不沿旧命令跑",
+      "lines": [
+        4,
+        3
+      ],
+      "estimate_pt": 197
+    },
+    {
+      "page": 41,
+      "heading": "点云与目标标记",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 41,
+      "heading": "探索图与两种路径",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 42,
+      "heading": "监测器统计哪些信息",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 42,
+      "heading": "故障时按层次检查",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 43,
+      "heading": "保存过程的检查",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 43,
+      "heading": "保存说明让产物可追查",
+      "lines": [
+        4,
+        3
+      ],
+      "estimate_pt": 197
+    },
+    {
+      "page": 44,
+      "heading": "普通对照与仓库目标导航",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 44,
+      "heading": "自主探索的独立产物目录",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 45,
+      "heading": "指定目标的两个场景",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 45,
+      "heading": "仓库自主探索",
+      "lines": [
+        4,
+        3
+      ],
+      "estimate_pt": 197
+    },
+    {
+      "page": 46,
+      "heading": "它控制的是仿真中的人",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 46,
+      "heading": "单写者与停止保护",
+      "lines": [
+        3,
+        4
+      ],
+      "estimate_pt": 197
+    },
+    {
+      "page": 47,
+      "heading": "最常用的几类示例",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 47,
+      "heading": "专项航线与原点工具",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 48,
+      "heading": "键盘与目标变化",
+      "lines": [
+        4,
+        3
+      ],
+      "estimate_pt": 197
+    },
+    {
+      "page": 48,
+      "heading": "适用边界与代码提醒",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 49,
+      "heading": "autoarming_control的顺序",
+      "lines": [
+        4,
+        3
+      ],
+      "estimate_pt": 197
+    },
+    {
+      "page": 49,
+      "heading": "与主避障控制器的区别",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 50,
+      "heading": "位置入口与公共实现",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 50,
+      "heading": "原点发布器不控制飞行",
+      "lines": [
+        3,
+        4
+      ],
+      "estimate_pt": 197
+    },
+    {
+      "page": 51,
+      "heading": "走廊定位基线",
+      "lines": [
+        3,
+        3
+      ],
+      "estimate_pt": 171
+    },
+    {
+      "page": 51,
+      "heading": "方形回访专项",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 52,
+      "heading": "FreeDOM是独立地图对照",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 52,
+      "heading": "回环是另一个问题",
+      "lines": [
+        3,
+        4
+      ],
+      "estimate_pt": 197
+    },
+    {
+      "page": 53,
+      "heading": "长期路线分支",
+      "lines": [
+        4,
+        3
+      ],
+      "estimate_pt": 197
+    },
+    {
+      "page": 53,
+      "heading": "即时安全分支",
+      "lines": [
+        4,
+        3
+      ],
+      "estimate_pt": 197
+    },
+    {
+      "page": 55,
+      "heading": "从静止到离开",
+      "lines": [
+        3,
+        3
+      ],
+      "estimate_pt": 171
+    },
+    {
+      "page": 55,
+      "heading": "从再观测到恢复通行",
+      "lines": [
+        3,
+        4
+      ],
+      "estimate_pt": 197
+    },
+    {
+      "page": 56,
+      "heading": "地图与感知问题",
+      "lines": [
+        3,
+        3
+      ],
+      "estimate_pt": 171
+    },
+    {
+      "page": 56,
+      "heading": "规划与执行问题",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 57,
+      "heading": "可以明确介绍的能力",
+      "lines": [
+        4,
+        4
+      ],
+      "estimate_pt": 223
+    },
+    {
+      "page": 57,
+      "heading": "不能从讲解材料推导的结论",
+      "lines": [
+        3,
+        4
+      ],
+      "estimate_pt": 197
+    }
+  ]
+}

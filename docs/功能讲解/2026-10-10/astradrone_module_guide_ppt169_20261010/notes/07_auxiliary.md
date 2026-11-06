@@ -1,0 +1,3 @@
+跟踪目标可以分成两条辅助支路。短时预测假定速度暂时不变，推算半秒后的目标位置，但转身、加速和停下都会让简单外推不准确。主碰撞判断直接读取当前位置和速度，自己计算双方的接近关系，不需要等辅助预测消息才工作。
+
+类别接口默认关闭并原样转发目标。只有启用并收到有效图像框、相机参数及坐标转换时，才尝试把三维目标对应到图像类别框。这段程序自身不运行人体网络，消息名字包含类别也不能证明已经识别人。源码是/home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/dynamic_predictor.cpp和src/semantic_fusion.cpp，开关在launch/perception.launch。

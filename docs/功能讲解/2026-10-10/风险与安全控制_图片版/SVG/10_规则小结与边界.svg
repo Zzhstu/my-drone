@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect x="0" y="0" width="1600" height="900" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1.5"/>
+<text x="60" y="87.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="47" font-weight="700" fill="#15334C" text-anchor="start">规则小结：安全依据不能省略</text>
+<text x="62" y="129.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#657585" text-anchor="start">我们实现的是可检查的工程保护层，不是零碰撞或所有工况有效的数学保证。</text>
+<polyline points="60,151 1540,151" fill="none" stroke="#D5E0E6" stroke-width="1.5"/>
+<rect x="60" y="774" width="1480" height="70" rx="0" fill="#EFF5F8" stroke="none" stroke-width="1.5"/>
+<text x="80" y="818.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="700" fill="#24618A" text-anchor="start">核心规则</text>
+<text x="210" y="818.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">零级风险不等于数据有效；可靠保护还需要感知时效、接口一致和真实刹停验证。</text>
+<text x="60" y="880.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="17" font-weight="400" fill="#657585" text-anchor="start">现有实现讲解 · 参数不是实验结果 · 源码对应见配套说明</text>
+<text x="1400" y="880.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="18" font-weight="400" fill="#657585" text-anchor="start">10 / 10</text>
+<rect x="60" y="211" width="465" height="485" rx="0" fill="#F6FAFC" stroke="#D5E0E6" stroke-width="1.5"/>
+<rect x="60" y="211" width="465" height="69" rx="0" fill="#24618A" stroke="none" stroke-width="1.5"/>
+<text x="78" y="256.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#FFFFFF" text-anchor="start">已经采用的机制</text>
+<text x="83" y="322.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">相对运动预测：提前发现行人接近。</text>
+<text x="83" y="371.88" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">扣除机体半径：不只看机心距离。</text>
+<text x="83" y="421.76" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">解除缓冲与方向保持：减少反复切</text>
+<text x="83" y="457.64" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">换。</text>
+<text x="83" y="507.52" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">规划与即时保护并行：路线可行仍要</text>
+<text x="83" y="543.4" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">检查当前扫描。</text>
+<text x="83" y="593.28" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">探索前向检查、限速与授权恢复。</text>
+<rect x="560" y="211" width="465" height="485" rx="0" fill="#F6FAFC" stroke="#D5E0E6" stroke-width="1.5"/>
+<rect x="560" y="211" width="465" height="69" rx="0" fill="#137B7E" stroke="none" stroke-width="1.5"/>
+<text x="578" y="256.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#FFFFFF" text-anchor="start">必须如实说明的限制</text>
+<text x="583" y="322.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">输入失效也可能输出零级，不能当作</text>
+<text x="583" y="357.88" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">已经确认安全。</text>
+<text x="583" y="407.76" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">二级短退路来源不一致，当前正常装</text>
+<text x="583" y="443.64" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">配下会被拒绝。</text>
+<text x="583" y="493.52" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">固定高度与圆形机体近似，不是完整</text>
+<text x="583" y="529.4" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">三维碰撞模型。</text>
+<text x="583" y="579.28" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">运动预测依赖短时速度稳定，漏检和</text>
+<text x="583" y="615.16" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">突变会影响结果。</text>
+<rect x="1060" y="211" width="480" height="485" rx="0" fill="#F6FAFC" stroke="#D5E0E6" stroke-width="1.5"/>
+<rect x="1060" y="211" width="480" height="69" rx="0" fill="#24618A" stroke="none" stroke-width="1.5"/>
+<text x="1078" y="256.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#FFFFFF" text-anchor="start">后续应验证的项目</text>
+<text x="1083" y="322.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">各上游输入是否真的有效，而非仅聚</text>
+<text x="1083" y="357.88" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">合话题仍在发布。</text>
+<text x="1083" y="407.76" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">修正并联调二级恢复来源接口。</text>
+<text x="1083" y="457.64" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">测量真实刹停距离、感知延迟与旋翼</text>
+<text x="1083" y="493.52" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">净空。</text>
+<text x="1083" y="543.4" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">测试起飞、窄通道、漏检、遮挡和多</text>
+<text x="1083" y="579.28" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">目标情形。</text>
+<text x="1083" y="629.16" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">本轮只制作图片，以上不是新增实</text>
+<text x="1083" y="665.04" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">测。</text>
+</svg>

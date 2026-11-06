@@ -1,0 +1,69 @@
+{
+  "scene": "cangku_20sqm",
+  "source_world": "simulation/astra_gazebo_worlds/cangku.world",
+  "source_sha256": "2ea8635e9f1cf6e50e7cb7238eb98e4abcec2e2523683a5304a1307b39736f11",
+  "world": "simulation/astra_gazebo_worlds/cangku_20sqm.world",
+  "interior_size_m": [
+    5.0,
+    4.0,
+    3.0
+  ],
+  "interior_floor_area_m2": 20.0,
+  "area_definition": "Inside wall faces; not free area after rack footprint",
+  "bounds_world": [
+    [
+      -2.5,
+      -2.0,
+      0
+    ],
+    [
+      2.5,
+      2.0,
+      3.0
+    ]
+  ],
+  "shelf_count": 1,
+  "other_furniture_count": 0,
+  "actors": 0,
+  "rack": {
+    "model": "shelf_aruco",
+    "original_mesh": "simulation/astra_gazebo_models/Shelf_with_ARUco_boxes/meshes/shelf_big_movai.dae",
+    "scale": [
+      0.2,
+      0.3,
+      0.3
+    ],
+    "minimum": [
+      -1.8060001907348,
+      -0.32100007868047503,
+      -1.40313594e-08
+    ],
+    "maximum": [
+      1.8059998092651999,
+      0.321,
+      1.8187947
+    ],
+    "size_m": [
+      3.612,
+      0.642000078680475,
+      1.8187947140313594
+    ],
+    "collision": "Same static triangle mesh as visual; open shelf gaps retained",
+    "textures": [
+      "simulation/astra_gazebo_models/Shelf_with_ARUco_boxes/meshes/Box_paper_04_1_Base_Color31.png",
+      "simulation/astra_gazebo_models/Shelf_with_ARUco_boxes/meshes/Box_paper_04_1_Base_Color32.png"
+    ]
+  },
+  "rack_end_to_wall_m": [
+    0.6939998092652,
+    0.6940001907348001
+  ],
+  "clear_area_minus_mesh_aabb_m2": 17.681095715806123,
+  "suggested_spawn_world": [
+    -1.3,
+    -1.2,
+    0.06
+  ],
+  "scope": "Scene preparation only; no mapping/flight/3DGS result. Rack AABB is not a completeness reference surface.",
+  "next_task": "Adapt inspection route and mesh-surface audit to this world before R3LIVE/3DGS; old 11x12m route must not be reused"
+}

@@ -1,0 +1,15 @@
+# track input type; 0:None, 1:target id; 2:target ROI pos; 255:stop tracking
+uint8 mode
+# if target with id
+#uint8 id
+# ROI leftup point pos; XY
+#int32[2] startPos 
+# ROI width and height;
+#int32[2] size
+# track speed; XY
+#float32[2] param
+# target fov threshold value; [0-100) if set 0, tracked without adjust fov
+#float32 fovTH
+---
+# result
+bool stateResponse

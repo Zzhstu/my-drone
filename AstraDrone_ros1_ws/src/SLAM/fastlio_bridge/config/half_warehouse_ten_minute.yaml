@@ -1,0 +1,26 @@
+# Independent endurance experiment. Lower quality is only an exit criterion;
+# occupancy evidence, 0.80m safety clearance and 0.60m/s controller cap remain.
+warehouse_explorer:
+  flight_budget_seconds: 600.0
+  flight_reserve_seconds: 60.0
+  flight_return_speed_mps: 0.35
+  flight_return_time_factor: 1.3
+  flight_landing_seconds: 25.0
+  flight_return_overhead_seconds: 15.0
+  surface_quality_target: 0.85
+  acceptance_window_seconds: 45.0
+  acceptance_hold_seconds: 5.0
+  acceptance_min_mission_seconds: 150.0
+  max_mission_seconds: 0.0       # arm-clock and dynamic return cost own the limit
+  max_mission_wall_seconds: 1100.0
+  inspection_budget_seconds: 90.0
+  ghost_revisit_budget_seconds: 90.0
+  ghost_cleared_max_groups: 2
+  ghost_expected_speed_mps: 0.27
+  ghost_endurance_revisit: true
+  ghost_endurance_min_exploration_seconds: 300.0
+  ghost_pending_min_age_seconds: 20.0
+  ghost_view_max_range: 4.5
+  ghost_observation_seconds: 4.0
+  no_frontier_seconds: 15.0
+  return_timeout: 180.0

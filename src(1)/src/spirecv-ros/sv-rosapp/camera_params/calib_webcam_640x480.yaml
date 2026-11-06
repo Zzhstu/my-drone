@@ -1,0 +1,20 @@
+%YAML:1.0
+---
+calibration_time: "2023年07月14日 星期五 16时39分17秒"
+image_width: 640
+image_height: 480
+flags: 0
+camera_matrix: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [ 386.90203857421875, 0., 319.149169921875, 0.,
+       386.90203857421875, 236.61355590820312, 0., 0., 1. ]
+distortion_coefficients: !!opencv-matrix
+   rows: 1
+   cols: 5
+   dt: d
+   data: [ 0, 0,
+       0, 0,
+       0 ]
+avg_reprojection_error: 0

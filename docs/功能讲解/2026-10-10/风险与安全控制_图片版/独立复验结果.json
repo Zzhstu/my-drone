@@ -1,0 +1,673 @@
+{
+  "status": "passed",
+  "total": 166,
+  "passed": 166,
+  "failed": [],
+  "checks": [
+    {
+      "check": "10页",
+      "passed": true
+    },
+    {
+      "check": "无PPTX",
+      "passed": true
+    },
+    {
+      "check": "生成阶段文字边界",
+      "passed": true
+    },
+    {
+      "check": "参考风格配色",
+      "passed": true
+    },
+    {
+      "check": "来源存在 /home/a/下载/fastlio2ppt.pptx",
+      "passed": true
+    },
+    {
+      "check": "来源未改 /home/a/下载/fastlio2ppt.pptx",
+      "passed": true
+    },
+    {
+      "check": "来源存在 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/collision_risk.cpp",
+      "passed": true
+    },
+    {
+      "check": "来源未改 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/collision_risk.cpp",
+      "passed": true
+    },
+    {
+      "check": "来源存在 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/static_collision_risk.cpp",
+      "passed": true
+    },
+    {
+      "check": "来源未改 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/static_collision_risk.cpp",
+      "passed": true
+    },
+    {
+      "check": "来源存在 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/avoidance_fusion.cpp",
+      "passed": true
+    },
+    {
+      "check": "来源未改 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/avoidance_fusion.cpp",
+      "passed": true
+    },
+    {
+      "check": "来源存在 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/mavros_avoidance_controller.cpp",
+      "passed": true
+    },
+    {
+      "check": "来源未改 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/mavros_avoidance_controller.cpp",
+      "passed": true
+    },
+    {
+      "check": "来源存在 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/dynamic_risk.yaml",
+      "passed": true
+    },
+    {
+      "check": "来源未改 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/dynamic_risk.yaml",
+      "passed": true
+    },
+    {
+      "check": "来源存在 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/static_risk.yaml",
+      "passed": true
+    },
+    {
+      "check": "来源未改 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/static_risk.yaml",
+      "passed": true
+    },
+    {
+      "check": "来源存在 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/avoidance.yaml",
+      "passed": true
+    },
+    {
+      "check": "来源未改 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/avoidance.yaml",
+      "passed": true
+    },
+    {
+      "check": "来源存在 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/astra_mavros_controller.yaml",
+      "passed": true
+    },
+    {
+      "check": "来源未改 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/astra_mavros_controller.yaml",
+      "passed": true
+    },
+    {
+      "check": "来源存在 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/warehouse_navigation.yaml",
+      "passed": true
+    },
+    {
+      "check": "来源未改 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/warehouse_navigation.yaml",
+      "passed": true
+    },
+    {
+      "check": "来源存在 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/warehouse_exploration.yaml",
+      "passed": true
+    },
+    {
+      "check": "来源未改 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/warehouse_exploration.yaml",
+      "passed": true
+    },
+    {
+      "check": "来源存在 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/launch/astra_dynamic_avoidance.launch",
+      "passed": true
+    },
+    {
+      "check": "来源未改 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/launch/astra_dynamic_avoidance.launch",
+      "passed": true
+    },
+    {
+      "check": "来源存在 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/launch/warehouse_exploration.launch",
+      "passed": true
+    },
+    {
+      "check": "来源未改 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/launch/warehouse_exploration.launch",
+      "passed": true
+    },
+    {
+      "check": "来源存在 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/warehouse_explorer.py",
+      "passed": true
+    },
+    {
+      "check": "来源未改 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/warehouse_explorer.py",
+      "passed": true
+    },
+    {
+      "check": "来源存在 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/exploration_grid.py",
+      "passed": true
+    },
+    {
+      "check": "来源未改 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/exploration_grid.py",
+      "passed": true
+    },
+    {
+      "check": "SVG画布 01_模块总览.svg",
+      "passed": true
+    },
+    {
+      "check": "SVG正文对应 01_模块总览.svg",
+      "passed": true
+    },
+    {
+      "check": "中文标点行首 01_模块总览.svg",
+      "passed": true
+    },
+    {
+      "check": "不含外链图像 01_模块总览.svg",
+      "passed": true
+    },
+    {
+      "check": "PNG高清 01_模块总览.png",
+      "passed": true
+    },
+    {
+      "check": "SVG画布 02_动态风险原理.svg",
+      "passed": true
+    },
+    {
+      "check": "SVG正文对应 02_动态风险原理.svg",
+      "passed": true
+    },
+    {
+      "check": "中文标点行首 02_动态风险原理.svg",
+      "passed": true
+    },
+    {
+      "check": "不含外链图像 02_动态风险原理.svg",
+      "passed": true
+    },
+    {
+      "check": "PNG高清 02_动态风险原理.png",
+      "passed": true
+    },
+    {
+      "check": "SVG画布 03_动态风险流程.svg",
+      "passed": true
+    },
+    {
+      "check": "SVG正文对应 03_动态风险流程.svg",
+      "passed": true
+    },
+    {
+      "check": "中文标点行首 03_动态风险流程.svg",
+      "passed": true
+    },
+    {
+      "check": "不含外链图像 03_动态风险流程.svg",
+      "passed": true
+    },
+    {
+      "check": "PNG高清 03_动态风险流程.png",
+      "passed": true
+    },
+    {
+      "check": "SVG画布 04_静态距离与阈值.svg",
+      "passed": true
+    },
+    {
+      "check": "SVG正文对应 04_静态距离与阈值.svg",
+      "passed": true
+    },
+    {
+      "check": "中文标点行首 04_静态距离与阈值.svg",
+      "passed": true
+    },
+    {
+      "check": "不含外链图像 04_静态距离与阈值.svg",
+      "passed": true
+    },
+    {
+      "check": "PNG高清 04_静态距离与阈值.png",
+      "passed": true
+    },
+    {
+      "check": "SVG画布 05_静态风险流程.svg",
+      "passed": true
+    },
+    {
+      "check": "SVG正文对应 05_静态风险流程.svg",
+      "passed": true
+    },
+    {
+      "check": "中文标点行首 05_静态风险流程.svg",
+      "passed": true
+    },
+    {
+      "check": "不含外链图像 05_静态风险流程.svg",
+      "passed": true
+    },
+    {
+      "check": "PNG高清 05_静态风险流程.png",
+      "passed": true
+    },
+    {
+      "check": "SVG画布 06_风险融合规则.svg",
+      "passed": true
+    },
+    {
+      "check": "SVG正文对应 06_风险融合规则.svg",
+      "passed": true
+    },
+    {
+      "check": "中文标点行首 06_风险融合规则.svg",
+      "passed": true
+    },
+    {
+      "check": "不含外链图像 06_风险融合规则.svg",
+      "passed": true
+    },
+    {
+      "check": "PNG高清 06_风险融合规则.png",
+      "passed": true
+    },
+    {
+      "check": "SVG画布 07_安全控制动作.svg",
+      "passed": true
+    },
+    {
+      "check": "SVG正文对应 07_安全控制动作.svg",
+      "passed": true
+    },
+    {
+      "check": "中文标点行首 07_安全控制动作.svg",
+      "passed": true
+    },
+    {
+      "check": "不含外链图像 07_安全控制动作.svg",
+      "passed": true
+    },
+    {
+      "check": "PNG高清 07_安全控制动作.png",
+      "passed": true
+    },
+    {
+      "check": "SVG画布 08_控制器完整流程.svg",
+      "passed": true
+    },
+    {
+      "check": "SVG正文对应 08_控制器完整流程.svg",
+      "passed": true
+    },
+    {
+      "check": "中文标点行首 08_控制器完整流程.svg",
+      "passed": true
+    },
+    {
+      "check": "不含外链图像 08_控制器完整流程.svg",
+      "passed": true
+    },
+    {
+      "check": "PNG高清 08_控制器完整流程.png",
+      "passed": true
+    },
+    {
+      "check": "SVG画布 09_短退路与保护.svg",
+      "passed": true
+    },
+    {
+      "check": "SVG正文对应 09_短退路与保护.svg",
+      "passed": true
+    },
+    {
+      "check": "中文标点行首 09_短退路与保护.svg",
+      "passed": true
+    },
+    {
+      "check": "不含外链图像 09_短退路与保护.svg",
+      "passed": true
+    },
+    {
+      "check": "PNG高清 09_短退路与保护.png",
+      "passed": true
+    },
+    {
+      "check": "SVG画布 10_规则小结与边界.svg",
+      "passed": true
+    },
+    {
+      "check": "SVG正文对应 10_规则小结与边界.svg",
+      "passed": true
+    },
+    {
+      "check": "中文标点行首 10_规则小结与边界.svg",
+      "passed": true
+    },
+    {
+      "check": "不含外链图像 10_规则小结与边界.svg",
+      "passed": true
+    },
+    {
+      "check": "PNG高清 10_规则小结与边界.png",
+      "passed": true
+    },
+    {
+      "check": "10节详细讲解",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/风险与安全控制_图片版/PNG/01_模块总览.png",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/风险与安全控制_图片版/SVG/01_模块总览.svg",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/collision_risk.cpp",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/static_collision_risk.cpp",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/avoidance_fusion.cpp",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/mavros_avoidance_controller.cpp",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/风险与安全控制_图片版/PNG/02_动态风险原理.png",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/风险与安全控制_图片版/SVG/02_动态风险原理.svg",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/collision_risk.cpp",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/dynamic_risk.yaml",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/风险与安全控制_图片版/PNG/03_动态风险流程.png",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/风险与安全控制_图片版/SVG/03_动态风险流程.svg",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/collision_risk.cpp",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/dynamic_risk.yaml",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/风险与安全控制_图片版/PNG/04_静态距离与阈值.png",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/风险与安全控制_图片版/SVG/04_静态距离与阈值.svg",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/static_collision_risk.cpp",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/static_risk.yaml",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/warehouse_navigation.yaml",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/风险与安全控制_图片版/PNG/05_静态风险流程.png",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/风险与安全控制_图片版/SVG/05_静态风险流程.svg",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/static_collision_risk.cpp",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/static_risk.yaml",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/风险与安全控制_图片版/PNG/06_风险融合规则.png",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/风险与安全控制_图片版/SVG/06_风险融合规则.svg",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/avoidance_fusion.cpp",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/avoidance.yaml",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/风险与安全控制_图片版/PNG/07_安全控制动作.png",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/风险与安全控制_图片版/SVG/07_安全控制动作.svg",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/mavros_avoidance_controller.cpp",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/astra_mavros_controller.yaml",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/warehouse_navigation.yaml",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/launch/warehouse_exploration.launch",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/风险与安全控制_图片版/PNG/08_控制器完整流程.png",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/风险与安全控制_图片版/SVG/08_控制器完整流程.svg",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/mavros_avoidance_controller.cpp",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/astra_mavros_controller.yaml",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/launch/warehouse_exploration.launch",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/风险与安全控制_图片版/PNG/09_短退路与保护.png",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/风险与安全控制_图片版/SVG/09_短退路与保护.svg",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/mavros_avoidance_controller.cpp",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/warehouse_explorer.py",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/exploration_grid.py",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/warehouse_exploration.yaml",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/avoidance_fusion.cpp",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/风险与安全控制_图片版/PNG/10_规则小结与边界.png",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/风险与安全控制_图片版/SVG/10_规则小结与边界.svg",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/collision_risk.cpp",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/static_collision_risk.cpp",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/avoidance_fusion.cpp",
+      "passed": true
+    },
+    {
+      "check": "正文链接 /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/mavros_avoidance_controller.cpp",
+      "passed": true
+    },
+    {
+      "check": "明确二级接口边界",
+      "passed": true
+    },
+    {
+      "check": "明确失效零级",
+      "passed": true
+    },
+    {
+      "check": "未扩大安全结论",
+      "passed": true
+    },
+    {
+      "check": "Python语法 build_images.py",
+      "passed": true
+    },
+    {
+      "check": "Python语法 verify_images.py",
+      "passed": true
+    },
+    {
+      "check": "压缩包CRC",
+      "passed": true
+    },
+    {
+      "check": "压缩包逐字节 SVG/01_模块总览.svg",
+      "passed": true
+    },
+    {
+      "check": "压缩包逐字节 PNG/01_模块总览.png",
+      "passed": true
+    },
+    {
+      "check": "压缩包逐字节 SVG/02_动态风险原理.svg",
+      "passed": true
+    },
+    {
+      "check": "压缩包逐字节 PNG/02_动态风险原理.png",
+      "passed": true
+    },
+    {
+      "check": "压缩包逐字节 SVG/03_动态风险流程.svg",
+      "passed": true
+    },
+    {
+      "check": "压缩包逐字节 PNG/03_动态风险流程.png",
+      "passed": true
+    },
+    {
+      "check": "压缩包逐字节 SVG/04_静态距离与阈值.svg",
+      "passed": true
+    },
+    {
+      "check": "压缩包逐字节 PNG/04_静态距离与阈值.png",
+      "passed": true
+    },
+    {
+      "check": "压缩包逐字节 SVG/05_静态风险流程.svg",
+      "passed": true
+    },
+    {
+      "check": "压缩包逐字节 PNG/05_静态风险流程.png",
+      "passed": true
+    },
+    {
+      "check": "压缩包逐字节 SVG/06_风险融合规则.svg",
+      "passed": true
+    },
+    {
+      "check": "压缩包逐字节 PNG/06_风险融合规则.png",
+      "passed": true
+    },
+    {
+      "check": "压缩包逐字节 SVG/07_安全控制动作.svg",
+      "passed": true
+    },
+    {
+      "check": "压缩包逐字节 PNG/07_安全控制动作.png",
+      "passed": true
+    },
+    {
+      "check": "压缩包逐字节 SVG/08_控制器完整流程.svg",
+      "passed": true
+    },
+    {
+      "check": "压缩包逐字节 PNG/08_控制器完整流程.png",
+      "passed": true
+    },
+    {
+      "check": "压缩包逐字节 SVG/09_短退路与保护.svg",
+      "passed": true
+    },
+    {
+      "check": "压缩包逐字节 PNG/09_短退路与保护.png",
+      "passed": true
+    },
+    {
+      "check": "压缩包逐字节 SVG/10_规则小结与边界.svg",
+      "passed": true
+    },
+    {
+      "check": "压缩包逐字节 PNG/10_规则小结与边界.png",
+      "passed": true
+    },
+    {
+      "check": "压缩包文本同步 详细讲解与源码对应.md",
+      "passed": true
+    },
+    {
+      "check": "压缩包文本同步 内容与来源.json",
+      "passed": true
+    },
+    {
+      "check": "压缩包文本同步 生成核验.json",
+      "passed": true
+    },
+    {
+      "check": "压缩包文本同步 build_images.py",
+      "passed": true
+    }
+  ],
+  "scope": "图文/来源/链接/打包验证；未ROS编译、飞行或碰撞测试"
+}

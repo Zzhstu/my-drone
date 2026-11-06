@@ -1,0 +1,822 @@
+{
+  "source": "/home/a/AstraDroneOpen/simulation/astra_gazebo_worlds/cangku.world",
+  "source_sha256": "2ea8635e9f1cf6e50e7cb7238eb98e4abcec2e2523683a5304a1307b39736f11",
+  "generated_world": "/home/a/AstraDroneOpen/exploration_demo_runs/warehouse_20261003_222021_cangku.world",
+  "removed_saved_state": true,
+  "spawn_world": [
+    -6,
+    -4,
+    0.06
+  ],
+  "relative_goal": [
+    0,
+    10,
+    0
+  ],
+  "pedestrian_world": [
+    -8,
+    -4,
+    0
+  ],
+  "boxes": [
+    {
+      "name": "Untitled/Wall_0",
+      "center": [
+        -9.721200000000001,
+        -5.62554,
+        1.25
+      ],
+      "yaw": -1.5708,
+      "size": [
+        20.75,
+        0.15,
+        6.5
+      ]
+    },
+    {
+      "name": "Untitled/Wall_1",
+      "center": [
+        15.4538,
+        -15.925540000000002,
+        1.25
+      ],
+      "yaw": 0.0,
+      "size": [
+        50.5,
+        0.15,
+        6.5
+      ]
+    },
+    {
+      "name": "Untitled/Wall_2",
+      "center": [
+        40.6288,
+        -2.50054,
+        1.25
+      ],
+      "yaw": 1.5708,
+      "size": [
+        27.0,
+        0.15,
+        6.5
+      ]
+    },
+    {
+      "name": "Untitled/Wall_3",
+      "center": [
+        15.5788,
+        10.92446,
+        1.25
+      ],
+      "yaw": 3.14159,
+      "size": [
+        50.25,
+        0.15,
+        6.5
+      ]
+    },
+    {
+      "name": "Untitled/Wall_4",
+      "center": [
+        -9.471200000000001,
+        8.74946,
+        1.25
+      ],
+      "yaw": -1.5708,
+      "size": [
+        4.5,
+        0.15,
+        6.5
+      ]
+    },
+    {
+      "name": "shelf_aruco/shelf_base",
+      "center": [
+        -2.79273,
+        -8.21492,
+        0.9
+      ],
+      "yaw": 0.0,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone/shelf_base",
+      "center": [
+        -2.259103163831679,
+        -3.828389248594493,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone/shelf_base",
+      "center": [
+        -2.223763163831679,
+        1.1772707514055074,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0/shelf_base",
+      "center": [
+        -2.176223163831679,
+        6.590500751405507,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_1/shelf_base",
+      "center": [
+        0.891756836168321,
+        6.681600751405508,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_1_clone/shelf_base",
+      "center": [
+        3.955216836168321,
+        6.721400751405508,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_1_clone_0/shelf_base",
+      "center": [
+        6.699476836168322,
+        6.8246807514055075,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_1_clone_1/shelf_base",
+      "center": [
+        9.85611683616832,
+        6.715800751405507,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_1_clone_2/shelf_base",
+      "center": [
+        12.920466836168321,
+        6.611190751405507,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_1_clone_3/shelf_base",
+      "center": [
+        16.588666836168322,
+        6.475390751405508,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_1_clone_4/shelf_base",
+      "center": [
+        19.90056683616832,
+        6.551740751405507,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_1_clone_5/shelf_base",
+      "center": [
+        23.23926683616832,
+        6.335670751405508,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_1_clone_6/shelf_base",
+      "center": [
+        26.37726683616832,
+        6.4697607514055075,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_1_clone_7/shelf_base",
+      "center": [
+        30.13356683616832,
+        6.669950751405508,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_1_clone_8/shelf_base",
+      "center": [
+        33.543566836168324,
+        6.644620751405507,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_1_clone_9/shelf_base",
+      "center": [
+        36.81656683616832,
+        6.625860751405508,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone/shelf_base",
+      "center": [
+        0.6748498361683211,
+        0.9061907514055074,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0/shelf_base",
+      "center": [
+        3.629366836168321,
+        0.9024407514055073,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_1/shelf_base",
+      "center": [
+        6.4001268361683215,
+        0.8909407514055074,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_2/shelf_base",
+      "center": [
+        9.77211683616832,
+        0.7591407514055073,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_3/shelf_base",
+      "center": [
+        12.91246683616832,
+        0.5734207514055074,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_4/shelf_base",
+      "center": [
+        16.68446683616832,
+        0.9209907514055073,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_5/shelf_base",
+      "center": [
+        19.72566683616832,
+        1.0128107514055074,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_6/shelf_base",
+      "center": [
+        22.904266836168322,
+        1.1081807514055073,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_7/shelf_base",
+      "center": [
+        26.22066683616832,
+        1.1606107514055073,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_8/shelf_base",
+      "center": [
+        29.762366836168322,
+        0.6620807514055074,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_9/shelf_base",
+      "center": [
+        33.11816683616832,
+        0.5307207514055075,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_10/shelf_base",
+      "center": [
+        37.02736683616832,
+        0.6024207514055073,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone/shelf_base",
+      "center": [
+        0.4534068361683211,
+        -3.919119248594493,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_0/shelf_base",
+      "center": [
+        3.6338968361683213,
+        -4.0726092485944925,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_1/shelf_base",
+      "center": [
+        6.332476836168322,
+        -4.0017792485944925,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_2/shelf_base",
+      "center": [
+        9.53658683616832,
+        -4.070939248594493,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_3/shelf_base",
+      "center": [
+        12.88576683616832,
+        -4.2710892485944925,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_4/shelf_base",
+      "center": [
+        16.565666836168322,
+        -4.426379248594492,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_5/shelf_base",
+      "center": [
+        19.89626683616832,
+        -4.530529248594492,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_6/shelf_base",
+      "center": [
+        23.00086683616832,
+        -4.499999248594492,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_7/shelf_base",
+      "center": [
+        26.152766836168322,
+        -4.399949248594493,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_8/shelf_base",
+      "center": [
+        30.00086683616832,
+        -3.499999248594493,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_9/shelf_base",
+      "center": [
+        33.62186683616832,
+        -4.649699248594493,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_10/shelf_base",
+      "center": [
+        37.00086683616832,
+        -4.499999248594492,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_11/shelf_base",
+      "center": [
+        0.632038836168321,
+        -8.820329248594494,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_12/shelf_base",
+      "center": [
+        3.682256836168321,
+        -8.668509248594493,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_13/shelf_base",
+      "center": [
+        6.0008668361683215,
+        -8.499999248594493,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_14/shelf_base",
+      "center": [
+        8.86375683616832,
+        -8.433949248594493,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_15/shelf_base",
+      "center": [
+        12.00086683616832,
+        -8.499999248594493,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_16/shelf_base",
+      "center": [
+        16.53426683616832,
+        -8.718879248594494,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_17/shelf_base",
+      "center": [
+        20.17436683616832,
+        -9.092269248594492,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_18/shelf_base",
+      "center": [
+        22.93736683616832,
+        -9.187329248594493,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_19/shelf_base",
+      "center": [
+        25.80266683616832,
+        -9.197579248594494,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_20/shelf_base",
+      "center": [
+        29.382766836168322,
+        -9.389649248594493,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_21/shelf_base",
+      "center": [
+        32.81836683616832,
+        -9.661029248594494,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_22/shelf_base",
+      "center": [
+        36.43276683616832,
+        -9.272779248594492,
+        0.9
+      ],
+      "yaw": 1.57253,
+      "size": [
+        3.6,
+        0.6,
+        1.8
+      ]
+    }
+  ],
+  "note": "Original geometry preserved; saved simulation state removed and mesh URIs resolved. Human collision guard only; boxes are not provided to UAV navigation."
+}

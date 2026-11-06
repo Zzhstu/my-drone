@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect x="0" y="0" width="1600" height="900" fill="#FFFFFF" stroke="none" stroke-width="1.6"/>
+<text x="60" y="80.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="46" font-weight="700" fill="#15334C" text-anchor="start">地图记住的不只是一个点</text>
+<text x="63" y="125.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#657585" text-anchor="start">把空间分成15厘米小格，每个格子保留代表位置和观测记录。</text>
+<polyline points="60,151 1540,151" fill="none" stroke="#D5E0E6" stroke-width="1.2"/>
+<rect x="60" y="784" width="1480" height="62" fill="#EFF5F8" stroke="none" stroke-width="1.6"/>
+<text x="78" y="823.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="700" fill="#137B7E" text-anchor="start">核心规则</text>
+<text x="210" y="822.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">同一输入帧的密集点不会把一个格子立刻变成稳定结构。</text>
+<text x="60" y="878.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="17" font-weight="400" fill="#657585" text-anchor="start">现有源码规则 · 所有点云与场景小图为示意 · 非新增实验结果</text>
+<text x="1400" y="879.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="18" font-weight="400" fill="#657585" text-anchor="start">03 / 16</text>
+<rect x="60" y="211" width="570" height="520" fill="#FFFFFF" stroke="#15334C" stroke-width="1.6" stroke-dasharray="7 6"/>
+<rect x="78" y="196" width="131.9375" height="36" fill="#FFFFFF" stroke="none" stroke-width="1.6"/>
+<text x="90" y="227.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#15334C" text-anchor="start">当前一帧</text>
+<rect x="90" y="263" width="510" height="180" fill="#F0F0FF" stroke="#B3BFEA" stroke-width="1.6"/>
+<text x="106" y="307.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="28" font-weight="700" fill="#15334C" text-anchor="start">许多点落进同一小格</text>
+<text x="108" y="349.64" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">先求本帧代表位置，再更新一次命中。</text>
+<circle cx="128.0" cy="482.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="128.0" cy="509.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="128.0" cy="536.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="128.0" cy="563.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="161.84615384615384" cy="482.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="161.84615384615384" cy="509.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="161.84615384615384" cy="536.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="161.84615384615384" cy="563.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="195.69230769230768" cy="482.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="195.69230769230768" cy="509.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="195.69230769230768" cy="536.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="195.69230769230768" cy="563.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="229.53846153846155" cy="482.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="229.53846153846155" cy="509.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="229.53846153846155" cy="536.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="229.53846153846155" cy="563.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="263.38461538461536" cy="482.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="263.38461538461536" cy="509.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="263.38461538461536" cy="536.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="263.38461538461536" cy="563.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="297.2307692307692" cy="482.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="297.2307692307692" cy="509.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="297.2307692307692" cy="536.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="297.2307692307692" cy="563.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="331.0769230769231" cy="482.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="331.0769230769231" cy="509.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="331.0769230769231" cy="536.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="331.0769230769231" cy="563.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="364.9230769230769" cy="482.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="364.9230769230769" cy="509.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="364.9230769230769" cy="536.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="364.9230769230769" cy="563.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="398.7692307692308" cy="482.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="398.7692307692308" cy="509.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="398.7692307692308" cy="536.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="398.7692307692308" cy="563.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="432.61538461538464" cy="482.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="432.61538461538464" cy="509.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="432.61538461538464" cy="536.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="432.61538461538464" cy="563.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="466.46153846153845" cy="482.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="466.46153846153845" cy="509.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="466.46153846153845" cy="536.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="466.46153846153845" cy="563.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="500.3076923076923" cy="482.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="500.3076923076923" cy="509.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="500.3076923076923" cy="536.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="500.3076923076923" cy="563.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<rect x="362.0" y="475" width="16" height="18" fill="none" stroke="#9BAAB6" stroke-width="1.6"/>
+<rect x="362.0" y="493" width="16" height="18" fill="none" stroke="#9BAAB6" stroke-width="1.6"/>
+<rect x="362.0" y="511" width="16" height="18" fill="none" stroke="#9BAAB6" stroke-width="1.6"/>
+<rect x="378.0" y="475" width="16" height="18" fill="none" stroke="#9BAAB6" stroke-width="1.6"/>
+<rect x="378.0" y="493" width="16" height="18" fill="none" stroke="#9BAAB6" stroke-width="1.6"/>
+<rect x="378.0" y="511" width="16" height="18" fill="none" stroke="#9BAAB6" stroke-width="1.6"/>
+<rect x="394.0" y="475" width="16" height="18" fill="none" stroke="#9BAAB6" stroke-width="1.6"/>
+<rect x="394.0" y="493" width="16" height="18" fill="none" stroke="#9BAAB6" stroke-width="1.6"/>
+<rect x="394.0" y="511" width="16" height="18" fill="none" stroke="#9BAAB6" stroke-width="1.6"/>
+<rect x="410.0" y="475" width="16" height="18" fill="none" stroke="#9BAAB6" stroke-width="1.6"/>
+<rect x="410.0" y="493" width="16" height="18" fill="none" stroke="#9BAAB6" stroke-width="1.6"/>
+<rect x="410.0" y="511" width="16" height="18" fill="none" stroke="#9BAAB6" stroke-width="1.6"/>
+<polyline points="637,440 696,440" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="696.00,440.00 686.00,444.80 686.00,435.20" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<rect x="710" y="211" width="830" height="520" fill="#FFFFFF" stroke="#15334C" stroke-width="1.6" stroke-dasharray="7 6"/>
+<rect x="728" y="196" width="158.921875" height="36" fill="#FFFFFF" stroke="none" stroke-width="1.6"/>
+<text x="740" y="227.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#15334C" text-anchor="start">格子的记录</text>
+<rect x="738" y="266" width="371" height="180" fill="#F0F0FF" stroke="#B3BFEA" stroke-width="1.6"/>
+<text x="754" y="310.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="28" font-weight="700" fill="#15334C" text-anchor="start">代表位置</text>
+<text x="756" y="352.64" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">随新观测逐步更新</text>
+<rect x="1140" y="266" width="371" height="180" fill="#FFF3E7" stroke="#E6B988" stroke-width="1.6"/>
+<text x="1156" y="310.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="28" font-weight="700" fill="#15334C" text-anchor="start">命中次数</text>
+<text x="1158" y="352.64" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">用于持续与稳定筛选</text>
+<rect x="738" y="486" width="371" height="180" fill="#EEF8F1" stroke="#A6CCB7" stroke-width="1.6"/>
+<text x="754" y="530.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="28" font-weight="700" fill="#15334C" text-anchor="start">最近命中时间</text>
+<text x="756" y="572.64" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">判断是否刚被重新看到</text>
+<rect x="1140" y="486" width="371" height="180" fill="#FFF0F5" stroke="#DCB0C3" stroke-width="1.6"/>
+<text x="1156" y="530.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="28" font-weight="700" fill="#15334C" text-anchor="start">已空证据次数</text>
+<text x="1158" y="572.64" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">达到条件才授权撤销</text>
+</svg>

@@ -1,0 +1,3 @@
+长期地图可帮助绕路，但此刻附近空间需要新扫描复查。静态风险先保留飞行高度附近的点，用邻域支持和稳健距离削弱孤立噪点，并在已跟踪动态目标周围作短时遮罩。这样动态目标交给动态风险处理，静态风险尽量关注近场环境净空。
+
+当前仓库配置把自身水平半径零点四米与额外余量相加。普通安全余量零点三米，对应中心到障碍零点七米；紧急余量零点二五米，对应零点六五米；退出余量零点三五米，对应零点七五米。不同触发与退出条件减少反复切换。这是静态风险距离，不能直接替代规划网格的膨胀和未知空间检查。源码是/home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/static_collision_risk.cpp，默认在config/static_risk.yaml，仓库覆盖在config/warehouse_navigation.yaml。

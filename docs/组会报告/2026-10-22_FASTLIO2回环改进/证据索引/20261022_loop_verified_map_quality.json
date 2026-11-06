@@ -1,0 +1,228 @@
+{
+  "version": 1,
+  "runs": [
+    {
+      "replay_report": "/home/a/AstraDroneOpen/evaluation/half_warehouse/reports/20261022_loop_raw_mapper_replay.json",
+      "pcd": "/home/a/AstraDroneOpen/evaluation/half_warehouse/reports/20261022_loop_raw_mapper_map.pcd",
+      "points": 116608,
+      "pcd_sha256": "eed0261cda2429d9c3377e3fa8a9cae3ab842016aca92c2f3d8432a7aa8f5194",
+      "source_bag_sha256": "dd74142e2f2866bf0190b3ee6a5cc73a0392ddbc5b24d40c6eae975d92c7d4cf",
+      "every_scan_acknowledged": true,
+      "input_counts": {
+        "/uav1/fastlio/registered_scan": 4181,
+        "/uav1/fastlio/odom": 4181,
+        "/uav1/semantic_dynamic_objects": 4181
+      },
+      "ghost_status": {
+        "enabled": true,
+        "pending_voxels": 7,
+        "pending_map_voxels": 7,
+        "pending_unmapped_voxels": 0,
+        "static_boundary_candidates": 1,
+        "actionable_voxels": 7,
+        "cleared_by_free_evidence": 487,
+        "reobserved_occupied": 570,
+        "evicted_unresolved": 0,
+        "history_records": 1005,
+        "history_unresolved": 0,
+        "history_evicted": 0,
+        "history_overflow": 0
+      },
+      "all_points": {
+        "points": 116608,
+        "mean_m": 0.01941497827557035,
+        "rmse_m": 0.03946433894040547,
+        "median_m": 0.008087017334591856,
+        "p95_m": 0.07165468945973637,
+        "p99_m": 0.08422616428633264,
+        "support": [
+          {
+            "tolerance_m": 0.05,
+            "supported_points": 102603,
+            "unsupported_points": 14005,
+            "ratio": 0.8798967480790341
+          },
+          {
+            "tolerance_m": 0.1,
+            "supported_points": 116216,
+            "unsupported_points": 392,
+            "ratio": 0.9966383095499451
+          },
+          {
+            "tolerance_m": 0.15,
+            "supported_points": 116499,
+            "unsupported_points": 109,
+            "ratio": 0.9990652442371021
+          },
+          {
+            "tolerance_m": 0.25,
+            "supported_points": 116507,
+            "unsupported_points": 101,
+            "ratio": 0.9991338501646543
+          }
+        ]
+      },
+      "height_band": {
+        "points": 33133,
+        "mean_m": 0.044570049127681234,
+        "rmse_m": 0.06992267518419618,
+        "median_m": 0.041225825297987795,
+        "p95_m": 0.08182335106819988,
+        "p99_m": 0.10039468478283323,
+        "support": [
+          {
+            "tolerance_m": 0.05,
+            "supported_points": 20846,
+            "unsupported_points": 12287,
+            "ratio": 0.6291612591675972
+          },
+          {
+            "tolerance_m": 0.1,
+            "supported_points": 32779,
+            "unsupported_points": 354,
+            "ratio": 0.98931578788519
+          },
+          {
+            "tolerance_m": 0.15,
+            "supported_points": 33032,
+            "unsupported_points": 101,
+            "ratio": 0.9969516795943622
+          },
+          {
+            "tolerance_m": 0.25,
+            "supported_points": 33032,
+            "unsupported_points": 101,
+            "ratio": 0.9969516795943622
+          }
+        ]
+      },
+      "ground_signed_height_residuals": [
+        {
+          "name": "ground_plane/link",
+          "points": 44618,
+          "median_signed_z_m": -0.006299015040725331
+        }
+      ],
+      "unresolved_includes": [
+        {
+          "uri": "model://person_standing",
+          "name": "0"
+        }
+      ],
+      "reference_world_sha256": "c3fb84993ac329c8162b0a0bcdb4636a8e7457c8cd317d1a868aab5c493705d0",
+      "alignment_sha256": "f3bc04272fec7844d7802e03ef1b35b19a0d464560f9b0b6de3d3a007cce916e"
+    },
+    {
+      "replay_report": "/home/a/AstraDroneOpen/evaluation/half_warehouse/reports/20261022_loop_verified_mapper_replay.json",
+      "pcd": "/home/a/AstraDroneOpen/evaluation/half_warehouse/reports/20261022_loop_verified_mapper_map.pcd",
+      "points": 116608,
+      "pcd_sha256": "eed0261cda2429d9c3377e3fa8a9cae3ab842016aca92c2f3d8432a7aa8f5194",
+      "source_bag_sha256": "dd74142e2f2866bf0190b3ee6a5cc73a0392ddbc5b24d40c6eae975d92c7d4cf",
+      "every_scan_acknowledged": true,
+      "input_counts": {
+        "/uav1/fastlio/registered_scan": 4181,
+        "/uav1/fastlio/odom": 4181,
+        "/uav1/semantic_dynamic_objects": 4181
+      },
+      "ghost_status": {
+        "enabled": true,
+        "pending_voxels": 7,
+        "pending_map_voxels": 7,
+        "pending_unmapped_voxels": 0,
+        "static_boundary_candidates": 1,
+        "actionable_voxels": 7,
+        "cleared_by_free_evidence": 487,
+        "reobserved_occupied": 570,
+        "evicted_unresolved": 0,
+        "history_records": 1005,
+        "history_unresolved": 0,
+        "history_evicted": 0,
+        "history_overflow": 0
+      },
+      "all_points": {
+        "points": 116608,
+        "mean_m": 0.01941497827557035,
+        "rmse_m": 0.03946433894040547,
+        "median_m": 0.008087017334591856,
+        "p95_m": 0.07165468945973637,
+        "p99_m": 0.08422616428633264,
+        "support": [
+          {
+            "tolerance_m": 0.05,
+            "supported_points": 102603,
+            "unsupported_points": 14005,
+            "ratio": 0.8798967480790341
+          },
+          {
+            "tolerance_m": 0.1,
+            "supported_points": 116216,
+            "unsupported_points": 392,
+            "ratio": 0.9966383095499451
+          },
+          {
+            "tolerance_m": 0.15,
+            "supported_points": 116499,
+            "unsupported_points": 109,
+            "ratio": 0.9990652442371021
+          },
+          {
+            "tolerance_m": 0.25,
+            "supported_points": 116507,
+            "unsupported_points": 101,
+            "ratio": 0.9991338501646543
+          }
+        ]
+      },
+      "height_band": {
+        "points": 33133,
+        "mean_m": 0.044570049127681234,
+        "rmse_m": 0.06992267518419618,
+        "median_m": 0.041225825297987795,
+        "p95_m": 0.08182335106819988,
+        "p99_m": 0.10039468478283323,
+        "support": [
+          {
+            "tolerance_m": 0.05,
+            "supported_points": 20846,
+            "unsupported_points": 12287,
+            "ratio": 0.6291612591675972
+          },
+          {
+            "tolerance_m": 0.1,
+            "supported_points": 32779,
+            "unsupported_points": 354,
+            "ratio": 0.98931578788519
+          },
+          {
+            "tolerance_m": 0.15,
+            "supported_points": 33032,
+            "unsupported_points": 101,
+            "ratio": 0.9969516795943622
+          },
+          {
+            "tolerance_m": 0.25,
+            "supported_points": 33032,
+            "unsupported_points": 101,
+            "ratio": 0.9969516795943622
+          }
+        ]
+      },
+      "ground_signed_height_residuals": [
+        {
+          "name": "ground_plane/link",
+          "points": 44618,
+          "median_signed_z_m": -0.006299015040725331
+        }
+      ],
+      "unresolved_includes": [
+        {
+          "uri": "model://person_standing",
+          "name": "0"
+        }
+      ],
+      "reference_world_sha256": "c3fb84993ac329c8162b0a0bcdb4636a8e7457c8cd317d1a868aab5c493705d0",
+      "alignment_sha256": "f3bc04272fec7844d7802e03ef1b35b19a0d464560f9b0b6de3d3a007cce916e"
+    }
+  ],
+  "scope": "Exact finite saved maintained-map points to static collision primitive boundaries. Fixed original initial alignment; no ICP, truth cleanup, cropping, or fitted offset. Geometry consistency proxy, not per-point ghost classification accuracy or completeness. Pending ghost voxels remain reported; a graph keyframe union alone is not a cleaned map."
+}

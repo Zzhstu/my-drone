@@ -1,0 +1,19 @@
+{
+  "id": "imx577_10p5mm_f3p6",
+  "source": "User supplied camera specification image, 2026-11-04; nominal optics, not a measured calibration",
+  "lens_type": "fixed focal length",
+  "focal_length_mm": 10.5,
+  "f_number": 3.6,
+  "horizontal_fov_deg": 33.0,
+  "nominal_vertical_fov_deg": 25.0,
+  "nominal_diagonal_fov_deg": 41.0,
+  "image_semi_dimensions_mm": {"horizontal": 3.143, "vertical": 2.356, "diagonal": 3.928},
+  "tv_distortion_spec": "<-1%; scalar TV distortion specification is not a radial/tangential calibration",
+  "relative_illumination_spec": ">80%",
+  "operating_temperature_c": [-20, 60],
+  "sensor": {"type": "CMOS", "model": "IMX577", "effective_pixels_mp": 12.33, "optical_format": "1/2.3 inch"},
+  "actual_output_resolution": null,
+  "actual_frame_rate_hz": null,
+  "distortion_coefficients": null,
+  "simulation_scope": "Rectified ideal square-pixel pinhole, authoritative horizontal FOV33deg; vertical/diagonal follow output aspect ratio. Aperture/illumination/temperature/CMOS readout are metadata only. Existing mount, housing and mass are placeholders, not measured IMX577 hardware."
+}

@@ -1,0 +1,41 @@
+# Experimental observation policy only. No speed, geometry, safety or return-budget overrides.
+# Existing demos keep legacy by default; this file is loaded only for joint policy.
+warehouse_explorer:
+  joint_selection_enabled: true
+  joint_strategy: channel_verification
+  joint_decision_hz: 1.0
+  joint_frontier_candidate_limit: 24
+  joint_ghost_group_limit: 12
+  joint_candidate_azimuth_samples: 16
+  joint_view_ranges_m:
+  - 1.5
+  - 2.5
+  - 4.0
+  joint_retained_views_per_group: 8
+  joint_total_candidate_limit: 48
+  joint_region_size_m: 2.5
+  joint_region_limit: 256
+  joint_topology_update_seconds: 5.0
+  joint_lookahead_depth: 2
+  joint_lookahead_branching: 6
+  joint_lookahead_discount: 0.7
+  joint_weight_area: 0.5
+  joint_weight_verify: 0.3
+  joint_weight_connectivity: 0.2
+  joint_area_scale_m2: 40.0  # v2: avoid clipping most measured frontier gains at 10 m2
+  joint_verify_group_scale: 3.0
+  joint_connectivity_area_scale_m2: 20.0
+  joint_min_evidence_quality: 0.15
+  joint_history_review_scale: 0.25
+  joint_score_epsilon_seconds: 2.0
+  joint_target_min_hold_seconds: 3.0
+  joint_switch_improvement_ratio: 0.2
+  joint_ghost_action_budget_seconds: 90.0
+  joint_ghost_cooldown_seconds: 30.0
+  joint_min_fresh_view_scans: 8
+  joint_max_view_seconds: 6.0
+  joint_low_gain_windows: 2
+  joint_extra_compute_budget_ms: 50.0
+  joint_replan_on_safety_invalidation: true
+  ghost_endurance_revisit: false
+  ghost_no_evidence_extra_attempts: 0

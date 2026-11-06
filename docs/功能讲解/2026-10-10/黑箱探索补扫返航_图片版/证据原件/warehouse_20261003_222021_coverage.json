@@ -1,0 +1,595 @@
+{
+  "scope": "exposed collision-box SHELF SIDE surfaces in declared world height band; not full visual mesh, unreachable/occluded sides stay in denominator",
+  "sampling_step_m": 0.3,
+  "euclidean_tolerance_m": 0.25,
+  "height_world": [
+    0.25,
+    1.9
+  ],
+  "alignment_note": "Evaluator-only initial pose alignment; ModelStates has no stamp, receipt pairing <=50ms; no long-term SLAM drift correction, not planner input",
+  "reference_samples": 10192,
+  "supported_samples": 9267,
+  "shelf_side_coverage": 0.9092425431711146,
+  "minimum_rack_coverage": 0.29591836734693877,
+  "acceptance_total_threshold": 0.95,
+  "acceptance_each_rack_threshold": 0.9,
+  "shelf_side_acceptance": false,
+  "full_3d_map_complete": false,
+  "racks": [
+    {
+      "name": "shelf_aruco/shelf_base",
+      "center_world": [
+        -2.79273,
+        -8.21492,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 196,
+      "coverage": 1.0
+    },
+    {
+      "name": "shelf_aruco_clone/shelf_base",
+      "center_world": [
+        -2.259103163831679,
+        -3.828389248594493,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 196,
+      "coverage": 1.0
+    },
+    {
+      "name": "shelf_aruco_clone_clone/shelf_base",
+      "center_world": [
+        -2.223763163831679,
+        1.1772707514055074,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 196,
+      "coverage": 1.0
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0/shelf_base",
+      "center_world": [
+        -2.176223163831679,
+        6.590500751405507,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 196,
+      "coverage": 1.0
+    },
+    {
+      "name": "shelf_aruco_clone_1/shelf_base",
+      "center_world": [
+        0.891756836168321,
+        6.681600751405508,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 196,
+      "coverage": 1.0
+    },
+    {
+      "name": "shelf_aruco_clone_1_clone/shelf_base",
+      "center_world": [
+        3.955216836168321,
+        6.721400751405508,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 196,
+      "coverage": 1.0
+    },
+    {
+      "name": "shelf_aruco_clone_1_clone_0/shelf_base",
+      "center_world": [
+        6.699476836168322,
+        6.8246807514055075,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 195,
+      "coverage": 0.9948979591836735
+    },
+    {
+      "name": "shelf_aruco_clone_1_clone_1/shelf_base",
+      "center_world": [
+        9.85611683616832,
+        6.715800751405507,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 195,
+      "coverage": 0.9948979591836735
+    },
+    {
+      "name": "shelf_aruco_clone_1_clone_2/shelf_base",
+      "center_world": [
+        12.920466836168321,
+        6.611190751405507,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 196,
+      "coverage": 1.0
+    },
+    {
+      "name": "shelf_aruco_clone_1_clone_3/shelf_base",
+      "center_world": [
+        16.588666836168322,
+        6.475390751405508,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 193,
+      "coverage": 0.9846938775510204
+    },
+    {
+      "name": "shelf_aruco_clone_1_clone_4/shelf_base",
+      "center_world": [
+        19.90056683616832,
+        6.551740751405507,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 194,
+      "coverage": 0.9897959183673469
+    },
+    {
+      "name": "shelf_aruco_clone_1_clone_5/shelf_base",
+      "center_world": [
+        23.23926683616832,
+        6.335670751405508,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 181,
+      "coverage": 0.923469387755102
+    },
+    {
+      "name": "shelf_aruco_clone_1_clone_6/shelf_base",
+      "center_world": [
+        26.37726683616832,
+        6.4697607514055075,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 178,
+      "coverage": 0.9081632653061225
+    },
+    {
+      "name": "shelf_aruco_clone_1_clone_7/shelf_base",
+      "center_world": [
+        30.13356683616832,
+        6.669950751405508,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 108,
+      "coverage": 0.5510204081632653
+    },
+    {
+      "name": "shelf_aruco_clone_1_clone_8/shelf_base",
+      "center_world": [
+        33.543566836168324,
+        6.644620751405507,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 156,
+      "coverage": 0.7959183673469388
+    },
+    {
+      "name": "shelf_aruco_clone_1_clone_9/shelf_base",
+      "center_world": [
+        36.81656683616832,
+        6.625860751405508,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 117,
+      "coverage": 0.5969387755102041
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone/shelf_base",
+      "center_world": [
+        0.6748498361683211,
+        0.9061907514055074,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 196,
+      "coverage": 1.0
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0/shelf_base",
+      "center_world": [
+        3.629366836168321,
+        0.9024407514055073,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 196,
+      "coverage": 1.0
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_1/shelf_base",
+      "center_world": [
+        6.4001268361683215,
+        0.8909407514055074,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 196,
+      "coverage": 1.0
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_2/shelf_base",
+      "center_world": [
+        9.77211683616832,
+        0.7591407514055073,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 196,
+      "coverage": 1.0
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_3/shelf_base",
+      "center_world": [
+        12.91246683616832,
+        0.5734207514055074,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 196,
+      "coverage": 1.0
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_4/shelf_base",
+      "center_world": [
+        16.68446683616832,
+        0.9209907514055073,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 196,
+      "coverage": 1.0
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_5/shelf_base",
+      "center_world": [
+        19.72566683616832,
+        1.0128107514055074,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 194,
+      "coverage": 0.9897959183673469
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_6/shelf_base",
+      "center_world": [
+        22.904266836168322,
+        1.1081807514055073,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 186,
+      "coverage": 0.9489795918367347
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_7/shelf_base",
+      "center_world": [
+        26.22066683616832,
+        1.1606107514055073,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 183,
+      "coverage": 0.9336734693877551
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_8/shelf_base",
+      "center_world": [
+        29.762366836168322,
+        0.6620807514055074,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 180,
+      "coverage": 0.9183673469387755
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_9/shelf_base",
+      "center_world": [
+        33.11816683616832,
+        0.5307207514055075,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 99,
+      "coverage": 0.5051020408163265
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_10/shelf_base",
+      "center_world": [
+        37.02736683616832,
+        0.6024207514055073,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 58,
+      "coverage": 0.29591836734693877
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone/shelf_base",
+      "center_world": [
+        0.4534068361683211,
+        -3.919119248594493,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 196,
+      "coverage": 1.0
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_0/shelf_base",
+      "center_world": [
+        3.6338968361683213,
+        -4.0726092485944925,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 196,
+      "coverage": 1.0
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_1/shelf_base",
+      "center_world": [
+        6.332476836168322,
+        -4.0017792485944925,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 196,
+      "coverage": 1.0
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_2/shelf_base",
+      "center_world": [
+        9.53658683616832,
+        -4.070939248594493,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 196,
+      "coverage": 1.0
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_3/shelf_base",
+      "center_world": [
+        12.88576683616832,
+        -4.2710892485944925,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 196,
+      "coverage": 1.0
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_4/shelf_base",
+      "center_world": [
+        16.565666836168322,
+        -4.426379248594492,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 189,
+      "coverage": 0.9642857142857143
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_5/shelf_base",
+      "center_world": [
+        19.89626683616832,
+        -4.530529248594492,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 194,
+      "coverage": 0.9897959183673469
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_6/shelf_base",
+      "center_world": [
+        23.00086683616832,
+        -4.499999248594492,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 196,
+      "coverage": 1.0
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_7/shelf_base",
+      "center_world": [
+        26.152766836168322,
+        -4.399949248594493,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 196,
+      "coverage": 1.0
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_8/shelf_base",
+      "center_world": [
+        30.00086683616832,
+        -3.499999248594493,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 165,
+      "coverage": 0.8418367346938775
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_9/shelf_base",
+      "center_world": [
+        33.62186683616832,
+        -4.649699248594493,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 109,
+      "coverage": 0.5561224489795918
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_10/shelf_base",
+      "center_world": [
+        37.00086683616832,
+        -4.499999248594492,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 108,
+      "coverage": 0.5510204081632653
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_11/shelf_base",
+      "center_world": [
+        0.632038836168321,
+        -8.820329248594494,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 196,
+      "coverage": 1.0
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_12/shelf_base",
+      "center_world": [
+        3.682256836168321,
+        -8.668509248594493,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 196,
+      "coverage": 1.0
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_13/shelf_base",
+      "center_world": [
+        6.0008668361683215,
+        -8.499999248594493,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 196,
+      "coverage": 1.0
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_14/shelf_base",
+      "center_world": [
+        8.86375683616832,
+        -8.433949248594493,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 196,
+      "coverage": 1.0
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_15/shelf_base",
+      "center_world": [
+        12.00086683616832,
+        -8.499999248594493,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 195,
+      "coverage": 0.9948979591836735
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_16/shelf_base",
+      "center_world": [
+        16.53426683616832,
+        -8.718879248594494,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 189,
+      "coverage": 0.9642857142857143
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_17/shelf_base",
+      "center_world": [
+        20.17436683616832,
+        -9.092269248594492,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 185,
+      "coverage": 0.9438775510204082
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_18/shelf_base",
+      "center_world": [
+        22.93736683616832,
+        -9.187329248594493,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 194,
+      "coverage": 0.9897959183673469
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_19/shelf_base",
+      "center_world": [
+        25.80266683616832,
+        -9.197579248594494,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 196,
+      "coverage": 1.0
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_20/shelf_base",
+      "center_world": [
+        29.382766836168322,
+        -9.389649248594493,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 184,
+      "coverage": 0.9387755102040817
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_21/shelf_base",
+      "center_world": [
+        32.81836683616832,
+        -9.661029248594494,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 137,
+      "coverage": 0.6989795918367347
+    },
+    {
+      "name": "shelf_aruco_clone_clone_0_clone_0_clone_22/shelf_base",
+      "center_world": [
+        36.43276683616832,
+        -9.272779248594492,
+        0.9
+      ],
+      "reference_samples": 196,
+      "supported_samples": 101,
+      "coverage": 0.5153061224489796
+    }
+  ],
+  "pcd": "/home/a/AstraDroneOpen/exploration_demo_runs/warehouse_20261003_222021_final_map.pcd",
+  "scene": "/home/a/AstraDroneOpen/exploration_demo_runs/warehouse_20261003_222021_scene.json",
+  "map_points": 284418
+}

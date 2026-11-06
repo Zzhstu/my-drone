@@ -1,0 +1,46 @@
+enable_control: true       # 仿真闭环开关；真机测试前必须先改为 false 做预览。
+auto_arm: true             # 自动请求 OFFBOARD 并解锁，仅用于 PX4 SITL。
+auto_goal: true
+# true 时最终目标先进入 A*，控制器只追踪规划器给出的前视航点。
+use_path_planner: true
+final_goal_topic: /move_base_simple/goal
+planner_waypoint_topic: /uav1/planner/waypoint
+# relative: 目标是起飞后 FAST-LIO 位置的偏移量；absolute: 目标是固定 map 坐标。
+auto_goal_mode: relative
+relative_goal_x: 0.0
+relative_goal_y: 12.0      # 延长到约 34 s 航行；前半段与 PedSim 的 x 向行人轨迹交叉。
+# 使用 absolute 模式时修改下面三项。Z 是 FAST-LIO map 高度，不是 MAVROS 原点高度。
+# 起飞仍按 home + takeoff_height；完成起飞后才跟踪 map 目标。
+absolute_goal_x: 0.0
+absolute_goal_y: 12.0
+absolute_goal_z: 1.5
+takeoff_height: 1.5
+prestream_seconds: 3.0
+# 初始化门控：只在地面连续稳定后取起飞基准，单位秒/米。
+# 不要用“第一次收到pose”或强制解锁代替它；负Z本身是合法局部坐标。
+ground_stable_seconds: 3.0
+ground_z_range: 0.12
+ground_xy_range: 0.25
+takeoff_settle_seconds: 1.0 # 高度到达且PX4确认在空中后连续驻留，再允许探索
+goal_delay_seconds: 3.0
+position_kp: 0.45
+altitude_kp: 0.8
+max_navigation_speed: 0.35 # 为点云多帧确认和 PX4 刹停预留距离。
+max_total_speed: 0.65      # 限制紧急横移，避免避障后产生过大的惯性偏航。
+max_vertical_speed: 0.5
+avoidance_gain: 1.0        # level 1 以横向避障为主；最终速度仍受 0.65 m/s 限制。
+level1_navigation_scale: 0.15 # level 1 时只保留 15% 目标速度，防止继续冲向交叉点。
+stop_on_level1: true      # 交叉行人场景优先悬停让行；level 2 仍主动逃逸。
+# 静态货架不会自行走开：仅当风险来源确定为 static_avoid、动态风险为0、
+# 新扫描足够新鲜且退让路径净空检查通过时，低速远离货架直到预警解除。
+# 不缩小原有风险阈值。设0可恢复静态预警一律停车；仅供SITL，专项回归待完成。
+static_recovery_speed: 0.15  # m/s，上限0.20；不是追踪目标的速度
+recovery_surface_distance: 0.65 # m，机心到表面距离，硬下限0.65
+recovery_horizon: 1.0       # s，检查退让线段与周围扫描点的距离
+goal_tolerance: 0.25        # 最终目标的悬停容差，不用于规划器的中间拐点。
+waypoint_tolerance: 0.03    # 中间航点应更精确跟踪，否则未过拐角就HOLD会形成死锁。
+takeoff_tolerance: 0.12
+risk_timeout: 0.45         # 感知链超时立即停止 XY 运动。
+odom_timeout: 0.35
+state_timeout: 2.5         # 容忍1Hz心跳抖动；断流后取消起飞确认并发布零速度
+publish_rate: 30.0

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" font-family="Microsoft YaHei, Arial, sans-serif" font-size="24" data-pptx-page-role="content">
+<g id="p22-bg" data-pptx-bounds="0 0 1280 720" data-pptx-role="background"><rect width="1280" height="720" fill="#F7F9FB"/></g>
+<g id="p22-title" data-pptx-bounds="52 42 1176 120"><text x="52" y="92" font-size="42" font-weight="bold" fill="#16334A">如何讲清我们的工作</text><text x="52" y="145" font-size="28" fill="#617382">把各模块怎样协作讲清楚，而不是只说“实现了避障”。</text></g>
+<g id="p22-statement" data-pptx-bounds="52 206 624 420"><text x="52" y="238" font-size="28" fill="#16334A">可以这样介绍</text><text x="52" y="290" fill="#253746"><tspan x="52">首先，用激光和惯性测量确定位置，</tspan><tspan x="52" dy="36">让扫描、地图和控制使用同一参考系。</tspan><tspan x="52" dy="56">其次，持续维护空间证据：</tspan><tspan x="52" dy="36">保留稳定结构，重新检查旧占用，</tspan><tspan x="52" dy="36">让局部新变化影响后续路线。</tspan><tspan x="52" dy="56">最后，目标导航或探索负责选下一站；</tspan><tspan x="52" dy="36">即时安全与控制器决定此刻能否行动。</tspan></text><text x="52" y="615" font-size="18" fill="#617382">详细中文解释、每项规则和源码路径都在配套文档中。</text></g>
+<g id="p22-conclusion" data-pptx-bounds="732 206 496 420"><rect x="732" y="206" width="496" height="420" rx="12" fill="#EAF3F2"/><text x="980" y="260" text-anchor="middle" font-size="28" fill="#16334A">位置 → 地图证据 → 安全行动</text>
+<g id="p22-summary-arrow" data-pptx-authoring="preset" data-pptx-object="shape" data-pptx-prst="rightArrow" data-pptx-frame="792 286 378 70" fill="#168B80" stroke="none">
+<path d="M 792 303.5 L 1135 303.5 L 1135 286 L 1170 321 L 1135 356 L 1135 338.5 L 792 338.5 Z"/>
+</g>
+<text x="778" y="407" font-size="28" fill="#D67B29">实现事实与效果主张分开</text><text x="778" y="455" fill="#253746"><tspan x="778">这份材料说明现有代码机制。</tspan><tspan x="778" dy="36">是否全图完整、动态识别多准，</tspan><tspan x="778" dy="36">是否无碰撞、机载速度够快，</tspan><tspan x="778" dy="36">仍需对应实验，不能由流程图证明。</tspan></text></g>
+<g id="p22-footer" data-pptx-bounds="52 661 1176 30"><line x1="52" y1="660" x2="1228" y2="660" stroke="#D3DEE5"/><text x="52" y="686" font-size="16" fill="#617382">已有方法的工程协作 · 本轮只制作讲解材料，未修改飞行程序</text><text x="1228" y="686" text-anchor="end" font-size="16" fill="#617382">22 / 22</text></g>
+</svg>

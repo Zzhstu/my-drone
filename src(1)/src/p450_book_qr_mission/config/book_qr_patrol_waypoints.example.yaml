@@ -1,0 +1,62 @@
+mission:
+  takeoff_height: 1.60
+  takeoff_wait_sec: 5.0
+  waypoint_reach_xy_tol: 0.18
+  waypoint_reach_z_tol: 0.12
+  waypoint_reach_yaw_tol_deg: 8.0
+  command_rate_hz: 10.0
+  decode_interval_sec: 0.20
+  success_repeat_threshold: 2
+  abort_on_scan_fail: false
+  land_after_finish: true
+  gimbal_settle_sec: 1.0
+  show_debug_window: true
+  center_distance_weight: 0.002
+
+ # 新增的，控制“保存前预览窗口”
+  show_snapshot_preview: true
+  snapshot_preview_wait_ms: 1200
+  snapshot_preview_window_name: "book_qr_patrol_snapshot_preview"
+
+  # 新增的，控制扫描结束后的自动降落
+  finish_hold_sec: 2.0
+  land_timeout_sec: 20.0
+  land_min_z: 0.15
+
+  # 吊舱保持固定，不跟随目标。无人机自己偏航转向。
+  gimbal_fixed_roll_deg: 0.0
+  gimbal_fixed_pitch_deg: 0.0
+  gimbal_fixed_yaw_deg: 0.0
+
+  save_root: "~/p450_results/book_qr_patrol"
+  # 指向 book_qr_demo/output，便于最终结果与预期二维码文本做匹配检查。
+  expected_txt_dir: "~/book_qr_demo/output"
+
+waypoints:
+  # 下面只是示例格式，不是你的真实场地坐标。
+  # 建议先手动飞到每个观察位，用 pose_sampler.py 采样后替换。
+
+  # 起飞后先到白板正面左侧起始观察位
+  
+  - {name: front_left, stage: front, scan: true, x: 1.005, y: 0.382, z: 1.390, yaw_deg: 6.59, hold_sec: 1.5, scan_timeout_sec: 6.0, note: '白板正面左二维码'}
+  - {name: front_mid,   stage: front,   scan: true,  x: 1.001, y: -1.187, z: 1.360, yaw_deg: 6.63, hold_sec: 1.5, scan_timeout_sec: 6.0, note: '白板正面中二维码'}
+  - {name: front_right, stage: front,   scan: true,  x: 1.027, y: -2.164, z: 1.326, yaw_deg: 6.45, hold_sec: 1.5, scan_timeout_sec: 6.0, note: '白板正面右二维码'}
+
+  # 从白板右侧绕到背面；这几个是转场点，不扫描。
+  - {name: transit_front_right_clear, stage: transfer, scan: false, x: 1.001, y: -3.102, z: 1.357, yaw_deg: 7.96, hold_sec: 1.5, scan_timeout_sec: 2.0, note: '离开白板正面右侧'}
+  - {name: transit_to_back_entry,     stage: transfer, scan: false, x: 2.386, y: -3.115, z: 1.346, yaw_deg: -169.60, hold_sec: 1.5, scan_timeout_sec: 2.0, note: '准备进入白板背面'}
+
+  # 白板背面三张二维码，同样从左到右。
+  - {name: back_left,  stage: back,    scan: true,  x: 2.191, y: -2.265, z: 1.427, yaw_deg: -167.76, hold_sec: 1.5, scan_timeout_sec: 6.0, note: '白板背面左二维码'}
+  - {name: back_mid,   stage: back,    scan: true,  x: 2.196, y: -1.187, z: 1.423, yaw_deg: -167.23, hold_sec: 1.5, scan_timeout_sec: 6.0, note: '白板背面中二维码'}
+  - {name: back_right, stage: back,    scan: true,  x: 2.200, y: 0.111, z: 1.424, yaw_deg: -167.58, hold_sec: 1.5, scan_timeout_sec: 6.0, note: '白板背面右二维码'}
+
+  # 继续从右后方绕到动捕帘子这一面。
+  - {name: transit_back_right_clear, stage: transfer, scan: false,  x: 2.389, y: 0.502, z: 1.457, yaw_deg: -169.40, hold_sec: 1.5, scan_timeout_sec: 2.0, note: '离开白板背面右侧'}
+  - {name: transit_to_curtain_entry, stage: transfer, scan: false, x: 2.390, y: 0.509, z: 1.457, yaw_deg: 6.59, hold_sec: 1.5, scan_timeout_sec: 2.0, note: '准备进入帘子一侧'}
+
+  # 动捕帘子侧三张二维码，待你实际贴好后再采样。
+  - {name: curtain_left,  stage: curtain, scan: true, x: 2.964, y: -0.195, z: 1.602, yaw_deg: 6.59, hold_sec: 1.5, scan_timeout_sec: 6.0, note: '动捕帘子左二维码'}
+  - {name: curtain_mid,   stage: curtain, scan: true, x: 2.932, y: -1.186, z: 1.602, yaw_deg: 6.63, hold_sec: 1.5, scan_timeout_sec: 6.0, note: '动捕帘子中二维码'}
+  - {name: curtain_right, stage: curtain, scan: true, x: 2.906, y: -2.164, z: 1.602, yaw_deg: 6.45, hold_sec: 1.5, scan_timeout_sec: 6.0, note: '动捕帘子右二维码'}
+  

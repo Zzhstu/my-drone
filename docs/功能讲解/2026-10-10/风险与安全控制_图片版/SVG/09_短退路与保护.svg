@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect x="0" y="0" width="1600" height="900" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1.5"/>
+<text x="60" y="87.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="47" font-weight="700" fill="#15334C" text-anchor="start">窄通道恢复：先有退路，再慢速执行</text>
+<text x="62" y="129.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#657585" text-anchor="start">短退路是特殊恢复措施，不是把正常规划安全距离降低。</text>
+<polyline points="60,151 1540,151" fill="none" stroke="#D5E0E6" stroke-width="1.5"/>
+<rect x="60" y="774" width="1480" height="70" rx="0" fill="#EFF5F8" stroke="none" stroke-width="1.5"/>
+<text x="80" y="818.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="700" fill="#24618A" text-anchor="start">核心规则</text>
+<text x="210" y="818.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">一级纯静态可以检查短退路；二级当前接口不一致，不能写成已能正常恢复。</text>
+<text x="60" y="880.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="17" font-weight="400" fill="#657585" text-anchor="start">现有实现讲解 · 参数不是实验结果 · 源码对应见配套说明</text>
+<text x="1400" y="880.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="18" font-weight="400" fill="#657585" text-anchor="start">09 / 10</text>
+<rect x="60" y="207" width="460" height="402" rx="0" fill="#F6FAFC" stroke="#D5E0E6" stroke-width="1.5"/>
+<rect x="60" y="207" width="460" height="69" rx="0" fill="#24618A" stroke="none" stroke-width="1.5"/>
+<text x="78" y="252.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#FFFFFF" text-anchor="start">探索器：先确认有路</text>
+<text x="83" y="318.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">机体足迹必须在已观测空间内。</text>
+<text x="83" y="367.88" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">净空沿恢复路线不继续减小，并返</text>
+<text x="83" y="403.76" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">回正常安全区域。</text>
+<text x="83" y="453.64" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">短命令最多 0.20 米；最低中心净空</text>
+<text x="83" y="489.52" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">0.45 米只用于恢复。</text>
+<rect x="570" y="207" width="460" height="402" rx="0" fill="#F6FAFC" stroke="#D5E0E6" stroke-width="1.5"/>
+<rect x="570" y="207" width="460" height="69" rx="0" fill="#137B7E" stroke="none" stroke-width="1.5"/>
+<text x="588" y="252.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#FFFFFF" text-anchor="start">控制器：重新检查</text>
+<text x="593" y="318.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">动态风险为零，授权与扫描都新</text>
+<text x="593" y="353.88" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">鲜。</text>
+<text x="593" y="403.76" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">恢复点与当前航点一致；再次检查</text>
+<text x="593" y="439.64" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">短段净空。</text>
+<text x="593" y="489.52" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">中心净空至少 0.45 米，恢复速度最</text>
+<text x="593" y="525.4" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">多 0.08 米/秒。</text>
+<rect x="1080" y="207" width="460" height="402" rx="0" fill="#F6FAFC" stroke="#D5E0E6" stroke-width="1.5"/>
+<rect x="1080" y="207" width="460" height="69" rx="0" fill="#24618A" stroke="none" stroke-width="1.5"/>
+<text x="1098" y="252.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#FFFFFF" text-anchor="start">3  低速执行或停车</text>
+<text x="1103" y="317.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">通过：沿授权短退路慢速执行；不通</text>
+<text x="1103" y="351.5" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">过：水平停车。</text>
+<text x="1103" y="400.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">不沿单个障碍的斥力方向盲目横移。</text>
+<text x="1103" y="448.5" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">当前二级来源检查不一致，正常融合</text>
+<text x="1103" y="483.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">链路下短退路被拒绝。</text>
+<text x="1103" y="531.5" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">无安全方向或持续停滞，应明确记录</text>
+<text x="1103" y="566.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">部分任务失败。</text>
+<polyline points="523,408 563,408" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="563.00,408.00 553.00,412.80 553.00,403.20" fill="#24618A"/>
+<polyline points="1033,408 1073,408" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="1073.00,408.00 1063.00,412.80 1063.00,403.20" fill="#24618A"/>
+<rect x="60" y="642" width="1480" height="95" rx="0" fill="#FFF6E7" stroke="#E8C892" stroke-width="1.5"/>
+<text x="84" y="681.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">正常通行依然保留 0.80 米规划净空。0.45 米只用于受约束恢复，不代表所有窄缝都能飞。</text>
+<text x="84" y="716.5" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">零速度是控制指令，不意味着无人机物理上瞬间停住。</text>
+</svg>

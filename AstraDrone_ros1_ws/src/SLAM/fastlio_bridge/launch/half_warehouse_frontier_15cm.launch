@@ -1,0 +1,13 @@
+<launch>
+  <arg name="rviz" default="true"/>
+  <arg name="output"/>
+  <arg name="return_after_goals" default="0"/>
+  <!-- Matched-resolution control: keep the original frontier policy. -->
+  <include file="$(find fastlio_bridge)/launch/half_warehouse_exploration.launch">
+    <arg name="rviz" value="$(arg rviz)"/>
+    <arg name="output" value="$(arg output)"/>
+    <arg name="return_after_goals" value="$(arg return_after_goals)"/>
+  </include>
+  <param name="/warehouse_explorer/planner_mode" value="frontier"/>
+  <param name="/warehouse_explorer/resolution" value="0.15"/>
+</launch>

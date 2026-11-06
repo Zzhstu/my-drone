@@ -1,0 +1,37 @@
+{
+  "scope": "Inward-facing original room wall-box surfaces only, world z=.25..2.20m; excludes furniture, outward faces, floor, ceiling and window edges. NOT full 3D completeness.",
+  "reference_samples": 2373,
+  "supported_samples": 2373,
+  "inward_wall_support_ratio": 1.0,
+  "sampling_step_m": 0.2,
+  "euclidean_tolerance_m": 0.25,
+  "map_points": 13374,
+  "full_3d_map_complete": false,
+  "alignment": {
+    "map_from_world_rotation": [
+      [
+        0.0012219648480165657,
+        -0.9999965021647491,
+        0.0023457323328117683
+      ],
+      [
+        0.9999834171531048,
+        0.0012351434852487767,
+        0.005624930165831895
+      ],
+      [
+        -0.005627807806761887,
+        0.0023388199669564414,
+        0.9999814286777791
+      ]
+    ],
+    "map_from_world_translation": [
+      -0.006638955812404597,
+      0.021231165839083462,
+      -0.13319193838269028
+    ],
+    "odom_stamp": 26.121,
+    "truth_receipt_age_wall": 0.00033535499824211,
+    "note": "Evaluator-only initial alignment; ModelStates has no timestamp. No long-term drift correction."
+  }
+}

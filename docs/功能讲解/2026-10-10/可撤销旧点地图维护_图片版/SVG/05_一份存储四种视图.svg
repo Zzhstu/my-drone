@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect x="0" y="0" width="1600" height="900" fill="#FFFFFF" stroke="none" stroke-width="1.6"/>
+<text x="60" y="80.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="46" font-weight="700" fill="#15334C" text-anchor="start">不是四张互不相关的地图</text>
+<text x="63" y="125.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#657585" text-anchor="start">同一份存储生成三种占用视图；自由观测来自最新一帧射线。</text>
+<polyline points="60,151 1540,151" fill="none" stroke="#D5E0E6" stroke-width="1.2"/>
+<rect x="60" y="784" width="1480" height="62" fill="#EFF5F8" stroke="none" stroke-width="1.6"/>
+<text x="78" y="823.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="700" fill="#137B7E" text-anchor="start">核心规则</text>
+<text x="210" y="822.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">删除共享存储里的旧格后，下一次发布时各占用视图一起改变。</text>
+<text x="60" y="878.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="17" font-weight="400" fill="#657585" text-anchor="start">现有源码规则 · 所有点云与场景小图为示意 · 非新增实验结果</text>
+<text x="1400" y="879.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="18" font-weight="400" fill="#657585" text-anchor="start">05 / 16</text>
+<rect x="60" y="219" width="450" height="506" fill="#FFFFFF" stroke="#15334C" stroke-width="1.6" stroke-dasharray="7 6"/>
+<rect x="78" y="204" width="185.90625" height="36" fill="#FFFFFF" stroke="none" stroke-width="1.6"/>
+<text x="90" y="235.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#15334C" text-anchor="start">共享地图记忆</text>
+<rect x="90" y="275" width="390" height="300" fill="#EEF8F1" stroke="#A6CCB7" stroke-width="1.6"/>
+<text x="106" y="317.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="700" fill="#15334C" text-anchor="start">一份可修改存储</text>
+<text x="108" y="358.88" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">记录命中、最近观测和空证据。</text>
+<text x="108" y="392.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">删除不是只隐藏显示层。</text>
+<rect x="195.04" y="493" width="155.70000000000002" height="35" fill="#EDF5FF" stroke="#7B9AB4" stroke-width="1.6"/>
+<rect x="207.04" y="505" width="155.70000000000002" height="35" fill="#EDF5FF" stroke="#7B9AB4" stroke-width="1.6"/>
+<rect x="219.04" y="517" width="155.70000000000002" height="35" fill="#EDF5FF" stroke="#7B9AB4" stroke-width="1.6"/>
+<polyline points="513,428 559,428" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="559.00,428.00 549.00,432.80 549.00,423.20" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<rect x="580" y="219" width="960" height="506" fill="#FFFFFF" stroke="#15334C" stroke-width="1.6" stroke-dasharray="7 6"/>
+<rect x="598" y="204" width="212.890625" height="36" fill="#FFFFFF" stroke="none" stroke-width="1.6"/>
+<text x="610" y="235.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#15334C" text-anchor="start">不同用途的输出</text>
+<rect x="608" y="267" width="430" height="185" fill="#F0F0FF" stroke="#B3BFEA" stroke-width="1.6"/>
+<text x="624" y="311.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="28" font-weight="700" fill="#15334C" text-anchor="start">持续地图：至少2次</text>
+<text x="626" y="351.64" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#15334C" text-anchor="start">显示与保存历史环境</text>
+<rect x="1068" y="267" width="430" height="185" fill="#FFF3E7" stroke="#E6B988" stroke-width="1.6"/>
+<text x="1084" y="311.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="28" font-weight="700" fill="#15334C" text-anchor="start">稳定地图：至少8次</text>
+<text x="1086" y="351.64" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#15334C" text-anchor="start">普通规划与静态支持</text>
+<rect x="608" y="486" width="430" height="185" fill="#EEF8F1" stroke="#A6CCB7" stroke-width="1.6"/>
+<text x="624" y="530.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="28" font-weight="700" fill="#15334C" text-anchor="start">局部占用：至少1次</text>
+<text x="626" y="570.64" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#15334C" text-anchor="start">6米内、近15帧、无空证据</text>
+<rect x="1068" y="486" width="430" height="185" fill="#FFF0F5" stroke="#DCB0C3" stroke-width="1.6"/>
+<text x="1084" y="530.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="28" font-weight="700" fill="#15334C" text-anchor="start">当前自由观测</text>
+<text x="1086" y="570.64" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#15334C" text-anchor="start">为规划提供局部修正线索</text>
+</svg>

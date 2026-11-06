@@ -1,0 +1,32 @@
+<launch>
+  <arg name="rviz" default="true"/>
+  <arg name="output"/>
+  <arg name="return_after_goals" default="0"/>
+  <arg name="enable_ghost_revisit" default="false"/>
+  <arg name="enable_loop_closure" default="false"/>
+  <arg name="online_loop" default="false"/>
+  <arg name="vertical_view_audit" default="false"/>
+  <!-- Same mapper, explorer, risk and controller as the existing project. -->
+  <include file="$(find fastlio_bridge)/launch/warehouse_exploration.launch">
+    <arg name="rviz" value="false"/>
+    <arg name="output" value="$(arg output)"/>
+    <arg name="return_after_goals" value="$(arg return_after_goals)"/>
+    <arg name="enable_ghost_revisit" value="$(arg enable_ghost_revisit)"/>
+    <arg name="enable_loop_closure" value="$(arg enable_loop_closure)"/>
+    <arg name="online_loop" value="$(arg online_loop)"/>
+    <arg name="vertical_view_audit" value="$(arg vertical_view_audit)"/>
+  </include>
+  <rosparam command="load" file="$(find fastlio_bridge)/config/half_warehouse_exploration.yaml"/>
+  <!-- Predicted CPA emergency: 0.40 m UAV envelope + 0.20 m to the
+       detected object's centre. This is not clearance to a person's body. -->
+  <param name="/collision_risk/emergency_cpa_distance" value="0.60"/>
+  <!-- Half-demo speed is capped at 0.60 m/s for a more comfortable pace. -->
+  <param name="/mavros_avoidance_controller/max_navigation_speed" value="0.60"/>
+  <param name="/mavros_avoidance_controller/max_total_speed" value="0.60"/>
+  <!-- Controller/risk vectors are in the LIO map. MAVROS expects local ENU.
+       The initial FCU yaw may reset at arming; convert using fresh attitudes. -->
+  <param name="/mavros_avoidance_controller/setpoint_topic" value="/small_indoor/map_velocity"/>
+  <node pkg="fastlio_bridge" type="small_indoor_velocity.py" name="small_indoor_velocity" output="screen" required="true"/>
+  <node if="$(arg rviz)" pkg="rviz" type="rviz" name="half_warehouse_rviz"
+        args="$(eval '-d ' + find('fastlio_bridge') + '/rviz/' + ('half_warehouse_online_loop.rviz' if arg('online_loop') else 'half_warehouse_exploration.rviz'))"/>
+</launch>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect x="0" y="0" width="1600" height="900" fill="#FFFFFF" stroke="none" stroke-width="1.6"/>
+<text x="60" y="80.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="46" font-weight="700" fill="#15334C" text-anchor="start">探索演示：删除权交给新的观测证据</text>
+<text x="63" y="125.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#657585" text-anchor="start">“目标可能在运动”是线索；“旧位置被真实回波射线穿过”才进入删除检查。</text>
+<polyline points="60,151 1540,151" fill="none" stroke="#D5E0E6" stroke-width="1.2"/>
+<rect x="60" y="784" width="1480" height="62" fill="#EFF5F8" stroke="none" stroke-width="1.6"/>
+<text x="78" y="823.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="700" fill="#137B7E" text-anchor="start">核心规则</text>
+<text x="210" y="822.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">轨迹不是删除许可；没有足够的新观测就保留旧占用。</text>
+<text x="60" y="878.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="17" font-weight="400" fill="#657585" text-anchor="start">现有源码规则 · 所有点云与场景小图为示意 · 非新增实验结果</text>
+<text x="1400" y="879.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="18" font-weight="400" fill="#657585" text-anchor="start">07 / 16</text>
+<rect x="60" y="218" width="330" height="510" fill="#FFFFFF" stroke="#15334C" stroke-width="1.6" stroke-dasharray="7 6"/>
+<rect x="78" y="203" width="77.96875" height="36" fill="#FFFFFF" stroke="none" stroke-width="1.6"/>
+<text x="90" y="234.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#15334C" text-anchor="start">输入</text>
+<rect x="83" y="274" width="284" height="150" fill="#F0F0FF" stroke="#B3BFEA" stroke-width="1.6"/>
+<text x="99" y="310.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="700" fill="#15334C" text-anchor="start">当前真实返回</text>
+<text x="101" y="344.02" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#15334C" text-anchor="start">包含当前人体返回</text>
+<rect x="83" y="496" width="284" height="150" fill="#FFF3E7" stroke="#E6B988" stroke-width="1.6"/>
+<text x="99" y="532.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="700" fill="#15334C" text-anchor="start">配对位姿与外参</text>
+<text x="101" y="566.02" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#15334C" text-anchor="start">构造扫描射线起点</text>
+<rect x="440" y="202" width="750" height="541" fill="#FFFFFF" stroke="#15334C" stroke-width="1.6" stroke-dasharray="7 6"/>
+<rect x="458" y="187" width="158.921875" height="36" fill="#FFFFFF" stroke="none" stroke-width="1.6"/>
+<text x="470" y="218.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#15334C" text-anchor="start">证据与撤销</text>
+<rect x="465" y="251" width="698" height="188" fill="#FFF2BF" stroke="#15334C" stroke-width="1.6" stroke-dasharray="7 6"/>
+<rect x="488" y="286" width="290" height="118" fill="#FFF3E7" stroke="#E6B988" stroke-width="1.6"/>
+<text x="504" y="322.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="700" fill="#15334C" text-anchor="start">近场射线</text>
+<text x="506" y="356.02" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#15334C" text-anchor="start">只取回波前空间</text>
+<rect x="837" y="286" width="300" height="118" fill="#FFF0F5" stroke="#DCB0C3" stroke-width="1.6"/>
+<text x="853" y="322.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="700" fill="#15334C" text-anchor="start">旧点矛盾检查</text>
+<text x="855" y="356.02" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#15334C" text-anchor="start">旧点确实靠近射线</text>
+<polyline points="782,345 833,345" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="833.00,345.00 823.00,349.80 823.00,340.20" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<rect x="465" y="486" width="698" height="216" fill="#E5F1E4" stroke="#15334C" stroke-width="1.6" stroke-dasharray="7 6"/>
+<rect x="488" y="539" width="290" height="133" fill="#EEF8F1" stroke="#A6CCB7" stroke-width="1.6"/>
+<text x="504" y="575.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="700" fill="#15334C" text-anchor="start">当前表面保护</text>
+<text x="506" y="609.02" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#15334C" text-anchor="start">邻格回波、命中重置</text>
+<rect x="837" y="539" width="300" height="133" fill="#F3EEFD" stroke="#C1B1E1" stroke-width="1.6"/>
+<text x="853" y="575.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="700" fill="#15334C" text-anchor="start">有时效的次数确认</text>
+<text x="855" y="609.02" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#15334C" text-anchor="start">3次或6次后撤销</text>
+<polyline points="987,408 987,535" fill="none" stroke="#137B7E" stroke-width="2"/>
+<polygon points="987.00,535.00 982.20,525.00 991.80,525.00" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<polyline points="782,605 833,605" fill="none" stroke="#137B7E" stroke-width="2"/>
+<polygon points="833.00,605.00 823.00,609.80 823.00,600.20" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<rect x="1230" y="218" width="310" height="510" fill="#FFFFFF" stroke="#15334C" stroke-width="1.6" stroke-dasharray="7 6"/>
+<rect x="1248" y="203" width="77.96875" height="36" fill="#FFFFFF" stroke="none" stroke-width="1.6"/>
+<text x="1260" y="234.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#15334C" text-anchor="start">输出</text>
+<rect x="1250" y="272" width="270" height="150" fill="#EEF8F1" stroke="#A6CCB7" stroke-width="1.6"/>
+<text x="1266" y="308.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="700" fill="#15334C" text-anchor="start">修正后的地图</text>
+<text x="1268" y="342.02" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#15334C" text-anchor="start">旧格可从多视图撤销</text>
+<rect x="1250" y="499" width="270" height="148" fill="#EDF5FF" stroke="#A7C6E3" stroke-width="1.6"/>
+<text x="1266" y="535.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="700" fill="#15334C" text-anchor="start">当前障碍仍有效</text>
+<text x="1268" y="569.02" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#15334C" text-anchor="start">清图不替代即时避障</text>
+<polyline points="370,349 484,349" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="484.00,349.00 474.00,353.80 474.00,344.20" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<polyline points="370,570 415,570 415,449 630,449 630,408" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="630.00,408.00 634.80,418.00 625.20,418.00" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<polyline points="1141,605 1204,605 1204,347 1246,347" fill="none" stroke="#137B7E" stroke-width="2"/>
+<polygon points="1246.00,347.00 1236.00,351.80 1236.00,342.20" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<polyline points="1385,426 1385,495" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="1385.00,495.00 1380.20,485.00 1389.80,485.00" fill="#24618A" stroke="none" stroke-width="1.6"/>
+</svg>

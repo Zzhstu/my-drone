@@ -1,0 +1,72 @@
+{
+  "status": "guarded_backend_and_offline_reconstruction_verified",
+  "checks": {
+    "real_recorded_pairs_all_acknowledged": true,
+    "real_low_drift_has_no_graph_deformation": true,
+    "stress_rmse_reduced_by_more_than_75_percent": true,
+    "stress_not_presented_as_real_flight": true,
+    "synthetic_loop_corrects_endpoint_below_10cm": true,
+    "planar_degeneracy_rejected": true,
+    "final_binary_config_stable": true,
+    "no_truth_or_flight_command_to_backend": true,
+    "all_mapper_scans_acknowledged": true,
+    "map_bytes_identical_in_low_drift_case": true,
+    "unresolved_ghosts_retained": true
+  },
+  "tests": {
+    "loop_tools": 12,
+    "ghost_revisit": 16,
+    "mission_regression": 34,
+    "sim_calibration": 3,
+    "total": 65
+  },
+  "real_flight_available": false,
+  "new_sitl_flight_run": false,
+  "online_optimized_map_and_control_integration": false,
+  "compiled_backend_sha256": "dd536f65dd7f12e2aa6237b32e0b46f4d9d8d1e7798cf9b99fc6a093b2330e67",
+  "config_sha256": "f06ef6777a8e896962209fe3a5a32b1b5ba88716af3cc648824e7a7b25f15ba3",
+  "same_recorded_flight": {
+    "raw_rmse_m": 0.07042792878913791,
+    "old_loop_rmse_m": 0.18127838381863853,
+    "guarded_loop_rmse_m": 0.07042792878913791,
+    "accepted_loops": 0
+  },
+  "semi_synthetic_recording_stress": {
+    "transform": {
+      "x_drift_metres": 0.8,
+      "ramp_seconds": 400.0,
+      "start_stamp": 29.224,
+      "scope": "Semi-synthetic stress test; both recorded odometry and registered scans shifted. Not an observed flight. These paths cannot rebuild the original uninjected map."
+    },
+    "raw": {
+      "samples": 4181,
+      "rmse_m": 0.4269990258714021,
+      "median_m": 0.37641505589300145,
+      "p95_m": 0.7142580461485561,
+      "final_m": 0.7189771868654885,
+      "displacement_error_m": 0.7189771900940084
+    },
+    "corrected": {
+      "samples": 4181,
+      "rmse_m": 0.04348689874114944,
+      "median_m": 0.02648284072413922,
+      "p95_m": 0.08642722572196805,
+      "final_m": 0.01823018240062065,
+      "displacement_error_m": 0.018230185372239912
+    },
+    "accepted_loops": 7
+  },
+  "maintained_map": {
+    "pcd": "/home/a/AstraDroneOpen/evaluation/half_warehouse/reports/20261022_loop_verified_mapper_map.pcd",
+    "sha256": "eed0261cda2429d9c3377e3fa8a9cae3ab842016aca92c2f3d8432a7aa8f5194",
+    "points": 116608,
+    "pending_ghost_voxels": 7
+  },
+  "limitations": [
+    "Recorded-flight normal case has no demonstrated accuracy improvement; harmful small corrections are rejected.",
+    "Artificial drift stress test is not a new flight or measured natural hardware drift.",
+    "No optimized localization feedback to PX4, no online rebuilding of planning map or ghost ledger.",
+    "2m candidate radius can miss larger drift; residual deadband can retain real small errors.",
+    "Geometric support cannot establish per-point ghost accuracy or full 3D coverage."
+  ]
+}

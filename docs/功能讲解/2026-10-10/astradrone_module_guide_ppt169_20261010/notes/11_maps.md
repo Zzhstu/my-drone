@@ -1,0 +1,3 @@
+地图维护在同一份空间格存储中积累占用与自由证据，再按用途输出不同视图。默认全局视图要求两次命中，稳定视图要求八次，局部视图保留近期附近占用，所以它们不是三套彼此无关的数据。全局用于长期选路，稳定支持可以帮助抑制感知误报，滚动局部图反映附近近期变化。
+
+同一空间证据仍可被后续清空信息更新，不是次数多就永久锁死。这里发布的/uav1/fastlio/cloud_map由衔接包维护，不能说已经直接删除FAST-LIO内部用于匹配的树节点。源码是/home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/static_map_builder.cpp，参数在config/static_map.yaml，启用及发布连接在launch/perception.launch。

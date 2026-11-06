@@ -1,0 +1,3 @@
+显示窗口把消息画出来，而不重新决定动作。当前扫描和维护地图是不同来源；已经飞过的轨迹与准备走的路线也不同。目标球表示跟踪中心，不是精确人体轮廓，更不是仿真中新生成的实体。探索中的青色方块是候选观察位置，不是雷达扫描的大方块。
+
+标记依靠编号和短有效期更新，目标消失后不会永久留球，航迹也有最大长度。没有球可能是当前没有确认目标，不能凭显示认定程序停止；需要结合下一页消息监测。源码是/home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/dynamic_marker.cpp、src/fastlio_bridge.cpp及scripts/warehouse_explorer.py，显示配置在rviz/astra_dynamic_avoidance.rviz和rviz/warehouse_exploration.rviz。

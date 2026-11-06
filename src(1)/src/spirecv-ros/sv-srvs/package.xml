@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>spirecv_srvs</name>
+  <version>0.1.0</version>
+  <description>The spirecv_srvs package</description>
+
+  <maintainer email="jariof@foxmail.com">Jario</maintainer>
+  <author email="jariof@foxmail.com">Jario</author>
+  <license>TODO</license>
+
+  <url type="website">http://www.amovauto.com/</url>
+  <url type="repository">https://gitee.com/amovlab1/spirecv-ros.git</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>message_generation</build_depend>
+
+  <build_depend>roscpp</build_depend>
+  <build_export_depend>roscpp</build_export_depend>
+  <exec_depend>roscpp</exec_depend>
+
+  <exec_depend>message_runtime</exec_depend>
+
+  <export>
+
+  </export>
+</package>

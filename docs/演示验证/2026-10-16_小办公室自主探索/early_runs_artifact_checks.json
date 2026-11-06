@@ -1,0 +1,32 @@
+{
+  "office_20261016_134903": {
+    "termination": "interrupted",
+    "failed": false,
+    "task_success": false,
+    "map_saved": true,
+    "pcd_verified": {
+      "points": 14013,
+      "finite_xyz": true,
+      "payload_matches_header": true,
+      "sha256": "2a97038deabbfd3fac2ebafab37cfccf81a80f010257d1b49ed8d682126c80fa"
+    }
+  },
+  "office_20261016_135412": {
+    "termination": "runtime_error",
+    "failed": true,
+    "task_success": false,
+    "map_saved": false
+  },
+  "office_20261016_135757": {
+    "termination": "returned_home_and_saved",
+    "failed": false,
+    "task_success": true,
+    "map_saved": true,
+    "pcd_verified": {
+      "points": 11998,
+      "finite_xyz": true,
+      "payload_matches_header": true,
+      "sha256": "14fdfdcff34cf921bf38492f993124fbc66cd59bd05e4b9a5506f06b93f4e7cc"
+    }
+  }
+}

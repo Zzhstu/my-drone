@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+<rect x="0" y="0" width="1920" height="1080" fill="white" stroke="none" stroke-width="1.5"/>
+<text x="65" y="93.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="47" font-weight="700" fill="#15334C" text-anchor="start">跟踪与显示：既要跟得上，也不要留下假球</text>
+<text x="68" y="147.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="25" font-weight="400" fill="#657585" text-anchor="start">位置输出快速跟随；判定历史单独平滑。观测、短时预测和丢失删除分别处理。</text>
+<polyline points="65.00,181.00 1855.00,181.00" fill="none" stroke="#DCE5EB" stroke-width="1"/>
+<text x="65" y="1048.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="21" font-weight="700" fill="#137B7E" text-anchor="start">显示球直径固定0.3米｜不是实测尺寸；对象尺寸字段也只是0.60×0.60×1.20米默认值。</text>
+<text x="1764" y="1050.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="20" font-weight="400" fill="#657585" text-anchor="start">05 / 07</text>
+<rect x="70" y="242" width="555" height="376" fill="#EFF0FF" stroke="#B7C2EB" stroke-width="2"/>
+<text x="90" y="284.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="27" font-weight="700" fill="#15334C" text-anchor="start">① 本帧重新观测到</text>
+<text x="90" y="326.18" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">在旧目标预测位置附近找最近中心；每个旧轨迹</text>
+<text x="90" y="358.34000000000003" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">本帧最多匹配一次。</text>
+<rect x="660" y="242" width="555" height="376" fill="#FFF3E5" stroke="#E9C291" stroke-width="2"/>
+<text x="680" y="284.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="27" font-weight="700" fill="#15334C" text-anchor="start">② 暂时没有观测到</text>
+<text x="680" y="326.18" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">仅对已确认目标外推位置，最多容忍4次丢失回</text>
+<text x="680" y="358.34000000000003" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">调；不会凭空生成动态点云。</text>
+<rect x="1250" y="242" width="590" height="376" fill="#EDF8F0" stroke="#A6D2BD" stroke-width="2"/>
+<text x="1270" y="284.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="27" font-weight="700" fill="#15334C" text-anchor="start">③ 持续丢失或取消确认</text>
+<text x="1270" y="326.18" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">第5次丢失回调删除轨迹；未输出的旧显示编号显式</text>
+<text x="1270" y="358.34000000000003" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">删除。</text>
+<circle cx="236.16" cy="441.96" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="244.0" cy="441.96" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="251.84" cy="441.96" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="240.08" cy="446.46799999999996" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="247.92" cy="446.46799999999996" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="236.16" cy="450.976" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="244.0" cy="450.976" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="251.84" cy="450.976" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="240.08" cy="455.484" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="247.92" cy="455.484" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="228.32" cy="459.99199999999996" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="236.16" cy="459.99199999999996" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="244.0" cy="459.99199999999996" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="251.84" cy="459.99199999999996" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="259.68" cy="459.99199999999996" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="232.24" cy="464.5" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="240.08" cy="464.5" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="247.92" cy="464.5" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="255.76" cy="464.5" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="228.32" cy="469.008" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="236.16" cy="469.008" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="244.0" cy="469.008" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="251.84" cy="469.008" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="259.68" cy="469.008" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="232.24" cy="473.51599999999996" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="240.08" cy="473.51599999999996" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="247.92" cy="473.51599999999996" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="255.76" cy="473.51599999999996" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="228.32" cy="478.024" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="236.16" cy="478.024" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="244.0" cy="478.024" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="251.84" cy="478.024" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="259.68" cy="478.024" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="232.24" cy="482.532" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="240.08" cy="482.532" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="247.92" cy="482.532" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="255.76" cy="482.532" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="228.32" cy="487.03999999999996" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="236.16" cy="487.03999999999996" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="244.0" cy="487.03999999999996" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="251.84" cy="487.03999999999996" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="259.68" cy="487.03999999999996" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="232.24" cy="491.548" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="240.08" cy="491.548" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="247.92" cy="491.548" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="255.76" cy="491.548" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="228.32" cy="496.056" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="236.16" cy="496.056" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="244.0" cy="496.056" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="251.84" cy="496.056" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="259.68" cy="496.056" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="232.24" cy="500.56399999999996" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="240.08" cy="500.56399999999996" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="247.92" cy="500.56399999999996" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="255.76" cy="500.56399999999996" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="236.16" cy="505.07199999999995" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="244.0" cy="505.07199999999995" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="251.84" cy="505.07199999999995" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="232.24" cy="509.58" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="240.08" cy="509.58" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="247.92" cy="509.58" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="255.76" cy="509.58" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="236.16" cy="514.088" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="244.0" cy="514.088" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="251.84" cy="514.088" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="232.24" cy="518.596" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="240.08" cy="518.596" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="247.92" cy="518.596" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="255.76" cy="518.596" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="236.16" cy="523.1039999999999" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="244.0" cy="523.1039999999999" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="251.84" cy="523.1039999999999" r="2.45" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="415" cy="476" r="33" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="402" cy="465" r="8" fill="#F6C7CC" stroke="none" stroke-width="1"/>
+<polyline points="287.00,481.00 364.00,481.00" fill="none" stroke="#24618A" stroke-width="2.5"/>
+<polygon points="364.00,481.00 355.25,484.50 355.25,477.50" fill="#24618A" stroke="none" stroke-width="1"/>
+<text x="138" y="581.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="20" font-weight="400" fill="#CB5263" text-anchor="start">红球：本帧观测到的确认目标</text>
+<circle cx="807.16" cy="441.96" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="815.0" cy="441.96" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="822.84" cy="441.96" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="811.08" cy="446.46799999999996" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="818.92" cy="446.46799999999996" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="807.16" cy="450.976" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="815.0" cy="450.976" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="822.84" cy="450.976" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="811.08" cy="455.484" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="818.92" cy="455.484" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="799.32" cy="459.99199999999996" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="807.16" cy="459.99199999999996" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="815.0" cy="459.99199999999996" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="822.84" cy="459.99199999999996" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="830.68" cy="459.99199999999996" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="803.24" cy="464.5" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="811.08" cy="464.5" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="818.92" cy="464.5" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="826.76" cy="464.5" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="799.32" cy="469.008" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="807.16" cy="469.008" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="815.0" cy="469.008" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="822.84" cy="469.008" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="830.68" cy="469.008" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="803.24" cy="473.51599999999996" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="811.08" cy="473.51599999999996" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="818.92" cy="473.51599999999996" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="826.76" cy="473.51599999999996" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="799.32" cy="478.024" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="807.16" cy="478.024" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="815.0" cy="478.024" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="822.84" cy="478.024" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="830.68" cy="478.024" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="803.24" cy="482.532" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="811.08" cy="482.532" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="818.92" cy="482.532" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="826.76" cy="482.532" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="799.32" cy="487.03999999999996" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="807.16" cy="487.03999999999996" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="815.0" cy="487.03999999999996" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="822.84" cy="487.03999999999996" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="830.68" cy="487.03999999999996" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="803.24" cy="491.548" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="811.08" cy="491.548" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="818.92" cy="491.548" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="826.76" cy="491.548" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="799.32" cy="496.056" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="807.16" cy="496.056" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="815.0" cy="496.056" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="822.84" cy="496.056" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="830.68" cy="496.056" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="803.24" cy="500.56399999999996" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="811.08" cy="500.56399999999996" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="818.92" cy="500.56399999999996" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="826.76" cy="500.56399999999996" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="807.16" cy="505.07199999999995" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="815.0" cy="505.07199999999995" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="822.84" cy="505.07199999999995" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="803.24" cy="509.58" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="811.08" cy="509.58" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="818.92" cy="509.58" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="826.76" cy="509.58" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="807.16" cy="514.088" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="815.0" cy="514.088" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="822.84" cy="514.088" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="803.24" cy="518.596" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="811.08" cy="518.596" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="818.92" cy="518.596" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="826.76" cy="518.596" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="807.16" cy="523.1039999999999" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="815.0" cy="523.1039999999999" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<circle cx="822.84" cy="523.1039999999999" r="2.45" fill="#657585" stroke="none" stroke-width="1"/>
+<polyline points="850.00,479.00 1020.00,479.00" fill="none" stroke="#D49B45" stroke-width="2.5" stroke-dasharray="7 5"/>
+<polygon points="1020.00,479.00 1011.25,482.50 1011.25,475.50" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="1053" cy="479" r="33" fill="#FF9900" stroke="none" stroke-width="1"/>
+<text x="699" y="581.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="20" font-weight="400" fill="#D49B45" text-anchor="start">橙球：短时外推，带预测标志</text>
+<circle cx="1488" cy="479" r="37" fill="none" stroke="#657585" stroke-width="2"/>
+<polyline points="1458.00,449.00 1518.00,509.00" fill="none" stroke="#CB5263" stroke-width="3"/>
+<polyline points="1458.00,509.00 1518.00,449.00" fill="none" stroke="#CB5263" stroke-width="3"/>
+<text x="1570" y="472.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="20" font-weight="400" fill="#137B7E" text-anchor="start">旧编号删除</text>
+<text x="1305" y="581.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="20" font-weight="400" fill="#137B7E" text-anchor="start">标记0.5秒过期（按仿真时钟）</text>
+<polyline points="625.00,438.00 660.00,438.00" fill="none" stroke="#24618A" stroke-width="2.5"/>
+<polygon points="660.00,438.00 651.25,441.50 651.25,434.50" fill="#24618A" stroke="none" stroke-width="1"/>
+<polyline points="1215.00,438.00 1250.00,438.00" fill="none" stroke="#24618A" stroke-width="2.5"/>
+<polygon points="1250.00,438.00 1241.25,441.50 1241.25,434.50" fill="#24618A" stroke="none" stroke-width="1"/>
+<rect x="70" y="666" width="850" height="313" fill="#EDF5FF" stroke="#A8C8E7" stroke-width="2"/>
+<text x="90" y="708.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="27" font-weight="700" fill="#15334C" text-anchor="start">跟踪更新规则</text>
+<text x="90" y="751.18" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">按“位置容差＋可行移动距离”缩放匹配门限；一般最多0.80米，近场最</text>
+<text x="90" y="784.68" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">多1.00米。</text>
+<text x="90" y="818.18" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">中心平滑权重0.65；运动历史与速度各0.20，分别兼顾跟随和抗抖动。</text>
+<rect x="965" y="666" width="875" height="313" fill="#F3EFFC" stroke="#C4B5E0" stroke-width="2"/>
+<text x="985" y="708.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="27" font-weight="700" fill="#15334C" text-anchor="start">显示更新规则</text>
+<text x="985" y="751.18" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">球的编号使用轨迹编号，而非数组顺序；球位置来自对象输出。</text>
+<text x="985" y="784.68" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">聚类与显示输入队列各保留1条；每次消息更新球，未出现编号删除，0.5秒</text>
+<text x="985" y="818.18" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">自动过期。</text>
+</svg>

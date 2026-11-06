@@ -1,0 +1,3 @@
+如果定位和飞控采用不同原点或方向，同一障碍的位置就可能被理解错。衔接程序不只是改消息标签，而是实际旋转和平移位置及点云，让感知、地图、规划与控制说同一种位置语言。主演示初始化时借助飞控位置建立一次转换，之后每帧输出由激光定位驱动，不再持续拿飞控轨迹替代定位结果。
+
+转换后的消息供下游使用，位置也按取样间隔记录已飞航迹，轨迹有最大长度避免无界增长。主演示不把借助飞控对齐后的结果又反馈给飞控，避免循环依赖。源码是/home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/fastlio_bridge.cpp与src/cloud_bridge.cpp，装配在launch/perception.launch。

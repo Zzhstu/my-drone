@@ -1,0 +1,2627 @@
+{
+  "scope": "material-only checks; no algorithm experiment",
+  "count": 655,
+  "passed": true,
+  "checks": [
+    {
+      "check": "4 PNG and 4 SVG",
+      "passed": true
+    },
+    {
+      "check": "no PPTX generated",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.png dimensions",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.png nonempty rendering",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.png dimensions",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.png nonempty rendering",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.png dimensions",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.png nonempty rendering",
+      "passed": true
+    },
+    {
+      "check": "04_独立回环后端_历史真实结果.png dimensions",
+      "passed": true
+    },
+    {
+      "check": "04_独立回环后端_历史真实结果.png nonempty rendering",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg vector canvas",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg editable text",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg readable text 独立回环后端：全局校正，连续控制分流",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg readable text 利用重访地点约束历史轨迹；优化结果单独输出，不直接接管无人机飞行。",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg readable text 当前主演示默认关闭回环；图为工程结构示意，不代表已证明精度提升。",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg readable text 01 / 04",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg readable text 输入与连续定位",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg readable text 独立回环处理",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg readable text 结果输出",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg readable text 连续位姿",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg readable text 无人机的位置与姿态",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg readable text 保持原始定位链路",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg readable text 当前注册点云",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg readable text 与位姿配对",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg readable text 保存为机体局部点云",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg readable text 历史",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg readable text 当前",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg readable text 寻找重访并验证几何",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg readable text 关键帧记忆",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg readable text 位移或转角触发",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg readable text 连接相邻帧位移",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg readable text 重访候选",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg readable text 时距与高度筛选",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg readable text 多帧摘要再核验",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg readable text 点云对齐与门控",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg readable text 检查匹配质量与覆盖",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg readable text 限制修正幅度",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg readable text 历史轨迹修正与地图重建",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg readable text 位姿图优化",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg readable text 固定第一帧；相邻约束＋回访约束",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg readable text 降低异常约束影响",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg readable text 地图重新拼接",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg readable text 每帧局部点云使用修正位置",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg readable text 重新合并并降采样",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg readable text 轨迹与回环连接",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg readable text 原始/修正轨迹并列",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg readable text 输出连接线及诊断",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg readable text 重建地图",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg readable text 单独的回环地图话题",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg readable text 不覆盖导航维护地图",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg readable text 按修正位置重新拼接",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg readable text 原始连续位姿 → 原有规划与安全控制；回环修正不回写原定位内部地图，也不直接用于飞控。",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "01_独立回环后端_分区架构.svg exact text inventory",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg vector canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg editable text",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 独立回环后端：从关键帧到修正地图",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 参考七步循环图：上排从左向右，下排从右向左；每个环节配工程图示。",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 示意图不是实验结果；循环由新关键帧触发，检测与地图发布采用独立定时任务。",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 02 / 04",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 1  保存关键帧",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 位姿与点云配对；移动1米",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 或转动10度，保留一帧。",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 2  筛选历史地点",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 相隔20秒、25帧；距离8米内",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 且高度差不超过1米。",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 3  比较环境摘要",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 最多聚合4帧；按方向和距离",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 记录高度，并比较相似程度。",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 4  对齐当前与历史点云",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 当前帧对历史小地图；",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 尝试初始位置与不同朝向。",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 第1帧",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 第2帧",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 第3帧",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 第4帧",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 0",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 1",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 2",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 3",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 4",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 5",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 6",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 关键帧",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 回访连接",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 分环、分方向",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 局部高度摘要",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 历史",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 当前",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 5  多道检查后接纳",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 匹配收敛、评分合格、重叠足够；",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 位置或角度修正过大则拒绝。",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 6  修正整条关键帧轨迹",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 加入回访连接；固定第一帧，",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 联合调整历史位置与姿态。",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 7  重建并发布结果",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 各帧点云按修正位置重新拼接；",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 轨迹、地图与诊断单独输出。",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 检查",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 拒绝",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 接纳",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 0",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 1",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 2",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 3",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 4",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 5",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 6",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 关键帧",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 回访连接",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 按修正位置重新拼接",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 处理新的关键帧",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg readable text 不合格：不加回环，等待后续帧",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "02_独立回环后端_七步图文流程.svg exact text inventory",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg vector canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg editable text",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg readable text 我们制定的规则：不是“看着像”就连接",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg readable text 以下是当前默认参数，不是安全保证；重复结构仍可能通过检查，历史实验已出现误回环。",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg readable text 回环修正的是位置关系，不自动去除人体鬼影；现有规则仍需更严格的重复结构验证。",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg readable text 03 / 04",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg readable text 01  关键帧与时间隔离",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg readable text 首帧初始化；之后移动1米或转10度存帧。",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg readable text 点数至少250；回访须隔20秒和25帧。",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg readable text 第1帧",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg readable text 第2帧",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg readable text 第3帧",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg readable text 第4帧",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg readable text 02  空间与高度先验",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg readable text 在8米范围内寻找历史地点，高差≤1米。",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg readable text 最多保留15个空间候选，不强行连接近邻。",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg readable text 0",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg readable text 1",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg readable text 2",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg readable text 3",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg readable text 4",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg readable text 5",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg readable text 6",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg readable text 关键帧",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg readable text 回访连接",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg readable text 03  相似性分级放行",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg readable text 摘要分数≤0.22进入点云验证；",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg readable text 距离≤2米时，≤0.55可进入几何兜底。",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg readable text 分环、分方向",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg readable text 局部高度摘要",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg readable text 兜底仅允许尝试对齐，不直接认定回环。",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg readable text 04  点云验证与硬门限",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg readable text 对齐须收敛；评分≤0.30、重叠≥35%。",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg readable text 位置修正≤4米、角度修正≤35度。",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg readable text 历史",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg readable text 当前",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg readable text 评分不是距离单位；低评分也不等于同一地点。",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg readable text 05  图优化与失败撤销",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg readable text 固定首帧；异常约束降权、限制每步改动。",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg readable text 数值求解失败，移除本次新增回访连接。",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg readable text 检查",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg readable text 拒绝",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg readable text 接纳",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg readable text 06  限频、冷却与输出隔离",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg readable text 每2秒检查；接纳后冷却10个关键帧。",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg readable text 地图定时检查5秒一次；不接管飞控。",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg readable text 按修正位置重新拼接",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "03_独立回环后端_接纳与保护规则.svg exact text inventory",
+      "passed": true
+    },
+    {
+      "check": "04_独立回环后端_历史真实结果.svg vector canvas",
+      "passed": true
+    },
+    {
+      "check": "04_独立回环后端_历史真实结果.svg editable text",
+      "passed": true
+    },
+    {
+      "check": "04_独立回环后端_历史真实结果.svg readable text 历史保存结果：能产生回环，不等于精度提高",
+      "passed": true
+    },
+    {
+      "check": "04_独立回环后端_历史真实结果.svg readable text 2026年9月23日闭环专用场景；沿用当时保存的原始轨迹图与评测报告，未重新运行实验。",
+      "passed": true
+    },
+    {
+      "check": "04_独立回环后端_历史真实结果.svg readable text 结论：保留独立后端作为研究模块；当前主演示默认关闭，不能宣称回环已改善精度。",
+      "passed": true
+    },
+    {
+      "check": "04_独立回环后端_历史真实结果.svg readable text 04 / 04",
+      "passed": true
+    },
+    {
+      "check": "04_独立回环后端_历史真实结果.svg readable text 黑色虚线：仿真真值   橙色：原始定位   绿色：修正定位",
+      "passed": true
+    },
+    {
+      "check": "04_独立回环后端_历史真实结果.svg readable text 同一航次的在线位姿评测",
+      "passed": true
+    },
+    {
+      "check": "04_独立回环后端_历史真实结果.svg readable text 177.1秒 · 真值航程51.10米 · 58个关键帧",
+      "passed": true
+    },
+    {
+      "check": "04_独立回环后端_历史真实结果.svg readable text 整段三维位置误差",
+      "passed": true
+    },
+    {
+      "check": "04_独立回环后端_历史真实结果.svg readable text 1.13 厘米 → 4.78 厘米",
+      "passed": true
+    },
+    {
+      "check": "04_独立回环后端_历史真实结果.svg readable text 刚体对齐后的均方根误差；越小越好。",
+      "passed": true
+    },
+    {
+      "check": "04_独立回环后端_历史真实结果.svg readable text 5秒间隔的相对位移误差",
+      "passed": true
+    },
+    {
+      "check": "04_独立回环后端_历史真实结果.svg readable text 0.97 厘米 → 2.89 厘米",
+      "passed": true
+    },
+    {
+      "check": "04_独立回环后端_历史真实结果.svg readable text 相邻时间段的运动一致性也变差。",
+      "passed": true
+    },
+    {
+      "check": "04_独立回环后端_历史真实结果.svg readable text 接受回环 / 数值优化失败",
+      "passed": true
+    },
+    {
+      "check": "04_独立回环后端_历史真实结果.svg readable text 2 条 / 0 次",
+      "passed": true
+    },
+    {
+      "check": "04_独立回环后端_历史真实结果.svg readable text 数值求解成功，仍不能证明回访连接正确。",
+      "passed": true
+    },
+    {
+      "check": "04_独立回环后端_历史真实结果.svg readable text 为什么不能只看左侧轨迹图？",
+      "passed": true
+    },
+    {
+      "check": "04_独立回环后端_历史真实结果.svg readable text 俯视轨迹重合会掩盖高度方向的误差。",
+      "passed": true
+    },
+    {
+      "check": "04_独立回环后端_历史真实结果.svg readable text 这里评测在线输出，不是回环后最终整条轨迹；",
+      "passed": true
+    },
+    {
+      "check": "04_独立回环后端_历史真实结果.svg readable text 原报告与原图已附在“证据原件”目录。",
+      "passed": true
+    },
+    {
+      "check": "04_独立回环后端_历史真实结果.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "04_独立回环后端_历史真实结果.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "04_独立回环后端_历史真实结果.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "04_独立回环后端_历史真实结果.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "04_独立回环后端_历史真实结果.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "04_独立回环后端_历史真实结果.svg rectangle in canvas",
+      "passed": true
+    },
+    {
+      "check": "04_独立回环后端_历史真实结果.svg exact text inventory",
+      "passed": true
+    },
+    {
+      "check": "1 font bounds 独立回环后端：全局校正，连续控制分流",
+      "passed": true
+    },
+    {
+      "check": "1 font bounds 利用重访地点约束历史轨迹；优化结果单独输出，不直接接管无人机飞行。",
+      "passed": true
+    },
+    {
+      "check": "1 font bounds 当前主演示默认关闭回环；图为工程结构示意，不代表已证明精度提升。",
+      "passed": true
+    },
+    {
+      "check": "1 font bounds 01 / 04",
+      "passed": true
+    },
+    {
+      "check": "1 font bounds 输入与连续定位",
+      "passed": true
+    },
+    {
+      "check": "1 font bounds 独立回环处理",
+      "passed": true
+    },
+    {
+      "check": "1 font bounds 结果输出",
+      "passed": true
+    },
+    {
+      "check": "1 font bounds 连续位姿",
+      "passed": true
+    },
+    {
+      "check": "1 font bounds 无人机的位置与姿态",
+      "passed": true
+    },
+    {
+      "check": "1 font bounds 保持原始定位链路",
+      "passed": true
+    },
+    {
+      "check": "1 font bounds 当前注册点云",
+      "passed": true
+    },
+    {
+      "check": "1 font bounds 与位姿配对",
+      "passed": true
+    },
+    {
+      "check": "1 font bounds 保存为机体局部点云",
+      "passed": true
+    },
+    {
+      "check": "1 font bounds 历史",
+      "passed": true
+    },
+    {
+      "check": "1 font bounds 当前",
+      "passed": true
+    },
+    {
+      "check": "1 font bounds 寻找重访并验证几何",
+      "passed": true
+    },
+    {
+      "check": "1 font bounds 关键帧记忆",
+      "passed": true
+    },
+    {
+      "check": "1 font bounds 位移或转角触发",
+      "passed": true
+    },
+    {
+      "check": "1 font bounds 连接相邻帧位移",
+      "passed": true
+    },
+    {
+      "check": "1 font bounds 重访候选",
+      "passed": true
+    },
+    {
+      "check": "1 font bounds 时距与高度筛选",
+      "passed": true
+    },
+    {
+      "check": "1 font bounds 多帧摘要再核验",
+      "passed": true
+    },
+    {
+      "check": "1 font bounds 点云对齐与门控",
+      "passed": true
+    },
+    {
+      "check": "1 font bounds 检查匹配质量与覆盖",
+      "passed": true
+    },
+    {
+      "check": "1 font bounds 限制修正幅度",
+      "passed": true
+    },
+    {
+      "check": "1 font bounds 历史轨迹修正与地图重建",
+      "passed": true
+    },
+    {
+      "check": "1 font bounds 位姿图优化",
+      "passed": true
+    },
+    {
+      "check": "1 font bounds 固定第一帧；相邻约束＋回访约束",
+      "passed": true
+    },
+    {
+      "check": "1 font bounds 降低异常约束影响",
+      "passed": true
+    },
+    {
+      "check": "1 font bounds 地图重新拼接",
+      "passed": true
+    },
+    {
+      "check": "1 font bounds 每帧局部点云使用修正位置",
+      "passed": true
+    },
+    {
+      "check": "1 font bounds 重新合并并降采样",
+      "passed": true
+    },
+    {
+      "check": "1 font bounds 轨迹与回环连接",
+      "passed": true
+    },
+    {
+      "check": "1 font bounds 原始/修正轨迹并列",
+      "passed": true
+    },
+    {
+      "check": "1 font bounds 输出连接线及诊断",
+      "passed": true
+    },
+    {
+      "check": "1 font bounds 重建地图",
+      "passed": true
+    },
+    {
+      "check": "1 font bounds 单独的回环地图话题",
+      "passed": true
+    },
+    {
+      "check": "1 font bounds 不覆盖导航维护地图",
+      "passed": true
+    },
+    {
+      "check": "1 font bounds 按修正位置重新拼接",
+      "passed": true
+    },
+    {
+      "check": "1 font bounds 原始连续位姿 → 原有规划与安全控制；回环修正不回写原定位内部地图，也不直接用于飞控。",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 独立回环后端：从关键帧到修正地图",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 参考七步循环图：上排从左向右，下排从右向左；每个环节配工程图示。",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 示意图不是实验结果；循环由新关键帧触发，检测与地图发布采用独立定时任务。",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 02 / 04",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 1  保存关键帧",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 位姿与点云配对；移动1米",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 或转动10度，保留一帧。",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 2  筛选历史地点",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 相隔20秒、25帧；距离8米内",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 且高度差不超过1米。",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 3  比较环境摘要",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 最多聚合4帧；按方向和距离",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 记录高度，并比较相似程度。",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 4  对齐当前与历史点云",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 当前帧对历史小地图；",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 尝试初始位置与不同朝向。",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 第1帧",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 第2帧",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 第3帧",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 第4帧",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 0",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 1",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 2",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 3",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 4",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 5",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 6",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 关键帧",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 回访连接",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 分环、分方向",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 局部高度摘要",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 历史",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 当前",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 5  多道检查后接纳",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 匹配收敛、评分合格、重叠足够；",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 位置或角度修正过大则拒绝。",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 6  修正整条关键帧轨迹",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 加入回访连接；固定第一帧，",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 联合调整历史位置与姿态。",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 7  重建并发布结果",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 各帧点云按修正位置重新拼接；",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 轨迹、地图与诊断单独输出。",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 检查",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 拒绝",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 接纳",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 0",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 1",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 2",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 3",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 4",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 5",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 6",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 关键帧",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 回访连接",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 按修正位置重新拼接",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 处理新的关键帧",
+      "passed": true
+    },
+    {
+      "check": "2 font bounds 不合格：不加回环，等待后续帧",
+      "passed": true
+    },
+    {
+      "check": "3 font bounds 我们制定的规则：不是“看着像”就连接",
+      "passed": true
+    },
+    {
+      "check": "3 font bounds 以下是当前默认参数，不是安全保证；重复结构仍可能通过检查，历史实验已出现误回环。",
+      "passed": true
+    },
+    {
+      "check": "3 font bounds 回环修正的是位置关系，不自动去除人体鬼影；现有规则仍需更严格的重复结构验证。",
+      "passed": true
+    },
+    {
+      "check": "3 font bounds 03 / 04",
+      "passed": true
+    },
+    {
+      "check": "3 font bounds 01  关键帧与时间隔离",
+      "passed": true
+    },
+    {
+      "check": "3 font bounds 首帧初始化；之后移动1米或转10度存帧。",
+      "passed": true
+    },
+    {
+      "check": "3 font bounds 点数至少250；回访须隔20秒和25帧。",
+      "passed": true
+    },
+    {
+      "check": "3 font bounds 第1帧",
+      "passed": true
+    },
+    {
+      "check": "3 font bounds 第2帧",
+      "passed": true
+    },
+    {
+      "check": "3 font bounds 第3帧",
+      "passed": true
+    },
+    {
+      "check": "3 font bounds 第4帧",
+      "passed": true
+    },
+    {
+      "check": "3 font bounds 02  空间与高度先验",
+      "passed": true
+    },
+    {
+      "check": "3 font bounds 在8米范围内寻找历史地点，高差≤1米。",
+      "passed": true
+    },
+    {
+      "check": "3 font bounds 最多保留15个空间候选，不强行连接近邻。",
+      "passed": true
+    },
+    {
+      "check": "3 font bounds 0",
+      "passed": true
+    },
+    {
+      "check": "3 font bounds 1",
+      "passed": true
+    },
+    {
+      "check": "3 font bounds 2",
+      "passed": true
+    },
+    {
+      "check": "3 font bounds 3",
+      "passed": true
+    },
+    {
+      "check": "3 font bounds 4",
+      "passed": true
+    },
+    {
+      "check": "3 font bounds 5",
+      "passed": true
+    },
+    {
+      "check": "3 font bounds 6",
+      "passed": true
+    },
+    {
+      "check": "3 font bounds 关键帧",
+      "passed": true
+    },
+    {
+      "check": "3 font bounds 回访连接",
+      "passed": true
+    },
+    {
+      "check": "3 font bounds 03  相似性分级放行",
+      "passed": true
+    },
+    {
+      "check": "3 font bounds 摘要分数≤0.22进入点云验证；",
+      "passed": true
+    },
+    {
+      "check": "3 font bounds 距离≤2米时，≤0.55可进入几何兜底。",
+      "passed": true
+    },
+    {
+      "check": "3 font bounds 分环、分方向",
+      "passed": true
+    },
+    {
+      "check": "3 font bounds 局部高度摘要",
+      "passed": true
+    },
+    {
+      "check": "3 font bounds 兜底仅允许尝试对齐，不直接认定回环。",
+      "passed": true
+    },
+    {
+      "check": "3 font bounds 04  点云验证与硬门限",
+      "passed": true
+    },
+    {
+      "check": "3 font bounds 对齐须收敛；评分≤0.30、重叠≥35%。",
+      "passed": true
+    },
+    {
+      "check": "3 font bounds 位置修正≤4米、角度修正≤35度。",
+      "passed": true
+    },
+    {
+      "check": "3 font bounds 历史",
+      "passed": true
+    },
+    {
+      "check": "3 font bounds 当前",
+      "passed": true
+    },
+    {
+      "check": "3 font bounds 评分不是距离单位；低评分也不等于同一地点。",
+      "passed": true
+    },
+    {
+      "check": "3 font bounds 05  图优化与失败撤销",
+      "passed": true
+    },
+    {
+      "check": "3 font bounds 固定首帧；异常约束降权、限制每步改动。",
+      "passed": true
+    },
+    {
+      "check": "3 font bounds 数值求解失败，移除本次新增回访连接。",
+      "passed": true
+    },
+    {
+      "check": "3 font bounds 检查",
+      "passed": true
+    },
+    {
+      "check": "3 font bounds 拒绝",
+      "passed": true
+    },
+    {
+      "check": "3 font bounds 接纳",
+      "passed": true
+    },
+    {
+      "check": "3 font bounds 06  限频、冷却与输出隔离",
+      "passed": true
+    },
+    {
+      "check": "3 font bounds 每2秒检查；接纳后冷却10个关键帧。",
+      "passed": true
+    },
+    {
+      "check": "3 font bounds 地图定时检查5秒一次；不接管飞控。",
+      "passed": true
+    },
+    {
+      "check": "3 font bounds 按修正位置重新拼接",
+      "passed": true
+    },
+    {
+      "check": "4 font bounds 历史保存结果：能产生回环，不等于精度提高",
+      "passed": true
+    },
+    {
+      "check": "4 font bounds 2026年9月23日闭环专用场景；沿用当时保存的原始轨迹图与评测报告，未重新运行实验。",
+      "passed": true
+    },
+    {
+      "check": "4 font bounds 结论：保留独立后端作为研究模块；当前主演示默认关闭，不能宣称回环已改善精度。",
+      "passed": true
+    },
+    {
+      "check": "4 font bounds 04 / 04",
+      "passed": true
+    },
+    {
+      "check": "4 font bounds 黑色虚线：仿真真值   橙色：原始定位   绿色：修正定位",
+      "passed": true
+    },
+    {
+      "check": "4 font bounds 同一航次的在线位姿评测",
+      "passed": true
+    },
+    {
+      "check": "4 font bounds 177.1秒 · 真值航程51.10米 · 58个关键帧",
+      "passed": true
+    },
+    {
+      "check": "4 font bounds 整段三维位置误差",
+      "passed": true
+    },
+    {
+      "check": "4 font bounds 1.13 厘米 → 4.78 厘米",
+      "passed": true
+    },
+    {
+      "check": "4 font bounds 刚体对齐后的均方根误差；越小越好。",
+      "passed": true
+    },
+    {
+      "check": "4 font bounds 5秒间隔的相对位移误差",
+      "passed": true
+    },
+    {
+      "check": "4 font bounds 0.97 厘米 → 2.89 厘米",
+      "passed": true
+    },
+    {
+      "check": "4 font bounds 相邻时间段的运动一致性也变差。",
+      "passed": true
+    },
+    {
+      "check": "4 font bounds 接受回环 / 数值优化失败",
+      "passed": true
+    },
+    {
+      "check": "4 font bounds 2 条 / 0 次",
+      "passed": true
+    },
+    {
+      "check": "4 font bounds 数值求解成功，仍不能证明回访连接正确。",
+      "passed": true
+    },
+    {
+      "check": "4 font bounds 为什么不能只看左侧轨迹图？",
+      "passed": true
+    },
+    {
+      "check": "4 font bounds 俯视轨迹重合会掩盖高度方向的误差。",
+      "passed": true
+    },
+    {
+      "check": "4 font bounds 这里评测在线输出，不是回环后最终整条轨迹；",
+      "passed": true
+    },
+    {
+      "check": "4 font bounds 原报告与原图已附在“证据原件”目录。",
+      "passed": true
+    },
+    {
+      "check": "1 diagram count appropriate to page",
+      "passed": true
+    },
+    {
+      "check": "2 diagram count appropriate to page",
+      "passed": true
+    },
+    {
+      "check": "3 diagram count appropriate to page",
+      "passed": true
+    },
+    {
+      "check": "4 diagram count appropriate to page",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/loop_closure_backend.cpp",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/loop_closure.yaml",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/launch/loop_closure.launch",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/launch/warehouse_exploration.launch",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/run_dynamic_comparison.py",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/analyze_loop_closure_bag.py",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/loop_closure_runs/loop_closure_20260923_182256_trajectory.png",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/loop_closure_runs/loop_closure_20260923_182256_report.txt",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/下载/fastlio2ppt.pptx",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销地图维护_图文并茂补充/00_六张图文流程图预览.png",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销地图维护_图文并茂补充/SVG/03_射线证据与四类误删保护.svg",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销地图维护_图文并茂补充/SVG/05_两种清理模式的图解.svg",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销地图维护_图文并茂补充/SVG/01_七步图文循环总流程.svg",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销地图维护_图文并茂补充/SVG/06_更新地图如何影响路径.svg",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销地图维护_图文并茂补充/SVG/02_人体离开与地图撤销对比.svg",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销地图维护_图文并茂补充/SVG/04_共享存储与多地图视图.svg",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销地图维护_图文并茂补充/PNG/03_射线证据与四类误删保护.png",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销地图维护_图文并茂补充/PNG/01_七步图文循环总流程.png",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销地图维护_图文并茂补充/PNG/05_两种清理模式的图解.png",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销地图维护_图文并茂补充/PNG/02_人体离开与地图撤销对比.png",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销地图维护_图文并茂补充/PNG/04_共享存储与多地图视图.png",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销地图维护_图文并茂补充/PNG/06_更新地图如何影响路径.png",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/00_全部图片预览.png",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/预览_01至08.png",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/预览_09至16.png",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/SVG/10_命中与空证据时间线.svg",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/SVG/06_普通版运动轨迹清理.svg",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/SVG/13_地图变化与路线更新.svg",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/SVG/08_射线与遮挡示意.svg",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/SVG/04_七步循环更新流程.svg",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/SVG/03_小格子中的地图记忆.svg",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/SVG/05_一份存储四种视图.svg",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/SVG/07_探索版观测证据架构.svg",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/SVG/11_避免误删静态结构.svg",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/SVG/12_人先静止后移动.svg",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/SVG/16_规则总览与适用边界.svg",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/SVG/01_地图维护总架构.svg",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/SVG/15_容量与保存规则.svg",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/SVG/09_旧点删除判断流程.svg",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/SVG/02_鬼影问题与撤销动机.svg",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/SVG/14_配对时间与更新时刻.svg",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/PNG/13_地图变化与路线更新.png",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/PNG/04_七步循环更新流程.png",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/PNG/14_配对时间与更新时刻.png",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/PNG/07_探索版观测证据架构.png",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/PNG/16_规则总览与适用边界.png",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/PNG/06_普通版运动轨迹清理.png",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/PNG/08_射线与遮挡示意.png",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/PNG/11_避免误删静态结构.png",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/PNG/03_小格子中的地图记忆.png",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/PNG/01_地图维护总架构.png",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/PNG/09_旧点删除判断流程.png",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/PNG/05_一份存储四种视图.png",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/PNG/12_人先静止后移动.png",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/PNG/15_容量与保存规则.png",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/PNG/02_鬼影问题与撤销动机.png",
+      "passed": true
+    },
+    {
+      "check": "protected original /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/PNG/10_命中与空证据时间线.png",
+      "passed": true
+    },
+    {
+      "check": "unchanged evidence copy loop_closure_20260923_182256_trajectory.png",
+      "passed": true
+    },
+    {
+      "check": "unchanged evidence copy loop_closure_20260923_182256_report.txt",
+      "passed": true
+    },
+    {
+      "check": "embedded original plot bytes",
+      "passed": true
+    },
+    {
+      "check": "actual raster chart contains green trajectory",
+      "passed": true
+    },
+    {
+      "check": "build_images.py syntax",
+      "passed": true
+    },
+    {
+      "check": "verify_images.py syntax",
+      "passed": true
+    },
+    {
+      "check": "ZIP CRC",
+      "passed": true
+    },
+    {
+      "check": "ZIP exact build_images.py",
+      "passed": true
+    },
+    {
+      "check": "ZIP exact 讲解与证据说明.md",
+      "passed": true
+    },
+    {
+      "check": "ZIP exact 图像人工复核.md",
+      "passed": true
+    },
+    {
+      "check": "ZIP exact verify_images.py",
+      "passed": true
+    },
+    {
+      "check": "ZIP exact 版面核验信息.json",
+      "passed": true
+    },
+    {
+      "check": "ZIP exact 源码与数据核验.json",
+      "passed": true
+    },
+    {
+      "check": "ZIP exact 00_四页总预览.png",
+      "passed": true
+    },
+    {
+      "check": "ZIP exact 证据原件/loop_closure_20260923_182256_trajectory.png",
+      "passed": true
+    },
+    {
+      "check": "ZIP exact 证据原件/loop_closure_20260923_182256_report.txt",
+      "passed": true
+    },
+    {
+      "check": "ZIP exact SVG/04_独立回环后端_历史真实结果.svg",
+      "passed": true
+    },
+    {
+      "check": "ZIP exact SVG/02_独立回环后端_七步图文流程.svg",
+      "passed": true
+    },
+    {
+      "check": "ZIP exact SVG/01_独立回环后端_分区架构.svg",
+      "passed": true
+    },
+    {
+      "check": "ZIP exact SVG/03_独立回环后端_接纳与保护规则.svg",
+      "passed": true
+    },
+    {
+      "check": "ZIP exact PNG/02_独立回环后端_七步图文流程.png",
+      "passed": true
+    },
+    {
+      "check": "ZIP exact PNG/03_独立回环后端_接纳与保护规则.png",
+      "passed": true
+    },
+    {
+      "check": "ZIP exact PNG/01_独立回环后端_分区架构.png",
+      "passed": true
+    },
+    {
+      "check": "ZIP exact PNG/04_独立回环后端_历史真实结果.png",
+      "passed": true
+    }
+  ]
+}

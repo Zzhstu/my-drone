@@ -1,0 +1,3 @@
+探索器不是按预先写好的仓库货架路线飞行。开始时只有有限计算窗口，从实际扫描更新未知、自由和占用状态；靠近窗口边缘再扩展，新增格子仍然未知。从已观测安全区域寻找可到达的未知边界观察位置，比较能多看到多少信息和走过去的代价，决定下一站。新视角获得扫描后再循环。
+
+未知区不能直接当成自由通道。长期没有进展的目标暂时降权，避免一直卡在同一货架。正常安全余量零点八米，起点受新障碍影响时才允许在已知空间中寻找净空不减的短退路，恢复下限零点四五米并不替代日常安全距离，控制器会再次检查扫描。当前启动文件覆盖控制速度上限为零点三米每秒。源码是/home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/warehouse_explorer.py、scripts/exploration_grid.py、src/exploration_search.cpp与scripts/exploration_native.py。参数是config/warehouse_exploration.yaml，覆盖值还要看launch/warehouse_exploration.launch。

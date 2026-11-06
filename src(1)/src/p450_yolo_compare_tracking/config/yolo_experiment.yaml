@@ -1,0 +1,12 @@
+models:
+  yolov5: /home/amov/SpireCV/models/yolov5n.pt
+  yolo11: /home/amov/SpireCV/models/yolo11n.pt
+  yolo26: /home/amov/SpireCV/models/yolo26n.pt
+classes: all
+imgsz: 640
+conf: 0.35
+iou: 0.45
+fov_x: 60.0
+fov_y: 39.0
+target_real_width_m: 0.0
+target_real_height_m: 0.0

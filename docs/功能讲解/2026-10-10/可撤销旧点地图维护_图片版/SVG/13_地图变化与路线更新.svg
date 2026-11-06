@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect x="0" y="0" width="1600" height="900" fill="#FFFFFF" stroke="none" stroke-width="1.6"/>
+<text x="60" y="80.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="46" font-weight="700" fill="#15334C" text-anchor="start">地图更新，要让路线也重新审视</text>
+<text x="63" y="125.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#657585" text-anchor="start">地图清得干净只是中间结果；最终目的是不再被历史假墙一直挡住。</text>
+<polyline points="60,151 1540,151" fill="none" stroke="#D5E0E6" stroke-width="1.2"/>
+<rect x="60" y="784" width="1480" height="62" fill="#EFF5F8" stroke="none" stroke-width="1.6"/>
+<text x="78" y="823.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="700" fill="#137B7E" text-anchor="start">核心规则</text>
+<text x="210" y="822.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">先在三维旧点上用自由证据修正，再膨胀障碍，最后叠加当前占用。</text>
+<text x="60" y="878.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="17" font-weight="400" fill="#657585" text-anchor="start">现有源码规则 · 所有点云与场景小图为示意 · 非新增实验结果</text>
+<text x="1400" y="879.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="18" font-weight="400" fill="#657585" text-anchor="start">13 / 16</text>
+<rect x="60" y="212" width="510" height="510" fill="#FFFFFF" stroke="#15334C" stroke-width="1.6" stroke-dasharray="7 6"/>
+<rect x="78" y="197" width="185.90625" height="36" fill="#FFFFFF" stroke="none" stroke-width="1.6"/>
+<text x="90" y="228.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#15334C" text-anchor="start">长期地图修正</text>
+<rect x="88" y="263" width="454" height="174" fill="#EEF8F1" stroke="#A6CCB7" stroke-width="1.6"/>
+<text x="104" y="301.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="700" fill="#15334C" text-anchor="start">满足多次证据再删</text>
+<text x="106" y="338.36" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="21" font-weight="400" fill="#15334C" text-anchor="start">共享存储删除旧占用</text>
+<circle cx="118.0" cy="362.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="118.0" cy="376.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="118.0" cy="390.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="118.0" cy="404.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="149.53846153846155" cy="362.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="149.53846153846155" cy="376.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="149.53846153846155" cy="390.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="149.53846153846155" cy="404.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="181.0769230769231" cy="362.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="181.0769230769231" cy="376.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="181.0769230769231" cy="390.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="181.0769230769231" cy="404.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="212.6153846153846" cy="362.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="212.6153846153846" cy="376.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="212.6153846153846" cy="390.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="212.6153846153846" cy="404.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="244.15384615384616" cy="362.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="244.15384615384616" cy="376.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="244.15384615384616" cy="390.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="244.15384615384616" cy="404.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="275.6923076923077" cy="362.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="275.6923076923077" cy="376.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="275.6923076923077" cy="390.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="275.6923076923077" cy="404.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="307.2307692307692" cy="362.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="307.2307692307692" cy="376.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="307.2307692307692" cy="390.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="307.2307692307692" cy="404.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="338.7692307692308" cy="362.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="338.7692307692308" cy="376.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="338.7692307692308" cy="390.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="338.7692307692308" cy="404.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="370.3076923076923" cy="362.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="370.3076923076923" cy="376.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="370.3076923076923" cy="390.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="370.3076923076923" cy="404.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="401.84615384615387" cy="362.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="401.84615384615387" cy="376.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="401.84615384615387" cy="390.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="401.84615384615387" cy="404.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="433.38461538461536" cy="362.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="433.38461538461536" cy="376.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="433.38461538461536" cy="390.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="433.38461538461536" cy="404.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="464.9230769230769" cy="362.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="464.9230769230769" cy="376.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="464.9230769230769" cy="390.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="464.9230769230769" cy="404.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="290.4" cy="364" r="3.1" fill="#FFFFFF" stroke="#D7E0E3" stroke-width="1.6"/>
+<circle cx="290.4" cy="376" r="3.1" fill="#FFFFFF" stroke="#D7E0E3" stroke-width="1.6"/>
+<circle cx="290.4" cy="388" r="3.1" fill="#FFFFFF" stroke="#D7E0E3" stroke-width="1.6"/>
+<circle cx="290.4" cy="400" r="3.1" fill="#FFFFFF" stroke="#D7E0E3" stroke-width="1.6"/>
+<circle cx="299.4" cy="364" r="3.1" fill="#FFFFFF" stroke="#D7E0E3" stroke-width="1.6"/>
+<circle cx="299.4" cy="376" r="3.1" fill="#FFFFFF" stroke="#D7E0E3" stroke-width="1.6"/>
+<circle cx="299.4" cy="388" r="3.1" fill="#FFFFFF" stroke="#D7E0E3" stroke-width="1.6"/>
+<circle cx="299.4" cy="400" r="3.1" fill="#FFFFFF" stroke="#D7E0E3" stroke-width="1.6"/>
+<circle cx="308.4" cy="364" r="3.1" fill="#FFFFFF" stroke="#D7E0E3" stroke-width="1.6"/>
+<circle cx="308.4" cy="376" r="3.1" fill="#FFFFFF" stroke="#D7E0E3" stroke-width="1.6"/>
+<circle cx="308.4" cy="388" r="3.1" fill="#FFFFFF" stroke="#D7E0E3" stroke-width="1.6"/>
+<circle cx="308.4" cy="400" r="3.1" fill="#FFFFFF" stroke="#D7E0E3" stroke-width="1.6"/>
+<circle cx="317.4" cy="364" r="3.1" fill="#FFFFFF" stroke="#D7E0E3" stroke-width="1.6"/>
+<circle cx="317.4" cy="376" r="3.1" fill="#FFFFFF" stroke="#D7E0E3" stroke-width="1.6"/>
+<circle cx="317.4" cy="388" r="3.1" fill="#FFFFFF" stroke="#D7E0E3" stroke-width="1.6"/>
+<circle cx="317.4" cy="400" r="3.1" fill="#FFFFFF" stroke="#D7E0E3" stroke-width="1.6"/>
+<rect x="88" y="511" width="454" height="160" fill="#EDF5FF" stroke="#A7C6E3" stroke-width="1.6"/>
+<text x="104" y="555.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="28" font-weight="700" fill="#15334C" text-anchor="start">持续与稳定地图更新</text>
+<text x="106" y="597.64" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">历史参考不再永远保留假墙</text>
+<polyline points="315,441 315,507" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="315.00,507.00 310.20,497.00 319.80,497.00" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<rect x="630" y="212" width="910" height="510" fill="#FFFFFF" stroke="#15334C" stroke-width="1.6" stroke-dasharray="7 6"/>
+<rect x="648" y="197" width="266.859375" height="36" fill="#FFFFFF" stroke="none" stroke-width="1.6"/>
+<text x="660" y="228.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#15334C" text-anchor="start">局部路线的及时修正</text>
+<rect x="657" y="274" width="260" height="276" fill="#F0F0FF" stroke="#B3BFEA" stroke-width="1.6"/>
+<text x="673" y="318.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="28" font-weight="700" fill="#15334C" text-anchor="start">旧点三维匹配</text>
+<text x="675" y="360.64" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">仅修正自由证据附近</text>
+<text x="675" y="393.76" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">原点</text>
+<polyline points="922,410 943,410" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="943.00,410.00 933.00,414.80 933.00,405.20" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<rect x="947" y="274" width="260" height="276" fill="#FFF3E7" stroke="#E6B988" stroke-width="1.6"/>
+<text x="963" y="318.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="28" font-weight="700" fill="#15334C" text-anchor="start">剩余障碍膨胀</text>
+<text x="965" y="360.64" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">保留机体与安全间隙</text>
+<polyline points="1212,410 1233,410" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="1233.00,410.00 1223.00,414.80 1223.00,405.20" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<rect x="1237" y="274" width="260" height="276" fill="#EEF8F1" stroke="#A6CCB7" stroke-width="1.6"/>
+<text x="1253" y="318.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="28" font-weight="700" fill="#15334C" text-anchor="start">当前占用回填</text>
+<text x="1255" y="360.64" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">当前人、货架继续挡</text>
+<text x="1255" y="393.76" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">路</text>
+<rect x="657" y="595" width="840" height="100" fill="#EEF8F1" stroke="#A6CCB7" stroke-width="1.6"/>
+<text x="673" y="631.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="700" fill="#15334C" text-anchor="start">重新检查路径或探索航点</text>
+<text x="675" y="665.02" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#15334C" text-anchor="start">探索与普通目标规划使用不同任务节点</text>
+<polyline points="513,590 611,590 611,410 653,410" fill="none" stroke="#137B7E" stroke-width="2"/>
+<polygon points="653.00,410.00 643.00,414.80 643.00,405.20" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<polyline points="1358,554 1358,591" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="1358.00,591.00 1353.20,581.00 1362.80,581.00" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<text x="75" y="761.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="23" font-weight="400" fill="#137B7E" text-anchor="start">局部自由观测可先修正路线，不必等持续地图完成删除；两者删除条件不能混同。</text>
+</svg>

@@ -1,0 +1,6879 @@
+{
+  "scope": "image/source/evidence only; no new flight or completeness test",
+  "count": 1718,
+  "passed": true,
+  "checks": [
+    {
+      "check": "seven PNG + seven SVG",
+      "passed": true
+    },
+    {
+      "check": "no PPTX",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.png dimensions",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.png nonempty content",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.png dimensions",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.png nonempty content",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.png dimensions",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.png nonempty content",
+      "passed": true
+    },
+    {
+      "check": "04_补扫与质量规则.png dimensions",
+      "passed": true
+    },
+    {
+      "check": "04_补扫与质量规则.png nonempty content",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.png dimensions",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.png nonempty content",
+      "passed": true
+    },
+    {
+      "check": "06_真实地图与任务结果.png dimensions",
+      "passed": true
+    },
+    {
+      "check": "06_真实地图与任务结果.png nonempty content",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.png dimensions",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.png nonempty content",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg canvas",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg editable text",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg text inventory",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg font size 黑箱自主探索：边飞边认识仓库",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg font size 没有预设货架布局或飞行路线；由观测生成地图、目标和动作",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg font size 机制示意｜固定高度的平面探索，不等于任意三维空间的完整扫描。",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg font size 01 / 07",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg font size 传感器与状态输入",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg font size 位置与当前点云",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg font size 回答：我在哪？",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg font size 眼前有什么物体？",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg font size 可更新的维护地图",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg font size 保留静态结构；旧占用",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg font size 须有新观测证据才能撤销。",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg font size 真实起飞与数据时效",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg font size 确认已起飞、数据未过期；",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg font size 没有有效输入就先保持。",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg font size 先确认，再规划",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg font size 自主决策与任务管理",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg font size 认识环境 → 选择观察位置",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg font size 观测格与安全通道",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg font size 区分未知、自由与占用；",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg font size 只在已知安全空间走。",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg font size 探索目标与路径",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg font size 优先可看见更多未知的位置；",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg font size 计入路程和障碍遮挡。",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg font size 多角度补扫 → 返航 → 保存",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg font size 已看表面的质量检查",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg font size 观察太少就换位置补扫；",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg font size 发现新通道可恢复探索。",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg font size 任务结束与保存确认",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg font size 回到起点，持续驻留5秒；",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg font size 地图保存成功后才结束。",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg font size 增益变小 / 无有用前沿",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg font size 新通道出现：再次探索",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg font size 执行与结果",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg font size 安全控制与反馈",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg font size 执行观察航点；遇到真实",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg font size 障碍或过期数据先保持。",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg font size 轨迹、点云与状态",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg font size 记录走过的路、维护地图",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg font size 和明确的结束原因。",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg font size 独立地图验收",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg font size 检查货架侧面缺口；",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg font size 真值不作为规划输入。",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg font size 飞行产生新观测：持续改变下一轮决策",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "01_模块架构.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "partitioned architecture",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg canvas",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg editable text",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg text inventory",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg font size 探索、补扫、返航：七步图文流程",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg font size 四上三下的主流程；遇到新未知区域或路径变化，会回到前面的步骤",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg font size 机制示意｜补扫不是每到一个目标就执行；是否转入补扫由观测增益和候选状态决定。",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg font size 02 / 07",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg font size 1　起飞与初始化",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg font size 确认起飞和新鲜数据，",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg font size 记录起点及固定飞行高度。",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg font size 2　建立观测格",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg font size 激光看到哪里才认识哪里；",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg font size 未知格不能直接当通道。",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg font size 3　选择未知边界视点",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg font size 比较能看到的未知范围，",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg font size 同时考虑到达路程。",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg font size 4　安全规划并飞过去",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg font size 路径考虑机体与净空；",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg font size 当前障碍变化时重新检查。",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg font size 5　增益变小，换角度补扫",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg font size 检查已有表面还缺哪些视角；",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg font size 新通道出现时可回到探索。",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg font size 6　按已知安全路径返航",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg font size 收敛、预算到期或人工请求返航；",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg font size 返航受阻不能当作成功。",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg font size 7　驻留确认、保存并结束",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg font size 起点附近连续5秒且保存成功；",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg font size 任务结束与地图完整分开记录。",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg font size 地图",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg font size 正常推进：到达后观察2秒，再选目标",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg font size 增益小 / 无前沿",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg font size 飞行获得新观测：更新观测格",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg font size 补扫打开新区域：回到探索；路线受阻：另选目标",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "02_图文七步流程.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "seven-step snake content",
+      "passed": true
+    },
+    {
+      "check": "explicit feedback loop",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg canvas",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg editable text",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg text inventory",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg font size 黑箱探索的规则：没有地图，也不盲目往前冲",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg font size “黑箱”指仓库几何未知，不是取消安全边界；飞行仍保持一个高度",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg font size 机制示意｜当前人体即使不进入长期地图，当前扫描中仍作为障碍。",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg font size 03 / 07",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg font size 从一次观测，到一个可到达的新视点",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg font size 灰色：未知　绿色：已看自由空间　棕色：占用　蓝点：候选视点",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg font size 候选点在已知安全边界附近，不在未知障碍后面直接落点。",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg font size 规则一：范围来自观测，而不是世界文件",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg font size 初始计算窗口以地图原点为中心，半径12米。",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg font size 飞到边缘或发现新的自由空间后扩展；新增格保持未知。",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg font size 20万个格是资源上限，不代表仓库的真实轮廓。",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg font size 规则二：优先“看得多、走得到、路程合理”",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg font size 先找安全可达的未知边界，再计算附近6米内的可见未知。",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg font size 射线被已测墙体挡住就停止，不把墙后未知算作可见收益。",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg font size 小于0.5平方米的收益候选过滤；到过的位置和失败位置受抑制。",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg font size 规则三：路线考虑机体和窄通道",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg font size 0.20米格；正常机心净空0.80米，已含约0.40米机体半径，",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg font size 另加栅格半对角线余量；不沿障碍角斜切。未知也不可通行。",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg font size 规则四：卡住要换方案，不能无声永久悬停",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg font size 目标25秒无进展或变得不可达：记录失败，暂避60秒再选点。",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg font size 同处达到两次失败会持续抑制。当前机位不安全时仅尝试",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg font size 受约束短恢复；30秒无0.20米进展则报告失败并保存部分图。",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "03_黑箱选点与安全规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "04_补扫与质量规则.svg canvas",
+      "passed": true
+    },
+    {
+      "check": "04_补扫与质量规则.svg editable text",
+      "passed": true
+    },
+    {
+      "check": "04_补扫与质量规则.svg text inventory",
+      "passed": true
+    },
+    {
+      "check": "04_补扫与质量规则.svg font size 补扫：从“走过通道”转向“看清货架”",
+      "passed": true
+    },
+    {
+      "check": "04_补扫与质量规则.svg font size 点云看起来很多，不代表每一面都看清；同一个方向反复扫描也不等于多视角",
+      "passed": true
+    },
+    {
+      "check": "04_补扫与质量规则.svg font size 机制示意｜95%是当前已看表面的观测质量，不包含从未看到的表面，不是全仓覆盖率。",
+      "passed": true
+    },
+    {
+      "check": "04_补扫与质量规则.svg font size 04 / 07",
+      "passed": true
+    },
+    {
+      "check": "04_补扫与质量规则.svg font size 为什么要换位置：遮挡会留下缺口",
+      "passed": true
+    },
+    {
+      "check": "04_补扫与质量规则.svg font size 同一侧扫描，只增加类似回波；走到另一个可达方向才可能补充信息。",
+      "passed": true
+    },
+    {
+      "check": "04_补扫与质量规则.svg font size 不同位置、不同方向",
+      "passed": true
+    },
+    {
+      "check": "04_补扫与质量规则.svg font size 第一视点 → 绕到另一侧 → 再次观察",
+      "passed": true
+    },
+    {
+      "check": "04_补扫与质量规则.svg font size 什么时候进入补扫？",
+      "passed": true
+    },
+    {
+      "check": "04_补扫与质量规则.svg font size 完整90秒观测窗口内：新自由面积少于1平方米，",
+      "passed": true
+    },
+    {
+      "check": "04_补扫与质量规则.svg font size 新增粗表面格少于25个，且窗口内至少到达3个观察目标。",
+      "passed": true
+    },
+    {
+      "check": "04_补扫与质量规则.svg font size 或者：连续30秒找不到有用前沿。低增益只触发补扫，不直接结束。",
+      "passed": true
+    },
+    {
+      "check": "04_补扫与质量规则.svg font size 一个表面格怎样才算“观察得够了”？",
+      "passed": true
+    },
+    {
+      "check": "04_补扫与质量规则.svg font size 用0.40米的三维粗格计数，至少3次不同采集时刻。",
+      "passed": true
+    },
+    {
+      "check": "04_补扫与质量规则.svg font size 还需至少2个方向扇区；新增方向的位置距初次观察至少0.75米。",
+      "passed": true
+    },
+    {
+      "check": "04_补扫与质量规则.svg font size 重复发布同一帧不加次数；初次方向与后续方向共同构成证据。",
+      "passed": true
+    },
+    {
+      "check": "04_补扫与质量规则.svg font size 补扫目标怎么选？",
+      "passed": true
+    },
+    {
+      "check": "04_补扫与质量规则.svg font size 只从当前维护地图的欠观测表面产生目标；",
+      "passed": true
+    },
+    {
+      "check": "04_补扫与质量规则.svg font size 换角度的位置必须安全、可达，并且未被已测障碍挡住。",
+      "passed": true
+    },
+    {
+      "check": "04_补扫与质量规则.svg font size 到达不等于观察合格；证据不足时，20秒冷却后可再次尝试。",
+      "passed": true
+    },
+    {
+      "check": "04_补扫与质量规则.svg font size 地图中已撤销的人体旧点，不再作为永久补扫对象。",
+      "passed": true
+    },
+    {
+      "check": "04_补扫与质量规则.svg font size 补扫之后仍可能继续探索",
+      "passed": true
+    },
+    {
+      "check": "04_补扫与质量规则.svg font size 没有补扫候选却出现新有效前沿：重置增益窗口，继续探索。",
+      "passed": true
+    },
+    {
+      "check": "04_补扫与质量规则.svg font size 补扫预算600仿真秒耗尽，或可达视点用尽：返航并标为部分结果。",
+      "passed": true
+    },
+    {
+      "check": "04_补扫与质量规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "04_补扫与质量规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "04_补扫与质量规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "04_补扫与质量规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "04_补扫与质量规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "04_补扫与质量规则.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg canvas",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg editable text",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg text inventory",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg font size 返航和结束：需要确认，不是绕一圈就算完成",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg font size 任务结束有两种口径：正常观测收敛，或带原因的部分结果返航",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg font size 机制示意｜这里的返航是在起点附近悬停确认；不声称真机自动降落，也不保证全三维地图完整。",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg font size 05 / 07",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg font size 正常收敛返航：要同时满足多项条件",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg font size 完整增益窗口已经变小；已看表面质量至少95%；",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg font size 没有有用前沿、没有剩余补扫候选；没有目标失败记录，",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg font size 表面证据与观测格没有容量不足。只认证当前可观测、可达范围。",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg font size 部分结果返航：必须写明原因",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg font size 探索3600仿真秒或3600真实秒预算到期；补扫预算到期；",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg font size 视点用尽仍未合格；容量不足；人工请求或显式目标上限。",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg font size 返回并保存可以成功，但“探索完整”不能因此改成成功。",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg font size 按已知安全路返航",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg font size 新障碍出现时继续更新路；",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg font size 没有安全路则报告受阻。",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg font size 起点内连续驻留",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg font size 平面误差不超过0.30米，",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg font size 持续保持5个仿真秒。",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg font size 0.30米 / 5秒",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg font size 保存成功回执",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg font size 保存失败就保持并重试；",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg font size 不能只看文件名出现。",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg font size 已保存",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg font size 结束本次任务",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg font size 记录终止原因和完整性；",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg font size 默认关闭本次仿真进程。",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg font size 任务成功 ≠ 地图完整",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg font size 连续性检查：离开或数据失效要重新计时",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg font size 偏离起点、暂停、数据过期或机位不安全，都会重置驻留计时。",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg font size 缺少有效扫描时不继续发新探索航点，由控制器看门狗保持。",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg font size 异常保护：保存部分地图，不伪装成成功",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg font size 返航超过1200仿真秒报告失败；运行器4800真实秒硬保护。",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg font size 显式保持展示模式可在完成后保留画面，不再进行探索。",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "05_返航与结束判断.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "06_真实地图与任务结果.svg canvas",
+      "passed": true
+    },
+    {
+      "check": "06_真实地图与任务结果.svg editable text",
+      "passed": true
+    },
+    {
+      "check": "06_真实地图与任务结果.svg text inventory",
+      "passed": true
+    },
+    {
+      "check": "06_真实地图与任务结果.svg font size 真实实验：已完成长程探索与返航保存",
+      "passed": true
+    },
+    {
+      "check": "06_真实地图与任务结果.svg font size 复用原保存点云的俯视结果图；同一航次，左为我们的维护图，右为并行FreeDOM地图",
+      "passed": true
+    },
+    {
+      "check": "06_真实地图与任务结果.svg font size 真实结果｜2026-10-03长程仿真；预算到期返航，不是完整仓库建图成功。",
+      "passed": true
+    },
+    {
+      "check": "06_真实地图与任务结果.svg font size 06 / 07",
+      "passed": true
+    },
+    {
+      "check": "06_真实地图与任务结果.svg font size 观察目标到达",
+      "passed": true
+    },
+    {
+      "check": "06_真实地图与任务结果.svg font size None",
+      "passed": true
+    },
+    {
+      "check": "06_真实地图与任务结果.svg font size 93 / 97",
+      "passed": true
+    },
+    {
+      "check": "06_真实地图与任务结果.svg font size 选出的目标并非全部到达",
+      "passed": true
+    },
+    {
+      "check": "06_真实地图与任务结果.svg font size 实际平面航程",
+      "passed": true
+    },
+    {
+      "check": "06_真实地图与任务结果.svg font size None",
+      "passed": true
+    },
+    {
+      "check": "06_真实地图与任务结果.svg font size 547.88 米",
+      "passed": true
+    },
+    {
+      "check": "06_真实地图与任务结果.svg font size 里程计累计平面位移",
+      "passed": true
+    },
+    {
+      "check": "06_真实地图与任务结果.svg font size 返航平面误差",
+      "passed": true
+    },
+    {
+      "check": "06_真实地图与任务结果.svg font size None",
+      "passed": true
+    },
+    {
+      "check": "06_真实地图与任务结果.svg font size 0.123 米",
+      "passed": true
+    },
+    {
+      "check": "06_真实地图与任务结果.svg font size 回到起点，不是定位精度",
+      "passed": true
+    },
+    {
+      "check": "06_真实地图与任务结果.svg font size 最终落盘地图",
+      "passed": true
+    },
+    {
+      "check": "06_真实地图与任务结果.svg font size None",
+      "passed": true
+    },
+    {
+      "check": "06_真实地图与任务结果.svg font size 284,418 点",
+      "passed": true
+    },
+    {
+      "check": "06_真实地图与任务结果.svg font size 维护地图的有限坐标点",
+      "passed": true
+    },
+    {
+      "check": "06_真实地图与任务结果.svg font size 返航与保存：成功；停止原因：真实时间预算到期；探索完整：否；全三维完整：否。",
+      "passed": true
+    },
+    {
+      "check": "06_真实地图与任务结果.svg font size 图示高度为世界坐标0.25—1.90米；仅显示降采样，不把地图点数当质量排名。",
+      "passed": true
+    },
+    {
+      "check": "06_真实地图与任务结果.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "06_真实地图与任务结果.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "06_真实地图与任务结果.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "06_真实地图与任务结果.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "06_真实地图与任务结果.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "embedded genuine original map",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg canvas",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg editable text",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg text inventory",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg font size 真实实验：整体看起来完整，局部货架仍有缺口",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg font size 下图依据原审计JSON的货架位置与比例绘制，不是示意布局；红、橙、浅绿表示不足90%",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg font size 真实结果｜两幅地图都没有通过“总体至少95%、每架至少90%”的联合侧面验收。",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg font size 07 / 07",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg font size 我们的维护地图：右侧货架存在缺口",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg font size 14",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg font size 15",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg font size 16",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg font size 27",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg font size 28",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg font size 38",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg font size 39",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg font size 40",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg font size 51",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg font size 52",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg font size 真实货架中心位置；数字是未达标货架编号",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg font size FreeDOM并行地图：缺口较少但仍存在",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg font size 16",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg font size 28",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg font size 40",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg font size 真实货架中心位置；数字是未达标货架编号",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg font size 同口径指标",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg font size 我们的维护地图",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg font size FreeDOM并行地图",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg font size 参考侧面支持率",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg font size 90.92%",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg font size 99.01%",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg font size 最差货架支持率",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg font size 29.59%",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg font size 85.71%",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg font size 低于90%的货架",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg font size 10 / 52",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg font size 3 / 52",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg font size 联合验收结果",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg font size 未通过",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg font size 未通过",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg font size 在线“已看质量”与离线“参考覆盖”不同",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg font size 在线质量92.65%只对当前已看表面计数，不能发现从未看到的整面。",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg font size 我们仍需改进：视角覆盖与静态保留",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg font size 这是一航次的代理几何指标；不能由缺口直接认定全部是误删，",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg font size 也不能由此判断人体去除精度。FreeDOM不参与本次飞行控制。",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg font size 评估：52个货架暴露侧面，参考高度0.25—1.90米，采样0.30米，匹配容差0.25米。",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "07_真实覆盖与缺口.svg rectangle bounds",
+      "passed": true
+    },
+    {
+      "check": "52 genuine rack positions in each map",
+      "passed": true
+    },
+    {
+      "check": "1 glyph bounds 黑箱自主探索：边飞边认识仓库",
+      "passed": true
+    },
+    {
+      "check": "1 glyph bounds 没有预设货架布局或飞行路线；由观测生成地图、目标和动作",
+      "passed": true
+    },
+    {
+      "check": "1 glyph bounds 机制示意｜固定高度的平面探索，不等于任意三维空间的完整扫描。",
+      "passed": true
+    },
+    {
+      "check": "1 glyph bounds 01 / 07",
+      "passed": true
+    },
+    {
+      "check": "1 glyph bounds 传感器与状态输入",
+      "passed": true
+    },
+    {
+      "check": "1 glyph bounds 位置与当前点云",
+      "passed": true
+    },
+    {
+      "check": "1 glyph bounds 回答：我在哪？",
+      "passed": true
+    },
+    {
+      "check": "1 glyph bounds 眼前有什么物体？",
+      "passed": true
+    },
+    {
+      "check": "1 glyph bounds 可更新的维护地图",
+      "passed": true
+    },
+    {
+      "check": "1 glyph bounds 保留静态结构；旧占用",
+      "passed": true
+    },
+    {
+      "check": "1 glyph bounds 须有新观测证据才能撤销。",
+      "passed": true
+    },
+    {
+      "check": "1 glyph bounds 真实起飞与数据时效",
+      "passed": true
+    },
+    {
+      "check": "1 glyph bounds 确认已起飞、数据未过期；",
+      "passed": true
+    },
+    {
+      "check": "1 glyph bounds 没有有效输入就先保持。",
+      "passed": true
+    },
+    {
+      "check": "1 glyph bounds 先确认，再规划",
+      "passed": true
+    },
+    {
+      "check": "1 glyph bounds 自主决策与任务管理",
+      "passed": true
+    },
+    {
+      "check": "1 glyph bounds 认识环境 → 选择观察位置",
+      "passed": true
+    },
+    {
+      "check": "1 glyph bounds 观测格与安全通道",
+      "passed": true
+    },
+    {
+      "check": "1 glyph bounds 区分未知、自由与占用；",
+      "passed": true
+    },
+    {
+      "check": "1 glyph bounds 只在已知安全空间走。",
+      "passed": true
+    },
+    {
+      "check": "1 glyph bounds 探索目标与路径",
+      "passed": true
+    },
+    {
+      "check": "1 glyph bounds 优先可看见更多未知的位置；",
+      "passed": true
+    },
+    {
+      "check": "1 glyph bounds 计入路程和障碍遮挡。",
+      "passed": true
+    },
+    {
+      "check": "1 glyph bounds 多角度补扫 → 返航 → 保存",
+      "passed": true
+    },
+    {
+      "check": "1 glyph bounds 已看表面的质量检查",
+      "passed": true
+    },
+    {
+      "check": "1 glyph bounds 观察太少就换位置补扫；",
+      "passed": true
+    },
+    {
+      "check": "1 glyph bounds 发现新通道可恢复探索。",
+      "passed": true
+    },
+    {
+      "check": "1 glyph bounds 任务结束与保存确认",
+      "passed": true
+    },
+    {
+      "check": "1 glyph bounds 回到起点，持续驻留5秒；",
+      "passed": true
+    },
+    {
+      "check": "1 glyph bounds 地图保存成功后才结束。",
+      "passed": true
+    },
+    {
+      "check": "1 glyph bounds 增益变小 / 无有用前沿",
+      "passed": true
+    },
+    {
+      "check": "1 glyph bounds 新通道出现：再次探索",
+      "passed": true
+    },
+    {
+      "check": "1 glyph bounds 执行与结果",
+      "passed": true
+    },
+    {
+      "check": "1 glyph bounds 安全控制与反馈",
+      "passed": true
+    },
+    {
+      "check": "1 glyph bounds 执行观察航点；遇到真实",
+      "passed": true
+    },
+    {
+      "check": "1 glyph bounds 障碍或过期数据先保持。",
+      "passed": true
+    },
+    {
+      "check": "1 glyph bounds 轨迹、点云与状态",
+      "passed": true
+    },
+    {
+      "check": "1 glyph bounds 记录走过的路、维护地图",
+      "passed": true
+    },
+    {
+      "check": "1 glyph bounds 和明确的结束原因。",
+      "passed": true
+    },
+    {
+      "check": "1 glyph bounds 独立地图验收",
+      "passed": true
+    },
+    {
+      "check": "1 glyph bounds 检查货架侧面缺口；",
+      "passed": true
+    },
+    {
+      "check": "1 glyph bounds 真值不作为规划输入。",
+      "passed": true
+    },
+    {
+      "check": "1 glyph bounds 飞行产生新观测：持续改变下一轮决策",
+      "passed": true
+    },
+    {
+      "check": "2 glyph bounds 探索、补扫、返航：七步图文流程",
+      "passed": true
+    },
+    {
+      "check": "2 glyph bounds 四上三下的主流程；遇到新未知区域或路径变化，会回到前面的步骤",
+      "passed": true
+    },
+    {
+      "check": "2 glyph bounds 机制示意｜补扫不是每到一个目标就执行；是否转入补扫由观测增益和候选状态决定。",
+      "passed": true
+    },
+    {
+      "check": "2 glyph bounds 02 / 07",
+      "passed": true
+    },
+    {
+      "check": "2 glyph bounds 1　起飞与初始化",
+      "passed": true
+    },
+    {
+      "check": "2 glyph bounds 确认起飞和新鲜数据，",
+      "passed": true
+    },
+    {
+      "check": "2 glyph bounds 记录起点及固定飞行高度。",
+      "passed": true
+    },
+    {
+      "check": "2 glyph bounds 2　建立观测格",
+      "passed": true
+    },
+    {
+      "check": "2 glyph bounds 激光看到哪里才认识哪里；",
+      "passed": true
+    },
+    {
+      "check": "2 glyph bounds 未知格不能直接当通道。",
+      "passed": true
+    },
+    {
+      "check": "2 glyph bounds 3　选择未知边界视点",
+      "passed": true
+    },
+    {
+      "check": "2 glyph bounds 比较能看到的未知范围，",
+      "passed": true
+    },
+    {
+      "check": "2 glyph bounds 同时考虑到达路程。",
+      "passed": true
+    },
+    {
+      "check": "2 glyph bounds 4　安全规划并飞过去",
+      "passed": true
+    },
+    {
+      "check": "2 glyph bounds 路径考虑机体与净空；",
+      "passed": true
+    },
+    {
+      "check": "2 glyph bounds 当前障碍变化时重新检查。",
+      "passed": true
+    },
+    {
+      "check": "2 glyph bounds 5　增益变小，换角度补扫",
+      "passed": true
+    },
+    {
+      "check": "2 glyph bounds 检查已有表面还缺哪些视角；",
+      "passed": true
+    },
+    {
+      "check": "2 glyph bounds 新通道出现时可回到探索。",
+      "passed": true
+    },
+    {
+      "check": "2 glyph bounds 6　按已知安全路径返航",
+      "passed": true
+    },
+    {
+      "check": "2 glyph bounds 收敛、预算到期或人工请求返航；",
+      "passed": true
+    },
+    {
+      "check": "2 glyph bounds 返航受阻不能当作成功。",
+      "passed": true
+    },
+    {
+      "check": "2 glyph bounds 7　驻留确认、保存并结束",
+      "passed": true
+    },
+    {
+      "check": "2 glyph bounds 起点附近连续5秒且保存成功；",
+      "passed": true
+    },
+    {
+      "check": "2 glyph bounds 任务结束与地图完整分开记录。",
+      "passed": true
+    },
+    {
+      "check": "2 glyph bounds 地图",
+      "passed": true
+    },
+    {
+      "check": "2 glyph bounds 正常推进：到达后观察2秒，再选目标",
+      "passed": true
+    },
+    {
+      "check": "2 glyph bounds 增益小 / 无前沿",
+      "passed": true
+    },
+    {
+      "check": "2 glyph bounds 飞行获得新观测：更新观测格",
+      "passed": true
+    },
+    {
+      "check": "2 glyph bounds 补扫打开新区域：回到探索；路线受阻：另选目标",
+      "passed": true
+    },
+    {
+      "check": "3 glyph bounds 黑箱探索的规则：没有地图，也不盲目往前冲",
+      "passed": true
+    },
+    {
+      "check": "3 glyph bounds “黑箱”指仓库几何未知，不是取消安全边界；飞行仍保持一个高度",
+      "passed": true
+    },
+    {
+      "check": "3 glyph bounds 机制示意｜当前人体即使不进入长期地图，当前扫描中仍作为障碍。",
+      "passed": true
+    },
+    {
+      "check": "3 glyph bounds 03 / 07",
+      "passed": true
+    },
+    {
+      "check": "3 glyph bounds 从一次观测，到一个可到达的新视点",
+      "passed": true
+    },
+    {
+      "check": "3 glyph bounds 灰色：未知　绿色：已看自由空间　棕色：占用　蓝点：候选视点",
+      "passed": true
+    },
+    {
+      "check": "3 glyph bounds 候选点在已知安全边界附近，不在未知障碍后面直接落点。",
+      "passed": true
+    },
+    {
+      "check": "3 glyph bounds 规则一：范围来自观测，而不是世界文件",
+      "passed": true
+    },
+    {
+      "check": "3 glyph bounds 初始计算窗口以地图原点为中心，半径12米。",
+      "passed": true
+    },
+    {
+      "check": "3 glyph bounds 飞到边缘或发现新的自由空间后扩展；新增格保持未知。",
+      "passed": true
+    },
+    {
+      "check": "3 glyph bounds 20万个格是资源上限，不代表仓库的真实轮廓。",
+      "passed": true
+    },
+    {
+      "check": "3 glyph bounds 规则二：优先“看得多、走得到、路程合理”",
+      "passed": true
+    },
+    {
+      "check": "3 glyph bounds 先找安全可达的未知边界，再计算附近6米内的可见未知。",
+      "passed": true
+    },
+    {
+      "check": "3 glyph bounds 射线被已测墙体挡住就停止，不把墙后未知算作可见收益。",
+      "passed": true
+    },
+    {
+      "check": "3 glyph bounds 小于0.5平方米的收益候选过滤；到过的位置和失败位置受抑制。",
+      "passed": true
+    },
+    {
+      "check": "3 glyph bounds 规则三：路线考虑机体和窄通道",
+      "passed": true
+    },
+    {
+      "check": "3 glyph bounds 0.20米格；正常机心净空0.80米，已含约0.40米机体半径，",
+      "passed": true
+    },
+    {
+      "check": "3 glyph bounds 另加栅格半对角线余量；不沿障碍角斜切。未知也不可通行。",
+      "passed": true
+    },
+    {
+      "check": "3 glyph bounds 规则四：卡住要换方案，不能无声永久悬停",
+      "passed": true
+    },
+    {
+      "check": "3 glyph bounds 目标25秒无进展或变得不可达：记录失败，暂避60秒再选点。",
+      "passed": true
+    },
+    {
+      "check": "3 glyph bounds 同处达到两次失败会持续抑制。当前机位不安全时仅尝试",
+      "passed": true
+    },
+    {
+      "check": "3 glyph bounds 受约束短恢复；30秒无0.20米进展则报告失败并保存部分图。",
+      "passed": true
+    },
+    {
+      "check": "4 glyph bounds 补扫：从“走过通道”转向“看清货架”",
+      "passed": true
+    },
+    {
+      "check": "4 glyph bounds 点云看起来很多，不代表每一面都看清；同一个方向反复扫描也不等于多视角",
+      "passed": true
+    },
+    {
+      "check": "4 glyph bounds 机制示意｜95%是当前已看表面的观测质量，不包含从未看到的表面，不是全仓覆盖率。",
+      "passed": true
+    },
+    {
+      "check": "4 glyph bounds 04 / 07",
+      "passed": true
+    },
+    {
+      "check": "4 glyph bounds 为什么要换位置：遮挡会留下缺口",
+      "passed": true
+    },
+    {
+      "check": "4 glyph bounds 同一侧扫描，只增加类似回波；走到另一个可达方向才可能补充信息。",
+      "passed": true
+    },
+    {
+      "check": "4 glyph bounds 不同位置、不同方向",
+      "passed": true
+    },
+    {
+      "check": "4 glyph bounds 第一视点 → 绕到另一侧 → 再次观察",
+      "passed": true
+    },
+    {
+      "check": "4 glyph bounds 什么时候进入补扫？",
+      "passed": true
+    },
+    {
+      "check": "4 glyph bounds 完整90秒观测窗口内：新自由面积少于1平方米，",
+      "passed": true
+    },
+    {
+      "check": "4 glyph bounds 新增粗表面格少于25个，且窗口内至少到达3个观察目标。",
+      "passed": true
+    },
+    {
+      "check": "4 glyph bounds 或者：连续30秒找不到有用前沿。低增益只触发补扫，不直接结束。",
+      "passed": true
+    },
+    {
+      "check": "4 glyph bounds 一个表面格怎样才算“观察得够了”？",
+      "passed": true
+    },
+    {
+      "check": "4 glyph bounds 用0.40米的三维粗格计数，至少3次不同采集时刻。",
+      "passed": true
+    },
+    {
+      "check": "4 glyph bounds 还需至少2个方向扇区；新增方向的位置距初次观察至少0.75米。",
+      "passed": true
+    },
+    {
+      "check": "4 glyph bounds 重复发布同一帧不加次数；初次方向与后续方向共同构成证据。",
+      "passed": true
+    },
+    {
+      "check": "4 glyph bounds 补扫目标怎么选？",
+      "passed": true
+    },
+    {
+      "check": "4 glyph bounds 只从当前维护地图的欠观测表面产生目标；",
+      "passed": true
+    },
+    {
+      "check": "4 glyph bounds 换角度的位置必须安全、可达，并且未被已测障碍挡住。",
+      "passed": true
+    },
+    {
+      "check": "4 glyph bounds 到达不等于观察合格；证据不足时，20秒冷却后可再次尝试。",
+      "passed": true
+    },
+    {
+      "check": "4 glyph bounds 地图中已撤销的人体旧点，不再作为永久补扫对象。",
+      "passed": true
+    },
+    {
+      "check": "4 glyph bounds 补扫之后仍可能继续探索",
+      "passed": true
+    },
+    {
+      "check": "4 glyph bounds 没有补扫候选却出现新有效前沿：重置增益窗口，继续探索。",
+      "passed": true
+    },
+    {
+      "check": "4 glyph bounds 补扫预算600仿真秒耗尽，或可达视点用尽：返航并标为部分结果。",
+      "passed": true
+    },
+    {
+      "check": "5 glyph bounds 返航和结束：需要确认，不是绕一圈就算完成",
+      "passed": true
+    },
+    {
+      "check": "5 glyph bounds 任务结束有两种口径：正常观测收敛，或带原因的部分结果返航",
+      "passed": true
+    },
+    {
+      "check": "5 glyph bounds 机制示意｜这里的返航是在起点附近悬停确认；不声称真机自动降落，也不保证全三维地图完整。",
+      "passed": true
+    },
+    {
+      "check": "5 glyph bounds 05 / 07",
+      "passed": true
+    },
+    {
+      "check": "5 glyph bounds 正常收敛返航：要同时满足多项条件",
+      "passed": true
+    },
+    {
+      "check": "5 glyph bounds 完整增益窗口已经变小；已看表面质量至少95%；",
+      "passed": true
+    },
+    {
+      "check": "5 glyph bounds 没有有用前沿、没有剩余补扫候选；没有目标失败记录，",
+      "passed": true
+    },
+    {
+      "check": "5 glyph bounds 表面证据与观测格没有容量不足。只认证当前可观测、可达范围。",
+      "passed": true
+    },
+    {
+      "check": "5 glyph bounds 部分结果返航：必须写明原因",
+      "passed": true
+    },
+    {
+      "check": "5 glyph bounds 探索3600仿真秒或3600真实秒预算到期；补扫预算到期；",
+      "passed": true
+    },
+    {
+      "check": "5 glyph bounds 视点用尽仍未合格；容量不足；人工请求或显式目标上限。",
+      "passed": true
+    },
+    {
+      "check": "5 glyph bounds 返回并保存可以成功，但“探索完整”不能因此改成成功。",
+      "passed": true
+    },
+    {
+      "check": "5 glyph bounds 按已知安全路返航",
+      "passed": true
+    },
+    {
+      "check": "5 glyph bounds 新障碍出现时继续更新路；",
+      "passed": true
+    },
+    {
+      "check": "5 glyph bounds 没有安全路则报告受阻。",
+      "passed": true
+    },
+    {
+      "check": "5 glyph bounds 起点内连续驻留",
+      "passed": true
+    },
+    {
+      "check": "5 glyph bounds 平面误差不超过0.30米，",
+      "passed": true
+    },
+    {
+      "check": "5 glyph bounds 持续保持5个仿真秒。",
+      "passed": true
+    },
+    {
+      "check": "5 glyph bounds 0.30米 / 5秒",
+      "passed": true
+    },
+    {
+      "check": "5 glyph bounds 保存成功回执",
+      "passed": true
+    },
+    {
+      "check": "5 glyph bounds 保存失败就保持并重试；",
+      "passed": true
+    },
+    {
+      "check": "5 glyph bounds 不能只看文件名出现。",
+      "passed": true
+    },
+    {
+      "check": "5 glyph bounds 已保存",
+      "passed": true
+    },
+    {
+      "check": "5 glyph bounds 结束本次任务",
+      "passed": true
+    },
+    {
+      "check": "5 glyph bounds 记录终止原因和完整性；",
+      "passed": true
+    },
+    {
+      "check": "5 glyph bounds 默认关闭本次仿真进程。",
+      "passed": true
+    },
+    {
+      "check": "5 glyph bounds 任务成功 ≠ 地图完整",
+      "passed": true
+    },
+    {
+      "check": "5 glyph bounds 连续性检查：离开或数据失效要重新计时",
+      "passed": true
+    },
+    {
+      "check": "5 glyph bounds 偏离起点、暂停、数据过期或机位不安全，都会重置驻留计时。",
+      "passed": true
+    },
+    {
+      "check": "5 glyph bounds 缺少有效扫描时不继续发新探索航点，由控制器看门狗保持。",
+      "passed": true
+    },
+    {
+      "check": "5 glyph bounds 异常保护：保存部分地图，不伪装成成功",
+      "passed": true
+    },
+    {
+      "check": "5 glyph bounds 返航超过1200仿真秒报告失败；运行器4800真实秒硬保护。",
+      "passed": true
+    },
+    {
+      "check": "5 glyph bounds 显式保持展示模式可在完成后保留画面，不再进行探索。",
+      "passed": true
+    },
+    {
+      "check": "6 glyph bounds 真实实验：已完成长程探索与返航保存",
+      "passed": true
+    },
+    {
+      "check": "6 glyph bounds 复用原保存点云的俯视结果图；同一航次，左为我们的维护图，右为并行FreeDOM地图",
+      "passed": true
+    },
+    {
+      "check": "6 glyph bounds 真实结果｜2026-10-03长程仿真；预算到期返航，不是完整仓库建图成功。",
+      "passed": true
+    },
+    {
+      "check": "6 glyph bounds 06 / 07",
+      "passed": true
+    },
+    {
+      "check": "6 glyph bounds 观察目标到达",
+      "passed": true
+    },
+    {
+      "check": "6 glyph bounds ",
+      "passed": true
+    },
+    {
+      "check": "6 glyph bounds 93 / 97",
+      "passed": true
+    },
+    {
+      "check": "6 glyph bounds 选出的目标并非全部到达",
+      "passed": true
+    },
+    {
+      "check": "6 glyph bounds 实际平面航程",
+      "passed": true
+    },
+    {
+      "check": "6 glyph bounds ",
+      "passed": true
+    },
+    {
+      "check": "6 glyph bounds 547.88 米",
+      "passed": true
+    },
+    {
+      "check": "6 glyph bounds 里程计累计平面位移",
+      "passed": true
+    },
+    {
+      "check": "6 glyph bounds 返航平面误差",
+      "passed": true
+    },
+    {
+      "check": "6 glyph bounds ",
+      "passed": true
+    },
+    {
+      "check": "6 glyph bounds 0.123 米",
+      "passed": true
+    },
+    {
+      "check": "6 glyph bounds 回到起点，不是定位精度",
+      "passed": true
+    },
+    {
+      "check": "6 glyph bounds 最终落盘地图",
+      "passed": true
+    },
+    {
+      "check": "6 glyph bounds ",
+      "passed": true
+    },
+    {
+      "check": "6 glyph bounds 284,418 点",
+      "passed": true
+    },
+    {
+      "check": "6 glyph bounds 维护地图的有限坐标点",
+      "passed": true
+    },
+    {
+      "check": "6 glyph bounds 返航与保存：成功；停止原因：真实时间预算到期；探索完整：否；全三维完整：否。",
+      "passed": true
+    },
+    {
+      "check": "6 glyph bounds 图示高度为世界坐标0.25—1.90米；仅显示降采样，不把地图点数当质量排名。",
+      "passed": true
+    },
+    {
+      "check": "7 glyph bounds 真实实验：整体看起来完整，局部货架仍有缺口",
+      "passed": true
+    },
+    {
+      "check": "7 glyph bounds 下图依据原审计JSON的货架位置与比例绘制，不是示意布局；红、橙、浅绿表示不足90%",
+      "passed": true
+    },
+    {
+      "check": "7 glyph bounds 真实结果｜两幅地图都没有通过“总体至少95%、每架至少90%”的联合侧面验收。",
+      "passed": true
+    },
+    {
+      "check": "7 glyph bounds 07 / 07",
+      "passed": true
+    },
+    {
+      "check": "7 glyph bounds 我们的维护地图：右侧货架存在缺口",
+      "passed": true
+    },
+    {
+      "check": "7 glyph bounds 14",
+      "passed": true
+    },
+    {
+      "check": "7 glyph bounds 15",
+      "passed": true
+    },
+    {
+      "check": "7 glyph bounds 16",
+      "passed": true
+    },
+    {
+      "check": "7 glyph bounds 27",
+      "passed": true
+    },
+    {
+      "check": "7 glyph bounds 28",
+      "passed": true
+    },
+    {
+      "check": "7 glyph bounds 38",
+      "passed": true
+    },
+    {
+      "check": "7 glyph bounds 39",
+      "passed": true
+    },
+    {
+      "check": "7 glyph bounds 40",
+      "passed": true
+    },
+    {
+      "check": "7 glyph bounds 51",
+      "passed": true
+    },
+    {
+      "check": "7 glyph bounds 52",
+      "passed": true
+    },
+    {
+      "check": "7 glyph bounds 真实货架中心位置；数字是未达标货架编号",
+      "passed": true
+    },
+    {
+      "check": "7 glyph bounds FreeDOM并行地图：缺口较少但仍存在",
+      "passed": true
+    },
+    {
+      "check": "7 glyph bounds 16",
+      "passed": true
+    },
+    {
+      "check": "7 glyph bounds 28",
+      "passed": true
+    },
+    {
+      "check": "7 glyph bounds 40",
+      "passed": true
+    },
+    {
+      "check": "7 glyph bounds 真实货架中心位置；数字是未达标货架编号",
+      "passed": true
+    },
+    {
+      "check": "7 glyph bounds 同口径指标",
+      "passed": true
+    },
+    {
+      "check": "7 glyph bounds 我们的维护地图",
+      "passed": true
+    },
+    {
+      "check": "7 glyph bounds FreeDOM并行地图",
+      "passed": true
+    },
+    {
+      "check": "7 glyph bounds 参考侧面支持率",
+      "passed": true
+    },
+    {
+      "check": "7 glyph bounds 90.92%",
+      "passed": true
+    },
+    {
+      "check": "7 glyph bounds 99.01%",
+      "passed": true
+    },
+    {
+      "check": "7 glyph bounds 最差货架支持率",
+      "passed": true
+    },
+    {
+      "check": "7 glyph bounds 29.59%",
+      "passed": true
+    },
+    {
+      "check": "7 glyph bounds 85.71%",
+      "passed": true
+    },
+    {
+      "check": "7 glyph bounds 低于90%的货架",
+      "passed": true
+    },
+    {
+      "check": "7 glyph bounds 10 / 52",
+      "passed": true
+    },
+    {
+      "check": "7 glyph bounds 3 / 52",
+      "passed": true
+    },
+    {
+      "check": "7 glyph bounds 联合验收结果",
+      "passed": true
+    },
+    {
+      "check": "7 glyph bounds 未通过",
+      "passed": true
+    },
+    {
+      "check": "7 glyph bounds 未通过",
+      "passed": true
+    },
+    {
+      "check": "7 glyph bounds 在线“已看质量”与离线“参考覆盖”不同",
+      "passed": true
+    },
+    {
+      "check": "7 glyph bounds 在线质量92.65%只对当前已看表面计数，不能发现从未看到的整面。",
+      "passed": true
+    },
+    {
+      "check": "7 glyph bounds 我们仍需改进：视角覆盖与静态保留",
+      "passed": true
+    },
+    {
+      "check": "7 glyph bounds 这是一航次的代理几何指标；不能由缺口直接认定全部是误删，",
+      "passed": true
+    },
+    {
+      "check": "7 glyph bounds 也不能由此判断人体去除精度。FreeDOM不参与本次飞行控制。",
+      "passed": true
+    },
+    {
+      "check": "7 glyph bounds 评估：52个货架暴露侧面，参考高度0.25—1.90米，采样0.30米，匹配容差0.25米。",
+      "passed": true
+    },
+    {
+      "check": "illustrations on mechanism page 1",
+      "passed": true
+    },
+    {
+      "check": "illustrations on mechanism page 2",
+      "passed": true
+    },
+    {
+      "check": "one illustration per snake card",
+      "passed": true
+    },
+    {
+      "check": "illustrations on mechanism page 3",
+      "passed": true
+    },
+    {
+      "check": "illustrations on mechanism page 4",
+      "passed": true
+    },
+    {
+      "check": "illustrations on mechanism page 5",
+      "passed": true
+    },
+    {
+      "check": "protected source /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/warehouse_explorer.py",
+      "passed": true
+    },
+    {
+      "check": "protected source /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/exploration_grid.py",
+      "passed": true
+    },
+    {
+      "check": "protected source /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/exploration_coverage.py",
+      "passed": true
+    },
+    {
+      "check": "protected source /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/exploration_native.py",
+      "passed": true
+    },
+    {
+      "check": "protected source /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/exploration_search.cpp",
+      "passed": true
+    },
+    {
+      "check": "protected source /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/run_warehouse_exploration.py",
+      "passed": true
+    },
+    {
+      "check": "protected source /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/warehouse_map_audit.py",
+      "passed": true
+    },
+    {
+      "check": "protected source /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/warehouse_exploration.yaml",
+      "passed": true
+    },
+    {
+      "check": "protected source /home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/launch/warehouse_exploration.launch",
+      "passed": true
+    },
+    {
+      "check": "protected source /home/a/AstraDroneOpen/exploration_demo_runs/warehouse_20261003_222021_result.json",
+      "passed": true
+    },
+    {
+      "check": "protected source /home/a/AstraDroneOpen/exploration_demo_runs/warehouse_20261003_222021_coverage.json",
+      "passed": true
+    },
+    {
+      "check": "protected source /home/a/AstraDroneOpen/exploration_demo_runs/warehouse_20261003_222021_freedom_coverage.json",
+      "passed": true
+    },
+    {
+      "check": "protected source /home/a/AstraDroneOpen/exploration_demo_runs/warehouse_20261003_222021_final_map.json",
+      "passed": true
+    },
+    {
+      "check": "protected source /home/a/AstraDroneOpen/exploration_demo_runs/warehouse_20261003_222021_alignment.json",
+      "passed": true
+    },
+    {
+      "check": "protected source /home/a/AstraDroneOpen/exploration_demo_runs/warehouse_20261003_222021_freedom_alignment.json",
+      "passed": true
+    },
+    {
+      "check": "protected source /home/a/AstraDroneOpen/exploration_demo_runs/warehouse_20261003_222021_scene.json",
+      "passed": true
+    },
+    {
+      "check": "protected source /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/黑箱探索补扫返航_图片版/证据原件/C02_rack_support.png",
+      "passed": true
+    },
+    {
+      "check": "protected source /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/黑箱探索补扫返航_图片版/证据原件/C03_rack_support_world.png",
+      "passed": true
+    },
+    {
+      "check": "protected source /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/黑箱探索补扫返航_图片版/证据原件/C04_true_map_comparison.png",
+      "passed": true
+    },
+    {
+      "check": "protected source /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/独立回环后端_图片版/build_images.py",
+      "passed": true
+    },
+    {
+      "check": "protected source /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/独立回环后端_图片版/讲解与证据说明.md",
+      "passed": true
+    },
+    {
+      "check": "protected source /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/独立回环后端_图片版/图像人工复核.md",
+      "passed": true
+    },
+    {
+      "check": "protected source /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/独立回环后端_图片版/独立核验.json",
+      "passed": true
+    },
+    {
+      "check": "protected source /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/独立回环后端_图片版/verify_images.py",
+      "passed": true
+    },
+    {
+      "check": "protected source /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/独立回环后端_图片版/版面核验信息.json",
+      "passed": true
+    },
+    {
+      "check": "protected source /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/独立回环后端_图片版/源码与数据核验.json",
+      "passed": true
+    },
+    {
+      "check": "protected source /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/独立回环后端_图片版/00_四页总预览.png",
+      "passed": true
+    },
+    {
+      "check": "protected source /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/独立回环后端_图片版/证据原件/loop_closure_20260923_182256_trajectory.png",
+      "passed": true
+    },
+    {
+      "check": "protected source /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/独立回环后端_图片版/证据原件/loop_closure_20260923_182256_report.txt",
+      "passed": true
+    },
+    {
+      "check": "protected source /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/独立回环后端_图片版/SVG/04_独立回环后端_历史真实结果.svg",
+      "passed": true
+    },
+    {
+      "check": "protected source /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/独立回环后端_图片版/SVG/02_独立回环后端_七步图文流程.svg",
+      "passed": true
+    },
+    {
+      "check": "protected source /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/独立回环后端_图片版/SVG/01_独立回环后端_分区架构.svg",
+      "passed": true
+    },
+    {
+      "check": "protected source /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/独立回环后端_图片版/SVG/03_独立回环后端_接纳与保护规则.svg",
+      "passed": true
+    },
+    {
+      "check": "protected source /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/独立回环后端_图片版/PNG/02_独立回环后端_七步图文流程.png",
+      "passed": true
+    },
+    {
+      "check": "protected source /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/独立回环后端_图片版/PNG/03_独立回环后端_接纳与保护规则.png",
+      "passed": true
+    },
+    {
+      "check": "protected source /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/独立回环后端_图片版/PNG/01_独立回环后端_分区架构.png",
+      "passed": true
+    },
+    {
+      "check": "protected source /home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/独立回环后端_图片版/PNG/04_独立回环后端_历史真实结果.png",
+      "passed": true
+    },
+    {
+      "check": "protected source /home/a/AstraDroneOpen/exploration_demo_runs/warehouse_20261003_222021_final_map.pcd",
+      "passed": true
+    },
+    {
+      "check": "protected source /home/a/AstraDroneOpen/exploration_demo_runs/warehouse_20261003_222021_freedom_static_map_point.pcd",
+      "passed": true
+    },
+    {
+      "check": "evidence copy 证据原件/warehouse_20261003_222021_result.json",
+      "passed": true
+    },
+    {
+      "check": "evidence copy 证据原件/warehouse_20261003_222021_coverage.json",
+      "passed": true
+    },
+    {
+      "check": "evidence copy 证据原件/warehouse_20261003_222021_freedom_coverage.json",
+      "passed": true
+    },
+    {
+      "check": "evidence copy 证据原件/warehouse_20261003_222021_final_map.json",
+      "passed": true
+    },
+    {
+      "check": "evidence copy 证据原件/warehouse_20261003_222021_alignment.json",
+      "passed": true
+    },
+    {
+      "check": "evidence copy 证据原件/warehouse_20261003_222021_freedom_alignment.json",
+      "passed": true
+    },
+    {
+      "check": "evidence copy 证据原件/warehouse_20261003_222021_scene.json",
+      "passed": true
+    },
+    {
+      "check": "evidence copy 证据原件/C02_rack_support.png",
+      "passed": true
+    },
+    {
+      "check": "evidence copy 证据原件/C03_rack_support_world.png",
+      "passed": true
+    },
+    {
+      "check": "evidence copy 证据原件/C04_true_map_comparison.png",
+      "passed": true
+    },
+    {
+      "check": "documentation link 证据原件/C04_true_map_comparison.png",
+      "passed": true
+    },
+    {
+      "check": "documentation link 证据原件/C03_rack_support_world.png",
+      "passed": true
+    },
+    {
+      "check": "documentation link 证据原件/C02_rack_support.png",
+      "passed": true
+    },
+    {
+      "check": "build_images.py syntax",
+      "passed": true
+    },
+    {
+      "check": "draw.py syntax",
+      "passed": true
+    },
+    {
+      "check": "verify_images.py syntax",
+      "passed": true
+    },
+    {
+      "check": "actual plotted map colored returns",
+      "passed": true
+    },
+    {
+      "check": "ZIP CRC",
+      "passed": true
+    },
+    {
+      "check": "archive exact build_images.py",
+      "passed": true
+    },
+    {
+      "check": "archive exact draw.py",
+      "passed": true
+    },
+    {
+      "check": "archive exact 图像人工复核.md",
+      "passed": true
+    },
+    {
+      "check": "archive exact 00_七页总预览.png",
+      "passed": true
+    },
+    {
+      "check": "archive exact 讲解与实验出处.md",
+      "passed": true
+    },
+    {
+      "check": "archive exact verify_images.py",
+      "passed": true
+    },
+    {
+      "check": "archive exact 版面核验信息.json",
+      "passed": true
+    },
+    {
+      "check": "archive exact 源码与数据核验.json",
+      "passed": true
+    },
+    {
+      "check": "archive exact 证据原件/warehouse_20261003_222021_result.json",
+      "passed": true
+    },
+    {
+      "check": "archive exact 证据原件/C02_rack_support.png",
+      "passed": true
+    },
+    {
+      "check": "archive exact 证据原件/C03_rack_support_world.png",
+      "passed": true
+    },
+    {
+      "check": "archive exact 证据原件/C04_true_map_comparison.png",
+      "passed": true
+    },
+    {
+      "check": "archive exact 证据原件/warehouse_20261003_222021_alignment.json",
+      "passed": true
+    },
+    {
+      "check": "archive exact 证据原件/warehouse_20261003_222021_freedom_alignment.json",
+      "passed": true
+    },
+    {
+      "check": "archive exact 证据原件/warehouse_20261003_222021_freedom_coverage.json",
+      "passed": true
+    },
+    {
+      "check": "archive exact 证据原件/warehouse_20261003_222021_final_map.json",
+      "passed": true
+    },
+    {
+      "check": "archive exact 证据原件/warehouse_20261003_222021_coverage.json",
+      "passed": true
+    },
+    {
+      "check": "archive exact 证据原件/warehouse_20261003_222021_scene.json",
+      "passed": true
+    },
+    {
+      "check": "archive exact SVG/05_返航与结束判断.svg",
+      "passed": true
+    },
+    {
+      "check": "archive exact SVG/06_真实地图与任务结果.svg",
+      "passed": true
+    },
+    {
+      "check": "archive exact SVG/02_图文七步流程.svg",
+      "passed": true
+    },
+    {
+      "check": "archive exact SVG/07_真实覆盖与缺口.svg",
+      "passed": true
+    },
+    {
+      "check": "archive exact SVG/04_补扫与质量规则.svg",
+      "passed": true
+    },
+    {
+      "check": "archive exact SVG/03_黑箱选点与安全规则.svg",
+      "passed": true
+    },
+    {
+      "check": "archive exact SVG/01_模块架构.svg",
+      "passed": true
+    },
+    {
+      "check": "archive exact PNG/03_黑箱选点与安全规则.png",
+      "passed": true
+    },
+    {
+      "check": "archive exact PNG/01_模块架构.png",
+      "passed": true
+    },
+    {
+      "check": "archive exact PNG/07_真实覆盖与缺口.png",
+      "passed": true
+    },
+    {
+      "check": "archive exact PNG/04_补扫与质量规则.png",
+      "passed": true
+    },
+    {
+      "check": "archive exact PNG/02_图文七步流程.png",
+      "passed": true
+    },
+    {
+      "check": "archive exact PNG/05_返航与结束判断.png",
+      "passed": true
+    },
+    {
+      "check": "archive exact PNG/06_真实地图与任务结果.png",
+      "passed": true
+    }
+  ]
+}

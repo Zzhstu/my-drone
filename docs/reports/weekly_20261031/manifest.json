@@ -1,0 +1,19 @@
+{
+  "template": "/home/a/下载/2026.10.24-张志华-周报.docx",
+  "template_sha256": "a015ee83676565280c777434ed91673fa87fe0284eeee9f3866f3bd7f9ad93ea",
+  "output": "/home/a/下载/2026.10.31-张志华-周报.docx",
+  "sha256": "296de6dbbbfedcfedad3d67f6274b880fed8984cd3e5aed309dd43c048234615",
+  "report_date": "2026-10-31",
+  "period": [
+    "2026-10-26",
+    "2026-10-31"
+  ],
+  "xml_text_characters": 2679,
+  "preserved": [
+    "landscape A4",
+    "table grids/borders/merged cells",
+    "paragraph styles",
+    "font inheritance",
+    "five report sections"
+  ]
+}

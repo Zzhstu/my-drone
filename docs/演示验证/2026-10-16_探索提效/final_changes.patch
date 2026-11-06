@@ -1,0 +1,563 @@
+--- before/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/HALF_WAREHOUSE_DEMO_CN.md
++++ after/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/HALF_WAREHOUSE_DEMO_CN.md
+@@ -10,7 +10,7 @@
+ | 货架碰撞尺寸 | 3.6×0.6×1.8m | 保持 |
+ | 顶棚下表面 | 世界Z约2.5m | 保持 |
+ | 起飞点 | 世界(-6,-4) | 保持 |
+-| 导航速度上限 | 0.30m/s | 0.40m/s |
++| 导航速度上限 | 0.30m/s | 0.80m/s |
+ 
+ 面积口径是屋顶盒的XY投影矩形，不是可飞自由面积，也不含无限地面。长边减半，短边保持；保留的货架位姿和尺寸均不缩放。移动右墙、缩短长墙与顶棚，保留原左侧入口。原货架狭缝不保证在现有安全包络下可通行。
+ 
+@@ -23,7 +23,7 @@
+ bash scripts/run_sh/half_warehouse_exploration_demo.sh
+ ```
+ 
+-默认打开Gazebo和RViz；自动等待地面/航向稳定、相对起飞1.2m、自主选点、观察、返航驻留并保存。运行副本会加入一名可移动的站立行人。无人机导航速度上限从0.30提高到0.40m/s，安全净距仍为0.80m，风险停车和紧急阈值不变。此场景不启用语义网络或回环。
++默认打开Gazebo和RViz；自动等待地面/航向稳定、相对起飞1.2m、自主选点、观察、返航驻留并保存。运行副本会加入一名可移动的站立行人。无人机导航速度上限由此前半仓库的0.40提高到0.80m/s，安全净距仍为0.80m，风险停车和紧急阈值不变。此场景不启用语义网络或回环。
+ 
+ 默认模式中，行人先静止；无人机起飞并接近后，行人沿左侧通道自动走一轮，结束后可键盘接管。手动模式会跳过自动行走，便于启动后直接控制：
+ 
+@@ -48,9 +48,25 @@
+ bash scripts/run_sh/half_warehouse_exploration_demo.sh --return-after-goals 2 --test-seconds 360
+ ```
+ 
+-首次构建方式与[小办公室说明](SMALL_INDOOR_DEMO_CN.md)相同。新入口共享已经构建的小室内运行器和速度坐标转换节点，通过`--scene cangku-half`选择新场景；默认小办公室入口仍选择office。既有FAST-LIO、严格证据地图、探索器、风险和控制算法不改。安全净距0.80m、导航上限0.30m/s和95%已测表面质量门限保持。
++首次构建方式与[小办公室说明](SMALL_INDOOR_DEMO_CN.md)相同。入口共享小室内运行器和速度坐标转换节点，通过`--scene cangku-half`选择场景；默认小办公室入口仍选择office。导航上限为0.80m/s，安全净距0.80m保持；按用户允许适当放宽验收的要求，半仓库在线已测表面质量门限由95%改为90%。FAST-LIO、证据地图、搜索及飞控安全链沿用已有实现；探索阶段调度增加以下证据策略。
+ 
+-探索预算600仿真秒或1200墙钟秒，补扫预算240仿真秒，返航超时600仿真秒；运行器总墙钟保护2400秒。预算退出是部分探索，不能从保存成功推断完整覆盖。任务成功表示确认返航驻留并保存，分别读取`exploration_complete`、`coverage_complete`判断探索报告。速度上限提升尚需完整动态场景任务验证，不能仅凭配置推断任务耗时或安全性能提高。
++探索预算550仿真秒或1200墙钟秒，补扫预算240仿真秒，返航超时600仿真秒；运行器总墙钟保护2400秒。这些是后备上限，不是必须等待的时长。预算退出是部分探索，不能从保存成功推断完整覆盖。任务成功表示确认返航驻留并保存，分别读取`exploration_complete`、`coverage_complete`判断探索报告。
++
++## 提速与有效补扫
++
++半仓库巡航与总水平速度上限均为0.80m/s，前视距离2.0m，规划3Hz，到达后观察1秒；后备任务预算550仿真秒（此前0.40m/s、1.2m前视、2Hz、2秒观察、600秒预算）。比例增益保持0.45，前视距离同步加大使0.80m/s上限可实际触及；前视航段仍逐段检查已知安全空间，转弯处可缩短。提高运动速度后保留较大的名义路径容量；结果是否保持质量须结合实际自由面积、在线已测表面证据和离线货架侧面代理检查，不能仅按速度倍率推断。
++
++共用探索器保留三处修复：
++
++- 低收益转补扫使用任务累计成功观察至少3次，不再要求同一个90秒窗口完成3次长途观察。
++- 补扫候选相对初次观测位置至少满足0.75m独立基线，再预留实际到达容差；到达误差范围内的视角也不能落回已见扇区。
++- 聚合采样保留每个区域的缺失体素数量，优先修复密集缺失。权重仅用于选点，实际质量仍由原独立扫描/视角证据计算，每体素仍需至少3次独立扫描、2个视角扇区和0.75m观测基线。
++
++半仓库增加适度放宽的演示验收：累计到达至少6个目标、任务至少180仿真秒、已测表面至少1000体素；最近60仿真秒新增已知射线平面面积低于max(2m², 1%累计已知面积)，且在线质量≥90%的联合条件连续保持10仿真秒。使用推进的扫描时间戳，过时/暂停/不安全时清除窗口；内存容量耗尽不能通过。达标可提前返航，退出原因`observed_map_accepted_partial`，`exploration_complete=false`、`coverage_complete=false`。只降低演示验收比例，不降低独立扫描/视角证据要求，也不代表未见区域或全三维完整。
++
++前3轮95%验收的自适应阶段调度没有证明提速，最终撤下强制阶段交接和过时目标退役；新门控只有已满足90%质量后才结束任务，不强迫提前转补扫。负结果和加载源码在[提效验证报告](../../../../docs/演示验证/2026-10-16_探索提效/方案与验证.md)中保留。原严格收敛、预算、候选耗尽和故障分支分别报告；550秒仍是后备预算。
++
++结果JSON增加`configuration`、`run_options`与`timing`，记录实际速度/安全/质量/预算参数、界面模式及启动/返航前/返航驻留墙钟。新增`map_quality_accepted`单独表示最终在线质量达标，与返航保存成功及探索完整标志分开。离线货架侧面支持率仍单独审计，其原验收比例未降低。批量性能测试用`--headless`，演示保留默认窗口；比较时同时报告仿真秒、墙钟秒及地图质量。`inspection_cells`是旧近场覆盖计数，当前表面补扫是否发生以`mission_phase`/状态历史为准。
+ 
+ ## 文件
+ 
+@@ -61,8 +77,14 @@
+ - `_shelf_audit.json`仅评价当前24个货架的碰撞盒侧面参考支持，含被遮挡或不可达面，不是全三维完整率；评估在仿真结束后运行，不把几何提供给探索器。
+ - [前后布局对比图](../../../../docs/演示验证/2026-10-16_半面积仓库/warehouse_area_comparison.png)仅为几何预览，不是实际重建图或预设航线。
+ 
+-## 验证记录
++## 最初版本验证记录（历史）
+ 
+ 场景SDF校验、4项新增裁剪测试与13项小办公室回归通过；展开启动参数确认原安全/质量设置不变。首次尝试飞行时发现已有用户小办公室仿真正在运行，预检查拒绝并发启动，未关闭用户进程。随后等待原任务自然结束，已完成Gazebo+RViz真实SITL两目标短测：到达2/2、自主返航驻留保存58030点，航程21.04m、地图返航XY误差0.185m、退出0。属于`explicit_goal_limit_partial`，两个complete标志false，未验证默认完整任务。原办公室离线审计也重算一致。详细证据见[本轮报告](../../../../docs/演示验证/2026-10-16_半面积仓库/验证报告.md)。
+ 
+ 关闭阶段仍复现原有仿真启动组原生段错误（具体进程/插件未定位）；本次地图已在关闭前保存、所有本轮进程最终退出。该既有卸载问题未在本轮修复。
++
++## 2026-10-16提效配置验证
++
++最终默认任务`warehouse_half_20261016_200841`：0.80m/s、90%验收、headless、自动行人，无目标数限额/短时截断，已返航驻留保存124105点。任务墙钟577.21秒，含启动623.31秒；原带行人0.40配置为1050.38/1099.70秒，分别缩短45.05%/43.32%。最终在线质量93.57%（原94.01%）、自由面积612.92m²（原615.16）、离线货架侧面支持100%（原99.87%）；21目标到达、1次目标超时、返航误差0.082m。提前退出`observed_map_accepted_partial`，两个完整标志false。79回归通过，地图有限XYZ/点数/SHA校验通过。
++
++实际MAVROS短段速度样本运动中位0.617m/s、p95=0.763m/s。单次结果混合了速度/验收/界面模式调整，只证明本配置下完成了一次更快的演示；GUI演示耗时需另测，不宣称统计或纯算法加速。完整结果、负结果及来源见[提效验证报告](../../../../docs/演示验证/2026-10-16_探索提效/方案与验证.md)。
+--- before/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/README.md
++++ after/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/README.md
+@@ -204,5 +204,5 @@
+ ## 14. 原cangku半面积仓库（2026-10-16新增）
+ 
+ 在项目根目录运行 `bash scripts/run_sh/half_warehouse_exploration_demo.sh`。
+-原50.5×27m仓库沿长轴裁为25.25×27m，主体名义占地减半，保留24个原尺寸/原位姿货架。复用小室内运行器与偏航速度转换，运行副本加入一名可自动行走并可键盘接管的行人；导航速度上限0.40m/s，0.80m安全净距保持。原仓库与办公室入口保持。
++原50.5×27m仓库沿长轴裁为25.25×27m，主体名义占地减半，保留24个原尺寸/原位姿货架。复用小室内运行器与偏航速度转换，运行副本加入一名可自动行走并可键盘接管的行人；导航/总速度上限0.80m/s，前视2m、规划3Hz、到达观察1秒；已测表面90%且低收益持续后可提前部分返航，0.80m安全净距保持。原仓库与办公室入口保持。
+ 来源、尺寸、启动、预算及验证边界见 [HALF_WAREHOUSE_DEMO_CN.md](HALF_WAREHOUSE_DEMO_CN.md)。
+--- before/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/half_warehouse_exploration.yaml
++++ after/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/half_warehouse_exploration.yaml
+@@ -1,6 +1,11 @@
+-# Same safety/quality thresholds. Independent smaller-scene time budgets.
++# Half-scene demo acceptance only; safety and scan evidence remain unchanged.
+ warehouse_explorer:
+-  max_mission_seconds: 600.0
++  surface_quality_target: 0.90
++  observed_map_acceptance: true
++  lookahead: 2.0          # swept safe segment; 0.45*2.0 permits the 0.80 m/s cap
++  planning_hz: 3.0
++  settle_seconds: 1.0    # ten lidar scans nominally; actual evidence still required
++  max_mission_seconds: 550.0
+   max_mission_wall_seconds: 1200.0
+   inspection_budget_seconds: 240.0
+   return_timeout: 600.0
+--- before/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/exploration_coverage.py
++++ after/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/exploration_coverage.py
+@@ -7,6 +7,49 @@
+ from collections import deque
+ import math
+ import numpy as np
++
++
++class ObservedMapAcceptance:
++    """Optional demo exit using fresh sensor evidence; never full coverage."""
++    def __init__(self, target=.90, window=60., hold=10.):
++        if not (.5<=target<=1. and math.isfinite(window) and window>=1. and
++                math.isfinite(hold) and hold>=1.):
++            raise ValueError('Invalid observed-map acceptance thresholds')
++        self.target,self.window,self.hold = target,window,hold
++        self.reset()
++
++    def reset(self):
++        self.samples = deque()
++        self.last_stamp = self.since = None
++        self.report = dict(accepted=False,quality_target=self.target,
++                           window_seconds=self.window,hold_seconds=self.hold)
++
++    def update(self, now, stamp, known_count, resolution, goals, mission_seconds,
++               surface, capacity_limited=False):
++        # A timer receiving duplicate scans cannot certify a plateau or dwell.
++        if self.last_stamp is not None and stamp<=self.last_stamp:
++            return False
++        if self.last_stamp is not None and stamp-self.last_stamp>1.5:
++            self.reset()
++        self.last_stamp = stamp
++        self.samples.append((now,known_count))
++        while len(self.samples)>1 and self.samples[1][0]<=now-self.window:
++            self.samples.popleft()
++        area = known_count*resolution**2
++        gain = max(0,known_count-self.samples[0][1])*resolution**2
++        threshold = max(2.,.01*area)
++        ready = now-self.samples[0][0]>=self.window
++        quality = surface.get('observed_surface_quality_ratio')
++        eligible = bool(ready and gain<threshold and goals>=6 and mission_seconds>=180.
++                        and surface.get('observed_surface_voxels',0)>=1000
++                        and quality is not None and math.isfinite(quality) and quality>=self.target
++                        and not capacity_limited and not surface.get('surface_evidence_capacity_limited',False))
++        self.since = (now if self.since is None else self.since) if eligible else None
++        held = now-self.since if self.since is not None else 0.
++        self.report.update(accepted=bool(eligible and held>=self.hold),
++            window_ready=ready,new_known_area_m2=gain,area_threshold_m2=threshold,
++            observed_surface_quality_ratio=quality,eligible=eligible,held_seconds=held)
++        return self.report['accepted']
+ 
+ 
+ class ProgressWindow:
+@@ -36,6 +79,7 @@
+         return dict(window_ready=ready,new_free_area_m2=area,new_surface_voxels=surfaces,
+                     observation_goals=max(0,last[3]-first[3]),
+                     low_gain=bool(ready and area<self.free_threshold and surfaces<self.surface_threshold))
++
+ 
+ 
+ def suppress_disk(mask, cell, radius):
+@@ -162,7 +206,7 @@
+             surface_evidence_capacity_limited=self.capacity_limited)
+ 
+     def inspection_candidates(self, grid, distances, deficits, minimum_distance=1.2,
+-                              limit=180, range_m=3.):
++                              limit=180, range_m=3., arrival_tolerance=.3):
+         """Observe deficient measured surfaces from another safe aisle view.
+ 
+         Bounded coarse representatives; candidates do NOT contain truth shelf
+@@ -170,13 +214,20 @@
+         """
+         mask = np.zeros(grid.shape,dtype=bool)
+         gain = np.zeros(grid.shape,dtype=float)
++        if not math.isfinite(arrival_tolerance) or arrival_tolerance<0:
++            raise ValueError('Arrival tolerance must be finite and nonnegative')
+         if not len(deficits):
+             return mask,gain
+         xy_cells = np.asarray([grid.cell(p[:2]) for p in deficits])
+-        _,index = np.unique(xy_cells//max(1,int(.8/grid.resolution)),axis=0,return_index=True)
+-        # Bounded sampling may leave deficits. It never authorizes 'complete'.
+-        index = index[::max(1,int(math.ceil(len(index)/limit)))]
+-        for surface in deficits[index]:
++        _,index,counts = np.unique(xy_cells//max(1,int(.8/grid.resolution)),axis=0,
++                                  return_index=True,return_counts=True)
++        # Keep the deficit mass when coarse representatives are selected.
++        # A bin with 50 missing voxels is more useful than one isolated voxel.
++        # This remains a heuristic score; actual scans alone certify quality.
++        selected = np.argsort(-counts,kind='stable')[:limit]
++        for representative in selected:
++            surface = deficits[index[representative]]
++            record = self.records.get(tuple(np.floor(surface/self.voxel).astype(np.int64)))
+             # Sector centres, not boundaries: grid quantization and the .30m
+             # arrival tolerance must not turn a proposed "new" direction back
+             # into the old sector. Score the ACTUAL rasterized waypoint below.
+@@ -192,12 +243,19 @@
+                     if distances[cell]<minimum_distance or not raw_line_visible(
+                             grid,grid.xy(cell),surface[:2],self.voxel*math.sqrt(2)/2):
+                         continue
+-                    record = self.records.get(tuple(np.floor(surface/self.voxel).astype(np.int64)))
+                     view_xy=grid.xy(cell)
++                    if record and math.dist(view_xy,record[2][:2])<self.baseline+arrival_tolerance:
++                        continue  # even an arrival at the tolerance edge needs an independent baseline
+                     direction = math.atan2(view_xy[1]-surface[1],view_xy[0]-surface[0])
+-                    bit = 1 << (int((direction+math.pi)/(2*math.pi)*8)%8)
+-                    if record and record[0]>=self.minimum_hits and record[1]&bit:
+-                        continue  # another direction, not another identical visit
++                    angle_margin = math.asin(min(1.,arrival_tolerance/max(
++                        math.dist(view_xy,surface[:2]),1e-6)))
++                    bits = 0
++                    for angle in (direction-angle_margin,direction,direction+angle_margin):
++                        bits |= 1 << int(((angle+math.pi)%(2*math.pi))/(2*math.pi)*8)
++                    if angle_margin>=math.pi/4:
++                        bits = 255  # excessive arrival uncertainty cannot promise a new sector
++                    if record and record[0]>=self.minimum_hits and record[1]&bits:
++                        continue
+                     mask[cell] = True
+-                    gain[cell] += 1
++                    gain[cell] += int(counts[representative])
+         return mask,gain
+--- before/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/run_small_indoor_exploration.py
++++ after/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/run_small_indoor_exploration.py
+@@ -206,7 +206,8 @@
+         print(('半面积仓库' if half else '小办公室')+'自主探索已启动：未知几何选点 → 补扫 → 返航驻留 → 保存。',flush=True)
+         if half:
+             mode='行人可立即键盘控制' if args.manual_pedestrian else '单名行人自动行走一轮后可键盘接管'
+-            print('半面积仓库：'+mode+'；导航速度上限0.40m/s，安全净距保持0.80m。',flush=True)
++            cruise=rospy.get_param('/mavros_avoidance_controller/max_navigation_speed',.3)
++            print('半面积仓库：'+mode+'；导航速度上限{:.2f}m/s，安全净距保持0.80m。'.format(cruise),flush=True)
+             print('另开终端运行 bash docs/演示启动命令/行人键盘控制.sh（WASD为世界XY，空格停止，Q退出）。',flush=True)
+         else:
+             print('本轮无行人/语义网络/回环；输出前缀：'+str(prefix),flush=True)
+@@ -249,8 +250,33 @@
+             Path(str(prefix)+'_flight_samples.json').write_text(json.dumps(samples,indent=2)+'\n')
+             Path(str(prefix)+'_frame_offsets.json').write_text(json.dumps(yaw_history,indent=2)+'\n')
+         task_success=bool(termination=='returned_home_and_saved' and mission.get('home_confirmed') and saved and not failed)
++        first_status=history[0]['wall_elapsed'] if history else None
++        return_status=next((r for r in history if r.get('mission_phase')=='RETURNING'),None)
++        last_status=history[-1]['wall_elapsed'] if history else None
++        timing=dict(startup_wall_seconds=first_status,
++                    before_return_wall_seconds=return_status['wall_elapsed']-first_status
++                        if return_status is not None and first_status is not None else None,
++                    return_and_dwell_wall_seconds=last_status-return_status['wall_elapsed']
++                        if return_status is not None else None,
++                    sim_seconds_at_return=return_status.get('mission_sim_seconds')
++                        if return_status is not None else None)
++        configuration={k:rospy.get_param(k,None) for k in (
++            '/mavros_avoidance_controller/max_navigation_speed','/mavros_avoidance_controller/max_total_speed',
++            '/warehouse_explorer/lookahead','/warehouse_explorer/planning_hz','/warehouse_explorer/settle_seconds',
++            '/warehouse_explorer/clearance','/warehouse_explorer/observed_map_acceptance',
++            '/warehouse_explorer/surface_quality_target','/warehouse_explorer/max_mission_seconds')
++            } if rosgraph.is_master_online() else {}
++        final_surface=mission.get('surface_quality',{})
++        final_quality=final_surface.get('observed_surface_quality_ratio')
++        target=configuration.get('/warehouse_explorer/surface_quality_target')
++        map_quality_accepted=bool(target is not None and final_quality is not None and final_quality>=target
++            and final_surface.get('observed_surface_voxels',0)>=1000
++            and not final_surface.get('surface_evidence_capacity_limited',False)
++            and not mission.get('grid_capacity_limited',False))
+         summary=dict(termination=termination,failed=failed,task_success=task_success,map_saved=saved,
++                     map_quality_accepted=map_quality_accepted,
+                      wall_elapsed_seconds=time.monotonic()-start_wall,mission=mission,
++                     run_options=vars(args),timing=timing,configuration=configuration,
+                      note='SITL only; successful return/save is separate from exploration/3D completeness. '
+                           'No collision-contact or physical-aircraft landing claim.')
+         Path(str(prefix)+'_result.json').write_text(json.dumps(summary,indent=2)+'\n')
+--- before/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/warehouse_explorer.py
++++ after/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/warehouse_explorer.py
+@@ -25,7 +25,7 @@
+ sys.path.insert(0,str(Path(__file__).resolve().parent))
+ from exploration_grid import ExplorationGrid
+ from exploration_native import SEARCH
+-from exploration_coverage import (SurfaceEvidence, ProgressWindow, suppress_disk,
++from exploration_coverage import (SurfaceEvidence, ProgressWindow, ObservedMapAcceptance, suppress_disk,
+                                   representative_cells, visible_unknown_gain)
+ 
+ 
+@@ -100,6 +100,8 @@
+             self.p('surface_view_baseline',.75),self.p('surface_max_voxels',150000))
+         self.progress = ProgressWindow(self.p('convergence_seconds',90.),
+             self.p('convergence_free_area',1.),self.p('convergence_new_surfaces',25))
++        self.acceptance = (ObservedMapAcceptance(self.p('surface_quality_target',.95))
++                           if self.p('observed_map_acceptance',False) else None)
+         self.surface_report = {}
+         self.progress_report = {}
+         self.exploration_complete = False
+@@ -141,6 +143,11 @@
+         # Service callbacks only request a transition; tick owns mission state.
+         self.return_requested = True
+         return TriggerResponse(True,'Return requested; observed-space planning and safety guards remain active')
++
++    def reset_progress(self):
++        self.progress.reset()
++        if getattr(self,'acceptance',None) is not None:
++            self.acceptance.reset()
+ 
+     def begin_return(self, reason, now):
+         self.phase = 'RETURNING'
+@@ -296,6 +303,7 @@
+                            useful_frontier_candidates=self.useful_frontier_count,
+                            remaining_inspection_candidates=self.remaining_inspection_count,
+                            surface_quality=self.surface_report,progress=self.progress_report,
++                           observed_map_acceptance=self.acceptance.report if self.acceptance else {},
+                            compute_ms=self.last_compute_ms,
+                            compute_p95_ms=float(np.percentile(self.tick_times,95)) if self.tick_times else 0.,
+                            search_backend='native' if SEARCH is not None else 'python',
+@@ -349,7 +357,7 @@
+                for name in ('odom','map','scan','free','mavros')):
+             # Stop publishing waypoints: existing controller watchdog holds.
+             self.home_since = None
+-            self.progress.reset()
++            self.reset_progress()
+             self.publish('WAIT_FRESH_DATA')
+             return
+         # A publisher's timer can keep receiving fresh while its source scan
+@@ -358,7 +366,7 @@
+                or inputs[name][0].header.stamp.to_sec()>now+.1
+                for name in ('odom','map','scan','free')):
+             self.home_since = None
+-            self.progress.reset()
++            self.reset_progress()
+             self.publish('WAIT_FRESH_DATA')
+             return
+         odom = inputs['odom'][0]
+@@ -371,7 +379,7 @@
+         if self.p('require_takeoff_confirmation',True) and not (
+                 takeoff_state and takeoff_state[0] and wall-takeoff_state[1]<=3.):
+             self.home_since = self.ready_since = None
+-            self.progress.reset()
++            self.reset_progress()
+             self.publish('WAIT_TAKEOFF_CONFIRMATION')
+             return
+         if self.altitude is None:
+@@ -437,13 +445,13 @@
+             return
+         if self.paused or now < self.settle_until:
+             if self.paused:
+-                self.progress.reset()  # paused time cannot certify convergence
++                self.reset_progress()  # paused time cannot certify convergence
+             self.home_since = None
+             self.last_progress,self.progress_position = now,position
+             self.publish('PAUSED' if self.paused else 'OBSERVING',position)
+             return
+         if not self.grid.inside(start) or not self.grid.safe[start]:
+-            self.progress.reset()
++            self.reset_progress()
+             self.home_since = None
+             if self.unsafe_since is None or (self.unsafe_position is not None and
+                     math.dist(position,self.unsafe_position) >= .20):
+@@ -469,6 +477,14 @@
+             return
+         self.progress.update(now,int(self.grid.known.sum()),len(self.surface.ever),self.goals_reached)
+         self.progress_report = self.progress.summary(self.grid.resolution)
++        if self.acceptance is not None and self.acceptance.update(
++                now,inputs['scan'][0].header.stamp.to_sec(),int(self.grid.known.sum()),
++                self.grid.resolution,self.goals_reached,now-self.mission_started,
++                self.surface_report,self.grid_capacity_limited):
++            # Residual frontiers may remain: this relaxed demo exit is PARTIAL.
++            self.begin_return('observed_map_accepted_partial',now)
++            self.return_tick(now,position,start,distances,parent)
++            return
+         candidates,gain = self.grid.frontiers(distances)
+         self.raw_frontier_count = int(candidates.sum())
+         self.blacklist = [(c,t) for c,t in self.blacklist if t > now]
+@@ -493,7 +509,7 @@
+         # Low gain does not equal full coverage. It moves to surface inspection
+         # and retains the residual frontier count in the report.
+         if (self.phase=='EXPLORING' and self.progress_report['low_gain'] and
+-                self.progress_report['observation_goals']>=self.p('convergence_min_goals',3)):
++                self.goals_reached>=self.p('convergence_min_goals',3)):
+             self.phase='INSPECTING'
+             self.inspection_started=now
+             self.target=None
+@@ -507,7 +523,8 @@
+             if self.inspection_plan is None or now-self.inspection_last_plan>=self.p('inspection_plan_seconds',3.):
+                 self.inspection_plan = self.surface.inspection_candidates(self.grid,distances,deficits,
+                     limit=self.p('inspection_max_surface_targets',60),
+-                    range_m=self.p('inspection_surface_range',3.))
++                    range_m=self.p('inspection_surface_range',3.),
++                    arrival_tolerance=self.p('arrival_tolerance',.3))
+                 self.inspection_last_plan = now
+             candidates,gain = (v.copy() for v in self.inspection_plan)
+             candidates &= self.grid.safe & np.isfinite(distances)
+@@ -532,7 +549,7 @@
+                 self.phase='EXPLORING'
+                 self.target=None
+                 self.no_frontier_since=None
+-                self.progress.reset()
++                self.reset_progress()
+                 candidates,gain=frontier_candidates,frontier_gain
+                 self.publish('RESUME_EXPLORATION',position,candidates=candidates)
+                 return
+--- before/docs/演示启动命令/所有Demo与行人启动命令.md
++++ after/docs/演示启动命令/所有Demo与行人启动命令.md
+@@ -19,7 +19,7 @@
+ bash scripts/run_sh/half_warehouse_exploration_demo.sh
+ ```
+ 
+-原50.5×27m仓库裁为25.25×27m，主体名义面积减半，保留24个原尺寸货架。运行副本带一名可移动行人；导航速度上限0.40m/s，0.80m净距与风险阈值不变。默认自动走一轮后开放键盘接管；加`--manual-pedestrian`可从开始就手动控制。键盘终端运行`bash docs/演示启动命令/行人键盘控制.sh`。`--headless`关闭GUI，`--keep-open`返航后保留窗口。[完整说明](../../AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/HALF_WAREHOUSE_DEMO_CN.md)。
++原50.5×27m仓库裁为25.25×27m，主体名义面积减半，保留24个原尺寸货架。运行副本带一名可移动行人；导航/总速度上限0.80m/s，前视2m、规划3Hz、到达观察1秒；已测表面90%且低收益持续后可提前部分返航，0.80m净距与风险阈值不变。默认自动走一轮后开放键盘接管；加`--manual-pedestrian`可从开始就手动控制。键盘终端运行`bash docs/演示启动命令/行人键盘控制.sh`。`--headless`关闭GUI，`--keep-open`返航后保留窗口。[完整说明](../../AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/HALF_WAREHOUSE_DEMO_CN.md)。
+ 
+ ## 2026-10-16新增：GitHub小办公室自主探索
+ 
+diff --git a/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/warehouse_exploration.yaml b/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/warehouse_exploration.yaml
+index 65dde6c..1a75c50 100644
+--- a/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/warehouse_exploration.yaml
++++ b/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/warehouse_exploration.yaml
+@@ -47,7 +47,7 @@ visualization_hz: 0.5          # only grid/markers/disk status; waypoints remain
+ convergence_seconds: 90.0
+ convergence_free_area: 1.0      # m² newly observed in the window
+ convergence_new_surfaces: 25   # unique coarse 3D measured surface voxels
+-convergence_min_goals: 3
++convergence_min_goals: 3       # cumulative arrivals, not 3 arrivals in every 90 s window
+ # Current-map coarse surface quality, NOT completeness of unseen surfaces.
+ surface_voxel: 0.40
+ surface_min_hits: 3            # distinct input acquisition stamps
+diff --git a/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/test/test_exploration_mission.py b/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/test/test_exploration_mission.py
+index b9e6b76..455a479 100644
+--- a/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/test/test_exploration_mission.py
++++ b/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/test/test_exploration_mission.py
+@@ -44,6 +44,14 @@ class MissionTest(unittest.TestCase):
+         self.assertEqual(n.phase,'INSPECTING')
+         self.assertFalse(n.exploration_complete)
+ 
++    def test_three_total_successes_need_not_all_fall_in_last_window(self):
++        for goals,expected in ((2,'EXPLORING'),(3,'INSPECTING')):
++            n=self.ready();n.goals_reached=goals
++            n.progress.update(0,int(n.grid.known.sum()),0,goals)
++            self.tick_at_100(n)
++            self.assertEqual(n.phase,expected)
++            self.assertFalse(n.exploration_complete)
++
+     def test_convergence_completion_requires_surface_quality_and_no_failures(self):
+         for failed,qualified,expected in ((False,1.,True),(True,1.,False),(False,.5,False)):
+             n=self.ready();n.phase='INSPECTING'
+@@ -61,6 +69,21 @@ class MissionTest(unittest.TestCase):
+         self.assertEqual(n.finish_reason,'wall_budget_partial')
+         self.assertFalse(n.exploration_complete)
+ 
++    def test_relaxed_acceptance_returns_partial_with_residual_frontiers(self):
++        n=self.ready();n.grid.known[:,50:]=False
++        n.acceptance=Mock();n.acceptance.update.return_value=True
++        n.return_tick=Mock()
++        self.tick_at_100(n)
++        self.assertEqual(n.finish_reason,'observed_map_accepted_partial')
++        self.assertEqual(n.phase,'RETURNING')
++        self.assertFalse(n.exploration_complete)
++        n.return_tick.assert_called_once()
++
++    def test_stale_inputs_reset_acceptance(self):
++        n=self.ready();n.inputs={};n.acceptance=Mock()
++        self.tick_at_100(n)
++        n.acceptance.reset.assert_called_once()
++
+     def test_inspection_resumes_when_new_frontier_is_visible(self):
+         n=self.ready();n.phase='INSPECTING'
+         n.grid.known[:,50:]=False
+diff --git a/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/test/test_exploration_grid.py b/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/test/test_exploration_grid.py
+index 796e034..0cdcd08 100644
+--- a/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/test/test_exploration_grid.py
++++ b/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/test/test_exploration_grid.py
+@@ -149,8 +149,11 @@ class GridTest(unittest.TestCase):
+         d,p=g.search(start)
+         path=g.path(p,start,goal)
+         self.assertTrue(path)
+-        waypoint=g.waypoint(path,g.xy(start),.6)
+-        self.assertTrue(g.segment_safe(g.xy(start),waypoint))
++        for lookahead in (.6,1.2,2.):
++            for index in range(0,len(path),5):
++                position=g.xy(path[index])
++                waypoint=g.waypoint(path[index:],position,lookahead)
++                self.assertTrue(g.segment_safe(position,waypoint))
+ 
+ 
+ if __name__=='__main__':
+--- /dev/null
++++ AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/test/test_exploration_efficiency.py
+@@ -0,0 +1,97 @@
++#!/usr/bin/env python3
++"""Inspection candidate baseline and deficit-weight regressions."""
++import sys
++import unittest
++from pathlib import Path
++import numpy as np
++sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
++from exploration_coverage import SurfaceEvidence, ObservedMapAcceptance
++from exploration_grid import ExplorationGrid
++
++
++class ObservedMapAcceptanceTest(unittest.TestCase):
++    def replay(self, gate, end=200, **overrides):
++        result=False
++        for second in range(end+1):
++            values=dict(now=float(second),stamp=float(second),known_count=15000,resolution=.2,
++                goals=6,mission_seconds=float(second),surface=dict(observed_surface_voxels=2000,
++                observed_surface_quality_ratio=.90))
++            values.update(overrides)
++            result=gate.update(**values)
++        return result
++
++    def test_relaxed_acceptance_requires_maturity_and_dwell(self):
++        g=ObservedMapAcceptance()
++        self.assertFalse(self.replay(g,189))
++        self.assertTrue(g.update(190,190,15000,.2,6,190,
++            dict(observed_surface_voxels=2000,observed_surface_quality_ratio=.90)))
++
++    def test_quality_small_map_goals_and_capacity_do_not_pass(self):
++        for values in (dict(goals=5),dict(mission_seconds=179),dict(capacity_limited=True),
++                dict(surface=dict(observed_surface_voxels=999,observed_surface_quality_ratio=1.)),
++                dict(surface=dict(observed_surface_voxels=2000,observed_surface_quality_ratio=.899)),
++                dict(surface=dict(observed_surface_voxels=2000,observed_surface_quality_ratio=1.,
++                                  surface_evidence_capacity_limited=True))):
++            self.assertFalse(self.replay(ObservedMapAcceptance(),**values))
++
++    def test_duplicate_scans_do_not_advance_acceptance(self):
++        g=ObservedMapAcceptance()
++        self.assertFalse(self.replay(g,stamp=0.))
++        self.assertFalse(g.report.get('window_ready',False))
++
++    def test_active_discovery_does_not_pass(self):
++        g=ObservedMapAcceptance()
++        for second in range(220):
++            accepted=g.update(second,second,10000+second*10,.2,6,second,
++                dict(observed_surface_voxels=2000,observed_surface_quality_ratio=.95))
++        self.assertFalse(accepted)
++        self.assertGreater(g.report['new_known_area_m2'],g.report['area_threshold_m2'])
++
++    def test_gap_and_explicit_reset_drop_old_evidence(self):
++        for gap in (False,True):
++            g=ObservedMapAcceptance();self.assertTrue(self.replay(g))
++            if not gap:g.reset()
++            self.assertFalse(g.update(204,204,15000,.2,6,204,
++                dict(observed_surface_voxels=2000,observed_surface_quality_ratio=.95)))
++            self.assertFalse(g.report['window_ready'])
++
++    def test_quality_dip_restarts_ten_second_hold(self):
++        g=ObservedMapAcceptance();self.assertFalse(self.replay(g,185))
++        for second in range(186,196):
++            quality=.89 if second==186 else .90
++            self.assertFalse(g.update(second,second,15000,.2,6,second,
++                dict(observed_surface_voxels=2000,observed_surface_quality_ratio=quality)))
++
++
++class InspectionCandidateTest(unittest.TestCase):
++    def test_inspection_waypoint_guarantees_original_view_baseline_with_arrival_error(self):
++        g=ExplorationGrid([-7,-7,7,7]);g.known[:]=True;g.update_obstacles([])
++        d,_=g.search(g.cell((-3.,0.)))
++        s=SurfaceEvidence();surface=np.array([[.2,.2,1.4]])
++        first=np.array([1.7,.2,1.4])
++        for stamp in (1,2,3):s.observe(surface,first,stamp)
++        mask,_=s.inspection_candidates(g,d,surface)
++        xy=np.array([g.xy(tuple(c)) for c in np.argwhere(mask)])
++        self.assertGreater(len(xy),0)
++        self.assertTrue(np.all(np.linalg.norm(xy-first[:2],axis=1)>=s.baseline+.3-1e-9))
++        old_bits=s.records[tuple(np.floor(surface[0]/s.voxel).astype(int))][1]
++        for view in xy:
++            for angle in np.linspace(0,2*np.pi,40):
++                actual=view+.3*np.array([np.cos(angle),np.sin(angle)])
++                theta=np.arctan2(actual[1]-surface[0,1],actual[0]-surface[0,0])
++                bit=1<<int(((theta+np.pi)%(2*np.pi))/(2*np.pi)*8)
++                self.assertFalse(old_bits&bit)
++
++    def test_inspection_scores_count_deficient_voxels_not_just_representatives(self):
++        g=ExplorationGrid([-10,-8,10,8]);g.known[:]=True;g.update_obstacles([])
++        d,_=g.search(g.cell((0.,0.)))
++        s=SurfaceEvidence()
++        deficits=np.array([[-4.2,.2,1.],[-4.2,.2,1.4],[-4.2,.2,1.8],[4.2,.2,1.]])
++        mask,gain=s.inspection_candidates(g,d,deficits)
++        left=[gain[tuple(c)] for c in np.argwhere(mask) if g.xy(tuple(c))[0]<0]
++        right=[gain[tuple(c)] for c in np.argwhere(mask) if g.xy(tuple(c))[0]>0]
++        self.assertGreater(max(left),max(right))
++
++
++if __name__=='__main__':
++    unittest.main()

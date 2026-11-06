@@ -1,0 +1,3 @@
+总流程先由激光和惯性定位，再通过衔接形成统一位置与当前扫描。此后不是一条完全串行链，而是两路并行决策：长期路线由地图维护和选定任务规划产生，指定目标与探索二选一；即时安全从当前扫描和跟踪目标分别判断动静风险，再融合为统一等级和建议。两路在同一控制器汇合，经过当下检查后才送给飞控执行。
+
+执行改变观察位置，新视角产生新扫描，下一轮又更新地图和判断。显示、监测、日志和地图保存是读取实际消息的旁路，不应画成必须等待显示完成才能飞行。探索器也直接消费当前观测，这张总图抽象了共享输入，没有表示它只能读一张累积全局图。实际装配可核对/home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/launch/astra_dynamic_avoidance.launch、launch/perception.launch和launch/warehouse_exploration.launch。

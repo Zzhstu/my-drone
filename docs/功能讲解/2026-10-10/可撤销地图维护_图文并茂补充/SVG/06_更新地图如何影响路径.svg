@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+<rect x="0" y="0" width="1920" height="1080" fill="white" stroke="none" stroke-width="1.5"/>
+<text x="65" y="95.0" font-family="Noto Sans CJK SC,sans-serif" font-size="47" font-weight="700" fill="#17394F" text-anchor="start">地图纠正以后，路径也要重新审视</text>
+<text x="68" y="149.0" font-family="Noto Sans CJK SC,sans-serif" font-size="26" font-weight="400" fill="#687E8E" text-anchor="start">普通两阶段规划的例子：全局提供方向，当前占用和自由观测共同修正局部；探索使用自己的规划器。</text>
+<polyline points="65.00,184.00 1855.00,184.00" fill="none" stroke="#DCE5EB" stroke-width="1"/>
+<text x="65" y="1053.0" font-family="Noto Sans CJK SC,sans-serif" font-size="21" font-weight="700" fill="#1A837D" text-anchor="start">路线仅示意；不等于本轮实测绕行距离、成功率或安全性；当前人体仍是实际障碍。</text>
+<text x="1764" y="1054.0" font-family="Noto Sans CJK SC,sans-serif" font-size="20" font-weight="400" fill="#687E8E" text-anchor="start">06 / 06</text>
+<rect x="65" y="230" width="510" height="454" fill="#FFF0F5" stroke="#DFB3C9" stroke-width="2"/>
+<text x="86" y="273.0" font-family="Noto Sans CJK SC,sans-serif" font-size="28" font-weight="700" fill="#17394F" text-anchor="start">更新前：假墙让路线绕远</text>
+<text x="86" y="309.72" font-family="Noto Sans CJK SC,sans-serif" font-size="22" font-weight="400" fill="#17394F" text-anchor="start">规划读取历史占用，人体旧点</text>
+<text x="86" y="339.42" font-family="Noto Sans CJK SC,sans-serif" font-size="22" font-weight="400" fill="#17394F" text-anchor="start">可能被扩大为障碍，形成假墙。</text>
+<g transform="translate(93,379) scale(1.008888888888889)">
+<rect x="15" y="15" width="419" height="245" fill="#F8FBFC" stroke="#C9DCE5" stroke-width="1.5"/>
+<rect x="55" y="42" width="84" height="166" fill="none" stroke="#99B8AA" stroke-width="1" stroke-dasharray="7 5"/>
+<rect x="65" y="52" width="64" height="146" fill="#DCEBE3" stroke="#1A837D" stroke-width="2"/>
+<polyline points="70.00,64.00 124.00,64.00" fill="none" stroke="#A5C5B3" stroke-width="1"/>
+<polyline points="70.00,84.00 124.00,84.00" fill="none" stroke="#A5C5B3" stroke-width="1"/>
+<polyline points="70.00,104.00 124.00,104.00" fill="none" stroke="#A5C5B3" stroke-width="1"/>
+<polyline points="70.00,124.00 124.00,124.00" fill="none" stroke="#A5C5B3" stroke-width="1"/>
+<polyline points="70.00,144.00 124.00,144.00" fill="none" stroke="#A5C5B3" stroke-width="1"/>
+<polyline points="70.00,164.00 124.00,164.00" fill="none" stroke="#A5C5B3" stroke-width="1"/>
+<polyline points="70.00,184.00 124.00,184.00" fill="none" stroke="#A5C5B3" stroke-width="1"/>
+<rect x="292" y="42" width="84" height="166" fill="none" stroke="#99B8AA" stroke-width="1" stroke-dasharray="7 5"/>
+<rect x="302" y="52" width="64" height="146" fill="#DCEBE3" stroke="#1A837D" stroke-width="2"/>
+<polyline points="307.00,64.00 361.00,64.00" fill="none" stroke="#A5C5B3" stroke-width="1"/>
+<polyline points="307.00,84.00 361.00,84.00" fill="none" stroke="#A5C5B3" stroke-width="1"/>
+<polyline points="307.00,104.00 361.00,104.00" fill="none" stroke="#A5C5B3" stroke-width="1"/>
+<polyline points="307.00,124.00 361.00,124.00" fill="none" stroke="#A5C5B3" stroke-width="1"/>
+<polyline points="307.00,144.00 361.00,144.00" fill="none" stroke="#A5C5B3" stroke-width="1"/>
+<polyline points="307.00,164.00 361.00,164.00" fill="none" stroke="#A5C5B3" stroke-width="1"/>
+<polyline points="307.00,184.00 361.00,184.00" fill="none" stroke="#A5C5B3" stroke-width="1"/>
+<rect x="140" y="124" width="151" height="34" fill="#FBE5E8" stroke="none" stroke-width="1.5"/>
+<circle cx="151.00" cy="136.00" r="2.7" fill="#D04E58" stroke="none" stroke-width="1"/>
+<circle cx="151.00" cy="143.00" r="2.7" fill="#D04E58" stroke="none" stroke-width="1"/>
+<circle cx="151.00" cy="150.00" r="2.7" fill="#D04E58" stroke="none" stroke-width="1"/>
+<circle cx="162.00" cy="136.00" r="2.7" fill="#D04E58" stroke="none" stroke-width="1"/>
+<circle cx="162.00" cy="143.00" r="2.7" fill="#D04E58" stroke="none" stroke-width="1"/>
+<circle cx="162.00" cy="150.00" r="2.7" fill="#D04E58" stroke="none" stroke-width="1"/>
+<circle cx="173.00" cy="136.00" r="2.7" fill="#D04E58" stroke="none" stroke-width="1"/>
+<circle cx="173.00" cy="143.00" r="2.7" fill="#D04E58" stroke="none" stroke-width="1"/>
+<circle cx="173.00" cy="150.00" r="2.7" fill="#D04E58" stroke="none" stroke-width="1"/>
+<circle cx="184.00" cy="136.00" r="2.7" fill="#D04E58" stroke="none" stroke-width="1"/>
+<circle cx="184.00" cy="143.00" r="2.7" fill="#D04E58" stroke="none" stroke-width="1"/>
+<circle cx="184.00" cy="150.00" r="2.7" fill="#D04E58" stroke="none" stroke-width="1"/>
+<circle cx="195.00" cy="136.00" r="2.7" fill="#D04E58" stroke="none" stroke-width="1"/>
+<circle cx="195.00" cy="143.00" r="2.7" fill="#D04E58" stroke="none" stroke-width="1"/>
+<circle cx="195.00" cy="150.00" r="2.7" fill="#D04E58" stroke="none" stroke-width="1"/>
+<circle cx="206.00" cy="136.00" r="2.7" fill="#D04E58" stroke="none" stroke-width="1"/>
+<circle cx="206.00" cy="143.00" r="2.7" fill="#D04E58" stroke="none" stroke-width="1"/>
+<circle cx="206.00" cy="150.00" r="2.7" fill="#D04E58" stroke="none" stroke-width="1"/>
+<circle cx="217.00" cy="136.00" r="2.7" fill="#D04E58" stroke="none" stroke-width="1"/>
+<circle cx="217.00" cy="143.00" r="2.7" fill="#D04E58" stroke="none" stroke-width="1"/>
+<circle cx="217.00" cy="150.00" r="2.7" fill="#D04E58" stroke="none" stroke-width="1"/>
+<circle cx="228.00" cy="136.00" r="2.7" fill="#D04E58" stroke="none" stroke-width="1"/>
+<circle cx="228.00" cy="143.00" r="2.7" fill="#D04E58" stroke="none" stroke-width="1"/>
+<circle cx="228.00" cy="150.00" r="2.7" fill="#D04E58" stroke="none" stroke-width="1"/>
+<circle cx="239.00" cy="136.00" r="2.7" fill="#D04E58" stroke="none" stroke-width="1"/>
+<circle cx="239.00" cy="143.00" r="2.7" fill="#D04E58" stroke="none" stroke-width="1"/>
+<circle cx="239.00" cy="150.00" r="2.7" fill="#D04E58" stroke="none" stroke-width="1"/>
+<circle cx="250.00" cy="136.00" r="2.7" fill="#D04E58" stroke="none" stroke-width="1"/>
+<circle cx="250.00" cy="143.00" r="2.7" fill="#D04E58" stroke="none" stroke-width="1"/>
+<circle cx="250.00" cy="150.00" r="2.7" fill="#D04E58" stroke="none" stroke-width="1"/>
+<circle cx="261.00" cy="136.00" r="2.7" fill="#D04E58" stroke="none" stroke-width="1"/>
+<circle cx="261.00" cy="143.00" r="2.7" fill="#D04E58" stroke="none" stroke-width="1"/>
+<circle cx="261.00" cy="150.00" r="2.7" fill="#D04E58" stroke="none" stroke-width="1"/>
+<text x="146" y="192.0" font-family="Noto Sans CJK SC,sans-serif" font-size="18" font-weight="400" fill="#D04E58" text-anchor="start">历史点形成假墙</text>
+<g transform="translate(214,225) scale(0.62)">
+<ellipse cx="0" cy="17" rx="40" ry="8" fill="#DAE4EC" stroke="none" stroke-width="1"/>
+<polyline points="0.00,0.00 -32.00,-12.00" fill="none" stroke="#17394F" stroke-width="4"/>
+<ellipse cx="-32" cy="-12" rx="16" ry="5" fill="#E6F2FB" stroke="#28628B" stroke-width="2"/>
+<polyline points="0.00,0.00 32.00,-12.00" fill="none" stroke="#17394F" stroke-width="4"/>
+<ellipse cx="32" cy="-12" rx="16" ry="5" fill="#E6F2FB" stroke="#28628B" stroke-width="2"/>
+<polyline points="0.00,0.00 -32.00,12.00" fill="none" stroke="#17394F" stroke-width="4"/>
+<ellipse cx="-32" cy="12" rx="16" ry="5" fill="#E6F2FB" stroke="#28628B" stroke-width="2"/>
+<polyline points="0.00,0.00 32.00,12.00" fill="none" stroke="#17394F" stroke-width="4"/>
+<ellipse cx="32" cy="12" rx="16" ry="5" fill="#E6F2FB" stroke="#28628B" stroke-width="2"/>
+<polygon points="-13.00,-9.00 11.00,-9.00 17.00,1.00 0.00,10.00 -17.00,1.00" fill="#4F8CB5" stroke="#17394F" stroke-width="1.3"/>
+<polyline points="-8.00,7.00 -13.00,20.00 0.00,20.00" fill="none" stroke="#17394F" stroke-width="2"/>
+<polyline points="8.00,7.00 13.00,20.00 0.00,20.00" fill="none" stroke="#17394F" stroke-width="2"/>
+<circle cx="0.00" cy="-4.00" r="4" fill="#9EE6E0" stroke="#1A837D" stroke-width="1"/>
+</g>
+<circle cx="214.00" cy="35.00" r="7" fill="#D9933E" stroke="none" stroke-width="1"/>
+<text x="231" y="40.0" font-family="Noto Sans CJK SC,sans-serif" font-size="18" font-weight="400" fill="#17394F" text-anchor="start">目标</text>
+<polyline points="214.00,218.00 394.00,218.00 394.00,28.00 230.00,28.00" fill="none" stroke="#28628B" stroke-width="3"/>
+<polygon points="230.00,28.00 240.50,23.80 240.50,32.20" fill="#28628B" stroke="none" stroke-width="1.3"/>
+<text x="39" y="288.0" font-family="Noto Sans CJK SC,sans-serif" font-size="18" font-weight="400" fill="#687E8E" text-anchor="start">保留货架占用与安全膨胀</text>
+</g>
+<polyline points="583.00,450.00 640.00,450.00" fill="none" stroke="#28628B" stroke-width="3"/>
+<polygon points="640.00,450.00 629.50,454.20 629.50,445.80" fill="#28628B" stroke="none" stroke-width="1.3"/>
+<rect x="655" y="230" width="610" height="454" fill="#FFF3E5" stroke="#E9C291" stroke-width="2"/>
+<text x="676" y="273.0" font-family="Noto Sans CJK SC,sans-serif" font-size="28" font-weight="700" fill="#17394F" text-anchor="start">两条更新支路，不必完全串行</text>
+<text x="676" y="309.72" font-family="Noto Sans CJK SC,sans-serif" font-size="22" font-weight="400" fill="#17394F" text-anchor="start">局部自由修路可先发生；</text>
+<text x="676" y="339.42" font-family="Noto Sans CJK SC,sans-serif" font-size="22" font-weight="400" fill="#17394F" text-anchor="start">持久删除仍须通过更严格的确认。</text>
+<rect x="681" y="416" width="557" height="80" fill="#F7FBFE" stroke="#A6C2D9" stroke-width="1.5"/>
+<text x="698" y="451.0" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="700" fill="#28628B" text-anchor="start">当前自由观测 → 剔除相匹配的旧点</text>
+<text x="698" y="479.0" font-family="Noto Sans CJK SC,sans-serif" font-size="20" font-weight="400" fill="#687E8E" text-anchor="start">先修正原始三维点，再生成安全膨胀。</text>
+<rect x="681" y="526" width="557" height="80" fill="#F1F9F2" stroke="#B0D1B7" stroke-width="1.5"/>
+<text x="698" y="561.0" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="700" fill="#1A837D" text-anchor="start">多次确认撤销 → 持续地图更新</text>
+<text x="698" y="589.0" font-family="Noto Sans CJK SC,sans-serif" font-size="20" font-weight="400" fill="#687E8E" text-anchor="start">真正删除共享记录；各占用视图随之更新。</text>
+<text x="687" y="651.0" font-family="Noto Sans CJK SC,sans-serif" font-size="21" font-weight="400" fill="#17394F" text-anchor="start">当前局部占用最后叠加，不能被自由观测抵消。</text>
+<polyline points="1272.00,450.00 1340.00,450.00" fill="none" stroke="#28628B" stroke-width="3"/>
+<polygon points="1340.00,450.00 1329.50,454.20 1329.50,445.80" fill="#28628B" stroke="none" stroke-width="1.3"/>
+<rect x="1349" y="230" width="506" height="454" fill="#EDF8F0" stroke="#A6D2BD" stroke-width="2"/>
+<text x="1370" y="273.0" font-family="Noto Sans CJK SC,sans-serif" font-size="28" font-weight="700" fill="#17394F" text-anchor="start">更新后：重新选择可行路线</text>
+<text x="1370" y="309.72" font-family="Noto Sans CJK SC,sans-serif" font-size="22" font-weight="400" fill="#17394F" text-anchor="start">通道内旧占用解除后，重新规划；</text>
+<text x="1370" y="339.42" font-family="Noto Sans CJK SC,sans-serif" font-size="22" font-weight="400" fill="#17394F" text-anchor="start">真实货架、当前行人仍然需要避让。</text>
+<g transform="translate(1371,379) scale(1.0266666666666666)">
+<rect x="15" y="15" width="419" height="245" fill="#F8FBFC" stroke="#C9DCE5" stroke-width="1.5"/>
+<rect x="55" y="42" width="84" height="166" fill="none" stroke="#99B8AA" stroke-width="1" stroke-dasharray="7 5"/>
+<rect x="65" y="52" width="64" height="146" fill="#DCEBE3" stroke="#1A837D" stroke-width="2"/>
+<polyline points="70.00,64.00 124.00,64.00" fill="none" stroke="#A5C5B3" stroke-width="1"/>
+<polyline points="70.00,84.00 124.00,84.00" fill="none" stroke="#A5C5B3" stroke-width="1"/>
+<polyline points="70.00,104.00 124.00,104.00" fill="none" stroke="#A5C5B3" stroke-width="1"/>
+<polyline points="70.00,124.00 124.00,124.00" fill="none" stroke="#A5C5B3" stroke-width="1"/>
+<polyline points="70.00,144.00 124.00,144.00" fill="none" stroke="#A5C5B3" stroke-width="1"/>
+<polyline points="70.00,164.00 124.00,164.00" fill="none" stroke="#A5C5B3" stroke-width="1"/>
+<polyline points="70.00,184.00 124.00,184.00" fill="none" stroke="#A5C5B3" stroke-width="1"/>
+<rect x="292" y="42" width="84" height="166" fill="none" stroke="#99B8AA" stroke-width="1" stroke-dasharray="7 5"/>
+<rect x="302" y="52" width="64" height="146" fill="#DCEBE3" stroke="#1A837D" stroke-width="2"/>
+<polyline points="307.00,64.00 361.00,64.00" fill="none" stroke="#A5C5B3" stroke-width="1"/>
+<polyline points="307.00,84.00 361.00,84.00" fill="none" stroke="#A5C5B3" stroke-width="1"/>
+<polyline points="307.00,104.00 361.00,104.00" fill="none" stroke="#A5C5B3" stroke-width="1"/>
+<polyline points="307.00,124.00 361.00,124.00" fill="none" stroke="#A5C5B3" stroke-width="1"/>
+<polyline points="307.00,144.00 361.00,144.00" fill="none" stroke="#A5C5B3" stroke-width="1"/>
+<polyline points="307.00,164.00 361.00,164.00" fill="none" stroke="#A5C5B3" stroke-width="1"/>
+<polyline points="307.00,184.00 361.00,184.00" fill="none" stroke="#A5C5B3" stroke-width="1"/>
+<circle cx="151.00" cy="136.00" r="2" fill="#F8FBFC" stroke="#D7E4E8" stroke-width="1"/>
+<circle cx="151.00" cy="143.00" r="2" fill="#F8FBFC" stroke="#D7E4E8" stroke-width="1"/>
+<circle cx="151.00" cy="150.00" r="2" fill="#F8FBFC" stroke="#D7E4E8" stroke-width="1"/>
+<circle cx="162.00" cy="136.00" r="2" fill="#F8FBFC" stroke="#D7E4E8" stroke-width="1"/>
+<circle cx="162.00" cy="143.00" r="2" fill="#F8FBFC" stroke="#D7E4E8" stroke-width="1"/>
+<circle cx="162.00" cy="150.00" r="2" fill="#F8FBFC" stroke="#D7E4E8" stroke-width="1"/>
+<circle cx="173.00" cy="136.00" r="2" fill="#F8FBFC" stroke="#D7E4E8" stroke-width="1"/>
+<circle cx="173.00" cy="143.00" r="2" fill="#F8FBFC" stroke="#D7E4E8" stroke-width="1"/>
+<circle cx="173.00" cy="150.00" r="2" fill="#F8FBFC" stroke="#D7E4E8" stroke-width="1"/>
+<circle cx="184.00" cy="136.00" r="2" fill="#F8FBFC" stroke="#D7E4E8" stroke-width="1"/>
+<circle cx="184.00" cy="143.00" r="2" fill="#F8FBFC" stroke="#D7E4E8" stroke-width="1"/>
+<circle cx="184.00" cy="150.00" r="2" fill="#F8FBFC" stroke="#D7E4E8" stroke-width="1"/>
+<circle cx="195.00" cy="136.00" r="2" fill="#F8FBFC" stroke="#D7E4E8" stroke-width="1"/>
+<circle cx="195.00" cy="143.00" r="2" fill="#F8FBFC" stroke="#D7E4E8" stroke-width="1"/>
+<circle cx="195.00" cy="150.00" r="2" fill="#F8FBFC" stroke="#D7E4E8" stroke-width="1"/>
+<circle cx="206.00" cy="136.00" r="2" fill="#F8FBFC" stroke="#D7E4E8" stroke-width="1"/>
+<circle cx="206.00" cy="143.00" r="2" fill="#F8FBFC" stroke="#D7E4E8" stroke-width="1"/>
+<circle cx="206.00" cy="150.00" r="2" fill="#F8FBFC" stroke="#D7E4E8" stroke-width="1"/>
+<circle cx="217.00" cy="136.00" r="2" fill="#F8FBFC" stroke="#D7E4E8" stroke-width="1"/>
+<circle cx="217.00" cy="143.00" r="2" fill="#F8FBFC" stroke="#D7E4E8" stroke-width="1"/>
+<circle cx="217.00" cy="150.00" r="2" fill="#F8FBFC" stroke="#D7E4E8" stroke-width="1"/>
+<circle cx="228.00" cy="136.00" r="2" fill="#F8FBFC" stroke="#D7E4E8" stroke-width="1"/>
+<circle cx="228.00" cy="143.00" r="2" fill="#F8FBFC" stroke="#D7E4E8" stroke-width="1"/>
+<circle cx="228.00" cy="150.00" r="2" fill="#F8FBFC" stroke="#D7E4E8" stroke-width="1"/>
+<circle cx="239.00" cy="136.00" r="2" fill="#F8FBFC" stroke="#D7E4E8" stroke-width="1"/>
+<circle cx="239.00" cy="143.00" r="2" fill="#F8FBFC" stroke="#D7E4E8" stroke-width="1"/>
+<circle cx="239.00" cy="150.00" r="2" fill="#F8FBFC" stroke="#D7E4E8" stroke-width="1"/>
+<circle cx="250.00" cy="136.00" r="2" fill="#F8FBFC" stroke="#D7E4E8" stroke-width="1"/>
+<circle cx="250.00" cy="143.00" r="2" fill="#F8FBFC" stroke="#D7E4E8" stroke-width="1"/>
+<circle cx="250.00" cy="150.00" r="2" fill="#F8FBFC" stroke="#D7E4E8" stroke-width="1"/>
+<circle cx="261.00" cy="136.00" r="2" fill="#F8FBFC" stroke="#D7E4E8" stroke-width="1"/>
+<circle cx="261.00" cy="143.00" r="2" fill="#F8FBFC" stroke="#D7E4E8" stroke-width="1"/>
+<circle cx="261.00" cy="150.00" r="2" fill="#F8FBFC" stroke="#D7E4E8" stroke-width="1"/>
+<text x="146" y="192.0" font-family="Noto Sans CJK SC,sans-serif" font-size="18" font-weight="400" fill="#1A837D" text-anchor="start">旧占用已撤销</text>
+<g transform="translate(214,225) scale(0.62)">
+<ellipse cx="0" cy="17" rx="40" ry="8" fill="#DAE4EC" stroke="none" stroke-width="1"/>
+<polyline points="0.00,0.00 -32.00,-12.00" fill="none" stroke="#17394F" stroke-width="4"/>
+<ellipse cx="-32" cy="-12" rx="16" ry="5" fill="#E6F2FB" stroke="#28628B" stroke-width="2"/>
+<polyline points="0.00,0.00 32.00,-12.00" fill="none" stroke="#17394F" stroke-width="4"/>
+<ellipse cx="32" cy="-12" rx="16" ry="5" fill="#E6F2FB" stroke="#28628B" stroke-width="2"/>
+<polyline points="0.00,0.00 -32.00,12.00" fill="none" stroke="#17394F" stroke-width="4"/>
+<ellipse cx="-32" cy="12" rx="16" ry="5" fill="#E6F2FB" stroke="#28628B" stroke-width="2"/>
+<polyline points="0.00,0.00 32.00,12.00" fill="none" stroke="#17394F" stroke-width="4"/>
+<ellipse cx="32" cy="12" rx="16" ry="5" fill="#E6F2FB" stroke="#28628B" stroke-width="2"/>
+<polygon points="-13.00,-9.00 11.00,-9.00 17.00,1.00 0.00,10.00 -17.00,1.00" fill="#4F8CB5" stroke="#17394F" stroke-width="1.3"/>
+<polyline points="-8.00,7.00 -13.00,20.00 0.00,20.00" fill="none" stroke="#17394F" stroke-width="2"/>
+<polyline points="8.00,7.00 13.00,20.00 0.00,20.00" fill="none" stroke="#17394F" stroke-width="2"/>
+<circle cx="0.00" cy="-4.00" r="4" fill="#9EE6E0" stroke="#1A837D" stroke-width="1"/>
+</g>
+<circle cx="214.00" cy="35.00" r="7" fill="#D9933E" stroke="none" stroke-width="1"/>
+<text x="231" y="40.0" font-family="Noto Sans CJK SC,sans-serif" font-size="18" font-weight="400" fill="#17394F" text-anchor="start">目标</text>
+<polyline points="214.00,218.00 214.00,157.00 214.00,55.00" fill="none" stroke="#1A837D" stroke-width="3"/>
+<polygon points="214.00,55.00 218.20,65.50 209.80,65.50" fill="#1A837D" stroke="none" stroke-width="1.3"/>
+<g transform="translate(391,172) scale(0.9)">
+<ellipse cx="0" cy="3" rx="15" ry="4" fill="#E1E6E9" stroke="none" stroke-width="1"/>
+<circle cx="0.00" cy="-50.00" r="8" fill="#D9933E" stroke="none" stroke-width="1"/>
+<polyline points="-12.00,-26.00 -8.00,-37.00 7.00,-37.00 14.00,-22.00" fill="none" stroke="#D9933E" stroke-width="5"/>
+<polyline points="0.00,-35.00 0.00,-15.00 -8.00,0.00" fill="none" stroke="#D9933E" stroke-width="8"/>
+<polyline points="1.00,-16.00 10.00,0.00" fill="none" stroke="#D9933E" stroke-width="5"/>
+</g>
+<ellipse cx="391" cy="153" rx="25" ry="37" fill="none" stroke="#D9933E" stroke-width="1.5"/>
+<text x="39" y="288.0" font-family="Noto Sans CJK SC,sans-serif" font-size="18" font-weight="400" fill="#687E8E" text-anchor="start">保留货架占用与安全膨胀</text>
+</g>
+<rect x="65" y="748" width="1790" height="249" fill="#F3F7FA" stroke="#B8CDD9" stroke-width="2"/>
+<text x="91" y="795.0" font-family="Noto Sans CJK SC,sans-serif" font-size="31" font-weight="700" fill="#17394F" text-anchor="start">地图、路线、安全保护：互相配合，但各自负责不同事情</text>
+<text x="95" y="857.0" font-family="Noto Sans CJK SC,sans-serif" font-size="27" font-weight="700" fill="#1A837D" text-anchor="start">地图维护</text>
+<text x="95" y="907.0" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="400" fill="#17394F" text-anchor="start">纠正过去留下的失效占用。</text>
+<polyline points="640.00,872.00 671.00,872.00" fill="none" stroke="#28628B" stroke-width="2"/>
+<polygon points="671.00,872.00 663.00,875.20 663.00,868.80" fill="#28628B" stroke="none" stroke-width="1.3"/>
+<text x="685" y="857.0" font-family="Noto Sans CJK SC,sans-serif" font-size="27" font-weight="700" fill="#1A837D" text-anchor="start">路径规划</text>
+<text x="685" y="907.0" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="400" fill="#17394F" text-anchor="start">重新计算可走路线和中间目标。</text>
+<polyline points="1230.00,872.00 1261.00,872.00" fill="none" stroke="#28628B" stroke-width="2"/>
+<polygon points="1261.00,872.00 1253.00,875.20 1253.00,868.80" fill="#28628B" stroke="none" stroke-width="1.3"/>
+<text x="1275" y="857.0" font-family="Noto Sans CJK SC,sans-serif" font-size="27" font-weight="700" fill="#1A837D" text-anchor="start">即时保护</text>
+<text x="1275" y="907.0" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="400" fill="#17394F" text-anchor="start">仍检查现在的障碍与输入有效性。</text>
+</svg>

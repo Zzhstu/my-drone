@@ -1,0 +1,10 @@
+# FALCON-inspired coverage-region guidance over this project's sensor-only map.
+# 0.15 m is the *planar* planning grid here, aligned with static_map.yaml's
+# 0.15 m occupied-point voxel centres. It is NOT FALCON's 3-D TSDF/ESDF map.
+warehouse_explorer:
+  planner_mode: coverage_guided
+  resolution: 0.15
+  coverage_region_size: 2.5
+  coverage_max_regions: 8
+  coverage_lookahead_weight: 0.6
+  coverage_revisit_weight: 0.4

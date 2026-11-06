@@ -1,0 +1,24 @@
+{
+  "status": "DESIGN_CONSISTENCY_ONLY_NO_IMPLEMENTATION_OR_FLIGHT_TEST",
+  "fixed_parameters": 40,
+  "existing_proposals": 3,
+  "new_parameters": 33,
+  "source_files_fingerprinted": 130,
+  "checks": [
+    "yaml_parse",
+    "all_new_keys_documented",
+    "weights_sum_to_one",
+    "600_equals_540_plus_60",
+    "view_ranges_within_existing_limits",
+    "dwell_limit_not_below_nominal",
+    "quality_target_within_existing_validation_bounds",
+    "B1_B2_B3_same_quality_target",
+    "source_fingerprint_saved"
+  ],
+  "files_sha256": {
+    "实施计划与参数清单.md": "e4e3fbe9ff17e621c1f21450138b038f252623c84c0572beb75e236764d04e83",
+    "current_source_fingerprint.json": "2b69845968d68a60d7aa9832c4e74c95c2868d192231b9b5f3fd57b250fceb32",
+    "parameters_draft.yaml": "c37d07cbf07e44fa8cd7838d6b5964990dc9c647e0885bac93ac52f752513c84",
+    "observed_baseline_parameters.json": "07699a2e6d1ff6f4e7ee651681f9bfe8d68aba95b9a318e9bb359277d58e7938"
+  }
+}

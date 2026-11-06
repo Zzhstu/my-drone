@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect x="0" y="0" width="1600" height="900" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1.5"/>
+<text x="60" y="87.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="47" font-weight="700" fill="#15334C" text-anchor="start">安全控制：普通演示与探索不同</text>
+<text x="62" y="129.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#657585" text-anchor="start">一级风险优先让行；二级风险怎样处理，必须结合当前演示配置解释。</text>
+<polyline points="60,151 1540,151" fill="none" stroke="#D5E0E6" stroke-width="1.5"/>
+<rect x="60" y="774" width="1480" height="70" rx="0" fill="#EFF5F8" stroke="none" stroke-width="1.5"/>
+<text x="80" y="818.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="700" fill="#24618A" text-anchor="start">核心规则</text>
+<text x="210" y="818.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">探索不盲目沿最近障碍斥力横移，避免躲开一侧货架却撞上另一侧。</text>
+<text x="60" y="880.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="17" font-weight="400" fill="#657585" text-anchor="start">现有实现讲解 · 参数不是实验结果 · 源码对应见配套说明</text>
+<text x="1400" y="880.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="18" font-weight="400" fill="#657585" text-anchor="start">07 / 10</text>
+<rect x="60" y="210" width="465" height="440" rx="0" fill="#F6FAFC" stroke="#D5E0E6" stroke-width="1.5"/>
+<rect x="60" y="210" width="465" height="69" rx="0" fill="#24618A" stroke="none" stroke-width="1.5"/>
+<text x="78" y="255.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#FFFFFF" text-anchor="start">普通演示：跟踪与让行</text>
+<text x="83" y="321.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">零级：跟踪规划航点。</text>
+<text x="83" y="370.88" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">一级：默认停止水平前进；纯静态预</text>
+<text x="83" y="406.76" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">警可检查低速退让。</text>
+<text x="83" y="456.64" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">二级：采用融合避让建议，再限制最</text>
+<text x="83" y="492.52" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">终速度。</text>
+<text x="83" y="542.4" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">普通场景导航上限 0.35 米/秒。</text>
+<rect x="560" y="210" width="465" height="440" rx="0" fill="#F6FAFC" stroke="#D5E0E6" stroke-width="1.5"/>
+<rect x="560" y="210" width="465" height="69" rx="0" fill="#137B7E" stroke="none" stroke-width="1.5"/>
+<text x="578" y="255.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#FFFFFF" text-anchor="start">仓库导航：更低速</text>
+<text x="583" y="321.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">同样保留一级停车让行。</text>
+<text x="583" y="370.88" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">只在静态预警且退路检查通过时，慢</text>
+<text x="583" y="406.76" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">速远离货架。</text>
+<text x="583" y="456.64" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">导航上限 0.25 米/秒。</text>
+<text x="583" y="506.52" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">静态退让 0.10 米/秒；不是向目标追</text>
+<text x="583" y="542.4" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">赶。</text>
+<rect x="1060" y="210" width="480" height="440" rx="0" fill="#F6FAFC" stroke="#D5E0E6" stroke-width="1.5"/>
+<rect x="1060" y="210" width="480" height="69" rx="0" fill="#24618A" stroke="none" stroke-width="1.5"/>
+<text x="1078" y="255.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#FFFFFF" text-anchor="start">自主探索：保守执行</text>
+<text x="1083" y="321.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">零级：跟踪探索器航点，同时检查前</text>
+<text x="1083" y="356.88" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">方短段。</text>
+<text x="1083" y="406.76" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">一级：停车，只有授权短退路通过才</text>
+<text x="1083" y="442.64" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">恢复。</text>
+<text x="1083" y="492.52" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">二级：默认水平停车；当前正常来源</text>
+<text x="1083" y="528.4" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">下短退路会被拦住。</text>
+<text x="1083" y="578.28" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">导航上限 0.30 米/秒。</text>
+<text x="75" y="711.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="400" fill="#15334C" text-anchor="start">共同规则：到位后仍检查风险；水平总限速 0.65 米/秒；不让两个控制器同时发飞控指令。</text>
+</svg>

@@ -1,0 +1,14 @@
+<launch>
+    <arg name="uav_id" default="1" />
+    <arg name="pcd_save_interval" default="-1" />
+
+    <include file="$(find p450_experiment)/launch_basic/p450_onboard_mid360.launch">
+        <arg name="uav_id" value="$(arg uav_id)" />
+    </include>
+    <include file="$(find p450_experiment)/launch_mid360/msg_MID360.launch" />
+    <include file="$(find p450_book_qr_mission)/launch/mid360_mapping_save.launch">
+        <arg name="uav_id" value="$(arg uav_id)" />
+        <arg name="pcd_save_interval" value="$(arg pcd_save_interval)" />
+    </include>
+    <include file="$(find p450_experiment)/launch_spirecv/gimbal_server.launch" />
+</launch>

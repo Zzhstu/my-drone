@@ -1,0 +1,11 @@
+{
+  "run": "warehouse_half_20261016_193649",
+  "files": {
+    "AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/warehouse_explorer.py": "feb050bff1b2fd4e2ff2002d597ad4f6037e0bcb3736cc6e251f3d6f6abd07d6",
+    "AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/exploration_coverage.py": "a8d0b81a59360fc612cd2e8e9b7d014d473ab8815bde3860f5667344f722ea52",
+    "AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/run_small_indoor_exploration.py": "c3009ab5759525d0d210ed6b2a7c52972e071e64fb80c10f46c5050e5ae5fca4",
+    "AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/half_warehouse_exploration.yaml": "c6b4cbec95519b39341c2b21b600eef200ffd99a84aaeaf52b1ec032ebfe95e0",
+    "AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/warehouse_exploration.yaml": "20fb957b56d63c080715a28dc0969444fc91a71408f8fa870445927c966cdd9b",
+    "AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/launch/half_warehouse_exploration.launch": "a13100a6ae3c51d353309cb1364f2dc3e31be278763031f96187de247d5a4664"
+  }
+}

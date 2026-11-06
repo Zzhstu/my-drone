@@ -1,0 +1,94 @@
+{
+  "runs": [
+    {
+      "run": "warehouse_half_20261016_145001",
+      "total_wall_seconds": 1229.3826931780059,
+      "mission_wall_seconds": 1181.478199145,
+      "mission_sim_seconds": 722.866,
+      "online_quality": 0.9106166560712016,
+      "known_free_area_m2": 604.2400000000001,
+      "goals_reached": 18,
+      "stalled_goals": 2,
+      "travel_xy_m": 172.924017082524,
+      "shelf_side_support": 0.9982993197278912,
+      "task_success": true,
+      "finish_reason": "mission_budget_partial"
+    },
+    {
+      "run": "warehouse_half_20261016_161659",
+      "total_wall_seconds": 1099.7017884210072,
+      "mission_wall_seconds": 1050.3817000910058,
+      "mission_sim_seconds": 638.809,
+      "online_quality": 0.9401454167748636,
+      "known_free_area_m2": 615.1600000000001,
+      "goals_reached": 21,
+      "stalled_goals": 1,
+      "travel_xy_m": 209.7256182241141,
+      "shelf_side_support": 0.9987244897959183,
+      "task_success": true,
+      "finish_reason": "mission_budget_partial"
+    },
+    {
+      "run": "warehouse_half_20261016_185803",
+      "total_wall_seconds": 1105.6398843770003,
+      "mission_wall_seconds": 1053.3416929819941,
+      "mission_sim_seconds": 666.624,
+      "online_quality": 0.9099477773532034,
+      "known_free_area_m2": 615.8000000000001,
+      "goals_reached": 21,
+      "stalled_goals": 1,
+      "travel_xy_m": 218.96207855666907,
+      "shelf_side_support": 1.0,
+      "task_success": true,
+      "finish_reason": "mission_budget_partial"
+    },
+    {
+      "run": "warehouse_half_20261016_191733",
+      "total_wall_seconds": 1096.8631900390028,
+      "mission_wall_seconds": 1045.8436868980061,
+      "mission_sim_seconds": 655.3149999999999,
+      "online_quality": 0.8802754048195843,
+      "known_free_area_m2": 601.2000000000002,
+      "goals_reached": 33,
+      "stalled_goals": 2,
+      "travel_xy_m": 193.98662694810255,
+      "shelf_side_support": 0.997874149659864,
+      "task_success": true,
+      "finish_reason": "mission_budget_partial"
+    },
+    {
+      "run": "warehouse_half_20261016_193649",
+      "total_wall_seconds": 1061.0781951129902,
+      "mission_wall_seconds": 1012.3366701370105,
+      "mission_sim_seconds": 627.568,
+      "online_quality": 0.928699436763953,
+      "known_free_area_m2": 608.4800000000001,
+      "goals_reached": 24,
+      "stalled_goals": 5,
+      "travel_xy_m": 192.7870088204951,
+      "shelf_side_support": 0.9985119047619048,
+      "task_success": true,
+      "finish_reason": "mission_budget_partial"
+    },
+    {
+      "run": "warehouse_half_20261016_200841",
+      "total_wall_seconds": 623.3076652140007,
+      "mission_wall_seconds": 577.2130316779949,
+      "mission_sim_seconds": 353.19800000000004,
+      "online_quality": 0.935672514619883,
+      "known_free_area_m2": 612.9200000000001,
+      "goals_reached": 21,
+      "stalled_goals": 1,
+      "travel_xy_m": 180.99721390185056,
+      "shelf_side_support": 1.0,
+      "task_success": true,
+      "finish_reason": "observed_map_accepted_partial"
+    }
+  ],
+  "relative_to_161659": {
+    "mission_wall_reduction": 0.4504730693347144,
+    "total_wall_reduction": 0.4332030085092713,
+    "online_quality_change_percentage_points": -0.447290215498064
+  },
+  "note": "Single runs with different speed, acceptance and GUI settings; not equal-quality causal algorithm benchmarking."
+}

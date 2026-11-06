@@ -1,0 +1,88 @@
+Panels:
+- Class: rviz/Displays
+  Name: Displays
+Visualization Manager:
+  Class: ''
+  Global Options:
+    Fixed Frame: loop_map
+    Frame Rate: 10
+    Background Color: 25; 25; 30
+  Displays:
+  - Class: rviz/Grid
+    Name: Ground
+    Enabled: true
+    Cell Size: 1
+    Plane Cell Count: 48
+  - Class: rviz/PointCloud2
+    Name: Current maintained map - white
+    Enabled: true
+    Topic: /dual_map/current_map
+    Queue Size: 1
+    Position Transformer: XYZ
+    Color Transformer: FlatColor
+    Color: 230; 230; 230
+    Style: Points
+    Size (Pixels): 2
+    Alpha: 0.65
+  - Class: rviz/PointCloud2
+    Name: DUFO background - green
+    Enabled: true
+    Topic: /dual_map/background_map
+    Queue Size: 1
+    Position Transformer: XYZ
+    Color Transformer: FlatColor
+    Color: 65; 220; 150
+    Style: Points
+    Size (Pixels): 2
+    Alpha: 0.65
+  - Class: rviz/PointCloud2
+    Name: Current only - geometric difference NOT ghost labels
+    Enabled: false
+    Topic: /dual_map/current_only
+    Queue Size: 1
+    Position Transformer: XYZ
+    Color Transformer: FlatColor
+    Color: 255; 155; 40
+    Style: Points
+    Size (Pixels): 4
+    Alpha: 1
+  - Class: rviz/PointCloud2
+    Name: Background only - geometric difference NOT free space
+    Enabled: false
+    Topic: /dual_map/background_only
+    Queue Size: 1
+    Position Transformer: XYZ
+    Color Transformer: FlatColor
+    Color: 180; 90; 255
+    Style: Points
+    Size (Pixels): 4
+    Alpha: 1
+  - Class: rviz/MarkerArray
+    Name: Pair validity and cutoff
+    Enabled: true
+    Marker Topic: /dual_map/markers
+  - Class: rviz/Path
+    Name: Actual navigation route - live demo
+    Enabled: true
+    Topic: /uav1/planner/local_path
+    Color: 255; 70; 190
+    Line Width: 0.05
+  Views:
+    Current:
+      Class: rviz/Orbit
+      Distance: 36
+      Pitch: 1.0
+      Yaw: 2.3
+      Focal Point:
+        X: 0
+        Y: 0
+        Z: 0
+  Tools:
+  - Class: rviz/Interact
+  - Class: rviz/MoveCamera
+  - Class: rviz/Select
+  - Class: rviz/FocusCamera
+  - Class: rviz/Measure
+Window Geometry:
+  Width: 1250
+  Height: 900

@@ -1,0 +1,13 @@
+{
+  "topic": "/uav1/fastlio/cloud_map",
+  "frame_id": "map",
+  "stamp": 2198.261,
+  "points": 284418,
+  "sha256": "9732f43cc49badb14d0ace3d28828e0759eb23255d1b5e1a05094b32953b3608",
+  "fields": [
+    "x",
+    "y",
+    "z"
+  ],
+  "note": "Exact finite XYZ from maintained RViz map; no extra ghost removal at export. Unobserved/occluded old occupancy may remain; stationary people are obstacles."
+}

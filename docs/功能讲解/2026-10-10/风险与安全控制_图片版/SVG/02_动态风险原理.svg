@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect x="0" y="0" width="1600" height="900" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1.5"/>
+<text x="60" y="87.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="47" font-weight="700" fill="#15334C" text-anchor="start">动态风险：不只看现在近不近</text>
+<text x="62" y="129.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#657585" text-anchor="start">同时考虑运动方向、未来距离和高度差，提前判断行人横穿带来的威胁。</text>
+<polyline points="60,151 1540,151" fill="none" stroke="#D5E0E6" stroke-width="1.5"/>
+<rect x="60" y="774" width="1480" height="70" rx="0" fill="#EFF5F8" stroke="none" stroke-width="1.5"/>
+<text x="80" y="818.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="700" fill="#24618A" text-anchor="start">核心规则</text>
+<text x="210" y="818.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">正在靠近且预测会太近，才触发普通预警；已经太近可直接紧急。</text>
+<text x="60" y="880.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="17" font-weight="400" fill="#657585" text-anchor="start">现有实现讲解 · 参数不是实验结果 · 源码对应见配套说明</text>
+<text x="1400" y="880.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="18" font-weight="400" fill="#657585" text-anchor="start">02 / 10</text>
+<rect x="60" y="205" width="680" height="342" rx="0" fill="#F6FAFC" stroke="#D5E0E6" stroke-width="1.5"/>
+<rect x="60" y="205" width="680" height="69" rx="0" fill="#137B7E" stroke="none" stroke-width="1.5"/>
+<text x="78" y="250.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#FFFFFF" text-anchor="start">我们制定的判断规则</text>
+<text x="83" y="315.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">向前预测最多 1.50 秒，寻找这段时间内两者最接近的时</text>
+<text x="83" y="349.5" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">刻。</text>
+<text x="83" y="398.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">普通预警：正在接近，预测水平中心距离小于 1.35 米，</text>
+<text x="83" y="432.5" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">预测高度差小于 0.80 米。</text>
+<text x="83" y="481.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">正在远离且没有已有风险保持时，不因“看起来近”就新</text>
+<text x="83" y="515.5" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">增普通预警。</text>
+<rect x="795" y="205" width="745" height="342" rx="0" fill="#F6FAFC" stroke="#D5E0E6" stroke-width="1.5"/>
+<text x="822" y="252.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#24618A" text-anchor="start">规则示意：两条运动路线正在交叉</text>
+<circle cx="917" cy="419" r="30" fill="#E5F3F5" stroke="#137B7E" stroke-width="2"/>
+<text x="917" y="431.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="700" fill="#137B7E" text-anchor="middle">机</text>
+<polyline points="950,419 1255,419" fill="none" stroke="#24618A" stroke-width="3"/>
+<polygon points="1255.00,419.00 1243.00,424.76 1243.00,413.24" fill="#24618A"/>
+<circle cx="1146" cy="335" r="27" fill="#FFF1D9" stroke="#A46E18" stroke-width="2"/>
+<text x="1146" y="347.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="700" fill="#A46E18" text-anchor="middle">人</text>
+<polyline points="1146,366 1146,473" fill="none" stroke="#24618A" stroke-width="3"/>
+<polygon points="1146.00,473.00 1140.24,461.00 1151.76,461.00" fill="#24618A"/>
+<circle cx="1146" cy="419" r="57" fill="none" stroke="#B94343" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="1255" y="384.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="700" fill="#B94343" text-anchor="start">预测接近区</text>
+<text x="828" y="508.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">先预测，再决定是否需要让行。</text>
+<rect x="60" y="578" width="720" height="160" rx="0" fill="#F6FAFC" stroke="#D5E0E6" stroke-width="1.5"/>
+<rect x="60" y="578" width="720" height="69" rx="0" fill="#24618A" stroke="none" stroke-width="1.5"/>
+<text x="78" y="623.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#FFFFFF" text-anchor="start">紧急入口一：已经太近</text>
+<text x="83" y="688.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">当前中心距离 &lt; 0.75 米，且当前高度差 &lt; 0.80 米。</text>
+<rect x="813" y="578" width="727" height="160" rx="0" fill="#F6FAFC" stroke="#D5E0E6" stroke-width="1.5"/>
+<rect x="813" y="578" width="727" height="69" rx="0" fill="#137B7E" stroke="none" stroke-width="1.5"/>
+<text x="831" y="623.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#FFFFFF" text-anchor="start">紧急入口二：即将快速逼近</text>
+<text x="836" y="688.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">0.80 秒内接近到 &lt; 0.45 米，且预测高度差 &lt; 0.80 米。</text>
+</svg>

@@ -1,0 +1,18 @@
+{
+  "run": "warehouse_half_20261016_200841",
+  "points": 124105,
+  "frame": "map",
+  "finite_xyz": true,
+  "sha256": "e5ea715e35f3d6b430be3927082a56790f9a031c4838b3c538b5cccc5d5f83df",
+  "source_unchanged": true,
+  "shelf_audit": {
+    "reference_samples": 4704,
+    "supported_samples": 4704,
+    "shelf_side_coverage": 1.0,
+    "minimum_rack_coverage": 1.0,
+    "shelf_side_acceptance": true,
+    "full_3d_map_complete": false
+  },
+  "own_simulator_processes_remaining": [],
+  "preexisting_mat_pre_restored_sha256": "38691e4117fd21f39140addff2ec794d05af9395a665fdf76f2e6442e79454e5"
+}

@@ -1,0 +1,3 @@
+探索进展很低并不立刻结束。当前九十秒窗口中新自由面积和新表面增长较少时进入检查，优先补扫已经发现但证据薄弱的表面。表面质量关注多次采集、至少两个观察方向和一定基线，而不是飞近一次就算看清。仍有可达收益就继续探索或补扫，无收益且满足质量等条件才表示已观测可达区域收敛。
+
+达到预算上限也会返航，但标记为部分结果，不是假装完整。返航需要在起点零点三米内连续停留五秒，且确认保存后才完成；返航受阻或超时不算成功。当前已测表面百分之九十五门槛的分母只包含已经看到的表面，不包括从未看到的货架，因此不是全仓库完整率。独立覆盖验收看/home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/warehouse_map_audit.py，状态与表面规则在scripts/warehouse_explorer.py及scripts/exploration_coverage.py。

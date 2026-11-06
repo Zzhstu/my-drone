@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "samples": 4181,
+  "max_truth_nearest_age_s": 0.0010000000000331966,
+  "metric_checks": "All three 4181-sample RMSE and endpoint metrics match verified reports to 1e-9 m.",
+  "scope": "Retrospective final-graph playback; stress case adds artificial 0.8m x drift. No new flight, no online correction animation, no fitted trajectory alignment.",
+  "reports": {
+    "stress_warehouse": {
+      "path": "/home/a/AstraDroneOpen/evaluation/half_warehouse/reports/20261022_loop_stress_warehouse_report.json",
+      "sha256": "3318d667080cfcbf741f5ac0b0f43cde62d4a254acde325605f855ec0769032b"
+    },
+    "verified_warehouse": {
+      "path": "/home/a/AstraDroneOpen/evaluation/half_warehouse/reports/20261022_loop_verified_warehouse_report.json",
+      "sha256": "04ec04398c6a328c9a2ae544214bad0e3441dbb4872ceca94ba102c4390ce73c"
+    },
+    "before_warehouse": {
+      "path": "/home/a/AstraDroneOpen/evaluation/half_warehouse/reports/20261022_loop_before_warehouse_report.json",
+      "sha256": "325c64d34c24289ded9b4bd731299741e72b861998dcb2b4e97fa4cb0a5cde2b"
+    }
+  },
+  "files": [
+    {
+      "path": "/home/a/AstraDroneOpen/evaluation/half_warehouse/reports/20261022_loop_motion_motion.gif",
+      "sha256": "0a08f73250a02c5f10a1e8ed98d7190a7af61e6f1a1d18e84af8db5a50e1d164",
+      "bytes": 17865682
+    },
+    {
+      "path": "/home/a/AstraDroneOpen/evaluation/half_warehouse/reports/20261022_loop_motion_motion_last_frame.png",
+      "sha256": "464d27de6f56c38a65c00e05a72649e2a5ab96de04196c28ade06932fa2d778e",
+      "bytes": 81008
+    },
+    {
+      "path": "/home/a/AstraDroneOpen/evaluation/half_warehouse/reports/20261022_loop_motion_original_recording.png",
+      "sha256": "aaa2d5b285b3b4c499caf325a9b4a339e847698edcfef80a32dd1313ac1dbb9e",
+      "bytes": 250049
+    },
+    {
+      "path": "/home/a/AstraDroneOpen/evaluation/half_warehouse/reports/20261022_loop_motion_trajectory.png",
+      "sha256": "dfc01722739474181971e87b059adb641790ef74a48cdfe2066cd17a4246c85f",
+      "bytes": 564292
+    },
+    {
+      "path": "/home/a/AstraDroneOpen/evaluation/half_warehouse/reports/20261022_loop_motion_trajectory.svg",
+      "sha256": "6d33d9195bd0d10d19d52cf1f3bed11c67c3a6eb31dba62286e71c746411104f",
+      "bytes": 491975
+    }
+  ],
+  "gif_validation": {
+    "decoded_frames": 165,
+    "duration_seconds": 13.2,
+    "size": [
+      1150,
+      500
+    ],
+    "full_frame_disposal": 2
+  }
+}

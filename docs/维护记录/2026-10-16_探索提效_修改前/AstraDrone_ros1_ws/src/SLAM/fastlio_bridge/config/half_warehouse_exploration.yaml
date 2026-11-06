@@ -1,0 +1,6 @@
+# Same safety/quality thresholds. Independent smaller-scene time budgets.
+warehouse_explorer:
+  max_mission_seconds: 600.0
+  max_mission_wall_seconds: 1200.0
+  inspection_budget_seconds: 240.0
+  return_timeout: 600.0

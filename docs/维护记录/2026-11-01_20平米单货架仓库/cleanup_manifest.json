@@ -1,0 +1,53 @@
+{
+  "user_scope": "Delete prior RoomGS experiment outputs including latest; retain code/runtime environment; remove regenerable download/probe/browser caches from that implementation",
+  "paths": [
+    {
+      "path": "/home/a/AstraDroneOpen/roomgs_runs",
+      "allocated_bytes": 30105944064
+    },
+    {
+      "path": "/home/a/AstraDroneOpen/evaluation/roomgs_20261101",
+      "allocated_bytes": 5554176
+    },
+    {
+      "path": "/home/a/AstraDroneOpen/.envs/roomgs_wheels",
+      "allocated_bytes": 1996845056
+    },
+    {
+      "path": "/home/a/AstraDroneOpen/.envs/roomgs_wheels_nvidia",
+      "allocated_bytes": 23076864
+    },
+    {
+      "path": "/home/a/AstraDroneOpen/.envs/roomgs_wheels_sjtu",
+      "allocated_bytes": 1048133632
+    },
+    {
+      "path": "/home/a/AstraDroneOpen/.envs/roomgs_wheels_tuna",
+      "allocated_bytes": 2072408064
+    },
+    {
+      "path": "/home/a/AstraDroneOpen/.envs/torch211_probe",
+      "allocated_bytes": 912769024
+    },
+    {
+      "path": "/tmp/astra_roomgs_chrome_20261101",
+      "allocated_bytes": 44482560
+    },
+    {
+      "path": "/tmp/astra_roomgs_chrome_gpu_20261101",
+      "allocated_bytes": 122941440
+    }
+  ],
+  "latest_run_deleted": "20261101_134105",
+  "preserved": [
+    "integration/roomgs",
+    "r3live_roomgs_ws",
+    "third_party/r3live_roomgs",
+    "third_party/gsplat",
+    ".envs/roomgs",
+    "other historical experiments",
+    "交流记录"
+  ],
+  "status": "deleted_and_verified_absent",
+  "allocated_bytes_removed": 36332154880
+}

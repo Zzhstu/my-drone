@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect x="0" y="0" width="1600" height="900" fill="#FFFFFF" stroke="none" stroke-width="1.6"/>
+<text x="60" y="80.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="46" font-weight="700" fill="#15334C" text-anchor="start">稳定点也能撤销，但要更多证据</text>
+<text x="63" y="125.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#657585" text-anchor="start">稳定只是更难被删除，不代表永久可信，也不是人体类别判定。</text>
+<polyline points="60,151 1540,151" fill="none" stroke="#D5E0E6" stroke-width="1.2"/>
+<rect x="60" y="784" width="1480" height="62" fill="#EFF5F8" stroke="none" stroke-width="1.6"/>
+<text x="78" y="823.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="700" fill="#137B7E" text-anchor="start">核心规则</text>
+<text x="210" y="822.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">命中就清零；过期证据不能无限拼凑成删除授权。</text>
+<text x="60" y="878.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="17" font-weight="400" fill="#657585" text-anchor="start">现有源码规则 · 所有点云与场景小图为示意 · 非新增实验结果</text>
+<text x="1400" y="879.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="18" font-weight="400" fill="#657585" text-anchor="start">10 / 16</text>
+<rect x="60" y="213" width="700" height="168" fill="#FFF3E7" stroke="#E6B988" stroke-width="1.6"/>
+<text x="76" y="257.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="28" font-weight="700" fill="#15334C" text-anchor="start">普通旧格：3次有效空证据</text>
+<text x="78" y="299.64" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">少量观测形成的占用，较早进入撤销。</text>
+<rect x="800" y="213" width="740" height="168" fill="#EEF8F1" stroke="#A6CCB7" stroke-width="1.6"/>
+<text x="816" y="257.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="28" font-weight="700" fill="#15334C" text-anchor="start">稳定旧格：6次有效空证据</text>
+<text x="818" y="299.64" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">至少8次命中，更谨慎地撤销旧占用。</text>
+<rect x="60" y="435" width="1480" height="277" fill="#FFFFFF" stroke="#15334C" stroke-width="1.6" stroke-dasharray="7 6"/>
+<rect x="78" y="420" width="293.84375" height="36" fill="#FFFFFF" stroke="none" stroke-width="1.6"/>
+<text x="90" y="451.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#15334C" text-anchor="start">稳定格的假设更新序列</text>
+<rect x="81" y="492" width="159" height="114" fill="#F0F0FF" stroke="#B3BFEA" stroke-width="1.6"/>
+<text x="97" y="528.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="700" fill="#15334C" text-anchor="start">重新命中</text>
+<text x="99" y="562.02" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#15334C" text-anchor="start">清零</text>
+<polyline points="243,549 257,549" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="257.00,549.00 247.00,553.80 247.00,544.20" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<rect x="262" y="492" width="159" height="114" fill="#FFF3E7" stroke="#E6B988" stroke-width="1.6"/>
+<text x="278" y="525.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="23" font-weight="700" fill="#15334C" text-anchor="start">等待满0.5秒</text>
+<text x="280" y="557.21" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="21" font-weight="400" fill="#15334C" text-anchor="start">暂不计数</text>
+<polyline points="424,549 438,549" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="438.00,549.00 428.00,553.80 428.00,544.20" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<rect x="443" y="492" width="159" height="114" fill="#EEF8F1" stroke="#A6CCB7" stroke-width="1.6"/>
+<text x="459" y="528.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="700" fill="#15334C" text-anchor="start">空证据1</text>
+<text x="461" y="562.02" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#15334C" text-anchor="start">保留</text>
+<polyline points="605,549 619,549" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="619.00,549.00 609.00,553.80 609.00,544.20" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<rect x="624" y="492" width="159" height="114" fill="#FFF0F5" stroke="#DCB0C3" stroke-width="1.6"/>
+<text x="640" y="528.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="700" fill="#15334C" text-anchor="start">空证据2</text>
+<text x="642" y="562.02" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#15334C" text-anchor="start">保留</text>
+<polyline points="786,549 800,549" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="800.00,549.00 790.00,553.80 790.00,544.20" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<rect x="805" y="492" width="159" height="114" fill="#EDF5FF" stroke="#A7C6E3" stroke-width="1.6"/>
+<text x="821" y="528.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="700" fill="#15334C" text-anchor="start">空证据3</text>
+<text x="823" y="562.02" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#15334C" text-anchor="start">保留</text>
+<polyline points="967,549 981,549" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="981.00,549.00 971.00,553.80 971.00,544.20" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<rect x="986" y="492" width="159" height="114" fill="#F3EEFD" stroke="#C1B1E1" stroke-width="1.6"/>
+<text x="1002" y="528.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="700" fill="#15334C" text-anchor="start">空证据4</text>
+<text x="1004" y="562.02" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#15334C" text-anchor="start">保留</text>
+<polyline points="1148,549 1162,549" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="1162.00,549.00 1152.00,553.80 1152.00,544.20" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<rect x="1167" y="492" width="159" height="114" fill="#F0F0FF" stroke="#B3BFEA" stroke-width="1.6"/>
+<text x="1183" y="528.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="700" fill="#15334C" text-anchor="start">空证据5</text>
+<text x="1185" y="562.02" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#15334C" text-anchor="start">保留</text>
+<polyline points="1329,549 1343,549" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="1343.00,549.00 1333.00,553.80 1333.00,544.20" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<rect x="1348" y="492" width="159" height="114" fill="#FFF3E7" stroke="#E6B988" stroke-width="1.6"/>
+<text x="1364" y="528.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="700" fill="#15334C" text-anchor="start">空证据6</text>
+<text x="1366" y="562.02" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#15334C" text-anchor="start">删除</text>
+<text x="87" y="665.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#137B7E" text-anchor="start">若中途再次命中 → 从零开始；若有效证据间隔超过1秒 → 下一次先清零。</text>
+</svg>

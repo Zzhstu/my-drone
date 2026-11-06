@@ -1,0 +1,104 @@
+# Independent demo only. Map axes are FAST-LIO aligned ENU, not Gazebo world.
+# This is a finite compute window around map origin, NOT a warehouse outline.
+# It grows only when the UAV pose or fresh lidar free-space observations
+# approach its edge. New cells remain unknown and are not traversable.
+initial_window_radius: 12.0
+growth_margin: 4.0
+growth_chunk: 8.0
+max_grid_cells: 200000          # explicit finite resource limit
+resolution: 0.20               # match sparse 0.15m free-voxel centre evidence
+# Do NOT lower resolution alone: 0.10m leaves unknown holes between free
+# samples and fails body_known in the live warehouse. A finer grid requires
+# consistent ray/voxel traversal evidence, not blind dilation of unknown space.
+# Total body-centre clearance includes ~0.40 m rotor envelope. Quantization
+# half-diagonal is added by the grid. Do not reduce to make a bad path pass.
+clearance: 0.80
+unknown_margin: 0.40
+# Recovery only, NOT a smaller planning radius. A 0.40m rotor envelope plus
+# 0.05m buffer is the absolute floor; only monotonic-clearance motion toward a
+# NORMAL .80m safe cell is allowed. Controller rechecks every fresh scan.
+recovery_minimum_clearance: 0.45
+recovery_command_horizon: 0.20 # kp*0.20 ≈0.09m/s; monotone raw-clearance check remains
+unsafe_stall_seconds: 30.0 # no 0.20m progress => explicit partial failure, never silent hover
+clearance_cost_weight: 1.50    # soft 1-cell edge penalty, never shrinks hard clearance
+height_below: 0.45
+height_above: 0.55
+# The controller is proportional; a 1.2m safe-segment lookahead avoids capping
+# cruise to kp(0.45)*0.6m=0.27m/s while keeping every swept segment checked.
+lookahead: 1.20                # swept segment still checked; cruise kp*1.2 ≈0.54m/s
+arrival_tolerance: 0.30
+settle_seconds: 2.0            # >= several scans at 10Hz; not a smaller clearance
+progress_timeout: 25.0
+blacklist_seconds: 60.0
+# Fixed altitude is captured after takeoff: this is planar exploration, not
+# complete 3-D black-box exploration. Vertical layers/obstacle overflight are
+# intentionally not inferred from the warehouse model.
+takeoff_relative_height: 1.2
+planning_hz: 2.0
+input_timeout_wall: 3.0
+input_timeout_sim: 1.5          # reject timer-republished old acquisition data
+no_frontier_seconds: 30.0
+# Ignore tiny holes / unknown cells behind measured walls, not real frontiers.
+frontier_sensor_range: 6.0
+frontier_min_gain_area: 0.50    # m² approximate visible unknown gain, not coverage
+visualization_hz: 0.5          # only grid/markers/disk status; waypoints remain 2Hz
+# Convergence has TWO evidence streams; a stable free-floor map alone is not
+# enough. Low gain after >=3 successful observations moves to surface inspection.
+convergence_seconds: 90.0
+convergence_free_area: 1.0      # m² newly observed in the window
+convergence_new_surfaces: 25   # unique coarse 3D measured surface voxels
+convergence_min_goals: 3       # cumulative arrivals, not 3 arrivals in every 90 s window
+# Current-map coarse surface quality, NOT completeness of unseen surfaces.
+surface_voxel: 0.40
+surface_min_hits: 3            # distinct input acquisition stamps
+surface_min_views: 2           # azimuth sectors + independent observation baseline
+surface_view_baseline: 0.75
+surface_observation_range: 6.0
+surface_height_below: 0.95     # exclude floor near 1.2m flight height
+surface_height_above: 2.0
+surface_max_voxels: 150000
+surface_quality_target: 0.95   # denominator: CURRENT measured map, not world mesh
+inspection_max_surface_targets: 60
+inspection_plan_seconds: 3.0
+inspection_visit_spacing: 0.8
+inspection_revisit_seconds: 20.0 # arrival alone is not surface evidence; bounded retries
+inspection_budget_seconds: 600.0  # sim seconds; exhaustion => PARTIAL, not complete
+save_every_wall_seconds: 60.0
+# Mission state: frontier -> close-range inspection -> return -> settle -> save.
+# 0 disables the explicit goal limit (useful for short lifecycle regression).
+return_after_goals: 0
+max_target_attempts: 2
+inspection_radius: 2.0          # metres; no marking through an occupied aisle
+inspection_surface_range: 3.0   # inspect reachable space near measured surfaces
+home_tolerance: 0.30            # metres XY; not the final map accuracy
+home_settle_seconds: 5.0        # continuous in-radius dwell, reset on departure
+max_mission_seconds: 3600.0     # sim seconds; budget => PARTIAL coverage + return
+max_mission_wall_seconds: 3600.0 # wall seconds; slow /clock cannot run forever
+return_timeout: 1200.0         # blocked return => failed, never false success
+# Tracks create hypotheses only. Occupancy remains until measured free rays
+# clear it; a second occupied view retires the hypothesis without erasing it.
+ghost_revisit_enabled: false # opt in with launch arg; preserve prior comparison demos
+ghost_height_below: 1.25      # inspect low wall/person traces from same safe flight altitude
+ghost_height_above: 0.85      # target grouping only; no vertical flight or safety change
+ghost_revisit_budget_seconds: 120.0
+ghost_expected_speed_mps: 0.45   # conservative cost estimate; controller cap is independent
+ghost_view_time_reserve_seconds: 5.0
+ghost_no_view_seconds: 20.0
+ghost_max_groups: 12
+ghost_cleared_max_groups: 12  # historical cleared groups are optional, one safe view each
+ghost_view_min_range: 1.2
+ghost_view_max_range: 3.0
+ghost_view_change: 0.7
+ghost_max_attempts: 2
+ghost_no_evidence_extra_attempts: 2 # only after two measured views yield no mapper evidence
+ghost_sensor_min_elevation_deg: -22.2 # simulated MID360 with configured -15 deg scan pitch
+ghost_sensor_max_elevation_deg: 37.2  # planning proxy; actual scan evidence is audited separately
+# Read-only counterfactual when no fixed-height revisit view is available.
+# XY remains on the current 2-D safe grid; candidate Z is never commanded.
+# A vertical body-box voxel sweep is reported, but a full 3-D flight route,
+# live dynamic safety and controller behavior are NOT certified by this proxy.
+ghost_vertical_view_diagnostic_enabled: false
+ghost_vertical_view_offsets_m: [-0.4, 0.4]
+ghost_vertical_body_radius_m: 0.45       # rotor envelope plus a small margin
+ghost_vertical_body_half_height_m: 0.55  # conservative body height proxy
+ghost_multilevel_flight_enabled: false   # true deliberately fails at startup

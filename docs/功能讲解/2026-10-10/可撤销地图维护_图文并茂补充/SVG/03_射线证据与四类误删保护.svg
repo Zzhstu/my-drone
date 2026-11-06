@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+<rect x="0" y="0" width="1920" height="1080" fill="white" stroke="none" stroke-width="1.5"/>
+<text x="65" y="95.0" font-family="Noto Sans CJK SC,sans-serif" font-size="47" font-weight="700" fill="#17394F" text-anchor="start">一条射线，怎样区别“已经空了”和“只是没看见”？</text>
+<text x="68" y="149.0" font-family="Noto Sans CJK SC,sans-serif" font-size="26" font-weight="400" fill="#687E8E" text-anchor="start">探索模式：射线授权是有条件的；不能把整块局部区域、货架背后或稀疏缺点全部清空。</text>
+<polyline points="65.00,184.00 1855.00,184.00" fill="none" stroke="#DCE5EB" stroke-width="1"/>
+<text x="65" y="1053.0" font-family="Noto Sans CJK SC,sans-serif" font-size="21" font-weight="700" fill="#1A837D" text-anchor="start">参数来自当前仓库探索配置；示意并非静态保留率或清理精度实验。</text>
+<text x="1764" y="1054.0" font-family="Noto Sans CJK SC,sans-serif" font-size="20" font-weight="400" fill="#687E8E" text-anchor="start">03 / 06</text>
+<rect x="65" y="229" width="570" height="360" fill="#EDF8F0" stroke="#A6D2BD" stroke-width="2"/>
+<text x="86" y="272.0" font-family="Noto Sans CJK SC,sans-serif" font-size="28" font-weight="700" fill="#17394F" text-anchor="start">允许累计：穿过旧点到达后方</text>
+<text x="86" y="308.72" font-family="Noto Sans CJK SC,sans-serif" font-size="22" font-weight="400" fill="#17394F" text-anchor="start">旧格距真实射线不超过6厘米；</text>
+<text x="86" y="338.42" font-family="Noto Sans CJK SC,sans-serif" font-size="22" font-weight="400" fill="#17394F" text-anchor="start">还须通过时效与邻格保护。</text>
+<g transform="translate(81,376) scale(1.0157894736842106)">
+<rect x="23" y="117" width="330" height="31" fill="#F4F8FA" stroke="#DAE5EB" stroke-width="1.5"/>
+<g transform="translate(37,109) scale(0.48)">
+<ellipse cx="0" cy="17" rx="40" ry="8" fill="#DAE4EC" stroke="none" stroke-width="1"/>
+<polyline points="0.00,0.00 -32.00,-12.00" fill="none" stroke="#17394F" stroke-width="4"/>
+<ellipse cx="-32" cy="-12" rx="16" ry="5" fill="#E6F2FB" stroke="#28628B" stroke-width="2"/>
+<polyline points="0.00,0.00 32.00,-12.00" fill="none" stroke="#17394F" stroke-width="4"/>
+<ellipse cx="32" cy="-12" rx="16" ry="5" fill="#E6F2FB" stroke="#28628B" stroke-width="2"/>
+<polyline points="0.00,0.00 -32.00,12.00" fill="none" stroke="#17394F" stroke-width="4"/>
+<ellipse cx="-32" cy="12" rx="16" ry="5" fill="#E6F2FB" stroke="#28628B" stroke-width="2"/>
+<polyline points="0.00,0.00 32.00,12.00" fill="none" stroke="#17394F" stroke-width="4"/>
+<ellipse cx="32" cy="12" rx="16" ry="5" fill="#E6F2FB" stroke="#28628B" stroke-width="2"/>
+<polygon points="-13.00,-9.00 11.00,-9.00 17.00,1.00 0.00,10.00 -17.00,1.00" fill="#4F8CB5" stroke="#17394F" stroke-width="1.3"/>
+<polyline points="-8.00,7.00 -13.00,20.00 0.00,20.00" fill="none" stroke="#17394F" stroke-width="2"/>
+<polyline points="8.00,7.00 13.00,20.00 0.00,20.00" fill="none" stroke="#17394F" stroke-width="2"/>
+<circle cx="0.00" cy="-4.00" r="4" fill="#9EE6E0" stroke="#1A837D" stroke-width="1"/>
+</g>
+<polygon points="162.00,80.00 196.00,80.00 196.00,125.00 162.00,125.00" fill="#FBE2E6" stroke="#D04E58" stroke-width="1.3"/>
+<polygon points="162.00,80.00 172.00,70.00 206.00,70.00 196.00,80.00" fill="#F7FBFD" stroke="#D04E58" stroke-width="1.3"/>
+<polygon points="196.00,80.00 206.00,70.00 206.00,115.00 196.00,125.00" fill="#C3D9E5" stroke="#D04E58" stroke-width="1.3"/>
+<circle cx="179.00" cy="99.00" r="4" fill="#D04E58" stroke="none" stroke-width="1"/>
+<polyline points="58.00,100.00 338.00,100.00" fill="none" stroke="#B5C2CD" stroke-width="1" stroke-dasharray="7 5"/>
+<polyline points="58.00,100.00 281.00,100.00" fill="none" stroke="#1A837D" stroke-width="2.4"/>
+<rect x="73" y="92" width="28" height="16" fill="#D9EEE5" stroke="none" stroke-width="1.5"/>
+<rect x="108" y="92" width="28" height="16" fill="#D9EEE5" stroke="none" stroke-width="1.5"/>
+<rect x="143" y="92" width="28" height="16" fill="#D9EEE5" stroke="none" stroke-width="1.5"/>
+<rect x="178" y="92" width="28" height="16" fill="#D9EEE5" stroke="none" stroke-width="1.5"/>
+<rect x="213" y="92" width="28" height="16" fill="#D9EEE5" stroke="none" stroke-width="1.5"/>
+<rect x="248" y="92" width="28" height="16" fill="#D9EEE5" stroke="none" stroke-width="1.5"/>
+<circle cx="179.00" cy="99.00" r="4" fill="#D04E58" stroke="none" stroke-width="1"/>
+<circle cx="338.00" cy="100.00" r="5" fill="#3686C5" stroke="none" stroke-width="1"/>
+<polyline points="286.00,140.00 338.00,140.00" fill="none" stroke="#D9933E" stroke-width="1.7"/>
+<text x="286" y="131.0" font-family="Noto Sans CJK SC,sans-serif" font-size="12" font-weight="400" fill="#D9933E" text-anchor="start">终点缓冲</text>
+<text x="132" y="36.0" font-family="Noto Sans CJK SC,sans-serif" font-size="18" font-weight="400" fill="#1A837D" text-anchor="start">真实回波在旧点后方</text>
+<text x="105" y="171.0" font-family="Noto Sans CJK SC,sans-serif" font-size="16" font-weight="400" fill="#1A837D" text-anchor="start">绿色：回波前的已观测自由空间</text>
+</g>
+<rect x="707" y="229" width="570" height="360" fill="#FFF0F5" stroke="#DFB3C9" stroke-width="2"/>
+<text x="728" y="272.0" font-family="Noto Sans CJK SC,sans-serif" font-size="28" font-weight="700" fill="#17394F" text-anchor="start">不能累计：货架把后方挡住</text>
+<text x="728" y="308.72" font-family="Noto Sans CJK SC,sans-serif" font-size="22" font-weight="400" fill="#17394F" text-anchor="start">射线只到当前回波前方；</text>
+<text x="728" y="338.42" font-family="Noto Sans CJK SC,sans-serif" font-size="22" font-weight="400" fill="#17394F" text-anchor="start">遮挡后的旧点不能凭空删除。</text>
+<g transform="translate(723,376) scale(1.0157894736842106)">
+<rect x="23" y="117" width="330" height="31" fill="#F4F8FA" stroke="#DAE5EB" stroke-width="1.5"/>
+<g transform="translate(37,109) scale(0.48)">
+<ellipse cx="0" cy="17" rx="40" ry="8" fill="#DAE4EC" stroke="none" stroke-width="1"/>
+<polyline points="0.00,0.00 -32.00,-12.00" fill="none" stroke="#17394F" stroke-width="4"/>
+<ellipse cx="-32" cy="-12" rx="16" ry="5" fill="#E6F2FB" stroke="#28628B" stroke-width="2"/>
+<polyline points="0.00,0.00 32.00,-12.00" fill="none" stroke="#17394F" stroke-width="4"/>
+<ellipse cx="32" cy="-12" rx="16" ry="5" fill="#E6F2FB" stroke="#28628B" stroke-width="2"/>
+<polyline points="0.00,0.00 -32.00,12.00" fill="none" stroke="#17394F" stroke-width="4"/>
+<ellipse cx="-32" cy="12" rx="16" ry="5" fill="#E6F2FB" stroke="#28628B" stroke-width="2"/>
+<polyline points="0.00,0.00 32.00,12.00" fill="none" stroke="#17394F" stroke-width="4"/>
+<ellipse cx="32" cy="12" rx="16" ry="5" fill="#E6F2FB" stroke="#28628B" stroke-width="2"/>
+<polygon points="-13.00,-9.00 11.00,-9.00 17.00,1.00 0.00,10.00 -17.00,1.00" fill="#4F8CB5" stroke="#17394F" stroke-width="1.3"/>
+<polyline points="-8.00,7.00 -13.00,20.00 0.00,20.00" fill="none" stroke="#17394F" stroke-width="2"/>
+<polyline points="8.00,7.00 13.00,20.00 0.00,20.00" fill="none" stroke="#17394F" stroke-width="2"/>
+<circle cx="0.00" cy="-4.00" r="4" fill="#9EE6E0" stroke="#1A837D" stroke-width="1"/>
+</g>
+<polygon points="162.00,80.00 196.00,80.00 196.00,125.00 162.00,125.00" fill="#FBE2E6" stroke="#D04E58" stroke-width="1.3"/>
+<polygon points="162.00,80.00 172.00,70.00 206.00,70.00 196.00,80.00" fill="#F7FBFD" stroke="#D04E58" stroke-width="1.3"/>
+<polygon points="196.00,80.00 206.00,70.00 206.00,115.00 196.00,125.00" fill="#C3D9E5" stroke="#D04E58" stroke-width="1.3"/>
+<circle cx="179.00" cy="99.00" r="4" fill="#D04E58" stroke="none" stroke-width="1"/>
+<polyline points="58.00,100.00 338.00,100.00" fill="none" stroke="#B5C2CD" stroke-width="1" stroke-dasharray="7 5"/>
+<rect x="109" y="53" width="18" height="77" fill="#AAC6BB" stroke="#1A837D" stroke-width="1.5"/>
+<polyline points="58.00,100.00 109.00,100.00" fill="none" stroke="#1A837D" stroke-width="2.4"/>
+<circle cx="109.00" cy="100.00" r="5" fill="#3686C5" stroke="none" stroke-width="1"/>
+<polygon points="127.00,60.00 343.00,60.00 343.00,130.00 127.00,130.00" fill="#E6E9ED" stroke="none" stroke-width="1.3"/>
+<polygon points="162.00,80.00 196.00,80.00 196.00,125.00 162.00,125.00" fill="#FBE2E6" stroke="#D04E58" stroke-width="1.3"/>
+<polygon points="162.00,80.00 172.00,70.00 206.00,70.00 196.00,80.00" fill="#F7FBFD" stroke="#D04E58" stroke-width="1.3"/>
+<polygon points="196.00,80.00 206.00,70.00 206.00,115.00 196.00,125.00" fill="#C3D9E5" stroke="#D04E58" stroke-width="1.3"/>
+<circle cx="179.00" cy="99.00" r="4" fill="#D04E58" stroke="none" stroke-width="1"/>
+<text x="143" y="36.0" font-family="Noto Sans CJK SC,sans-serif" font-size="18" font-weight="400" fill="#687E8E" text-anchor="start">挡住后方 → 没有清空证据</text>
+</g>
+<rect x="1349" y="229" width="506" height="360" fill="#FFF3E5" stroke="#E9C291" stroke-width="2"/>
+<text x="1370" y="272.0" font-family="Noto Sans CJK SC,sans-serif" font-size="28" font-weight="700" fill="#17394F" text-anchor="start">不能累计：偏离旧点</text>
+<text x="1370" y="308.72" font-family="Noto Sans CJK SC,sans-serif" font-size="22" font-weight="400" fill="#17394F" text-anchor="start">即使穿过同一个15厘米格子，</text>
+<text x="1370" y="338.42" font-family="Noto Sans CJK SC,sans-serif" font-size="22" font-weight="400" fill="#17394F" text-anchor="start">也不一定真的扫过代表点。</text>
+<g transform="translate(1365,376) scale(1.0157894736842106)">
+<rect x="23" y="117" width="330" height="31" fill="#F4F8FA" stroke="#DAE5EB" stroke-width="1.5"/>
+<g transform="translate(37,109) scale(0.48)">
+<ellipse cx="0" cy="17" rx="40" ry="8" fill="#DAE4EC" stroke="none" stroke-width="1"/>
+<polyline points="0.00,0.00 -32.00,-12.00" fill="none" stroke="#17394F" stroke-width="4"/>
+<ellipse cx="-32" cy="-12" rx="16" ry="5" fill="#E6F2FB" stroke="#28628B" stroke-width="2"/>
+<polyline points="0.00,0.00 32.00,-12.00" fill="none" stroke="#17394F" stroke-width="4"/>
+<ellipse cx="32" cy="-12" rx="16" ry="5" fill="#E6F2FB" stroke="#28628B" stroke-width="2"/>
+<polyline points="0.00,0.00 -32.00,12.00" fill="none" stroke="#17394F" stroke-width="4"/>
+<ellipse cx="-32" cy="12" rx="16" ry="5" fill="#E6F2FB" stroke="#28628B" stroke-width="2"/>
+<polyline points="0.00,0.00 32.00,12.00" fill="none" stroke="#17394F" stroke-width="4"/>
+<ellipse cx="32" cy="12" rx="16" ry="5" fill="#E6F2FB" stroke="#28628B" stroke-width="2"/>
+<polygon points="-13.00,-9.00 11.00,-9.00 17.00,1.00 0.00,10.00 -17.00,1.00" fill="#4F8CB5" stroke="#17394F" stroke-width="1.3"/>
+<polyline points="-8.00,7.00 -13.00,20.00 0.00,20.00" fill="none" stroke="#17394F" stroke-width="2"/>
+<polyline points="8.00,7.00 13.00,20.00 0.00,20.00" fill="none" stroke="#17394F" stroke-width="2"/>
+<circle cx="0.00" cy="-4.00" r="4" fill="#9EE6E0" stroke="#1A837D" stroke-width="1"/>
+</g>
+<polygon points="162.00,80.00 196.00,80.00 196.00,125.00 162.00,125.00" fill="#FBE2E6" stroke="#D04E58" stroke-width="1.3"/>
+<polygon points="162.00,80.00 172.00,70.00 206.00,70.00 196.00,80.00" fill="#F7FBFD" stroke="#D04E58" stroke-width="1.3"/>
+<polygon points="196.00,80.00 206.00,70.00 206.00,115.00 196.00,125.00" fill="#C3D9E5" stroke="#D04E58" stroke-width="1.3"/>
+<circle cx="179.00" cy="99.00" r="4" fill="#D04E58" stroke="none" stroke-width="1"/>
+<polyline points="58.00,100.00 338.00,100.00" fill="none" stroke="#B5C2CD" stroke-width="1" stroke-dasharray="7 5"/>
+<polyline points="58.00,123.00 332.00,123.00" fill="none" stroke="#1A837D" stroke-width="2.2"/>
+<circle cx="337.00" cy="123.00" r="5" fill="#3686C5" stroke="none" stroke-width="1"/>
+<polyline points="179.00,99.00 179.00,123.00" fill="none" stroke="#D04E58" stroke-width="1.4"/>
+<text x="101" y="37.0" font-family="Noto Sans CJK SC,sans-serif" font-size="18" font-weight="400" fill="#D04E58" text-anchor="start">经过同一个格子 ≠ 穿过旧点</text>
+<text x="115" y="170.0" font-family="Noto Sans CJK SC,sans-serif" font-size="17" font-weight="400" fill="#687E8E" text-anchor="start">点线距离超过 6 厘米：不计</text>
+</g>
+<rect x="65" y="633" width="570" height="358" fill="#FFF3E5" stroke="#E9C291" stroke-width="2"/>
+<text x="86" y="676.0" font-family="Noto Sans CJK SC,sans-serif" font-size="28" font-weight="700" fill="#17394F" text-anchor="start">保留：回波终点附近</text>
+<text x="86" y="712.72" font-family="Noto Sans CJK SC,sans-serif" font-size="22" font-weight="400" fill="#17394F" text-anchor="start">终点前保留0.30米缓冲，</text>
+<text x="86" y="742.4200000000001" font-family="Noto Sans CJK SC,sans-serif" font-size="22" font-weight="400" fill="#17394F" text-anchor="start">避免删除真实表面。</text>
+<g transform="translate(81,780) scale(1.0052631578947369)">
+<rect x="23" y="117" width="330" height="31" fill="#F4F8FA" stroke="#DAE5EB" stroke-width="1.5"/>
+<g transform="translate(37,109) scale(0.48)">
+<ellipse cx="0" cy="17" rx="40" ry="8" fill="#DAE4EC" stroke="none" stroke-width="1"/>
+<polyline points="0.00,0.00 -32.00,-12.00" fill="none" stroke="#17394F" stroke-width="4"/>
+<ellipse cx="-32" cy="-12" rx="16" ry="5" fill="#E6F2FB" stroke="#28628B" stroke-width="2"/>
+<polyline points="0.00,0.00 32.00,-12.00" fill="none" stroke="#17394F" stroke-width="4"/>
+<ellipse cx="32" cy="-12" rx="16" ry="5" fill="#E6F2FB" stroke="#28628B" stroke-width="2"/>
+<polyline points="0.00,0.00 -32.00,12.00" fill="none" stroke="#17394F" stroke-width="4"/>
+<ellipse cx="-32" cy="12" rx="16" ry="5" fill="#E6F2FB" stroke="#28628B" stroke-width="2"/>
+<polyline points="0.00,0.00 32.00,12.00" fill="none" stroke="#17394F" stroke-width="4"/>
+<ellipse cx="32" cy="12" rx="16" ry="5" fill="#E6F2FB" stroke="#28628B" stroke-width="2"/>
+<polygon points="-13.00,-9.00 11.00,-9.00 17.00,1.00 0.00,10.00 -17.00,1.00" fill="#4F8CB5" stroke="#17394F" stroke-width="1.3"/>
+<polyline points="-8.00,7.00 -13.00,20.00 0.00,20.00" fill="none" stroke="#17394F" stroke-width="2"/>
+<polyline points="8.00,7.00 13.00,20.00 0.00,20.00" fill="none" stroke="#17394F" stroke-width="2"/>
+<circle cx="0.00" cy="-4.00" r="4" fill="#9EE6E0" stroke="#1A837D" stroke-width="1"/>
+</g>
+<polygon points="162.00,80.00 196.00,80.00 196.00,125.00 162.00,125.00" fill="#FBE2E6" stroke="#D04E58" stroke-width="1.3"/>
+<polygon points="162.00,80.00 172.00,70.00 206.00,70.00 196.00,80.00" fill="#F7FBFD" stroke="#D04E58" stroke-width="1.3"/>
+<polygon points="196.00,80.00 206.00,70.00 206.00,115.00 196.00,125.00" fill="#C3D9E5" stroke="#D04E58" stroke-width="1.3"/>
+<circle cx="179.00" cy="99.00" r="4" fill="#D04E58" stroke="none" stroke-width="1"/>
+<polyline points="58.00,100.00 338.00,100.00" fill="none" stroke="#B5C2CD" stroke-width="1" stroke-dasharray="7 5"/>
+<polyline points="58.00,100.00 139.00,100.00" fill="none" stroke="#1A837D" stroke-width="2.4"/>
+<circle cx="205.00" cy="100.00" r="5" fill="#3686C5" stroke="none" stroke-width="1"/>
+<polyline points="143.00,140.00 205.00,140.00" fill="none" stroke="#D9933E" stroke-width="1.7"/>
+<text x="150" y="170.0" font-family="Noto Sans CJK SC,sans-serif" font-size="17" font-weight="400" fill="#D9933E" text-anchor="start">终点前 0.30 米保护段</text>
+</g>
+<rect x="707" y="633" width="570" height="358" fill="#EDF5FF" stroke="#A8C8E7" stroke-width="2"/>
+<text x="728" y="676.0" font-family="Noto Sans CJK SC,sans-serif" font-size="28" font-weight="700" fill="#17394F" text-anchor="start">保留：附近仍有真实回波</text>
+<text x="728" y="712.72" font-family="Noto Sans CJK SC,sans-serif" font-size="22" font-weight="400" fill="#17394F" text-anchor="start">本格及周围26邻格有当前点，</text>
+<text x="728" y="742.4200000000001" font-family="Noto Sans CJK SC,sans-serif" font-size="22" font-weight="400" fill="#17394F" text-anchor="start">该旧格不获撤销证据。</text>
+<g transform="translate(723,780) scale(1.0052631578947369)">
+<rect x="23" y="117" width="330" height="31" fill="#F4F8FA" stroke="#DAE5EB" stroke-width="1.5"/>
+<g transform="translate(37,109) scale(0.48)">
+<ellipse cx="0" cy="17" rx="40" ry="8" fill="#DAE4EC" stroke="none" stroke-width="1"/>
+<polyline points="0.00,0.00 -32.00,-12.00" fill="none" stroke="#17394F" stroke-width="4"/>
+<ellipse cx="-32" cy="-12" rx="16" ry="5" fill="#E6F2FB" stroke="#28628B" stroke-width="2"/>
+<polyline points="0.00,0.00 32.00,-12.00" fill="none" stroke="#17394F" stroke-width="4"/>
+<ellipse cx="32" cy="-12" rx="16" ry="5" fill="#E6F2FB" stroke="#28628B" stroke-width="2"/>
+<polyline points="0.00,0.00 -32.00,12.00" fill="none" stroke="#17394F" stroke-width="4"/>
+<ellipse cx="-32" cy="12" rx="16" ry="5" fill="#E6F2FB" stroke="#28628B" stroke-width="2"/>
+<polyline points="0.00,0.00 32.00,12.00" fill="none" stroke="#17394F" stroke-width="4"/>
+<ellipse cx="32" cy="12" rx="16" ry="5" fill="#E6F2FB" stroke="#28628B" stroke-width="2"/>
+<polygon points="-13.00,-9.00 11.00,-9.00 17.00,1.00 0.00,10.00 -17.00,1.00" fill="#4F8CB5" stroke="#17394F" stroke-width="1.3"/>
+<polyline points="-8.00,7.00 -13.00,20.00 0.00,20.00" fill="none" stroke="#17394F" stroke-width="2"/>
+<polyline points="8.00,7.00 13.00,20.00 0.00,20.00" fill="none" stroke="#17394F" stroke-width="2"/>
+<circle cx="0.00" cy="-4.00" r="4" fill="#9EE6E0" stroke="#1A837D" stroke-width="1"/>
+</g>
+<polygon points="162.00,80.00 196.00,80.00 196.00,125.00 162.00,125.00" fill="#FBE2E6" stroke="#D04E58" stroke-width="1.3"/>
+<polygon points="162.00,80.00 172.00,70.00 206.00,70.00 196.00,80.00" fill="#F7FBFD" stroke="#D04E58" stroke-width="1.3"/>
+<polygon points="196.00,80.00 206.00,70.00 206.00,115.00 196.00,125.00" fill="#C3D9E5" stroke="#D04E58" stroke-width="1.3"/>
+<circle cx="179.00" cy="99.00" r="4" fill="#D04E58" stroke="none" stroke-width="1"/>
+<polyline points="58.00,100.00 338.00,100.00" fill="none" stroke="#B5C2CD" stroke-width="1" stroke-dasharray="7 5"/>
+<rect x="110" y="12" width="34" height="34" fill="none" stroke="#A8BBD2" stroke-width="1"/>
+<rect x="110" y="46" width="34" height="34" fill="none" stroke="#A8BBD2" stroke-width="1"/>
+<rect x="110" y="80" width="34" height="34" fill="none" stroke="#A8BBD2" stroke-width="1"/>
+<rect x="144" y="12" width="34" height="34" fill="none" stroke="#A8BBD2" stroke-width="1"/>
+<rect x="144" y="46" width="34" height="34" fill="none" stroke="#A8BBD2" stroke-width="1"/>
+<rect x="144" y="80" width="34" height="34" fill="none" stroke="#A8BBD2" stroke-width="1"/>
+<rect x="178" y="12" width="34" height="34" fill="none" stroke="#A8BBD2" stroke-width="1"/>
+<rect x="178" y="46" width="34" height="34" fill="none" stroke="#A8BBD2" stroke-width="1"/>
+<rect x="178" y="80" width="34" height="34" fill="none" stroke="#A8BBD2" stroke-width="1"/>
+<polyline points="58.00,100.00 194.00,93.00" fill="none" stroke="#1A837D" stroke-width="2"/>
+<circle cx="194.00" cy="93.00" r="6" fill="#3686C5" stroke="none" stroke-width="1"/>
+<rect x="99" y="9" width="276" height="29" fill="#F7FBFD" stroke="none" stroke-width="1.5"/>
+<text x="119" y="36.0" font-family="Noto Sans CJK SC,sans-serif" font-size="18" font-weight="400" fill="#28628B" text-anchor="start">本格或相邻格仍有回波</text>
+<text x="126" y="174.0" font-family="Noto Sans CJK SC,sans-serif" font-size="18" font-weight="400" fill="#1A837D" text-anchor="start">保留当前真实结构</text>
+</g>
+<rect x="1349" y="633" width="506" height="358" fill="#F0F5F8" stroke="#B7CCD9" stroke-width="2"/>
+<text x="1373" y="679.0" font-family="Noto Sans CJK SC,sans-serif" font-size="28" font-weight="700" fill="#17394F" text-anchor="start">时效、数量也必须过关</text>
+<circle cx="1381.00" cy="717.00" r="4" fill="#1A837D" stroke="none" stroke-width="1"/>
+<text x="1398" y="720.0" font-family="Noto Sans CJK SC,sans-serif" font-size="21" font-weight="400" fill="#17394F" text-anchor="start">扫描与位姿时间差 ≤ 0.08秒</text>
+<circle cx="1381.00" cy="757.00" r="4" fill="#1A837D" stroke="none" stroke-width="1"/>
+<text x="1398" y="760.0" font-family="Noto Sans CJK SC,sans-serif" font-size="21" font-weight="400" fill="#17394F" text-anchor="start">最近命中后至少经过0.5秒</text>
+<circle cx="1381.00" cy="797.00" r="4" fill="#1A837D" stroke="none" stroke-width="1"/>
+<text x="1398" y="800.0" font-family="Noto Sans CJK SC,sans-serif" font-size="21" font-weight="400" fill="#17394F" text-anchor="start">有效证据间隔超过1秒重新累计</text>
+<circle cx="1381.00" cy="837.00" r="4" fill="#1A837D" stroke="none" stroke-width="1"/>
+<text x="1398" y="840.0" font-family="Noto Sans CJK SC,sans-serif" font-size="21" font-weight="400" fill="#17394F" text-anchor="start">同一回调多条射线最多计一次</text>
+<circle cx="1381.00" cy="877.00" r="4" fill="#1A837D" stroke="none" stroke-width="1"/>
+<text x="1398" y="880.0" font-family="Noto Sans CJK SC,sans-serif" font-size="21" font-weight="400" fill="#17394F" text-anchor="start">普通旧格3次；稳定旧格6次</text>
+<circle cx="1381.00" cy="917.00" r="4" fill="#1A837D" stroke="none" stroke-width="1"/>
+<text x="1398" y="920.0" font-family="Noto Sans CJK SC,sans-serif" font-size="21" font-weight="400" fill="#17394F" text-anchor="start">只检查近6米，不是清空全仓库</text>
+</svg>

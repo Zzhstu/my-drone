@@ -1,0 +1,3 @@
+地图保存器把实际维护话题中的结果带到离线，不按世界真值补点或裁掉人体来造一张好图。它检查地图和扫描接收时间，过期超过三秒或没有有效点时拒绝保存，不用坏数据覆盖上次有效结果。只保留有限坐标，先写临时文件并完成写入，再替换正式文件，减少中断留下半个地图的风险。
+
+同时写来源说明，包括话题、参考系、采集时刻、点数和校验值；失败要给出原因。默认产物在/home/a/AstraDroneOpen/dynamic_demo_runs，运行前缀关联最后的_final_map.pcd。文件存在证明保存成功，不自动证明完整或者无鬼影，遮挡下的旧点需要重新可见才有清理证据。源码是/home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/save_navigation_map.py，服务是/demo/save_map，最终位置由运行器和启动参数决定。

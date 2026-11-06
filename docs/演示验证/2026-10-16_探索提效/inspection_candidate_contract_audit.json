@@ -1,0 +1,14 @@
+{
+  "before": {
+    "candidates": 19,
+    "baseline_invalid_candidates": 1,
+    "dense_bin_max_gain": 1.0,
+    "sparse_bin_max_gain": 1.0
+  },
+  "after": {
+    "candidates": 18,
+    "baseline_invalid_candidates": 0,
+    "dense_bin_max_gain": 3.0,
+    "sparse_bin_max_gain": 1.0
+  }
+}

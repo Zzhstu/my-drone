@@ -1,0 +1,240 @@
+diff --git a/r3live/CMakeLists.txt b/r3live/CMakeLists.txt
+index 851d17a..151ff47 100755
+--- a/r3live/CMakeLists.txt
++++ b/r3live/CMakeLists.txt
+@@ -26,6 +26,7 @@ find_package(catkin REQUIRED COMPONENTS
+                     tf
+                     cv_bridge
+                     livox_ros_driver
++                    std_srvs
+             )
+ 
+ # find_package(Ceres REQUIRED)
+@@ -122,6 +123,8 @@ target_link_libraries(r3live_mapping
+                           pcl_common 
+                           pcl_io) 
+ 
++option(R3LIVE_BUILD_MESHING "Build optional offline CGAL mesher" OFF)
++if(R3LIVE_BUILD_MESHING)
+ FIND_PACKAGE(CGAL REQUIRED)
+ if(CGAL_FOUND)
+ 	include_directories(${CGAL_INCLUDE_DIRS})
+@@ -163,3 +166,5 @@ target_link_libraries(r3live_meshing
+                                   pcl_kdtree)
+ 
+ endif()
++
++endif() # R3LIVE_BUILD_MESHING
+diff --git a/r3live/package.xml b/r3live/package.xml
+index bc9c5c6..2e221ab 100755
+--- a/r3live/package.xml
++++ b/r3live/package.xml
+@@ -8,10 +8,12 @@
+ 
+   <buildtool_depend>catkin</buildtool_depend>
+   <build_depend>roscpp</build_depend>
++  <build_depend>std_srvs</build_depend>
+   <build_depend>livox_ros_driver</build_depend>
+ 
+   <run_depend>catkin</run_depend>
+   <run_depend>roscpp</run_depend>
++  <run_depend>std_srvs</run_depend>
+   <run_depend>livox_ros_driver</run_depend>
+ 
+ </package>
+diff --git a/r3live/src/loam/include/common_lib.h b/r3live/src/loam/include/common_lib.h
+index 4ee294f..02bdcb3 100644
+--- a/r3live/src/loam/include/common_lib.h
++++ b/r3live/src/loam/include/common_lib.h
+@@ -58,7 +58,7 @@ static const Eigen::Matrix3f Eye3f(Eigen::Matrix3f::Identity());
+ static const Eigen::Vector3d Zero3d(0, 0, 0);
+ static const Eigen::Vector3f Zero3f(0, 0, 0);
+ // Eigen::Vector3d Lidar_offset_to_IMU(0.05512, 0.02226, 0.0297); // Horizon
+-static const Eigen::Vector3d Lidar_offset_to_IMU(0.04165, 0.02326, -0.0284); // Avia
++extern Eigen::Vector3d Lidar_offset_to_IMU; // Configurable translation, axes must be aligned.
+ 
+ struct Pose6D
+ {
+diff --git a/r3live/src/r3live.cpp b/r3live/src/r3live.cpp
+index a8015f9..384c7d2 100644
+--- a/r3live/src/r3live.cpp
++++ b/r3live/src/r3live.cpp
+@@ -87,6 +87,7 @@ Dr. Fu Zhang < fuzhang@hku.hk >.
+ Camera_Lidar_queue g_camera_lidar_queue;
+ MeasureGroup Measures;
+ StatesGroup g_lio_state;
++Eigen::Vector3d Lidar_offset_to_IMU(0.04165, 0.02326, -0.0284); // Upstream Avia default.
+ std::string data_dump_dir = std::string("/mnt/0B3B134F0B3B134F/color_temp_r3live/");
+ 
+ int main(int argc, char **argv)
+diff --git a/r3live/src/r3live.hpp b/r3live/src/r3live.hpp
+index 97e32d7..c8da69b 100644
+--- a/r3live/src/r3live.hpp
++++ b/r3live/src/r3live.hpp
+@@ -77,6 +77,9 @@ Dr. Fu Zhang < fuzhang@hku.hk >.
+ #include <FOV_Checker/FOV_Checker.h>
+ 
+ #include <opencv2/highgui/highgui.hpp>
++#include <std_srvs/Trigger.h>
++#include <std_msgs/String.h>
++#include <atomic>
+ #include <cv_bridge/cv_bridge.h>
+ 
+ #include "lib_sophus/so3.hpp"
+@@ -279,6 +282,13 @@ public:
+     int esikf_iter_times = 2;
+     std::vector<std::shared_ptr<RGB_pts>> m_last_added_rgb_pts_vec;
+     std::string m_map_output_dir;
++    bool m_enable_gui = true;
++    std::atomic<bool> m_save_requested{false};
++    ros::ServiceServer m_save_service;
++    ros::Publisher m_vio_status;
++    ros::Publisher m_optical_pose;
++    bool request_save(std_srvs::Trigger::Request &, std_srvs::Trigger::Response &res)
++    { m_save_requested.store(true); res.success = true; res.message = "Save queued on VIO thread"; return true; }
+     std::shared_ptr<std::shared_future<void> > m_render_thread = nullptr;
+     
+     // VIO subsystem related
+@@ -324,9 +334,18 @@ public:
+         m_pub_render_rgb_pts = m_ros_node_handle.advertise<sensor_msgs::PointCloud2>("/render_pts", 10);
+         pubPath = m_ros_node_handle.advertise<nav_msgs::Path>("/path", 10);
+ 
++        m_vio_status = m_ros_node_handle.advertise<std_msgs::String>("/r3live/vio_status", 10);
++        m_optical_pose = m_ros_node_handle.advertise<geometry_msgs::PoseStamped>("/roomgs/optical_pose", 20);
+         pub_odom_cam = m_ros_node_handle.advertise<nav_msgs::Odometry>("/camera_odom", 10);
+         pub_path_cam = m_ros_node_handle.advertise<nav_msgs::Path>("/camera_path", 10);
+         std::string LiDAR_pointcloud_topic, IMU_topic, IMAGE_topic, IMAGE_topic_compressed;
++        m_ros_node_handle.param("r3live_common/enable_gui", m_enable_gui, true);
++        std::vector<double> lidar_translation;
++        if (m_ros_node_handle.getParam("r3live_lio/lidar_in_imu_translation", lidar_translation)) {
++            if (lidar_translation.size() != 3) throw std::runtime_error("lidar_in_imu_translation requires three values");
++            Lidar_offset_to_IMU = Eigen::Vector3d(lidar_translation[0], lidar_translation[1], lidar_translation[2]);
++        }
++        m_save_service = m_ros_node_handle.advertiseService("/r3live/save_map", &R3LIVE::request_save, this);
+ 
+         get_ros_parameter<std::string>(m_ros_node_handle, "/LiDAR_pointcloud_topic", LiDAR_pointcloud_topic, std::string("/laser_cloud_flat") );
+         get_ros_parameter<std::string>(m_ros_node_handle, "/IMU_topic", IMU_topic, std::string("/livox/imu") );
+diff --git a/r3live/src/r3live_lio.cpp b/r3live/src/r3live_lio.cpp
+index 4e04949..d728280 100644
+--- a/r3live/src/r3live_lio.cpp
++++ b/r3live/src/r3live_lio.cpp
+@@ -1019,7 +1019,7 @@ int R3LIVE::service_LIO_update()
+             geometry_msgs::Quaternion geoQuat = tf::createQuaternionMsgFromRollPitchYaw( euler_cur( 0 ), euler_cur( 1 ), euler_cur( 2 ) );
+             odomAftMapped.header.frame_id = "world";
+             odomAftMapped.child_frame_id = "/aft_mapped";
+-            odomAftMapped.header.stamp = ros::Time::now(); // ros::Time().fromSec(last_timestamp_lidar);
++            odomAftMapped.header.stamp.fromSec( Measures.lidar_end_time );
+             odomAftMapped.pose.pose.orientation.x = geoQuat.x;
+             odomAftMapped.pose.pose.orientation.y = geoQuat.y;
+             odomAftMapped.pose.pose.orientation.z = geoQuat.z;
+diff --git a/r3live/src/r3live_vio.cpp b/r3live/src/r3live_vio.cpp
+index 71e98da..db26972 100644
+--- a/r3live/src/r3live_vio.cpp
++++ b/r3live/src/r3live_vio.cpp
+@@ -496,7 +496,7 @@ void R3LIVE::publish_camera_odom( std::shared_ptr< Image_frame > &image, double
+     nav_msgs::Odometry camera_odom;
+     camera_odom.header.frame_id = "world";
+     camera_odom.child_frame_id = "/aft_mapped";
+-    camera_odom.header.stamp = ros::Time::now(); // ros::Time().fromSec(last_timestamp_lidar);
++    camera_odom.header.stamp.fromSec(msg_time);
+     camera_odom.pose.pose.orientation.x = odom_q.x();
+     camera_odom.pose.pose.orientation.y = odom_q.y();
+     camera_odom.pose.pose.orientation.z = odom_q.z();
+@@ -1071,15 +1071,24 @@ void R3LIVE::publish_render_pts( ros::Publisher &pts_pub, Global_map &m_map_rgb_
+ 
+ char R3LIVE::cv_keyboard_callback()
+ {
+-    char c = cv_wait_key( 1 );
++    char c = m_enable_gui ? cv_wait_key( 1 ) : char(-1);
+     // return c;
+-    if ( c == 's' || c == 'S' )
++    if ( c == 's' || c == 'S' || m_save_requested.exchange(false) )
+     {
+         scope_color( ANSI_COLOR_GREEN_BOLD );
+         cout << "I capture the keyboard input!!!" << endl;
+-        m_mvs_recorder.export_to_mvs( m_map_rgb_pts );
+-        // m_map_rgb_pts.save_and_display_pointcloud( m_map_output_dir, std::string("/rgb_pt"), std::max(m_pub_pt_minimum_views, 5) );
+-        m_map_rgb_pts.save_and_display_pointcloud( m_map_output_dir, std::string("/rgb_pt"), m_pub_pt_minimum_views  );
++        std::unique_lock<std::mutex> lock(m_mutex_lio_process);
++        wait_render_thread_finish();
++        if (m_if_record_mvs) m_mvs_recorder.export_to_mvs(m_map_rgb_pts);
++        try {
++            m_map_rgb_pts.save_to_pcd(m_map_output_dir, "/rgb_pt", m_pub_pt_minimum_views);
++            std::ofstream done(m_map_output_dir + "/save_complete.txt");
++            done << std::setprecision(17) << ros::Time::now().toSec() << std::endl;
++        } catch (const std::exception &e) {
++            std::ofstream failure(m_map_output_dir + "/save_error.txt");
++            failure << e.what() << std::endl;
++        }
++
+     }
+     return c;
+ }
+@@ -1092,7 +1101,7 @@ void R3LIVE::service_VIO_update()
+     op_track.m_maximum_vio_tracked_pts = m_maximum_vio_tracked_pts;
+     m_map_rgb_pts.m_minimum_depth_for_projection = m_tracker_minimum_depth;
+     m_map_rgb_pts.m_maximum_depth_for_projection = m_tracker_maximum_depth;
+-    cv::imshow( "Control panel", generate_control_panel_img().clone() );
++    if (m_enable_gui) cv::imshow( "Control panel", generate_control_panel_img().clone() );
+     Common_tools::Timer tim;
+     cv::Mat             img_get;
+     while ( ros::ok() )
+@@ -1189,10 +1198,32 @@ void R3LIVE::service_VIO_update()
+         g_cost_time_logger.record( tim, "Vio_f2f" );
+         tim.tic( "Vio_f2m" );
+         res_photometric = vio_photometric( state_out, op_track, img_pose );
++        std_msgs::String vio_status;
++        std::ostringstream vio_json;
++        vio_json << "{\"frame\":" << g_camera_frame_idx
++                 << ",\"tracked\":" << op_track.m_map_rgb_pts_in_last_frame_pos.size()
++                 << ",\"esikf\":" << (res_esikf ? "true" : "false")
++                 << ",\"photometric\":" << (res_photometric ? "true" : "false") << "}";
++        vio_status.data = vio_json.str(); m_vio_status.publish(vio_status);
+         g_cost_time_logger.record( tim, "Vio_f2m" );
+         g_lio_state = state_out;
+         print_dash_board();
+         set_image_pose( img_pose, state_out );
++        // Export only a successfully fused optical camera pose, at the original
++        // image measurement time. Internally the historical w2c fields hold c2w.
++        if (res_esikf && res_photometric) {
++            geometry_msgs::PoseStamped pose;
++            pose.header.stamp.fromSec(message_time);
++            pose.header.frame_id = "world";
++            pose.pose.position.x = img_pose->m_pose_w2c_t.x();
++            pose.pose.position.y = img_pose->m_pose_w2c_t.y();
++            pose.pose.position.z = img_pose->m_pose_w2c_t.z();
++            pose.pose.orientation.x = img_pose->m_pose_w2c_q.x();
++            pose.pose.orientation.y = img_pose->m_pose_w2c_q.y();
++            pose.pose.orientation.z = img_pose->m_pose_w2c_q.z();
++            pose.pose.orientation.w = img_pose->m_pose_w2c_q.w();
++            m_optical_pose.publish(pose);
++        }
+ 
+         if ( 1 )
+         {
+diff --git a/r3live/src/rgb_map/pointcloud_rgbd.cpp b/r3live/src/rgb_map/pointcloud_rgbd.cpp
+index 355dcd1..e9662b7 100644
+--- a/r3live/src/rgb_map/pointcloud_rgbd.cpp
++++ b/r3live/src/rgb_map/pointcloud_rgbd.cpp
+@@ -647,6 +647,7 @@ void Global_map::save_to_pcd(std::string dir_name, std::string _file_name, int s
+     cout << "Total have " << pt_count << " points." << endl;
+     tim.tic();
+     cout << "Now write to: " << file_name << endl; 
++    if (pc_rgb.empty()) throw std::runtime_error("No color-observed points available for export");
+     pcl::io::savePCDFileBinary(std::string(file_name).append(".pcd"), pc_rgb);
+     cout << "Save PCD cost time = " << tim.toc() << endl;
+ }
+diff --git a/r3live/src/tools/tools_eigen.hpp b/r3live/src/tools/tools_eigen.hpp
+index 981e4e7..ab3c307 100644
+--- a/r3live/src/tools/tools_eigen.hpp
++++ b/r3live/src/tools/tools_eigen.hpp
+@@ -66,9 +66,6 @@ Dr. Fu Zhang < fuzhang@hku.hk >.
+ template < int M, int N, int option = (EIGEN_DATA_TYPE_DEFAULT_OPTION|Eigen::RowMajor) >
+ using eigen_mat_d = Eigen::Matrix< double, M, N, option >;
+ 
+-template < int M, int N, int option = (EIGEN_DATA_TYPE_DEFAULT_OPTION|Eigen::RowMajor) >
+-using eigen_mat_d = Eigen::Matrix< double, M, N, option >;
+-
+ template < int M, int N, int option = (EIGEN_DATA_TYPE_DEFAULT_OPTION|Eigen::RowMajor) >
+ using eigen_mat_f = Eigen::Matrix< float, M, N, option >;
+ 

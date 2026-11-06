@@ -1,0 +1,7 @@
+# Independent office demo. Safety geometry/quality thresholds are inherited.
+# No world bounds or privileged floorplan are supplied to the explorer.
+warehouse_explorer:
+  max_mission_seconds: 300.0
+  max_mission_wall_seconds: 600.0
+  inspection_budget_seconds: 120.0
+  return_timeout: 300.0

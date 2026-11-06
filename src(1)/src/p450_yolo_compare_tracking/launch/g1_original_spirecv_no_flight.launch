@@ -1,0 +1,20 @@
+<launch>
+  <!-- 原机载 YOLOv5+NanoTrack/SpireCV 检测跟踪链路；不启动 p450_mission/gimbal_yolov5_tracking，不启动 Prometheus 控制器/PX4。 -->
+  <arg name="uav_id" default="1"/>
+  <arg name="start_gimbal_server" default="true"/>
+  <arg name="start_detector" default="true"/>
+  <arg name="start_video_streaming" default="false"/>
+  <arg name="start_logger" default="true"/>
+  <arg name="model_name" default="spirecv_yolov5_original"/>
+  <arg name="output_dir" default="/home/amov/p450_yolo_logs"/>
+
+  <include if="$(arg start_gimbal_server)" file="$(find p450_experiment)/launch_spirecv/gimbal_server.launch"/>
+  <include if="$(arg start_detector)" file="$(find p450_experiment)/launch_spirecv/gimbal_detection_with_tracking.launch"/>
+  <include if="$(arg start_video_streaming)" file="$(find p450_experiment)/launch_spirecv/video_streaming.launch"/>
+
+  <node if="$(arg start_logger)" pkg="p450_yolo_compare_tracking" type="benchmark_logger.py" name="benchmark_logger" output="screen">
+    <param name="uav_id" value="$(arg uav_id)"/>
+    <param name="model_name" value="$(arg model_name)"/>
+    <param name="output_dir" value="$(arg output_dir)"/>
+  </node>
+</launch>

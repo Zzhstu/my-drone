@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect x="0" y="0" width="1600" height="900" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1.5"/>
+<text x="60" y="87.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="47" font-weight="700" fill="#15334C" text-anchor="start">动态风险、静态风险与安全控制</text>
+<text x="62" y="129.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#657585" text-anchor="start">规划决定走哪条路；即时风险决定此刻还能不能继续执行。</text>
+<polyline points="60,151 1540,151" fill="none" stroke="#D5E0E6" stroke-width="1.5"/>
+<rect x="60" y="774" width="1480" height="70" rx="0" fill="#EFF5F8" stroke="none" stroke-width="1.5"/>
+<text x="80" y="818.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="700" fill="#24618A" text-anchor="start">核心规则</text>
+<text x="210" y="818.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">规划速度只是候选指令，必须经过即时风险与控制检查。</text>
+<text x="60" y="880.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="17" font-weight="400" fill="#657585" text-anchor="start">现有实现讲解 · 参数不是实验结果 · 源码对应见配套说明</text>
+<text x="1400" y="880.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="18" font-weight="400" fill="#657585" text-anchor="start">01 / 10</text>
+<text x="68" y="208.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#24618A" text-anchor="start">观测输入</text>
+<text x="425" y="208.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#24618A" text-anchor="start">并行判断</text>
+<text x="850" y="208.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#24618A" text-anchor="start">统一裁决与执行</text>
+<rect x="60" y="248" width="270" height="130" rx="0" fill="#F4F9FB" stroke="#24618A" stroke-width="1.5"/>
+<text x="195.0" y="292.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#24618A" text-anchor="middle">运动目标与位姿</text>
+<text x="195.0" y="328.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#657585" text-anchor="middle">目标速度与自身运动</text>
+<rect x="410" y="248" width="345" height="130" rx="0" fill="#F4F9FB" stroke="#137B7E" stroke-width="1.5"/>
+<text x="582.5" y="292.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#137B7E" text-anchor="middle">动态风险</text>
+<text x="582.5" y="328.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#657585" text-anchor="middle">预测会不会接近</text>
+<rect x="60" y="449" width="270" height="130" rx="0" fill="#F4F9FB" stroke="#24618A" stroke-width="1.5"/>
+<text x="195.0" y="493.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#24618A" text-anchor="middle">当前扫描与位姿</text>
+<text x="195.0" y="529.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#657585" text-anchor="middle">机身附近的障碍点</text>
+<rect x="410" y="449" width="345" height="130" rx="0" fill="#F4F9FB" stroke="#24618A" stroke-width="1.5"/>
+<text x="582.5" y="493.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#24618A" text-anchor="middle">静态风险</text>
+<text x="582.5" y="529.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#657585" text-anchor="middle">判断机体还剩多少间隙</text>
+<polyline points="332,312 402,312" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="402.00,312.00 392.00,316.80 392.00,307.20" fill="#24618A"/>
+<polyline points="332,514 402,514" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="402.00,514.00 392.00,518.80 392.00,509.20" fill="#24618A"/>
+<rect x="848" y="352" width="285" height="132" rx="0" fill="#F4F9FB" stroke="#137B7E" stroke-width="1.5"/>
+<text x="990.5" y="396.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#137B7E" text-anchor="middle">风险融合</text>
+<text x="990.5" y="432.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#657585" text-anchor="middle">等级、方向、风险来源</text>
+<polyline points="757,312 800,312 800,388 840,388" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="840.00,388.00 830.00,392.80 830.00,383.20" fill="#24618A"/>
+<polyline points="757,514 800,514 800,449 840,449" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="840.00,449.00 830.00,453.80 830.00,444.20" fill="#24618A"/>
+<rect x="1212" y="352" width="328" height="132" rx="0" fill="#F4F9FB" stroke="#24618A" stroke-width="1.5"/>
+<text x="1376.0" y="396.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#24618A" text-anchor="middle">安全控制</text>
+<text x="1376.0" y="432.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#657585" text-anchor="middle">跟踪／停车／有条件退让</text>
+<polyline points="1136,418 1204,418" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="1204.00,418.00 1194.00,422.80 1194.00,413.20" fill="#24618A"/>
+<rect x="848" y="594" width="285" height="110" rx="0" fill="#F4F9FB" stroke="#24618A" stroke-width="1.5"/>
+<text x="990.5" y="638.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#24618A" text-anchor="middle">规划或自主探索</text>
+<text x="990.5" y="674.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#657585" text-anchor="middle">提供当前航点</text>
+<polyline points="1136,649 1375,649 1375,491" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="1375.00,491.00 1379.80,501.00 1370.20,501.00" fill="#24618A"/>
+<text x="86" y="700.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="400" fill="#15334C" text-anchor="start">长期地图负责路线参考，</text>
+<text x="86" y="738.34" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="400" fill="#15334C" text-anchor="start">当前扫描负责即时保护。</text>
+</svg>

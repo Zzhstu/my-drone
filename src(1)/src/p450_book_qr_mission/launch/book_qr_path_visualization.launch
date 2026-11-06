@@ -1,0 +1,29 @@
+<launch>
+    <arg name="uav_id" default="1" />
+    <arg name="fixed_frame" default="world" />
+    <arg name="odom_topic" default="/Odometry" />
+    <arg name="path_topic" default="/book_qr_path" />
+    <arg name="planned_path_topic" default="/book_qr_waypoints_path" />
+    <arg name="marker_topic" default="/book_qr_waypoints_markers" />
+    <arg name="waypoints_param" default="/book_qr_patrol_mission/waypoints" />
+
+    <node pkg="p450_book_qr_mission" type="odom_to_path.py" name="odom_to_path" output="screen">
+        <param name="odom_topic" value="$(arg odom_topic)" />
+        <param name="path_topic" value="$(arg path_topic)" />
+        <param name="frame_id_override" value="" />
+        <param name="min_dist" value="0.03" />
+        <param name="max_len" value="8000" />
+        <param name="publish_rate_hz" value="10.0" />
+    </node>
+
+    <node pkg="p450_book_qr_mission" type="waypoints_to_marker.py" name="waypoints_to_marker" output="screen">
+        <param name="waypoints_param" value="$(arg waypoints_param)" />
+        <param name="marker_topic" value="$(arg marker_topic)" />
+        <param name="planned_path_topic" value="$(arg planned_path_topic)" />
+        <param name="frame_id" value="$(arg fixed_frame)" />
+        <param name="line_width" value="0.05" />
+        <param name="point_scale" value="0.12" />
+        <param name="text_scale" value="0.20" />
+        <param name="z_lift" value="0.0" />
+    </node>
+</launch>

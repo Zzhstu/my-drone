@@ -1,0 +1,59 @@
+{
+  "termination": "returned_home_and_saved",
+  "failed": false,
+  "mission": {
+    "state": "COMPLETE",
+    "stamp": 2199.761,
+    "wall_seconds": 3833.2651840990293,
+    "known_free_area_m2": 1187.0000000000002,
+    "known_cells": 32000,
+    "map_points": 284442,
+    "goals_selected": 97,
+    "goals_reached": 93,
+    "stalled_goals": 3,
+    "travel_xy_m": 547.8823530006512,
+    "mission_phase": "COMPLETE",
+    "finish_reason": "wall_budget_partial",
+    "home_map_xy": [
+      0.00010925648489506796,
+      0.005377246075436316
+    ],
+    "home_confirmed": true,
+    "home_error_xy_m": 0.12256225128667773,
+    "inspection_cells": 0,
+    "coverage_complete": false,
+    "exploration_complete": false,
+    "grid_capacity_limited": false,
+    "completion_scope": "observed reachable fixed-altitude space; NOT all 3D surfaces",
+    "raw_frontier_candidates": 1123,
+    "useful_frontier_candidates": 0,
+    "remaining_inspection_candidates": 234,
+    "surface_quality": {
+      "observed_surface_voxels": 15849,
+      "qualified_surface_voxels": 14684,
+      "observed_surface_quality_ratio": 0.9264937850968515,
+      "surface_evidence_capacity_limited": false
+    },
+    "progress": {
+      "window_ready": true,
+      "new_free_area_m2": 0.0,
+      "new_surface_voxels": 0,
+      "observation_goals": 11,
+      "low_gain": true
+    },
+    "compute_ms": 159.92227295646444,
+    "compute_p95_ms": 184.35780945001167,
+    "search_backend": "native",
+    "mission_sim_seconds": 2174.941,
+    "estimated_rtf": 0.5722439174873502,
+    "target_map_xy": [
+      0.10000000000000142,
+      0.10000000000000142
+    ],
+    "frontier_candidates": 0,
+    "note": "Observed 2D area, not 3D completeness. No backend. Ghost removal needs reobservation."
+  },
+  "freedom_baseline": true,
+  "freedom_point_map": "/home/a/AstraDroneOpen/exploration_demo_runs/warehouse_20261003_222021_freedom_static_map_point.pcd",
+  "note": "SITL only: save then stop owned simulation processes; no physical landing claim"
+}

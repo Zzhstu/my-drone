@@ -1,0 +1,63 @@
+{
+  "original_18_core_files_unchanged": {
+    "AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/static_map_builder.cpp": true,
+    "AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/static_path_planner.cpp": true,
+    "AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/dynamic_detector.cpp": true,
+    "AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/dynamic_cluster.cpp": true,
+    "AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/collision_risk.cpp": true,
+    "AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/static_collision_risk.cpp": true,
+    "AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/avoidance_fusion.cpp": true,
+    "AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/mavros_avoidance_controller.cpp": true,
+    "AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/system_watchdog.cpp": true,
+    "AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/warehouse_explorer.py": true,
+    "AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/exploration_grid.py": true,
+    "AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/exploration_coverage.py": true,
+    "AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/run_warehouse_exploration.py": true,
+    "AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/launch/warehouse_exploration.launch": true,
+    "AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/launch/astra_dynamic_avoidance.launch": true,
+    "AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/launch/perception.launch": true,
+    "AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/warehouse_exploration.yaml": true,
+    "AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/warehouse_navigation.yaml": true
+  },
+  "pinned_assets_match": {
+    "assets/coffee_table_set_1/meshes/table_large_frame.dae": true,
+    "assets/desk_brown/meshes/table.dae": true,
+    "assets/door_3d/meshes/door_v2_door.dae": true,
+    "assets/door_3d/meshes/door_v2_handle.dae": true,
+    "assets/file_cabinet_large/meshes/model.dae": true,
+    "assets/file_cabinet_small/meshes/model.dae": true,
+    "assets/office_chair/meshes/chair_base.dae": true,
+    "assets/office_chair/meshes/chair_cushion.dae": true,
+    "assets/office_chair/meshes/chair_wheels.dae": true,
+    "assets/sofa_set_2/meshes/sofa_cushions.dae": true,
+    "assets/sofa_set_2/meshes/sofa_frame.dae": true,
+    "assets/table_conference_2/meshes/base.dae": true,
+    "assets/table_conference_2/meshes/glasses.dae": true,
+    "assets/table_conference_2/meshes/top.dae": true
+  },
+  "original_world_match": true,
+  "unit_tests": {
+    "new": {
+      "passed": 13,
+      "evidence": "console execution before SITL"
+    },
+    "existing_exploration": {
+      "passed": 51,
+      "evidence": "regression.log"
+    }
+  },
+  "build": {
+    "package": "fastlio_bridge",
+    "exit_code": 0,
+    "evidence": "build_adapter.log"
+  },
+  "shell_syntax": "bash -n passed",
+  "changes_compared_to_scoped_backup": {
+    ".gitignore": "--- .gitignore before\n+++ .gitignore after\n@@ -54,6 +54,7 @@\n # beside large bags; keep the entire run directory out of source commits.\n dynamic_demo_runs/\n exploration_demo_runs/\n+small_indoor_demo_runs/\n \n ### 仿真与传感器缓存 ###\n **/.gazebo/\n",
+    "AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/CMakeLists.txt": "--- AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/CMakeLists.txt before\n+++ AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/CMakeLists.txt after\n@@ -108,6 +108,7 @@\n install(DIRECTORY launch config rviz\n   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})\n catkin_install_python(PROGRAMS\n+  scripts/small_indoor_velocity.py\n   scripts/exploration_grid.py\n   scripts/exploration_native.py\n   scripts/exploration_coverage.py\n",
+    "AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/README.md": "--- AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/README.md before\n+++ AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/README.md after\n@@ -194,3 +194,9 @@\n 正常演示无默认时间上限，暂无可达边界时悬停并保持仿真。\n 原仓库指定目标与badcase/ours入口不变；新demo不启用语义网络或回环。\n 启动、暂停/恢复、键盘行人、参数与验证边界见 [EXPLORATION_DEMO_CN.md](EXPLORATION_DEMO_CN.md)。\n+\n+## 13. GitHub小办公室自主探索 demo（2026-10-16新增）\n+\n+在项目根目录运行 `bash scripts/run_sh/small_indoor_exploration_demo.sh`。\n+约10×10米的GitHub office_small轻量适配场景，复用现有FAST-LIO、严格证据地图、探索、风险和控制；新入口另做地图速度到PX4局部ENU的偏航转换。此版不添加行人，不启用语义网络或回环，自动返航并保存后退出，可用`--keep-open`继续展示。\n+来源、构建、启动、状态、产物及验证限制见 [SMALL_INDOOR_DEMO_CN.md](SMALL_INDOOR_DEMO_CN.md)。\n",
+    "docs/演示启动命令/所有Demo与行人启动命令.md": "--- docs/演示启动命令/所有Demo与行人启动命令.md before\n+++ docs/演示启动命令/所有Demo与行人启动命令.md after\n@@ -11,6 +11,17 @@\n 同一时间运行一个完整demo。主启动脚本已经负责ROS、Gazebo、PX4、FAST-LIO与对应控制链，不需要另开第二个飞控控制器。\n \n 新增的 `docs/演示启动命令/行人键盘控制.sh` 只包装原有键盘客户端及ROS/PedSim环境，不生成行人、不替换算法。它补充了当前多工作区source顺序会丢失的PedSim消息路径。\n+\n+## 2026-10-16新增：GitHub小办公室自主探索\n+\n+```bash\n+cd /home/a/AstraDroneOpen\n+bash scripts/run_sh/small_indoor_exploration_demo.sh\n+```\n+\n+约10×10米办公室，复用原定位、地图维护、探索和安全控制；自动起飞、选点、补扫、返航保存。此入口为静态室内验证，没有行人，不需要启动行人键盘终端。`--headless`关闭两种GUI；`--keep-open`在成功返航保存后保持展示。预算结束的部分探索与完整建图区分。\n+\n+来源、独立速度坐标转换与完整操作见 [小办公室演示说明](../../AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/SMALL_INDOOR_DEMO_CN.md)。\n \n ## 1. 基础键盘飞行/建图\n \n"
+  },
+  "git_operations": "No git add, commit, reset or push performed. Git status may refresh index stat cache.",
+  "runtime_side_effect": "Existing FAST-LIO runtime regenerates its Log outputs during SITL; these are not algorithm-source changes."
+}

@@ -1,0 +1,110 @@
+<launch>
+    <!-- ========================= -->
+    <!--  P450 MID360 一键建图启动  -->
+    <!--  功能:                    -->
+    <!--  1) 启动 uav_control + MAVROS -->
+    <!--  2) 启动 MID360 驱动         -->
+    <!--  3) 启动 FAST_LIO 建图       -->
+    <!--  4) 退出 laserMapping 时保存 PCD -->
+    <!-- ========================= -->
+
+    <!-- ---------- P450 飞控/控制参数 ---------- -->
+    <arg name="uav_id" default="1"/>
+    <arg name="sim_mode" default="false"/>
+    <arg name="flag_printf" default="true"/>
+    <!-- 如果是 matlab 外部控制则改为 true；建图通常保持 false -->
+    <arg name="control_enable_external_control" default="false"/>
+
+    <!-- ---------- MID360 驱动参数 ---------- -->
+    <arg name="lvx_file_path" default="livox_test.lvx"/>
+    <arg name="bd_list" default="47MDM610020272"/>
+    <arg name="xfer_format" default="1"/>
+    <arg name="multi_topic" default="0"/>
+    <arg name="data_src" default="0"/>
+    <arg name="publish_freq" default="10.0"/>
+    <arg name="output_type" default="0"/>
+    <arg name="rosbag_enable" default="false"/>
+    <arg name="msg_frame_id" default="livox_frame"/>
+    <arg name="lidar_bag" default="true"/>
+    <arg name="imu_bag" default="true"/>
+    <arg name="cmdline_arg" default="$(arg bd_list)"/>
+
+    <!-- ---------- FAST_LIO 保存参数 ---------- -->
+    <arg name="pcd_save_en" default="true"/>
+    <arg name="pcd_save_interval" default="-1"/>
+
+    <!-- ========== 1. 启动 uav_control_main ========== -->
+    <node pkg="prometheus_uav_control" type="uav_control_main"
+          name="uav_control_main_$(arg uav_id)" output="screen">
+        <param name="uav_id" value="$(arg uav_id)" />
+        <param name="sim_mode" value="$(arg sim_mode)" />
+        <param name="flag_printf" value="$(arg flag_printf)" />
+        <param name="control/enable_external_control" value="$(arg control_enable_external_control)" />
+        <rosparam command="load" file="$(find p450_experiment)/config/prometheus_control_config/uav_control_mid360.yaml" />
+        <rosparam command="load" file="$(find p450_experiment)/config/prometheus_control_config/sensor_tf_offset_mid360.yaml" />
+    </node>
+
+    <!-- ========== 2. 启动 MAVROS ========== -->
+    <group ns="/uav$(arg uav_id)">
+        <node pkg="mavros" type="mavros_node" name="mavros" output="screen">
+            <param name="fcu_url" value="/dev/ttyTHS0:921600" />
+            <param name="gcs_url" value="udp://@192.168.2.31" />
+            <param name="target_system_id" value="1" />
+            <param name="target_component_id" value="1" />
+            <rosparam command="load" file="$(find p450_experiment)/config/mavros_config/px4_pluginlists.yaml" />
+            <rosparam command="load" file="$(find p450_experiment)/config/mavros_config/px4_config_indoor.yaml" />
+        </node>
+    </group>
+
+    <!-- ========== 3. 启动 MID360 驱动 ========== -->
+    <param name="xfer_format" value="$(arg xfer_format)"/>
+    <param name="multi_topic" value="$(arg multi_topic)"/>
+    <param name="data_src" value="$(arg data_src)"/>
+    <param name="publish_freq" type="double" value="$(arg publish_freq)"/>
+    <param name="output_data_type" value="$(arg output_type)"/>
+    <param name="cmdline_str" type="string" value="$(arg bd_list)"/>
+    <param name="cmdline_file_path" type="string" value="$(arg lvx_file_path)"/>
+    <param name="user_config_path" type="string" value="$(find p450_experiment)/config/mid360_config/MID360_config.json"/>
+    <param name="frame_id" type="string" value="$(arg msg_frame_id)"/>
+    <param name="enable_lidar_bag" type="bool" value="$(arg lidar_bag)"/>
+    <param name="enable_imu_bag" type="bool" value="$(arg imu_bag)"/>
+
+    <node name="livox_lidar_publisher2"
+          pkg="livox_ros_driver2"
+          type="livox_ros_driver2_node"
+          required="true"
+          output="screen"
+          args="$(arg cmdline_arg)"/>
+
+    <group if="$(arg rosbag_enable)">
+        <node pkg="rosbag" type="record" name="record" output="screen" args="-a"/>
+    </group>
+
+    <!-- ========== 4. 启动 FAST_LIO 建图 ========== -->
+    <!-- 先加载你的现有 mid360.yaml -->
+    <rosparam command="load" file="$(find p450_experiment)/config/mid360_config/mid360.yaml" />
+
+    <!-- 再覆盖为“必保存 PCD”的参数 -->
+    <param name="pcd_save/pcd_save_en" type="bool" value="$(arg pcd_save_en)"/>
+    <param name="pcd_save/interval" type="int" value="$(arg pcd_save_interval)"/>
+
+    <!-- 与你现有 mapping_mid360_save.launch 保持一致 -->
+    <param name="feature_extract_enable" type="bool" value="0"/>
+    <param name="point_filter_num" type="int" value="3"/>
+    <param name="max_iteration" type="int" value="3"/>
+    <param name="filter_size_surf" type="double" value="0.5"/>
+    <param name="filter_size_map" type="double" value="0.5"/>
+    <param name="cube_side_length" type="double" value="1000"/>
+    <param name="runtime_pos_log_enable" type="bool" value="0"/>
+
+    <param name="filter_range_x" type="double" value="25"/>
+    <param name="filter_range_y" type="double" value="25"/>
+    <param name="filter_range_z" type="double" value="0.5"/>
+
+    <remap from="/cloud_registered" to="/uav$(arg uav_id)/mid_point_cloud_centers"/>
+
+    <node pkg="fast_lio" type="fastlio_mapping" name="laserMapping" output="screen"/>
+    <node pkg="tf" type="static_transform_publisher" name="tf_MID360"
+          args="0.0 0.0 0.0 0.0 0.0 0.0 world camera_init 100"/>
+    <node pkg="fast_lio" type="fliter_points" name="fliter_points" output="screen"/>
+</launch>

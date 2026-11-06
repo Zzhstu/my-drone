@@ -1,0 +1,3 @@
+定位不是只对惯性数据积分。惯性测量预测短时间内的运动，但误差会积累；激光扫描与已经存在的环境表面比较，为位置和方向提供修正约束。修正后的状态又用于整理扫描和更新匹配地图，下一帧继续预测和比较。输出位置、姿态以及当前扫描，其他模块才能在统一参考下判断变化。
+
+当前主演示启用模拟雷达分支。模拟点没有真实逐点采集时刻，这个分支不执行与真实雷达相同的逐点去畸变，讲一般算法时不能说该仿真已经验证了这一能力。源码是/home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/FAST_LIO/src/laserMapping.cpp、src/IMU_Processing.hpp和src/preprocess.cpp。启动分支可看同包launch/mapping_mid360.launch及fastlio_bridge/scripts/run_warehouse_exploration.py中的sim_lidar参数。

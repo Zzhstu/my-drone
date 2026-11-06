@@ -1,0 +1,24 @@
+{
+  "baseline": "000b725",
+  "head": "8808ad52558a9f1f4005a847e1d4ec6a63b8649d",
+  "total": 1888,
+  "groups": {
+    "09_文档汇报与项目规范": 1632,
+    "03_飞行任务示例": 12,
+    "01_FASTLIO改动与复用": 17,
+    "02_动态导航主包": 105,
+    "04_FreeDOM作者实现与适配": 45,
+    "05_EXP原包留档": 43,
+    "08_离线分析": 8,
+    "07_运行入口": 8,
+    "06_仿真与传感器": 9,
+    "11_安装副产物": 3,
+    "10_记录与研究计划": 6
+  },
+  "git_head_changed": 256,
+  "missing": [],
+  "unclassified_core": [],
+  "report_self_excluded": 7,
+  "coverage_ok": true,
+  "validation_scope": "文件范围/用途归类/存在性及源码哈希；没有新ROS编译、SITL或性能实验"
+}

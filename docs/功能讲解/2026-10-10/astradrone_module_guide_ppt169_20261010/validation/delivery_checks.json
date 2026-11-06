@@ -1,0 +1,20 @@
+{
+  "slides": 22,
+  "notes": 22,
+  "native_editable_shapes": 500,
+  "parsed_xml_parts": 105,
+  "verified_internal_relationships": 125,
+  "pdf_pages": 22,
+  "rendered_pages": 22,
+  "contact_sheets": [
+    "validation/rendered/contact-1.png",
+    "validation/rendered/contact-2.png",
+    "validation/rendered/contact-3.png",
+    "validation/rendered/contact-4.png"
+  ],
+  "pptx_bytes": 119502,
+  "pdf_bytes": 356428,
+  "pptx_sha256": "b72f655e05dd0434fb71bb45783e586dcf9b8da6e2aa1922e05a05157d8424fe",
+  "pdf_sha256": "c6466099917caa317dbd1ecc4a4b7b36a121c19fb1af2d793280db733752efe6",
+  "scope": "Document integrity and actual exported PDF rendering only; no ROS or flight test"
+}

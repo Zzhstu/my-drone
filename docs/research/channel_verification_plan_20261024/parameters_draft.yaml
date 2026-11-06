@@ -1,0 +1,139 @@
+# DESIGN SPECIFICATION ONLY. New policy and joint_* keys are not implemented.
+# DO NOT rosparam load this file or use it as a flight configuration.
+document:
+  status: DESIGN_ONLY_NOT_IMPLEMENTED
+  ready_for_rosparam_load: false
+  date: '2026-10-24'
+  scope: SITL fixed-altitude half-warehouse; no battery power model or hardware validation
+  baseline_parameter_source: half_warehouse_online_loop_ten_minute_runs/warehouse_half_ten_minute_20261024_102949_runtime_parameters.json
+fixed_existing_parameters:
+  /filter_size_surf: 0.2
+  /filter_size_map: 0.2
+  /point_filter_num: 3
+  /max_iteration: 3
+  /warehouse_explorer/resolution: 0.2
+  /warehouse_explorer/clearance: 0.8
+  /warehouse_explorer/unknown_margin: 0.4
+  /warehouse_explorer/takeoff_relative_height: 1.2
+  /warehouse_explorer/planning_hz: 3.0
+  /warehouse_explorer/lookahead: 2.0
+  /warehouse_explorer/settle_seconds: 1.0
+  /warehouse_explorer/surface_min_hits: 3
+  /warehouse_explorer/surface_min_views: 2
+  /warehouse_explorer/surface_view_baseline: 0.75
+  /warehouse_explorer/ghost_max_attempts: 2
+  /warehouse_explorer/ghost_pending_min_age_seconds: 20.0
+  /warehouse_explorer/ghost_observation_seconds: 4.0
+  /warehouse_explorer/flight_budget_seconds: 600.0
+  /warehouse_explorer/flight_reserve_seconds: 60.0
+  /warehouse_explorer/flight_return_speed_mps: 0.35
+  /warehouse_explorer/flight_return_time_factor: 1.3
+  /warehouse_explorer/flight_landing_seconds: 25.0
+  /warehouse_explorer/home_settle_seconds: 5.0
+  /warehouse_explorer/flight_return_overhead_seconds: 15.0
+  /mavros_avoidance_controller/max_navigation_speed: 0.6
+  /mavros_avoidance_controller/max_total_speed: 0.6
+  /mavros_avoidance_controller/max_vertical_speed: 0.5
+  /mavros_avoidance_controller/publish_rate: 30.0
+  /static_map_builder/voxel_size: 0.15
+  /static_map_builder/free_space_miss_threshold: 3
+  /static_map_builder/stable_free_miss_threshold: 6
+  /static_map_builder/free_ray_point_tolerance: 0.06
+  /static_map_builder/free_space_endpoint_margin: 0.3
+  /static_map_builder/clearing_odom_max_dt: 0.08
+  /static_collision_risk/uav_radius: 0.4
+  /static_collision_risk/safe_clearance: 0.3
+  /static_collision_risk/emergency_clearance: 0.25
+  /collision_risk/emergency_time_to_cpa: 0.8
+  /collision_risk/emergency_cpa_distance: 0.6
+  /loop_closure_backend/allow_verified_small_loops: false
+proposed_existing_parameter_changes:
+  /warehouse_explorer/surface_quality_target:
+    baseline: 0.85
+    proposed: 0.7
+    meaning: Exit-quality target for already observed multiview surfaces, not world
+      coverage or geometric correctness.
+  /warehouse_explorer/ghost_endurance_revisit:
+    baseline: true
+    proposed: false
+    meaning: 'Only with a new joint policy implementation: disable legacy 300s phase
+      forcing; active ghost candidates remain enabled.'
+  /warehouse_explorer/ghost_no_evidence_extra_attempts:
+    baseline: 2
+    proposed: 0
+    meaning: For the candidate entry, keep two distinct views per episode; no automatic
+      two extra retries without new independent evidence.
+proposed_new_warehouse_explorer_parameters:
+  joint_selection_enabled: true
+  joint_strategy: channel_verification
+  joint_decision_hz: 1.0
+  joint_frontier_candidate_limit: 24
+  joint_ghost_group_limit: 12
+  joint_candidate_azimuth_samples: 16
+  joint_view_ranges_m:
+  - 1.5
+  - 2.5
+  - 4.0
+  joint_retained_views_per_group: 8
+  joint_total_candidate_limit: 48
+  joint_region_size_m: 2.5
+  joint_region_limit: 256
+  joint_topology_update_seconds: 5.0
+  joint_lookahead_depth: 2
+  joint_lookahead_branching: 6
+  joint_lookahead_discount: 0.7
+  joint_weight_area: 0.5
+  joint_weight_verify: 0.3
+  joint_weight_connectivity: 0.2
+  joint_area_scale_m2: 10.0
+  joint_verify_group_scale: 3.0
+  joint_connectivity_area_scale_m2: 20.0
+  joint_min_evidence_quality: 0.15
+  joint_history_review_scale: 0.25
+  joint_score_epsilon_seconds: 2.0
+  joint_target_min_hold_seconds: 3.0
+  joint_switch_improvement_ratio: 0.2
+  joint_ghost_action_budget_seconds: 90.0
+  joint_ghost_cooldown_seconds: 30.0
+  joint_min_fresh_view_scans: 8
+  joint_max_view_seconds: 6.0
+  joint_low_gain_windows: 2
+  joint_extra_compute_budget_ms: 50.0
+  joint_replan_on_safety_invalidation: true
+experiment_arms:
+  B0:
+    policy: legacy
+    surface_quality_target: 0.85
+  B1:
+    policy: legacy
+    surface_quality_target: 0.7
+  B2:
+    policy: joint_simple
+    surface_quality_target: 0.7
+    evidence_quality: false
+    connectivity_value: false
+  B3:
+    policy: joint_channel
+    surface_quality_target: 0.7
+    evidence_quality: true
+    connectivity_value: true
+acceptance_targets_not_results:
+  normal_arm_to_disarm_max_s: 540.0
+  absolute_arm_to_disarm_max_s: 600.0
+  collisions: 0
+  false_traversable_channels: 0
+  lost_map_input_frames: 0
+  ghost_history_evictions: 0
+  position_rmse_max_m: 0.03
+  position_p95_max_m: 0.05
+  last_airborne_error_max_m: 0.04
+  geometry_support_at_10cm_min: 0.995
+  point_to_static_geometry_p95_max_m: 0.05
+  planner_processing_p95_max_ms: 200.0
+  ineffective_verification_time_relative_reduction_target: 0.25
+  unsaturated_surface_coverage_absolute_gain_target: 0.05
+  or_time_to_same_coverage_relative_reduction_target: 0.15
+  static_false_removal_absolute_regression_max: 0.005
+  residual_ghost_rate_absolute_regression_max: 0.005
+  observed_free_area_relative_regression_max: 0.01
+  supported_surface_coverage_absolute_regression_max: 0.01

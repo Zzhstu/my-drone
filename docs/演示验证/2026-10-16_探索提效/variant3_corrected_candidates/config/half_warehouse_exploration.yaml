@@ -1,0 +1,18 @@
+# Same safety/quality thresholds. Independent smaller-scene time budgets.
+warehouse_explorer:
+  max_mission_seconds: 600.0
+  max_mission_wall_seconds: 1200.0
+  inspection_budget_seconds: 240.0
+  return_timeout: 600.0
+  # Phase switching uses measured free-space plateau; quality still needs 95%
+  # independent measured-surface evidence. Early quality exit remains PARTIAL.
+  adaptive_inspection: true
+  frontier_plateau_seconds: 60.0
+  frontier_plateau_area: 2.0
+  frontier_plateau_fraction: 0.01 # limit=max(2m², 1% of sensor-observed area)
+  efficiency_min_goals: 6
+  efficiency_min_seconds: 180.0
+  quality_hold_seconds: 10.0
+  quality_min_surfaces: 1000
+  retire_observed_frontier: true
+  frontier_retire_seconds: 3.0

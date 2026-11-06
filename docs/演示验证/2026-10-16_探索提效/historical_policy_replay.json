@@ -1,0 +1,20 @@
+{
+  "note": "Counterfactual trigger diagnostic only; status stamp substitutes scan stamp; NOT a flight replay or performance result.",
+  "runs": {
+    "145001": {
+      "mission_sim_seconds": 376.31,
+      "goals_reached": 14,
+      "quality": 0.7706457422176486,
+      "report": {
+        "window_ready": true,
+        "new_free_area_m2": 0.8800000000000001,
+        "free_space_plateau": true,
+        "quality_qualified": false,
+        "quality_hold_seconds": 0.0,
+        "ready_to_inspect": true,
+        "ready_to_return": false
+      }
+    },
+    "161659": null
+  }
+}

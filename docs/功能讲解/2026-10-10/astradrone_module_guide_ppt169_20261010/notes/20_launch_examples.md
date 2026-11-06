@@ -1,0 +1,3 @@
+演示脚本准备环境并装配仿真、定位和所选任务，组织日志、录制、退出和地图保存。它们不是另一套避障算法。指定目标任务由通用规划器发航点，自主探索任务关闭通用规划器，由探索器发航点；两者共用感知、地图、风险和控制链。只保留一个航点指挥者才能避免相互覆盖。
+
+MissionControl的offboard/src包含autoarming_control.cpp自动解锁、keyboard_control.cpp键盘飞行、position_control.cpp定点飞行、long_corridor_baseline_flight.cpp走廊航线、loop_closure_demo_flight.cpp回环航线、pub_origin.cpp原点发布以及position_control_lib.cpp公共控制库。这些是独立飞行示例，不是主避障控制器的并行步骤。行人键盘控制改变仿真人的位置，不是键盘飞无人机。当前入口在/home/a/AstraDroneOpen/scripts/run_sh/dynamic_comparison_demo.sh、warehouse_dynamic_demo.sh与warehouse_exploration_demo.sh；装配源码在/home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/launch。

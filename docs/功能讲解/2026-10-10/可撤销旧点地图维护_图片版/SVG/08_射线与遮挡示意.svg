@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect x="0" y="0" width="1600" height="900" fill="#FFFFFF" stroke="none" stroke-width="1.6"/>
+<text x="60" y="80.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="46" font-weight="700" fill="#15334C" text-anchor="start">看不到，不等于这里已经空了</text>
+<text x="63" y="125.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#657585" text-anchor="start">只有回波前、确实经过旧点附近的射线，才能提供撤销线索。</text>
+<polyline points="60,151 1540,151" fill="none" stroke="#D5E0E6" stroke-width="1.2"/>
+<rect x="60" y="784" width="1480" height="62" fill="#EFF5F8" stroke="none" stroke-width="1.6"/>
+<text x="78" y="823.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="700" fill="#137B7E" text-anchor="start">核心规则</text>
+<text x="210" y="822.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">遮挡后方、偏离射线、没有有效返回：都不能凭缺点删除。</text>
+<text x="60" y="878.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="17" font-weight="400" fill="#657585" text-anchor="start">现有源码规则 · 所有点云与场景小图为示意 · 非新增实验结果</text>
+<text x="1400" y="879.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="18" font-weight="400" fill="#657585" text-anchor="start">08 / 16</text>
+<rect x="60" y="215" width="1480" height="518" fill="#FFFFFF" stroke="#15334C" stroke-width="1.6" stroke-dasharray="7 6"/>
+<rect x="78" y="200" width="239.875" height="36" fill="#FFFFFF" stroke="none" stroke-width="1.6"/>
+<text x="90" y="231.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#15334C" text-anchor="start">三种观测必须区分</text>
+<rect x="82" y="260" width="450" height="410" fill="#F0F0FF" stroke="#B3BFEA" stroke-width="1.6"/>
+<text x="98" y="304.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="28" font-weight="700" fill="#15334C" text-anchor="start">1 支持已经空了</text>
+<text x="100" y="346.64" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">旧点在有效射线附近</text>
+<circle cx="127" cy="495" r="12" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<polyline points="144,495 478,495" fill="none" stroke="#137B7E" stroke-width="3"/>
+<polygon points="478.00,495.00 466.00,500.76 466.00,489.24" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="315" cy="495" r="7" fill="#B94343" stroke="none" stroke-width="1.6"/>
+<circle cx="478" cy="495" r="8" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<text x="127" y="570.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="400" fill="#657585" text-anchor="middle">雷达</text>
+<text x="315" y="570.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="400" fill="#657585" text-anchor="middle">旧点</text>
+<text x="478" y="570.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="400" fill="#657585" text-anchor="middle">新回波</text>
+<rect x="574" y="260" width="450" height="410" fill="#FFF3E7" stroke="#E6B988" stroke-width="1.6"/>
+<text x="590" y="304.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="28" font-weight="700" fill="#15334C" text-anchor="start">2 前方存在遮挡</text>
+<text x="592" y="346.64" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">回波前就遇到实体</text>
+<circle cx="619" cy="495" r="12" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<polyline points="636,495 762,495" fill="none" stroke="#137B7E" stroke-width="3"/>
+<polygon points="762.00,495.00 750.00,500.76 750.00,489.24" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<rect x="762" y="461" width="14" height="68" fill="#D5E0E6" stroke="#15334C" stroke-width="1.6"/>
+<polyline points="779,495 970,495" fill="none" stroke="#657585" stroke-width="2" stroke-dasharray="7 6"/>
+<circle cx="884" cy="495" r="7" fill="#B94343" stroke="none" stroke-width="1.6"/>
+<text x="619" y="570.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="400" fill="#657585" text-anchor="middle">雷达</text>
+<text x="769" y="570.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="400" fill="#657585" text-anchor="middle">当前障碍</text>
+<text x="898" y="570.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="20" font-weight="400" fill="#657585" text-anchor="middle">遮挡后旧点</text>
+<rect x="1066" y="260" width="450" height="410" fill="#EEF8F1" stroke="#A6CCB7" stroke-width="1.6"/>
+<text x="1082" y="304.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="28" font-weight="700" fill="#15334C" text-anchor="start">3 从旧点旁边扫过</text>
+<text x="1084" y="346.64" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">同格不代表击穿旧点</text>
+<circle cx="1111" cy="495" r="12" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<polyline points="1128,495 1462,495" fill="none" stroke="#137B7E" stroke-width="3"/>
+<polygon points="1462.00,495.00 1450.00,500.76 1450.00,489.24" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1299" cy="540" r="7" fill="#B94343" stroke="none" stroke-width="1.6"/>
+<circle cx="1462" cy="495" r="8" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<polyline points="1299,495 1299,535" fill="none" stroke="#B94343" stroke-width="1.5" stroke-dasharray="7 6"/>
+<text x="1156" y="593.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="400" fill="#657585" text-anchor="start">偏离太远，保留旧点</text>
+</svg>

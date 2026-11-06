@@ -1,0 +1,153 @@
+{
+  "checks": [
+    "initial_window_radius",
+    "growth_margin",
+    "growth_chunk",
+    "max_grid_cells",
+    "resolution",
+    "clearance",
+    "recovery_minimum_clearance",
+    "unsafe_stall_seconds",
+    "convergence_seconds",
+    "convergence_free_area",
+    "convergence_new_surfaces",
+    "convergence_min_goals",
+    "surface_voxel",
+    "surface_min_hits",
+    "surface_min_views",
+    "surface_view_baseline",
+    "surface_quality_target",
+    "inspection_revisit_seconds",
+    "inspection_budget_seconds",
+    "home_tolerance",
+    "home_settle_seconds",
+    "max_mission_seconds",
+    "max_mission_wall_seconds",
+    "return_timeout",
+    "frontier_min_gain_area",
+    "frontier_sensor_range",
+    "settle_seconds",
+    "progress_timeout",
+    "blacklist_seconds",
+    "max_target_attempts",
+    "warehouse_explorer.py:coverage_complete=False",
+    "warehouse_explorer.py:'observed_reachable_converged'",
+    "warehouse_explorer.py:'wall_budget_partial'",
+    "warehouse_explorer.py:not self.failed_visits",
+    "warehouse_explorer.py:if self.save():",
+    "warehouse_explorer.py:'STALLED_UNSAFE'",
+    "warehouse_explorer.py:scores = [gain[tuple(c)]/(2.+distances[tuple(c)])",
+    "exploration_grid.py:grow_to_include",
+    "exploration_grid.py:constant_values=False",
+    "exploration_grid.py:math.sqrt(2)/2",
+    "exploration_coverage.py:stamp <= self.last_stamp",
+    "exploration_coverage.py:np.linalg.norm(observer-record[2])>=self.baseline",
+    "exploration_coverage.py:keys = self.keys(current_map)",
+    "exploration_coverage.py:grid.occupied",
+    "run_warehouse_exploration.py:default=4800.",
+    "run_warehouse_exploration.py:returned_home_and_saved",
+    "run_warehouse_exploration.py:SITL only: save then stop owned simulation processes; no physical landing claim",
+    "warehouse_exploration.launch:max_navigation_speed\" value=\"0.30",
+    "warehouse_exploration.launch:enable_path_planner\" value=\"false",
+    "warehouse_exploration.launch:enable_loop_closure\" value=\"false",
+    "warehouse_exploration.launch:evidence_only_clearing\" value=\"true",
+    "historical lifecycle and partial",
+    "PCD bytes match metadata",
+    "two original coverage reports"
+  ],
+  "source_hashes": {
+    "/home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/warehouse_explorer.py": "3effd02691d3597c3411c088ee28a983427a8eff630892c50730444d43ccbcac",
+    "/home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/exploration_grid.py": "45c973760461aa82d2646db03a398ea44a469014ef955e21e8843ec3db295b3c",
+    "/home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/exploration_coverage.py": "c4aa074c9ca891849aaefb37c68e7e26f854206ca8668b6c76e7e70d03f4faff",
+    "/home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/exploration_native.py": "4738ed8cc0a682ab65a9d60723dde8d3d4705eef5084bc8d0548ed4d70ff49d7",
+    "/home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/exploration_search.cpp": "f846cd8b1f8ad75836279beef49d6a2d00042483081f49160c8d09b150168007",
+    "/home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/run_warehouse_exploration.py": "b2cdd62bb935dd4df5737206161aaa2f0cd2f99476b9f48a555ddc86271b24ec",
+    "/home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/warehouse_map_audit.py": "b1eb2f49b927719956d48a84794ff1215103fd26ecec04bdfe233a2a00cf0739",
+    "/home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/warehouse_exploration.yaml": "e96664c39bbd8a62d09ae88103f5d09d4931625d9c45ff964a1bc451ab1a0a68",
+    "/home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/launch/warehouse_exploration.launch": "3618006f0dfd19c1ec7075319b397079dbee75c5181398a7d0b3958010f9c659",
+    "/home/a/AstraDroneOpen/exploration_demo_runs/warehouse_20261003_222021_result.json": "2fcf0abc8dccef8f79cd50b29746729f780163024dcc8381084c31ff5a441805",
+    "/home/a/AstraDroneOpen/exploration_demo_runs/warehouse_20261003_222021_coverage.json": "b19995aa155dd913641908fe3d076c4590160a385a4ca298734433799f574fb6",
+    "/home/a/AstraDroneOpen/exploration_demo_runs/warehouse_20261003_222021_freedom_coverage.json": "e2bbc910e6b6d82c48c213a490b1e0c3790834478465e713f3b123a1308fd84a",
+    "/home/a/AstraDroneOpen/exploration_demo_runs/warehouse_20261003_222021_final_map.json": "189dca99665d628f9ab577cb7c1439d39a59b9238514be0077e21e643c87edbd",
+    "/home/a/AstraDroneOpen/exploration_demo_runs/warehouse_20261003_222021_alignment.json": "a2d5e215cab76f6aee20897e79f98791d88bfb7721d895f62c72a18e2135a101",
+    "/home/a/AstraDroneOpen/exploration_demo_runs/warehouse_20261003_222021_freedom_alignment.json": "8b423ae6773eb505ba08c283dcf60030b8cad381f64d6fa628ca7e85bc792b6f",
+    "/home/a/AstraDroneOpen/exploration_demo_runs/warehouse_20261003_222021_scene.json": "0fdcd3308e3bf4d3e2e115a38a217bf8c9f1326e523f5eb55786ba49855256c0",
+    "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/黑箱探索补扫返航_图片版/证据原件/C02_rack_support.png": "7abc859ea4a82242d259018bfb7062f43214830ec7fc76a0a0d9970d2526d5de",
+    "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/黑箱探索补扫返航_图片版/证据原件/C03_rack_support_world.png": "43eb8bb47dd37b99db73f317b41d28135a09208bfc8d2ab8f4be476f8c671f66",
+    "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/黑箱探索补扫返航_图片版/证据原件/C04_true_map_comparison.png": "83d7cb0e3ad9a3bdaec1c542022a219e13d7dbc539942f43a725843cdcfe8852",
+    "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/独立回环后端_图片版/build_images.py": "12809e5997be7bf9e715c3ae1e1b21b09897889f70c12ecd99094dad425e40d2",
+    "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/独立回环后端_图片版/讲解与证据说明.md": "8c6e10726b9b3aa86b07308faabcfde5a617e4f6a7706b0c7a93b9a11252830c",
+    "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/独立回环后端_图片版/图像人工复核.md": "4374192b512a82ea9ad06351b6b8aea39921d5c6ea3a93cd7b8f6ddae158b23a",
+    "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/独立回环后端_图片版/独立核验.json": "6b87293514b4b4d28647dc1feb92adbb2f816f7f9e3ee960587a4e48ad30a166",
+    "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/独立回环后端_图片版/verify_images.py": "4b5b546f34dd745b74d1019c6ca2033f63fed2db3eef3c9970a0c0af93ec2c3b",
+    "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/独立回环后端_图片版/版面核验信息.json": "c0fbc113b03ea7aa4a0db9168a2f46853b613837ec29d1991a3cd2ca56f5092e",
+    "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/独立回环后端_图片版/源码与数据核验.json": "2804b4e454fd0928ba20303140f5840084e0f9700190998ed595278bc7ea5568",
+    "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/独立回环后端_图片版/00_四页总预览.png": "da7347c6480d4d8e491242b30620c652bc8f9929ca75245d77d09a7d44599934",
+    "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/独立回环后端_图片版/证据原件/loop_closure_20260923_182256_trajectory.png": "0b207ad40b1c263b9fe4fb4e2efeb0ce977ad0fa88f6027e7fbb6a245e097bfd",
+    "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/独立回环后端_图片版/证据原件/loop_closure_20260923_182256_report.txt": "bad95a487cd894f60ebcfdd1a26e8961e327c47df1d9b7689d39f4a6443a0794",
+    "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/独立回环后端_图片版/SVG/04_独立回环后端_历史真实结果.svg": "e1e3427483bdef202f16bde8ed2836d750358679e605afc4eed2a43bea987c6c",
+    "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/独立回环后端_图片版/SVG/02_独立回环后端_七步图文流程.svg": "7485cf58665b2cc8c7dc04be044148142ca1614b3d06ab117cc9be2475b141bd",
+    "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/独立回环后端_图片版/SVG/01_独立回环后端_分区架构.svg": "b7582a1d4cf378b1b645ad84d7eb2166290223c7ccd48a51cfbf1850ec55fba6",
+    "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/独立回环后端_图片版/SVG/03_独立回环后端_接纳与保护规则.svg": "de0b1cb80f8073efa535d5aac57d9e8697cbfd36c97154dcd6cdb6dae41e1d31",
+    "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/独立回环后端_图片版/PNG/02_独立回环后端_七步图文流程.png": "2c391e9d47e1e0e234811ef9fcd9491736591e74ef57c0376d7fde4c30b79a17",
+    "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/独立回环后端_图片版/PNG/03_独立回环后端_接纳与保护规则.png": "93c9e30267e81e3a7184982efb2f6d7435f1af9e217d603225fcbfd85686c230",
+    "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/独立回环后端_图片版/PNG/01_独立回环后端_分区架构.png": "dc1db949122963883be050650df6fde58ad50476163b0f67f17196bb806b771d",
+    "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/独立回环后端_图片版/PNG/04_独立回环后端_历史真实结果.png": "caea1738fdafd3dcc39038ea2ddf62b1359162f176df6dc88969dc180b304c86",
+    "/home/a/AstraDroneOpen/exploration_demo_runs/warehouse_20261003_222021_final_map.pcd": "9732f43cc49badb14d0ace3d28828e0759eb23255d1b5e1a05094b32953b3608",
+    "/home/a/AstraDroneOpen/exploration_demo_runs/warehouse_20261003_222021_freedom_static_map_point.pcd": "50c8b0e7798edd343a51584cd71ccb2f23a6c548dc04e1cb3d2ae9eebd587549"
+  },
+  "copies": [
+    {
+      "source": "/home/a/AstraDroneOpen/exploration_demo_runs/warehouse_20261003_222021_result.json",
+      "copy": "证据原件/warehouse_20261003_222021_result.json",
+      "sha256": "2fcf0abc8dccef8f79cd50b29746729f780163024dcc8381084c31ff5a441805"
+    },
+    {
+      "source": "/home/a/AstraDroneOpen/exploration_demo_runs/warehouse_20261003_222021_coverage.json",
+      "copy": "证据原件/warehouse_20261003_222021_coverage.json",
+      "sha256": "b19995aa155dd913641908fe3d076c4590160a385a4ca298734433799f574fb6"
+    },
+    {
+      "source": "/home/a/AstraDroneOpen/exploration_demo_runs/warehouse_20261003_222021_freedom_coverage.json",
+      "copy": "证据原件/warehouse_20261003_222021_freedom_coverage.json",
+      "sha256": "e2bbc910e6b6d82c48c213a490b1e0c3790834478465e713f3b123a1308fd84a"
+    },
+    {
+      "source": "/home/a/AstraDroneOpen/exploration_demo_runs/warehouse_20261003_222021_final_map.json",
+      "copy": "证据原件/warehouse_20261003_222021_final_map.json",
+      "sha256": "189dca99665d628f9ab577cb7c1439d39a59b9238514be0077e21e643c87edbd"
+    },
+    {
+      "source": "/home/a/AstraDroneOpen/exploration_demo_runs/warehouse_20261003_222021_alignment.json",
+      "copy": "证据原件/warehouse_20261003_222021_alignment.json",
+      "sha256": "a2d5e215cab76f6aee20897e79f98791d88bfb7721d895f62c72a18e2135a101"
+    },
+    {
+      "source": "/home/a/AstraDroneOpen/exploration_demo_runs/warehouse_20261003_222021_freedom_alignment.json",
+      "copy": "证据原件/warehouse_20261003_222021_freedom_alignment.json",
+      "sha256": "8b423ae6773eb505ba08c283dcf60030b8cad381f64d6fa628ca7e85bc792b6f"
+    },
+    {
+      "source": "/home/a/AstraDroneOpen/exploration_demo_runs/warehouse_20261003_222021_scene.json",
+      "copy": "证据原件/warehouse_20261003_222021_scene.json",
+      "sha256": "0fdcd3308e3bf4d3e2e115a38a217bf8c9f1326e523f5eb55786ba49855256c0"
+    },
+    {
+      "source": "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/黑箱探索补扫返航_图片版/证据原件/C02_rack_support.png",
+      "copy": "证据原件/C02_rack_support.png",
+      "sha256": "7abc859ea4a82242d259018bfb7062f43214830ec7fc76a0a0d9970d2526d5de"
+    },
+    {
+      "source": "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/黑箱探索补扫返航_图片版/证据原件/C03_rack_support_world.png",
+      "copy": "证据原件/C03_rack_support_world.png",
+      "sha256": "43eb8bb47dd37b99db73f317b41d28135a09208bfc8d2ab8f4be476f8c671f66"
+    },
+    {
+      "source": "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/黑箱探索补扫返航_图片版/证据原件/C04_true_map_comparison.png",
+      "copy": "证据原件/C04_true_map_comparison.png",
+      "sha256": "83d7cb0e3ad9a3bdaec1c542022a219e13d7dbc539942f43a725843cdcfe8852"
+    }
+  ],
+  "experiment": "/home/a/AstraDroneOpen/exploration_demo_runs/warehouse_20261003_222021",
+  "validation_scope": "materials and historical evidence, not a new ROS experiment"
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>p450_yolo_compare_tracking</name>
+  <version>0.1.0</version>
+  <description>P450 G1 gimbal YOLO detection, click tracking, benchmark logging and target-following controller.</description>
+  <maintainer email="user@example.com">p450 user</maintainer>
+  <license>Apache-2.0</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>cv_bridge</build_depend>
+  <build_depend>image_transport</build_depend>
+  <build_depend>prometheus_msgs</build_depend>
+  <build_depend>spirecv_msgs</build_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>cv_bridge</exec_depend>
+  <exec_depend>image_transport</exec_depend>
+  <exec_depend>prometheus_msgs</exec_depend>
+  <exec_depend>spirecv_msgs</exec_depend>
+  <export/>
+</package>

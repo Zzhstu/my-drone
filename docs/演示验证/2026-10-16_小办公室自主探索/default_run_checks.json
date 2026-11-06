@@ -1,0 +1,92 @@
+{
+  "default_run": "office_20261016_140145",
+  "exit_code": 0,
+  "result": {
+    "termination": "returned_home_and_saved",
+    "failed": false,
+    "task_success": true,
+    "map_saved": true,
+    "wall_elapsed_seconds": 741.6144341270119,
+    "mission": {
+      "state": "COMPLETE",
+      "stamp": 305.42,
+      "wall_seconds": 670.5561414370022,
+      "known_free_area_m2": 88.52000000000001,
+      "known_cells": 2289,
+      "map_points": 13374,
+      "goals_selected": 22,
+      "goals_reached": 20,
+      "stalled_goals": 1,
+      "travel_xy_m": 49.646601409142534,
+      "mission_phase": "COMPLETE",
+      "finish_reason": "inspection_budget_partial",
+      "home_map_xy": [
+        -0.013555390556863353,
+        0.022080327111368543
+      ],
+      "home_confirmed": true,
+      "home_error_xy_m": 0.0810785541117614,
+      "inspection_cells": 0,
+      "coverage_complete": false,
+      "exploration_complete": false,
+      "grid_capacity_limited": false,
+      "completion_scope": "observed reachable fixed-altitude space; NOT all 3D surfaces",
+      "raw_frontier_candidates": 103,
+      "useful_frontier_candidates": 0,
+      "remaining_inspection_candidates": 79,
+      "surface_quality": {
+        "observed_surface_voxels": 1040,
+        "qualified_surface_voxels": 979,
+        "observed_surface_quality_ratio": 0.9413461538461538,
+        "surface_evidence_capacity_limited": false
+      },
+      "progress": {
+        "window_ready": true,
+        "new_free_area_m2": 1.0400000000000003,
+        "new_surface_voxels": 10,
+        "observation_goals": 12,
+        "low_gain": false
+      },
+      "compute_ms": 24.27389199147001,
+      "compute_p95_ms": 40.52554764493834,
+      "search_backend": "native",
+      "mission_sim_seconds": 259.997,
+      "estimated_rtf": 0.41968702624597715,
+      "target_map_xy": [
+        -0.09999999999999964,
+        0.10000000000000142
+      ],
+      "frontier_candidates": 0,
+      "note": "Observed 2D area, not 3D completeness. No backend. Ghost removal needs reobservation."
+    },
+    "note": "SITL only; successful return/save is separate from exploration/3D completeness. No collision-contact or physical-aircraft landing claim."
+  },
+  "pcd_verification": {
+    "header_points": 13374,
+    "finite_xyz": true,
+    "binary_payload_bytes": 160488,
+    "sha256_matches": true,
+    "sha256": "4ac811b71ff6ac4ad2650cb1bca2a27d3211cd13c1aa87b7e54ad1d6e2be4e7a",
+    "source_topic": "/uav1/fastlio/cloud_map"
+  },
+  "history_phases": [
+    "COMPLETE",
+    "EXPLORING",
+    "INSPECTING",
+    "RETURNING"
+  ],
+  "yaw_offset_degrees": {
+    "min": -90.3875831039233,
+    "max": -0.0019181071447463346
+  },
+  "status_samples": 1341,
+  "process_cleanup": "After runner exit, no gzserver, px4, rosmaster or fastlio_mapping process found. Gazebo GUI needed roslaunch SIGTERM escalation; no segmentation fault found.",
+  "limits": [
+    "Fixed altitude planar exploration",
+    "Partial: inspection_budget_partial; exploration_complete=false; coverage_complete=false",
+    "One stalled goal; 20 reached of 22 selected",
+    "No people or dynamic filtering evaluation",
+    "No collision-contact truth, flight fault injection or physical flight validation",
+    "MAVROS time-sync reset messages occurred during slow SITL; no flight process exited early"
+  ]
+}

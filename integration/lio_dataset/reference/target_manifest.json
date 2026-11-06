@@ -1,0 +1,63 @@
+{
+  "scene": "warehouse20",
+  "required_fraction": 1.0,
+  "step_m": 0.2,
+  "distance_tolerance_m": 0.2,
+  "raw_surface_samples": 5837,
+  "required_samples": 4407,
+  "unobservable_samples": 1430,
+  "capability_body_positions": 1360,
+  "capability_yaw": "16 yaw directions per station; actual camera extrinsics and intrinsics",
+  "sample_policy": "One actual triangle sample per 20cm voxel, normal and component, nearest voxel centre; selected before visibility",
+  "camera_K": [
+    [
+      462.26636,
+      0.0,
+      320.0
+    ],
+    [
+      0.0,
+      462.26636,
+      240.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "body_from_camera": [
+    [
+      -0.0007994951156568153,
+      0.0015907467222610295,
+      0.999998415164957,
+      0.12002588061809882
+    ],
+    [
+      -0.9999968267959636,
+      -0.0023902453717674498,
+      -0.0007956915647450238,
+      0.03249998969528463
+    ],
+    [
+      0.002388975839874275,
+      -0.9999958781174692,
+      0.0015926526639970591,
+      0.03
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "minimum_views": 2,
+  "minimum_baseline_m": 0.4,
+  "scope": "All predetermined externally observable structural and real rack triangle samples; excludes buried/occluded interiors and surfaces not visible from the declared safe camera capability lattice",
+  "eligibility_frozen_before_capture": true,
+  "selected_flight_route_used_for_eligibility": false,
+  "world_sha256": "a07f04fddc479545b488b5ad8d252f20bc101db6ffa5fcfdd052b1ff3f28befc",
+  "mesh_sha256": "62dbfdeb3ba405ce74b0ab282f5b437809eac9c1e77d63637997a156231ecf95",
+  "reference_sha256": "fa56cfe7edd93370012d1e15e8f8e53858d69d134b288474b2a5c08bba062d67"
+}

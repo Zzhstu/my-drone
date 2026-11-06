@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect x="0" y="0" width="1600" height="900" fill="#FFFFFF" stroke="none" stroke-width="1.6"/>
+<text x="60" y="80.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="46" font-weight="700" fill="#15334C" text-anchor="start">保护货架、薄结构与真实表面</text>
+<text x="63" y="125.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#657585" text-anchor="start">不因为旁边有人被误判运动，就把一整段货架擦掉。</text>
+<polyline points="60,151 1540,151" fill="none" stroke="#D5E0E6" stroke-width="1.2"/>
+<rect x="60" y="784" width="1480" height="62" fill="#EFF5F8" stroke="none" stroke-width="1.6"/>
+<text x="78" y="823.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="700" fill="#137B7E" text-anchor="start">核心规则</text>
+<text x="210" y="822.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">先保护当前返回，再要求真实射线矛盾，稳定格使用更高删除门限。</text>
+<text x="60" y="878.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="17" font-weight="400" fill="#657585" text-anchor="start">现有源码规则 · 所有点云与场景小图为示意 · 非新增实验结果</text>
+<text x="1400" y="879.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="18" font-weight="400" fill="#657585" text-anchor="start">11 / 16</text>
+<rect x="60.0" y="214" width="341.5" height="425" fill="#F0F0FF" stroke="#B3BFEA" stroke-width="1.6"/>
+<text x="76.0" y="258.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="28" font-weight="700" fill="#15334C" text-anchor="start">1 轨迹不授权擦除</text>
+<text x="78.0" y="300.64" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">探索不沿目标圆柱直接删除</text>
+<text x="78.0" y="333.76" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">货架。</text>
+<polyline points="404.5,426.5 436.5,426.5" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="436.50,426.50 426.50,431.30 426.50,421.70" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<rect x="439.5" y="214" width="341.5" height="425" fill="#FFF3E7" stroke="#E6B988" stroke-width="1.6"/>
+<text x="455.5" y="258.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="28" font-weight="700" fill="#15334C" text-anchor="start">2 当前表面优先</text>
+<text x="457.5" y="300.64" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">旧格周围27个邻格有回波就</text>
+<text x="457.5" y="333.76" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">保护。</text>
+<polyline points="784.0,426.5 816.0,426.5" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="816.00,426.50 806.00,431.30 806.00,421.70" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<rect x="819.0" y="214" width="341.5" height="425" fill="#EEF8F1" stroke="#A6CCB7" stroke-width="1.6"/>
+<text x="835.0" y="258.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="28" font-weight="700" fill="#15334C" text-anchor="start">3 射线确实矛盾</text>
+<text x="837.0" y="300.64" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">旧代表点距离射线不超过6厘</text>
+<text x="837.0" y="333.76" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">米。</text>
+<polyline points="1163.5,426.5 1195.5,426.5" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="1195.50,426.50 1185.50,431.30 1185.50,421.70" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<rect x="1198.5" y="214" width="341.5" height="425" fill="#FFF0F5" stroke="#DCB0C3" stroke-width="1.6"/>
+<text x="1214.5" y="258.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="28" font-weight="700" fill="#15334C" text-anchor="start">4 稳定格更谨慎</text>
+<text x="1216.5" y="300.64" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">最近命中有等待；稳定格需6</text>
+<text x="1216.5" y="333.76" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#15334C" text-anchor="start">次证据。</text>
+<circle cx="93.0" cy="576.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="93.0" cy="590.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="93.0" cy="604.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="93.0" cy="619.2" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="116.07692307692308" cy="576.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="116.07692307692308" cy="590.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="116.07692307692308" cy="604.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="116.07692307692308" cy="619.2" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="139.15384615384616" cy="576.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="139.15384615384616" cy="590.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="139.15384615384616" cy="604.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="139.15384615384616" cy="619.2" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="162.23076923076923" cy="576.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="162.23076923076923" cy="590.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="162.23076923076923" cy="604.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="162.23076923076923" cy="619.2" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="185.30769230769232" cy="576.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="185.30769230769232" cy="590.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="185.30769230769232" cy="604.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="185.30769230769232" cy="619.2" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="208.3846153846154" cy="576.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="208.3846153846154" cy="590.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="208.3846153846154" cy="604.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="208.3846153846154" cy="619.2" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="231.46153846153845" cy="576.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="231.46153846153845" cy="590.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="231.46153846153845" cy="604.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="231.46153846153845" cy="619.2" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="254.53846153846155" cy="576.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="254.53846153846155" cy="590.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="254.53846153846155" cy="604.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="254.53846153846155" cy="619.2" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="277.61538461538464" cy="576.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="277.61538461538464" cy="590.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="277.61538461538464" cy="604.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="277.61538461538464" cy="619.2" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="300.6923076923077" cy="576.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="300.6923076923077" cy="590.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="300.6923076923077" cy="604.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="300.6923076923077" cy="619.2" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="323.7692307692308" cy="576.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="323.7692307692308" cy="590.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="323.7692307692308" cy="604.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="323.7692307692308" cy="619.2" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="346.8461538461538" cy="576.0" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="346.8461538461538" cy="590.4" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="346.8461538461538" cy="604.8" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="346.8461538461538" cy="619.2" r="2.7" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="217.0" cy="578" r="3.1" fill="#B94343" stroke="none" stroke-width="1.6"/>
+<circle cx="217.0" cy="590" r="3.1" fill="#B94343" stroke="none" stroke-width="1.6"/>
+<circle cx="217.0" cy="602" r="3.1" fill="#B94343" stroke="none" stroke-width="1.6"/>
+<circle cx="217.0" cy="614" r="3.1" fill="#B94343" stroke="none" stroke-width="1.6"/>
+<circle cx="226.0" cy="578" r="3.1" fill="#B94343" stroke="none" stroke-width="1.6"/>
+<circle cx="226.0" cy="590" r="3.1" fill="#B94343" stroke="none" stroke-width="1.6"/>
+<circle cx="226.0" cy="602" r="3.1" fill="#B94343" stroke="none" stroke-width="1.6"/>
+<circle cx="226.0" cy="614" r="3.1" fill="#B94343" stroke="none" stroke-width="1.6"/>
+<circle cx="235.0" cy="578" r="3.1" fill="#B94343" stroke="none" stroke-width="1.6"/>
+<circle cx="235.0" cy="590" r="3.1" fill="#B94343" stroke="none" stroke-width="1.6"/>
+<circle cx="235.0" cy="602" r="3.1" fill="#B94343" stroke="none" stroke-width="1.6"/>
+<circle cx="235.0" cy="614" r="3.1" fill="#B94343" stroke="none" stroke-width="1.6"/>
+<circle cx="244.0" cy="578" r="3.1" fill="#B94343" stroke="none" stroke-width="1.6"/>
+<circle cx="244.0" cy="590" r="3.1" fill="#B94343" stroke="none" stroke-width="1.6"/>
+<circle cx="244.0" cy="602" r="3.1" fill="#B94343" stroke="none" stroke-width="1.6"/>
+<circle cx="244.0" cy="614" r="3.1" fill="#B94343" stroke="none" stroke-width="1.6"/>
+<rect x="577.0" y="569" width="70" height="68" fill="#E3F0E7" stroke="#137B7E" stroke-width="1.6" stroke-dasharray="7 6"/>
+<circle cx="589.0" cy="581" r="3" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<circle cx="589.0" cy="603" r="3" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<circle cx="589.0" cy="625" r="3" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<circle cx="611.0" cy="581" r="3" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<circle cx="611.0" cy="603" r="3" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<circle cx="611.0" cy="625" r="3" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<circle cx="633.0" cy="581" r="3" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<circle cx="633.0" cy="603" r="3" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<circle cx="633.0" cy="625" r="3" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<circle cx="851" cy="605.0" r="8" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<polyline points="865,605.0 1126,584" fill="none" stroke="#137B7E" stroke-width="1.8"/>
+<polygon points="1126.00,584.00 1116.42,589.59 1115.65,580.02" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<polyline points="865,605.0 1126,607" fill="none" stroke="#137B7E" stroke-width="1.8"/>
+<polygon points="1126.00,607.00 1115.96,611.72 1116.04,602.12" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<polyline points="865,605.0 1126,630" fill="none" stroke="#137B7E" stroke-width="1.8"/>
+<polygon points="1126.00,630.00 1115.59,633.82 1116.50,624.27" fill="#137B7E" stroke="none" stroke-width="1.6"/>
+<circle cx="1132" cy="584" r="4" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<circle cx="1132" cy="607" r="4" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<circle cx="1132" cy="630" r="4" fill="#24618A" stroke="none" stroke-width="1.6"/>
+<rect x="1227.0" y="591" width="41.0" height="28" fill="#EEF8F1" stroke="#137B7E" stroke-width="1.6"/>
+<rect x="1277.0" y="591" width="41.0" height="28" fill="#EEF8F1" stroke="#137B7E" stroke-width="1.6"/>
+<rect x="1327.0" y="591" width="41.0" height="28" fill="#EEF8F1" stroke="#137B7E" stroke-width="1.6"/>
+<rect x="1377.0" y="591" width="41.0" height="28" fill="#EEF8F1" stroke="#137B7E" stroke-width="1.6"/>
+<rect x="1427.0" y="591" width="41.0" height="28" fill="#EEF8F1" stroke="#137B7E" stroke-width="1.6"/>
+<rect x="1477.0" y="591" width="41.0" height="28" fill="#EEF8F1" stroke="#137B7E" stroke-width="1.6"/>
+<text x="73" y="724.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#657585" text-anchor="start">这些是降低误删风险的工程规则，不是“所有静态表面永远不缺点”的保证。</text>
+</svg>

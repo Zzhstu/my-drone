@@ -1,0 +1,76 @@
+{
+  "phases": {
+    "approach_x": {
+      "messages": 38,
+      "detected": 0,
+      "observed": 0,
+      "age_p95_s": 0.02515,
+      "center_error_median": null
+    },
+    "approach_y": {
+      "messages": 120,
+      "detected": 23,
+      "observed": 19,
+      "age_p95_s": 0.026,
+      "center_error_median": 0.053382409925091544
+    },
+    "cross_first": {
+      "messages": 62,
+      "detected": 50,
+      "observed": 50,
+      "age_p95_s": 0.026949999999999995,
+      "center_error_median": 0.08051658749940833
+    },
+    "cross_repeat": {
+      "messages": 76,
+      "detected": 46,
+      "observed": 42,
+      "age_p95_s": 0.026,
+      "center_error_median": 0.14226784847784524
+    },
+    "final_observation": {
+      "messages": 39,
+      "detected": 6,
+      "observed": 6,
+      "age_p95_s": 0.027,
+      "center_error_median": 0.19971585502850142
+    },
+    "leave": {
+      "messages": 41,
+      "detected": 8,
+      "observed": 8,
+      "age_p95_s": 0.025,
+      "center_error_median": 0.15937187936287298
+    },
+    "pause": {
+      "messages": 37,
+      "detected": 6,
+      "observed": 6,
+      "age_p95_s": 0.029199999999999997,
+      "center_error_median": 0.1186529810324464
+    },
+    "pause_before_repeat": {
+      "messages": 38,
+      "detected": 0,
+      "observed": 0,
+      "age_p95_s": 0.02615,
+      "center_error_median": null
+    },
+    "waiting": {
+      "messages": 7,
+      "detected": 0,
+      "observed": 0,
+      "age_p95_s": 0.0278,
+      "center_error_median": null
+    }
+  },
+  "deadman_drift_m": 5.468763746286294e-07,
+  "other_actor_drift_m": 1.7688496221791848e-07,
+  "exported_map": "/home/a/AstraDroneOpen/dynamic_demo_runs/ours_20260924_144552_final_map.pcd",
+  "export_equals_topic": true,
+  "tested_snapshot": "dynamic_demo_runs/ours_20260924_144552_manual_test_map.pcd",
+  "export_stamp": 285.316,
+  "export_sha256": "495b24fe2973d71b4b5e3c79afcc4684e51f2d04b4be65031b248b843a8220bf",
+  "vacated_pause_roi_points": 0,
+  "points": 190305
+}

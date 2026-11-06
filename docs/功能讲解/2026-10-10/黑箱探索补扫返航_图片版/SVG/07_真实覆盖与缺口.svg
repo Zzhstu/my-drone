@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+<rect x="0" y="0" width="1920" height="1080" fill="white" stroke="none" stroke-width="1.5"/>
+<text x="65" y="93.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="47" font-weight="700" fill="#15334C" text-anchor="start">真实实验：整体看起来完整，局部货架仍有缺口</text>
+<text x="68" y="147.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="25" font-weight="400" fill="#657585" text-anchor="start">下图依据原审计JSON的货架位置与比例绘制，不是示意布局；红、橙、浅绿表示不足90%</text>
+<polyline points="65.00,181.00 1855.00,181.00" fill="none" stroke="#DCE5EB" stroke-width="1"/>
+<text x="65" y="1048.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="21" font-weight="700" fill="#137B7E" text-anchor="start">真实结果｜两幅地图都没有通过“总体至少95%、每架至少90%”的联合侧面验收。</text>
+<text x="1764" y="1050.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="20" font-weight="400" fill="#657585" text-anchor="start">07 / 07</text>
+<text x="505.0" y="241.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="26" font-weight="700" fill="#15334C" text-anchor="middle">我们的维护地图：右侧货架存在缺口</text>
+<rect x="90" y="277" width="830" height="201" fill="#FBFCFD" stroke="#B8CCD7" stroke-width="1.5"/>
+<rect x="141.60010389370944" y="411.2529958431255" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="151.0986892977413" y="377.20690276295034" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="151.72774313354313" y="338.3554331287517" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="152.5739576030966" y="296.340605719792" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="207.18416097500796" y="295.63353235011135" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="261.7139081121195" y="295.3246243356955" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="310.561878667795" y="294.5230157997941" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="366.75023464531444" y="295.3680887799349" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="421.29582382865874" y="296.18002012134315" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="486.58997438011113" y="297.23403289414915" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="545.5419664228993" y="296.641441765992" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="604.970999857863" y="298.31847077792276" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="660.8275628670933" y="297.2777301836256" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="727.6898979950636" y="295.7239539171452" width="18" height="32" fill="#D49B45" stroke="white" stroke-width="1"/>
+<text x="746.6898979950636" y="310.7239539171452" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="16" font-weight="400" fill="#15334C" text-anchor="start">14</text>
+<rect x="788.3880751338382" y="295.92055291224955" width="18" height="32" fill="#B7CC68" stroke="white" stroke-width="1"/>
+<text x="807.3880751338382" y="310.92055291224955" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="16" font-weight="400" fill="#15334C" text-anchor="start">15</text>
+<rect x="846.6476451558937" y="296.0661588004516" width="18" height="32" fill="#D49B45" stroke="white" stroke-width="1"/>
+<text x="865.6476451558937" y="311.0661588004516" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="16" font-weight="400" fill="#15334C" text-anchor="start">16</text>
+<rect x="203.3232051073715" y="340.4594226902558" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="255.91376118523687" y="340.4885283448804" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="305.23343311750403" y="340.5777856857292" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="365.25503028177866" y="341.6007524269356" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="421.15342341308383" y="343.04221967410456" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="488.2952193566198" y="340.3445523733373" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="542.4287373373944" y="339.63189071796876" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="599.0079824556669" y="338.89167570955556" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="658.0400747322157" y="338.484739850364" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="721.0825187123912" y="342.35408438369967" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="780.8159330356461" y="343.37363606143015" width="18" height="32" fill="#D49B45" stroke="white" stroke-width="1"/>
+<text x="799.8159330356461" y="358.37363606143015" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="16" font-weight="400" fill="#15334C" text-anchor="start">27</text>
+<rect x="850.3998961062905" y="342.8171359450075" width="18" height="32" fill="#CB5263" stroke="white" stroke-width="1"/>
+<text x="869.3998961062905" y="357.8171359450075" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="16" font-weight="400" fill="#15334C" text-anchor="start">28</text>
+<rect x="199.38150820410416" y="377.91110437470803" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="255.9943954205561" y="379.1024182222632" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="304.02925960329935" y="378.5526706177135" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="361.062584046736" y="379.0894565040704" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="420.6781620261029" y="380.6429223102348" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="486.18057318533357" y="381.84820687200977" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="545.4654261995279" y="382.6565679197841" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="600.727467473733" y="382.4196090836002" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="656.8314512050245" y="381.64307021821554" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="725.3278311017159" y="374.6581011837032" width="18" height="32" fill="#B7CC68" stroke="white" stroke-width="1"/>
+<text x="744.3278311017159" y="389.6581011837032" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="16" font-weight="400" fill="#15334C" text-anchor="start">38</text>
+<rect x="789.7818192012769" y="383.5815068162148" width="18" height="32" fill="#D49B45" stroke="white" stroke-width="1"/>
+<text x="808.7818192012769" y="398.5815068162148" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="16" font-weight="400" fill="#15334C" text-anchor="start">39</text>
+<rect x="849.9281947296989" y="382.4196090836002" width="18" height="32" fill="#D49B45" stroke="white" stroke-width="1"/>
+<text x="868.9281947296989" y="397.4196090836002" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="16" font-weight="400" fill="#15334C" text-anchor="start">40</text>
+<rect x="202.56116708347471" y="415.9518845087624" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="256.855205932706" y="414.7735323794001" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="298.12658437720285" y="413.46564068318844" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="349.0861750953337" y="412.9529930864002" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="404.92689605833107" y="413.46564068318844" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="485.62165155420223" y="415.16447953231784" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="550.4156206459481" y="418.0625489670605" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="599.5971641751078" y="418.8003579080247" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="650.5996530184304" y="418.87991336399864" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="714.3256189933651" y="420.37066618633185" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="775.4794774619792" y="422.47698420020595" width="18" height="32" fill="#B7CC68" stroke="white" stroke-width="1"/>
+<text x="794.4794774619792" y="437.47698420020595" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="16" font-weight="400" fill="#15334C" text-anchor="start">51</text>
+<rect x="839.8159852186908" y="419.46357875807087" width="18" height="32" fill="#D49B45" stroke="white" stroke-width="1"/>
+<text x="858.8159852186908" y="434.46357875807087" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="16" font-weight="400" fill="#15334C" text-anchor="start">52</text>
+<text x="90" y="507.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="19" font-weight="400" fill="#657585" text-anchor="start">真实货架中心位置；数字是未达标货架编号</text>
+<text x="1415.0" y="241.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="26" font-weight="700" fill="#15334C" text-anchor="middle">FreeDOM并行地图：缺口较少但仍存在</text>
+<rect x="1000" y="277" width="830" height="201" fill="#FBFCFD" stroke="#B8CCD7" stroke-width="1.5"/>
+<rect x="1051.6001038937095" y="411.2529958431255" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1061.0986892977412" y="377.20690276295034" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1061.727743133543" y="338.3554331287517" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1062.5739576030967" y="296.340605719792" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1117.184160975008" y="295.63353235011135" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1171.7139081121195" y="295.3246243356955" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1220.561878667795" y="294.5230157997941" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1276.7502346453143" y="295.3680887799349" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1331.2958238286587" y="296.18002012134315" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1396.589974380111" y="297.23403289414915" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1455.5419664228993" y="296.641441765992" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1514.970999857863" y="298.31847077792276" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1570.8275628670933" y="297.2777301836256" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1637.6898979950636" y="295.7239539171452" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1698.3880751338384" y="295.92055291224955" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1756.6476451558938" y="296.0661588004516" width="18" height="32" fill="#B7CC68" stroke="white" stroke-width="1"/>
+<text x="1775.6476451558938" y="311.0661588004516" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="16" font-weight="400" fill="#15334C" text-anchor="start">16</text>
+<rect x="1113.3232051073715" y="340.4594226902558" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1165.9137611852368" y="340.4885283448804" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1215.233433117504" y="340.5777856857292" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1275.2550302817785" y="341.6007524269356" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1331.1534234130838" y="343.04221967410456" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1398.2952193566198" y="340.3445523733373" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1452.4287373373945" y="339.63189071796876" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1509.007982455667" y="338.89167570955556" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1568.0400747322155" y="338.484739850364" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1631.0825187123912" y="342.35408438369967" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1690.8159330356461" y="343.37363606143015" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1760.3998961062905" y="342.8171359450075" width="18" height="32" fill="#B7CC68" stroke="white" stroke-width="1"/>
+<text x="1779.3998961062905" y="357.8171359450075" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="16" font-weight="400" fill="#15334C" text-anchor="start">28</text>
+<rect x="1109.3815082041042" y="377.91110437470803" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1165.9943954205562" y="379.1024182222632" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1214.0292596032994" y="378.5526706177135" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1271.062584046736" y="379.0894565040704" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1330.6781620261029" y="380.6429223102348" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1396.1805731853335" y="381.84820687200977" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1455.4654261995279" y="382.6565679197841" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1510.727467473733" y="382.4196090836002" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1566.8314512050245" y="381.64307021821554" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1635.327831101716" y="374.6581011837032" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1699.781819201277" y="383.5815068162148" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1759.928194729699" y="382.4196090836002" width="18" height="32" fill="#B7CC68" stroke="white" stroke-width="1"/>
+<text x="1778.928194729699" y="397.4196090836002" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="16" font-weight="400" fill="#15334C" text-anchor="start">40</text>
+<rect x="1112.5611670834746" y="415.9518845087624" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1166.855205932706" y="414.7735323794001" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1208.1265843772028" y="413.46564068318844" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1259.0861750953336" y="412.9529930864002" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1314.926896058331" y="413.46564068318844" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1395.6216515542023" y="415.16447953231784" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1460.4156206459481" y="418.0625489670605" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1509.5971641751078" y="418.8003579080247" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1560.5996530184304" y="418.87991336399864" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1624.325618993365" y="420.37066618633185" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1685.479477461979" y="422.47698420020595" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<rect x="1749.815985218691" y="419.46357875807087" width="18" height="32" fill="#137B7E" stroke="white" stroke-width="1"/>
+<text x="1000" y="507.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="19" font-weight="400" fill="#657585" text-anchor="start">真实货架中心位置；数字是未达标货架编号</text>
+<rect x="90" y="551" width="635" height="53" fill="#E9F2F7" stroke="#D3E0E8" stroke-width="1"/>
+<text x="110" y="587.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="700" fill="#15334C" text-anchor="start">同口径指标</text>
+<rect x="725" y="551" width="562" height="53" fill="#E9F2F7" stroke="#D3E0E8" stroke-width="1"/>
+<text x="745" y="587.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="700" fill="#15334C" text-anchor="start">我们的维护地图</text>
+<rect x="1287" y="551" width="543" height="53" fill="#E9F2F7" stroke="#D3E0E8" stroke-width="1"/>
+<text x="1307" y="587.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="700" fill="#15334C" text-anchor="start">FreeDOM并行地图</text>
+<rect x="90" y="604" width="635" height="53" fill="#F6FAFC" stroke="#D3E0E8" stroke-width="1"/>
+<text x="110" y="640.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="400" fill="#15334C" text-anchor="start">参考侧面支持率</text>
+<rect x="725" y="604" width="562" height="53" fill="#F6FAFC" stroke="#D3E0E8" stroke-width="1"/>
+<text x="745" y="640.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="700" fill="#137B7E" text-anchor="start">90.92%</text>
+<rect x="1287" y="604" width="543" height="53" fill="#F6FAFC" stroke="#D3E0E8" stroke-width="1"/>
+<text x="1307" y="640.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="700" fill="#137B7E" text-anchor="start">99.01%</text>
+<rect x="90" y="657" width="635" height="53" fill="white" stroke="#D3E0E8" stroke-width="1"/>
+<text x="110" y="693.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="400" fill="#15334C" text-anchor="start">最差货架支持率</text>
+<rect x="725" y="657" width="562" height="53" fill="white" stroke="#D3E0E8" stroke-width="1"/>
+<text x="745" y="693.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="700" fill="#137B7E" text-anchor="start">29.59%</text>
+<rect x="1287" y="657" width="543" height="53" fill="white" stroke="#D3E0E8" stroke-width="1"/>
+<text x="1307" y="693.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="700" fill="#137B7E" text-anchor="start">85.71%</text>
+<rect x="90" y="710" width="635" height="53" fill="#F6FAFC" stroke="#D3E0E8" stroke-width="1"/>
+<text x="110" y="746.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="400" fill="#15334C" text-anchor="start">低于90%的货架</text>
+<rect x="725" y="710" width="562" height="53" fill="#F6FAFC" stroke="#D3E0E8" stroke-width="1"/>
+<text x="745" y="746.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="700" fill="#137B7E" text-anchor="start">10 / 52</text>
+<rect x="1287" y="710" width="543" height="53" fill="#F6FAFC" stroke="#D3E0E8" stroke-width="1"/>
+<text x="1307" y="746.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="700" fill="#137B7E" text-anchor="start">3 / 52</text>
+<rect x="90" y="763" width="635" height="53" fill="white" stroke="#D3E0E8" stroke-width="1"/>
+<text x="110" y="799.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="400" fill="#CB5263" text-anchor="start">联合验收结果</text>
+<rect x="725" y="763" width="562" height="53" fill="white" stroke="#D3E0E8" stroke-width="1"/>
+<text x="745" y="799.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="700" fill="#CB5263" text-anchor="start">未通过</text>
+<rect x="1287" y="763" width="543" height="53" fill="white" stroke="#D3E0E8" stroke-width="1"/>
+<text x="1307" y="799.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="700" fill="#CB5263" text-anchor="start">未通过</text>
+<rect x="90" y="853" width="831" height="137" fill="#FFF3E5" stroke="#E9C291" stroke-width="2"/>
+<text x="110" y="895.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="27" font-weight="700" fill="#15334C" text-anchor="start">在线“已看质量”与离线“参考覆盖”不同</text>
+<text x="110" y="934.18" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="21" font-weight="400" fill="#15334C" text-anchor="start">在线质量92.65%只对当前已看表面计数，不能发现从未看到的整面。</text>
+<rect x="1000" y="853" width="830" height="137" fill="#FFF0F5" stroke="#DFB3C9" stroke-width="2"/>
+<text x="1020" y="895.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="27" font-weight="700" fill="#15334C" text-anchor="start">我们仍需改进：视角覆盖与静态保留</text>
+<text x="1020" y="934.18" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="21" font-weight="400" fill="#15334C" text-anchor="start">这是一航次的代理几何指标；不能由缺口直接认定全部是误删，</text>
+<text x="1020" y="962.3199999999999" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="21" font-weight="400" fill="#15334C" text-anchor="start">也不能由此判断人体去除精度。FreeDOM不参与本次飞行控制。</text>
+<text x="92" y="845.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="21" font-weight="400" fill="#657585" text-anchor="start">评估：52个货架暴露侧面，参考高度0.25—1.90米，采样0.30米，匹配容差0.25米。</text>
+</svg>

@@ -1,0 +1,208 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+<rect x="0" y="0" width="1920" height="1080" fill="white" stroke="none" stroke-width="1.5"/>
+<text x="65" y="93.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="47" font-weight="700" fill="#15334C" text-anchor="start">静态支持与连续运动确认</text>
+<text x="68" y="147.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="25" font-weight="400" fill="#657585" text-anchor="start">不只看中心有没有跳动：先排除稳定结构，再检查一段历史是否像连续运动。</text>
+<polyline points="65.00,181.00 1855.00,181.00" fill="none" stroke="#DCE5EB" stroke-width="1"/>
+<text x="65" y="1048.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="21" font-weight="700" fill="#137B7E" text-anchor="start">规则边界｜慢速、急转、遮挡、背景混合或静态支持过强，都可能造成漏检。</text>
+<text x="1764" y="1050.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="20" font-weight="400" fill="#657585" text-anchor="start">04 / 07</text>
+<rect x="70" y="238" width="640" height="345" fill="#EDF8F0" stroke="#A6D2BD" stroke-width="2"/>
+<text x="90" y="280.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="27" font-weight="700" fill="#15334C" text-anchor="start">第一道：稳定静态地图否决</text>
+<text x="90" y="321.18" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="400" fill="#15334C" text-anchor="start">稳定地图至少30点才启用；簇内至少60%的点在0.35米内有</text>
+<text x="90" y="352.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="400" fill="#15334C" text-anchor="start">背景支持，则本次运动判断不通过。</text>
+<circle cx="135.9329419696158" cy="423.1677063269057" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="155.31859485365138" cy="422.69271275827276" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="173.03224001611974" cy="425.92034057330073" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="190.48639500938415" cy="423.70899993238277" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="229.94116900360214" cy="425.687707917465" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="251.06397319743758" cy="424.27347443641565" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="270.97871649324674" cy="422.08468103935326" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="289.0742369704835" cy="425.32063341648814" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="116.6829419696158" cy="434.9163188974506" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="136.06859485365138" cy="434.9163188974506" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="153.78224001611974" cy="431.8557292925134" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="190.08215145067373" cy="435.3435187944009" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="210.69116900360214" cy="432.01345376194496" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="231.81397319743758" cy="433.84456568169037" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="251.72871649324676" cy="435.6506078486147" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="287.1619577782213" cy="433.2853876096111" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="305.5000195868986" cy="435.8131235220876" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="116.81859485365136" cy="442.8391348983343" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="151.98639500938415" cy="442.8391348983343" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="170.83215145067373" cy="442.36414132970134" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="191.44116900360214" cy="445.5917691447293" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="212.56397319743758" cy="443.38042850381134" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="250.57423697048353" cy="445.35913648889357" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="267.9119577782213" cy="443.94490300784423" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="286.2500195868986" cy="441.75610961078183" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="306.4268541639991" cy="444.9920619879167" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="115.28224001611973" cy="451.52715786394197" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="132.73639500938415" cy="454.5877474688792" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="151.58215145067373" cy="454.5877474688792" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="172.19116900360214" cy="451.52715786394197" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="213.22871649324676" cy="455.01494736582947" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="231.32423697048353" cy="451.68488233337354" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="248.66195777822125" cy="453.51599425311895" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="267.0000195868986" cy="455.3220364200433" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="308.3403340736533" cy="452.9568161810397" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="113.48639500938414" cy="462.0355699011299" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="132.33215145067373" cy="462.5105634697629" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="174.06397319743758" cy="462.5105634697629" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="193.97871649324676" cy="462.0355699011299" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="212.07423697048353" cy="465.2631977161579" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="229.41195777822125" cy="463.0518570752399" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="267.9268541639991" cy="465.03056506032215" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="289.0903340736533" cy="463.6163315792728" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="309.4812147113897" cy="461.4275381822104" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="133.69116900360214" cy="471.19858643537054" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="154.81397319743758" cy="474.25917604030775" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="174.72871649324676" cy="474.25917604030775" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="192.82423697048353" cy="471.19858643537054" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="228.5000195868986" cy="474.68637593725805" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="248.67685416399914" cy="471.3563109048021" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="269.8403340736533" cy="473.1874228245475" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="290.2312147113897" cy="474.99346499147185" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="114.44116900360214" cy="484.93462628758647" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="135.56397319743758" cy="481.7069984725585" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="155.47871649324676" cy="482.18199204119145" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="190.91195777822125" cy="482.18199204119145" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="209.2500195868986" cy="481.7069984725585" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="229.42685416399914" cy="484.93462628758647" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="250.59033407365328" cy="482.7232856466685" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="289.55057568031424" cy="484.7019936317507" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="306.9241933666699" cy="483.2877601507014" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="116.31397319743758" cy="494.3578045086866" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="154.32423697048353" cy="490.8700150067991" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="171.66195777822125" cy="493.9306046117363" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="190.0000195868986" cy="493.9306046117363" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="210.17685416399914" cy="490.8700150067991" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="251.73121471138975" cy="494.3578045086866" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="270.30057568031424" cy="491.0277394762307" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="287.6741933666699" cy="492.8588513959761" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="305.5772050162409" cy="494.66489356290043" r="2.8" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="438.8329419696158" cy="423.1677063269057" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="457.11859485365136" cy="422.69271275827276" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="473.7322400161197" cy="425.92034057330073" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="490.08639500938415" cy="423.70899993238277" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="527.3411690036021" cy="425.687707917465" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="547.3639731974375" cy="424.27347443641565" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="566.1787164932468" cy="422.08468103935326" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="583.1742369704835" cy="425.32063341648814" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="420.6829419696158" cy="434.9163188974506" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="438.9685948536513" cy="434.9163188974506" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="455.5822400161197" cy="431.8557292925134" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="489.68215145067376" cy="435.3435187944009" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="509.19116900360217" cy="432.01345376194496" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="529.2139731974376" cy="433.84456568169037" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="548.0287164932467" cy="435.6506078486147" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="581.2619577782212" cy="433.2853876096111" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="598.5000195868986" cy="435.8131235220876" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="420.81859485365135" cy="442.8391348983343" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="453.78639500938414" cy="442.8391348983343" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="471.5321514506737" cy="442.36414132970134" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="491.0411690036022" cy="445.5917691447293" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="511.0639731974376" cy="443.38042850381134" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="546.8742369704835" cy="445.35913648889357" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="563.1119577782213" cy="443.94490300784423" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="580.3500195868986" cy="441.75610961078183" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="599.4268541639991" cy="444.9920619879167" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="419.2822400161197" cy="451.52715786394197" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="435.6363950093841" cy="454.5877474688792" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="453.38215145067375" cy="454.5877474688792" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="472.89116900360216" cy="451.52715786394197" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="511.72871649324674" cy="455.01494736582947" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="528.7242369704835" cy="451.68488233337354" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="544.9619577782212" cy="453.51599425311895" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="562.2000195868986" cy="455.3220364200433" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="601.3403340736533" cy="452.9568161810397" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="417.4863950093841" cy="462.0355699011299" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="435.2321514506737" cy="462.5105634697629" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="474.76397319743756" cy="462.5105634697629" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="493.57871649324676" cy="462.0355699011299" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="510.5742369704835" cy="465.2631977161579" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="526.8119577782212" cy="463.0518570752399" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="563.1268541639992" cy="465.03056506032215" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="583.1903340736533" cy="463.6163315792728" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="602.4812147113897" cy="461.4275381822104" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="436.59116900360215" cy="471.19858643537054" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="456.6139731974376" cy="474.25917604030775" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="475.4287164932467" cy="474.25917604030775" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="492.42423697048355" cy="471.19858643537054" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="525.9000195868986" cy="474.68637593725805" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="544.9768541639991" cy="471.3563109048021" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="565.0403340736533" cy="473.1874228245475" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="584.3312147113897" cy="474.99346499147185" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="418.44116900360217" cy="484.93462628758647" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="438.46397319743755" cy="481.7069984725585" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="457.27871649324675" cy="482.18199204119145" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="490.5119577782213" cy="482.18199204119145" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="507.7500195868986" cy="481.7069984725585" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="526.8268541639991" cy="484.93462628758647" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="546.8903340736532" cy="482.7232856466685" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="583.6505756803142" cy="484.7019936317507" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="599.9241933666699" cy="483.2877601507014" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="420.3139731974376" cy="494.3578045086866" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="456.12423697048354" cy="490.8700150067991" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="472.36195777822127" cy="493.9306046117363" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="489.6000195868986" cy="493.9306046117363" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="508.6768541639991" cy="490.8700150067991" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="548.0312147113897" cy="494.3578045086866" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="565.5005756803142" cy="491.0277394762307" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="581.7741933666699" cy="492.8588513959761" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<circle cx="598.5772050162409" cy="494.66489356290043" r="2.8" fill="#D49B45" stroke="none" stroke-width="1"/>
+<polyline points="292.50,451.65 419.00,451.65" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="419.00,451.65 411.00,454.85 411.00,448.45" fill="#24618A" stroke="none" stroke-width="1"/>
+<circle cx="518.0" cy="459.75" r="47" fill="none" stroke="#137B7E" stroke-width="2"/>
+<polyline points="463.00,434.10 573.00,485.40" fill="none" stroke="#CB5263" stroke-width="3"/>
+<text x="105" y="528.35" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="20" font-weight="400" fill="#657585" text-anchor="start">稳定地图支持 → 否决运动</text>
+<rect x="70" y="615" width="640" height="357" fill="#EFF0FF" stroke="#B7C2EB" stroke-width="2"/>
+<text x="90" y="657.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="27" font-weight="700" fill="#15334C" text-anchor="start">第二道：短历史的多项证据</text>
+<text x="90" y="698.18" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="400" fill="#15334C" text-anchor="start">最多保留12个历史中心；默认看水平移动，避免扫描点上</text>
+<text x="90" y="729.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="400" fill="#15334C" text-anchor="start">下变化直接触发运动确认。</text>
+<polyline points="160.90,847.00 298.15,835.80 424.42,826.00 567.16,814.80" fill="none" stroke="#137B7E" stroke-width="3"/>
+<polygon points="567.16,814.80 557.02,819.81 556.36,811.43" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="160.9" cy="847.0" r="5" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="298.15" cy="835.8" r="5" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="424.41999999999996" cy="826.0" r="5" fill="#137B7E" stroke="none" stroke-width="1"/>
+<circle cx="567.16" cy="814.8" r="5" fill="#137B7E" stroke="none" stroke-width="1"/>
+<polyline points="149.92,884.80 226.78,859.60 188.35,894.60 259.72,875.00" fill="none" stroke="#CB5263" stroke-width="2.4"/>
+<circle cx="149.92000000000002" cy="884.8" r="4" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="226.78" cy="859.6" r="4" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="188.35" cy="894.6" r="4" fill="#CB5263" stroke="none" stroke-width="1"/>
+<circle cx="259.72" cy="875.0" r="4" fill="#CB5263" stroke="none" stroke-width="1"/>
+<text x="111" y="790.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="20" font-weight="400" fill="#137B7E" text-anchor="start">方向稳定，多帧一致</text>
+<text x="336.58" y="890.8" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="20" font-weight="400" fill="#CB5263" text-anchor="start">来回抖动不等于运动</text>
+<rect x="760" y="238" width="1080" height="734" fill="#FFF7DE" stroke="#24618A" stroke-width="1.8" stroke-dasharray="8 6"/>
+<text x="790" y="287.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="30" font-weight="700" fill="#15334C" text-anchor="start">每次判断必须同时满足下列条件</text>
+<text x="793" y="339.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="24" font-weight="700" fill="#15334C" text-anchor="start">条件</text>
+<text x="1206" y="339.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="24" font-weight="700" fill="#15334C" text-anchor="start">一般区域</text>
+<text x="1525" y="339.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="24" font-weight="700" fill="#15334C" text-anchor="start">近场＜3米</text>
+<rect x="781" y="362" width="1035" height="60" fill="white" stroke="none" stroke-width="1.5"/>
+<text x="797" y="395.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="400" fill="#15334C" text-anchor="start">历史跨度足够</text>
+<text x="1205" y="395.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="400" fill="#15334C" text-anchor="start">至少0.50秒</text>
+<text x="1519" y="395.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="400" fill="#15334C" text-anchor="start">至少0.45秒</text>
+<rect x="781" y="428" width="1035" height="60" fill="#FFFBEF" stroke="none" stroke-width="1.5"/>
+<text x="797" y="461.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="400" fill="#15334C" text-anchor="start">水平总位移足够</text>
+<text x="1205" y="461.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="400" fill="#15334C" text-anchor="start">大于0.20米</text>
+<text x="1519" y="461.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="400" fill="#15334C" text-anchor="start">大于0.18米</text>
+<rect x="781" y="494" width="1035" height="60" fill="white" stroke="none" stroke-width="1.5"/>
+<text x="797" y="527.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="400" fill="#15334C" text-anchor="start">水平拟合速度足够</text>
+<text x="1205" y="527.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="400" fill="#15334C" text-anchor="start">大于0.30米/秒</text>
+<text x="1519" y="527.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="400" fill="#15334C" text-anchor="start">大于0.32米/秒</text>
+<rect x="781" y="560" width="1035" height="60" fill="#FFFBEF" stroke="none" stroke-width="1.5"/>
+<text x="797" y="593.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="400" fill="#15334C" text-anchor="start">运动方向较一致</text>
+<text x="1205" y="593.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="400" fill="#15334C" text-anchor="start">至少0.82</text>
+<text x="1519" y="593.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="400" fill="#15334C" text-anchor="start">至少0.80</text>
+<rect x="781" y="626" width="1035" height="60" fill="white" stroke="none" stroke-width="1.5"/>
+<text x="797" y="659.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="400" fill="#15334C" text-anchor="start">匀速拟合误差较小</text>
+<text x="1205" y="659.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="400" fill="#15334C" text-anchor="start">不超过0.10米</text>
+<text x="1519" y="659.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="400" fill="#15334C" text-anchor="start">不超过0.10米</text>
+<text x="794" y="735.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="24" font-weight="400" fill="#657585" text-anchor="start">另须：拟合速度有效，且三维速度小于3米/秒。</text>
+<polyline points="1185.00,758.00 1185.00,788.00" fill="none" stroke="#24618A" stroke-width="2.5"/>
+<polygon points="1185.00,788.00 1181.50,779.25 1188.50,779.25" fill="#24618A" stroke="none" stroke-width="1"/>
+<rect x="795" y="792" width="450" height="143" fill="#FFF0F5" stroke="#DFB3C9" stroke-width="2"/>
+<text x="815" y="834.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="27" font-weight="700" fill="#15334C" text-anchor="start">连续4次合格</text>
+<text x="815" y="875.18" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="400" fill="#15334C" text-anchor="start">才把该轨迹确认为动态目标。</text>
+<rect x="1293" y="792" width="500" height="143" fill="#EFF0FF" stroke="#B7C2EB" stroke-width="2"/>
+<text x="1313" y="834.0" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="27" font-weight="700" fill="#15334C" text-anchor="start">连续3次不合格</text>
+<text x="1313" y="875.18" xml:space="preserve" font-family="Noto Sans CJK SC,sans-serif" font-size="23" font-weight="400" fill="#15334C" text-anchor="start">已确认目标取消动态状态，不代表实体消失。</text>
+</svg>

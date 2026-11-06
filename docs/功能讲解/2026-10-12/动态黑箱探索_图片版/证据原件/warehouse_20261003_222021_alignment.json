@@ -1,0 +1,27 @@
+{
+  "map_from_world_rotation": [
+    [
+      0.9999979547055031,
+      0.0006770114312500981,
+      0.0019058437323926153
+    ],
+    [
+      -0.0006855260899545388,
+      0.9999897720394092,
+      0.004470555955415909
+    ],
+    [
+      -0.001902797622012168,
+      -0.004471853317414347,
+      0.9999881908748309
+    ]
+  ],
+  "map_from_world_translation": [
+    6.005478223206988,
+    3.9981467700814584,
+    -0.09038430369857652
+  ],
+  "odom_stamp": 5.922,
+  "truth_receipt_age_wall": 0.0002831229940056801,
+  "note": "Evaluator-only initial pose alignment; ModelStates has no stamp, receipt pairing <=50ms; no long-term SLAM drift correction, not planner input"
+}

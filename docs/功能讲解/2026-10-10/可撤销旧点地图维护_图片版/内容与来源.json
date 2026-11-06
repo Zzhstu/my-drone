@@ -1,0 +1,3731 @@
+{
+  "pages": [
+    {
+      "number": 1,
+      "name": "地图维护总架构",
+      "title": "可撤销旧点：让地图能承认环境变化",
+      "text": [
+        "可撤销旧点：让地图能承认环境变化",
+        "新扫描提供现在的事实；旧地图保存历史，但旧占用不是永久结论。",
+        "核心规则",
+        "维护导航地图，不自动回写FAST-LIO内部匹配树。",
+        "现有源码规则 · 所有点云与场景小图为示意 · 非新增实验结果",
+        "01 / 16",
+        "输入与观测",
+        "当前扫描",
+        "同一地图坐标",
+        "位姿与时间",
+        "定位、射线起点",
+        "运动目标",
+        "仅普通版清理",
+        "地图维护核心",
+        "新点整理与观测证据",
+        "小格聚合",
+        "一帧同格算一次",
+        "射线与保护",
+        "确认旧位置已空",
+        "一份可修改的存储",
+        "跨帧命中",
+        "更新代表点与时间",
+        "有条件撤销",
+        "删除失效旧格子",
+        "结果与使用",
+        "多种地图视图",
+        "共享更新、不同筛选",
+        "规划与探索",
+        "重新审视可走路线",
+        "显示与保存",
+        "保存真实维护快照",
+        "仅普通版按轨迹清理；探索版不走这条删除支路"
+      ],
+      "sources": [
+        "src/static_map_builder.cpp",
+        "config/static_map.yaml",
+        "launch/perception.launch",
+        "launch/astra_dynamic_avoidance.launch",
+        "launch/warehouse_exploration.launch"
+      ],
+      "svg": "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/SVG/01_地图维护总架构.svg",
+      "png": "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/PNG/01_地图维护总架构.png",
+      "arrows": 10
+    },
+    {
+      "number": 2,
+      "name": "鬼影问题与撤销动机",
+      "title": "为什么只过滤新点还不够？",
+      "text": [
+        "为什么只过滤新点还不够？",
+        "人先站着、后来离开：留下的问题在旧地图，不只在当前这一帧。",
+        "核心规则",
+        "不再加入新的人体点，并不等于旧的人体点已经消失。",
+        "现有源码规则 · 所有点云与场景小图为示意 · 非新增实验结果",
+        "02 / 16",
+        "1 人原本不动",
+        "反复扫到人体，旧位置进入",
+        "地图。",
+        "2 人已经离开",
+        "当前扫描改变，历史点还留",
+        "在原处。",
+        "3 新观测来核实",
+        "不是凭空删除，而是观察旧",
+        "位置是否已经空了。",
+        "4 地图与路线更新",
+        "撤销满足条件的旧格子，再",
+        "重新评估路线。",
+        "绿点：环境结构    红点：旧占用    空心点：已撤销的位置（示意）"
+      ],
+      "sources": [
+        "src/static_map_builder.cpp",
+        "config/static_map.yaml",
+        "launch/perception.launch",
+        "launch/astra_dynamic_avoidance.launch",
+        "launch/warehouse_exploration.launch"
+      ],
+      "svg": "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/SVG/02_鬼影问题与撤销动机.svg",
+      "png": "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/PNG/02_鬼影问题与撤销动机.png",
+      "arrows": 6
+    },
+    {
+      "number": 3,
+      "name": "小格子中的地图记忆",
+      "title": "地图记住的不只是一个点",
+      "text": [
+        "地图记住的不只是一个点",
+        "把空间分成15厘米小格，每个格子保留代表位置和观测记录。",
+        "核心规则",
+        "同一输入帧的密集点不会把一个格子立刻变成稳定结构。",
+        "现有源码规则 · 所有点云与场景小图为示意 · 非新增实验结果",
+        "03 / 16",
+        "当前一帧",
+        "许多点落进同一小格",
+        "先求本帧代表位置，再更新一次命中。",
+        "格子的记录",
+        "代表位置",
+        "随新观测逐步更新",
+        "命中次数",
+        "用于持续与稳定筛选",
+        "最近命中时间",
+        "判断是否刚被重新看到",
+        "已空证据次数",
+        "达到条件才授权撤销"
+      ],
+      "sources": [
+        "src/static_map_builder.cpp",
+        "config/static_map.yaml",
+        "launch/perception.launch",
+        "launch/astra_dynamic_avoidance.launch",
+        "launch/warehouse_exploration.launch"
+      ],
+      "svg": "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/SVG/03_小格子中的地图记忆.svg",
+      "png": "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/PNG/03_小格子中的地图记忆.png",
+      "arrows": 1
+    },
+    {
+      "number": 4,
+      "name": "七步循环更新流程",
+      "title": "地图维护的七步循环工作流程",
+      "text": [
+        "地图维护的七步循环工作流程",
+        "沿用参考图的上排前进、下排返回结构；每来一帧，再检查一次。",
+        "核心规则",
+        "先写入当前占用，再判断哪些旧占用与新观测发生矛盾。",
+        "现有源码规则 · 所有点云与场景小图为示意 · 非新增实验结果",
+        "04 / 16",
+        "1 建立小格存储",
+        "初始合格扫描建立记录",
+        "2 检查扫描与位姿",
+        "探索需时间配对",
+        "3 写入当前占用",
+        "更新命中、重置空证据",
+        "4 生成射线证据",
+        "近距离真实返回点",
+        "5 检查误删保护",
+        "当前回波、点线距离",
+        "6 累积并撤销旧格",
+        "满足次数与时效才删",
+        "7 输出多种地图",
+        "持续、稳定、局部视图",
+        "处理下一帧；首次建立存储之后持续更新"
+      ],
+      "sources": [
+        "src/static_map_builder.cpp",
+        "config/static_map.yaml",
+        "launch/perception.launch",
+        "launch/astra_dynamic_avoidance.launch",
+        "launch/warehouse_exploration.launch"
+      ],
+      "svg": "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/SVG/04_七步循环更新流程.svg",
+      "png": "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/PNG/04_七步循环更新流程.png",
+      "arrows": 10
+    },
+    {
+      "number": 5,
+      "name": "一份存储四种视图",
+      "title": "不是四张互不相关的地图",
+      "text": [
+        "不是四张互不相关的地图",
+        "同一份存储生成三种占用视图；自由观测来自最新一帧射线。",
+        "核心规则",
+        "删除共享存储里的旧格后，下一次发布时各占用视图一起改变。",
+        "现有源码规则 · 所有点云与场景小图为示意 · 非新增实验结果",
+        "05 / 16",
+        "共享地图记忆",
+        "一份可修改存储",
+        "记录命中、最近观测和空证据。",
+        "删除不是只隐藏显示层。",
+        "不同用途的输出",
+        "持续地图：至少2次",
+        "显示与保存历史环境",
+        "稳定地图：至少8次",
+        "普通规划与静态支持",
+        "局部占用：至少1次",
+        "6米内、近15帧、无空证据",
+        "当前自由观测",
+        "为规划提供局部修正线索"
+      ],
+      "sources": [
+        "src/static_map_builder.cpp",
+        "config/static_map.yaml"
+      ],
+      "svg": "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/SVG/05_一份存储四种视图.svg",
+      "png": "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/PNG/05_一份存储四种视图.png",
+      "arrows": 1
+    },
+    {
+      "number": 6,
+      "name": "普通版运动轨迹清理",
+      "title": "普通演示：沿确认运动轨迹回溯清理",
+      "text": [
+        "普通演示：沿确认运动轨迹回溯清理",
+        "这是保留的普通ours规则，不要混同为探索版的证据删除。",
+        "核心规则",
+        "轨迹能够快速清旧点，但误跟踪可能连带擦掉邻近静态结构。",
+        "现有源码规则 · 所有点云与场景小图为示意 · 非新增实验结果",
+        "06 / 16",
+        "1 确认运动目标",
+        "读取位置、速度和实际已走",
+        "轨迹。",
+        "2 形成回溯区域",
+        "保留20秒轨迹，另向后回溯1",
+        ".5秒。",
+        "3 不入图并擦旧点",
+        "屏蔽邻近新点，直接删除旧",
+        "格。",
+        "4 保留模式边界",
+        "清理快，但假动态与轨迹范",
+        "围可能误伤货架。",
+        "探索版：不使用这条轨迹圆柱直接删除，也不按轨迹范围禁止新点入图。"
+      ],
+      "sources": [
+        "src/static_map_builder.cpp",
+        "config/static_map.yaml",
+        "launch/perception.launch",
+        "launch/astra_dynamic_avoidance.launch",
+        "launch/warehouse_exploration.launch"
+      ],
+      "svg": "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/SVG/06_普通版运动轨迹清理.svg",
+      "png": "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/PNG/06_普通版运动轨迹清理.png",
+      "arrows": 4
+    },
+    {
+      "number": 7,
+      "name": "探索版观测证据架构",
+      "title": "探索演示：删除权交给新的观测证据",
+      "text": [
+        "探索演示：删除权交给新的观测证据",
+        "“目标可能在运动”是线索；“旧位置被真实回波射线穿过”才进入删除检查。",
+        "核心规则",
+        "轨迹不是删除许可；没有足够的新观测就保留旧占用。",
+        "现有源码规则 · 所有点云与场景小图为示意 · 非新增实验结果",
+        "07 / 16",
+        "输入",
+        "当前真实返回",
+        "包含当前人体返回",
+        "配对位姿与外参",
+        "构造扫描射线起点",
+        "证据与撤销",
+        "近场射线",
+        "只取回波前空间",
+        "旧点矛盾检查",
+        "旧点确实靠近射线",
+        "当前表面保护",
+        "邻格回波、命中重置",
+        "有时效的次数确认",
+        "3次或6次后撤销",
+        "输出",
+        "修正后的地图",
+        "旧格可从多视图撤销",
+        "当前障碍仍有效",
+        "清图不替代即时避障"
+      ],
+      "sources": [
+        "src/static_map_builder.cpp",
+        "config/static_map.yaml",
+        "launch/perception.launch",
+        "launch/astra_dynamic_avoidance.launch",
+        "launch/warehouse_exploration.launch"
+      ],
+      "svg": "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/SVG/07_探索版观测证据架构.svg",
+      "png": "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/PNG/07_探索版观测证据架构.png",
+      "arrows": 7
+    },
+    {
+      "number": 8,
+      "name": "射线与遮挡示意",
+      "title": "看不到，不等于这里已经空了",
+      "text": [
+        "看不到，不等于这里已经空了",
+        "只有回波前、确实经过旧点附近的射线，才能提供撤销线索。",
+        "核心规则",
+        "遮挡后方、偏离射线、没有有效返回：都不能凭缺点删除。",
+        "现有源码规则 · 所有点云与场景小图为示意 · 非新增实验结果",
+        "08 / 16",
+        "三种观测必须区分",
+        "1 支持已经空了",
+        "旧点在有效射线附近",
+        "雷达",
+        "旧点",
+        "新回波",
+        "2 前方存在遮挡",
+        "回波前就遇到实体",
+        "雷达",
+        "当前障碍",
+        "遮挡后旧点",
+        "3 从旧点旁边扫过",
+        "同格不代表击穿旧点",
+        "偏离太远，保留旧点"
+      ],
+      "sources": [
+        "src/static_map_builder.cpp",
+        "config/static_map.yaml",
+        "launch/perception.launch",
+        "launch/astra_dynamic_avoidance.launch",
+        "launch/warehouse_exploration.launch"
+      ],
+      "svg": "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/SVG/08_射线与遮挡示意.svg",
+      "png": "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/PNG/08_射线与遮挡示意.png",
+      "arrows": 3
+    },
+    {
+      "number": 9,
+      "name": "旧点删除判断流程",
+      "title": "一个旧格子，到底能不能删除？",
+      "text": [
+        "一个旧格子，到底能不能删除？",
+        "先过几何与表面保护，再过时间与次数；不满足就保留。",
+        "核心规则",
+        "“当前没扫到”只是缺测，不是直接删除条件。",
+        "现有源码规则 · 所有点云与场景小图为示意 · 非新增实验结果",
+        "09 / 16",
+        "旧格与新射线",
+        "得到候选，不是立即删除",
+        "几何和表面",
+        "保护通过？",
+        "是",
+        "检查最近命中与证据间隔",
+        "刚被扫到则不计数；旧证据过期则重算。",
+        "次数达到",
+        "3次或6次？",
+        "是",
+        "撤销共享存储旧格",
+        "下一次地图发布反映删除",
+        "保留旧占用",
+        "缺证据、受保护或次数不足",
+        "否：保留",
+        "否：继续等待"
+      ],
+      "sources": [
+        "src/static_map_builder.cpp",
+        "config/static_map.yaml",
+        "launch/perception.launch",
+        "launch/astra_dynamic_avoidance.launch",
+        "launch/warehouse_exploration.launch"
+      ],
+      "svg": "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/SVG/09_旧点删除判断流程.svg",
+      "png": "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/PNG/09_旧点删除判断流程.png",
+      "arrows": 6
+    },
+    {
+      "number": 10,
+      "name": "命中与空证据时间线",
+      "title": "稳定点也能撤销，但要更多证据",
+      "text": [
+        "稳定点也能撤销，但要更多证据",
+        "稳定只是更难被删除，不代表永久可信，也不是人体类别判定。",
+        "核心规则",
+        "命中就清零；过期证据不能无限拼凑成删除授权。",
+        "现有源码规则 · 所有点云与场景小图为示意 · 非新增实验结果",
+        "10 / 16",
+        "普通旧格：3次有效空证据",
+        "少量观测形成的占用，较早进入撤销。",
+        "稳定旧格：6次有效空证据",
+        "至少8次命中，更谨慎地撤销旧占用。",
+        "稳定格的假设更新序列",
+        "重新命中",
+        "清零",
+        "等待满0.5秒",
+        "暂不计数",
+        "空证据1",
+        "保留",
+        "空证据2",
+        "保留",
+        "空证据3",
+        "保留",
+        "空证据4",
+        "保留",
+        "空证据5",
+        "保留",
+        "空证据6",
+        "删除",
+        "若中途再次命中 → 从零开始；若有效证据间隔超过1秒 → 下一次先清零。"
+      ],
+      "sources": [
+        "src/static_map_builder.cpp",
+        "config/static_map.yaml",
+        "launch/perception.launch",
+        "launch/astra_dynamic_avoidance.launch",
+        "launch/warehouse_exploration.launch"
+      ],
+      "svg": "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/SVG/10_命中与空证据时间线.svg",
+      "png": "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/PNG/10_命中与空证据时间线.png",
+      "arrows": 7
+    },
+    {
+      "number": 11,
+      "name": "避免误删静态结构",
+      "title": "保护货架、薄结构与真实表面",
+      "text": [
+        "保护货架、薄结构与真实表面",
+        "不因为旁边有人被误判运动，就把一整段货架擦掉。",
+        "核心规则",
+        "先保护当前返回，再要求真实射线矛盾，稳定格使用更高删除门限。",
+        "现有源码规则 · 所有点云与场景小图为示意 · 非新增实验结果",
+        "11 / 16",
+        "1 轨迹不授权擦除",
+        "探索不沿目标圆柱直接删除",
+        "货架。",
+        "2 当前表面优先",
+        "旧格周围27个邻格有回波就",
+        "保护。",
+        "3 射线确实矛盾",
+        "旧代表点距离射线不超过6厘",
+        "米。",
+        "4 稳定格更谨慎",
+        "最近命中有等待；稳定格需6",
+        "次证据。",
+        "这些是降低误删风险的工程规则，不是“所有静态表面永远不缺点”的保证。"
+      ],
+      "sources": [
+        "src/static_map_builder.cpp",
+        "config/static_map.yaml",
+        "launch/perception.launch",
+        "launch/astra_dynamic_avoidance.launch",
+        "launch/warehouse_exploration.launch"
+      ],
+      "svg": "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/SVG/11_避免误删静态结构.svg",
+      "png": "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/PNG/11_避免误删静态结构.png",
+      "arrows": 6
+    },
+    {
+      "number": 12,
+      "name": "人先静止后移动",
+      "title": "人从静止到离开，地图如何变化？",
+      "text": [
+        "人从静止到离开，地图如何变化？",
+        "先承认当前占用，再核实旧位置消失；不需要一开始就知道“这是人”。",
+        "核心规则",
+        "静止的人仍是障碍；人离开后的旧占用才是要撤销的内容。",
+        "现有源码规则 · 所有点云与场景小图为示意 · 非新增实验结果",
+        "12 / 16",
+        "1 原地站立",
+        "当前回波占空间，可以进入",
+        "稳定地图。",
+        "2 开始移动",
+        "新位置仍是障碍，风险保护",
+        "继续工作。",
+        "3 回看旧位置",
+        "有效射线、多次已空证据，",
+        "逐步核实。",
+        "4 撤销旧格",
+        "原位置不再长期挡路；现有",
+        "人仍不能忽略。",
+        "旧位置被遮挡时：保留未确认占用；需要安全地换视角再观察，而不是强行擦除。"
+      ],
+      "sources": [
+        "src/static_map_builder.cpp",
+        "config/static_map.yaml",
+        "launch/perception.launch",
+        "launch/astra_dynamic_avoidance.launch",
+        "launch/warehouse_exploration.launch"
+      ],
+      "svg": "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/SVG/12_人先静止后移动.svg",
+      "png": "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/PNG/12_人先静止后移动.png",
+      "arrows": 6
+    },
+    {
+      "number": 13,
+      "name": "地图变化与路线更新",
+      "title": "地图更新，要让路线也重新审视",
+      "text": [
+        "地图更新，要让路线也重新审视",
+        "地图清得干净只是中间结果；最终目的是不再被历史假墙一直挡住。",
+        "核心规则",
+        "先在三维旧点上用自由证据修正，再膨胀障碍，最后叠加当前占用。",
+        "现有源码规则 · 所有点云与场景小图为示意 · 非新增实验结果",
+        "13 / 16",
+        "长期地图修正",
+        "满足多次证据再删",
+        "共享存储删除旧占用",
+        "持续与稳定地图更新",
+        "历史参考不再永远保留假墙",
+        "局部路线的及时修正",
+        "旧点三维匹配",
+        "仅修正自由证据附近",
+        "原点",
+        "剩余障碍膨胀",
+        "保留机体与安全间隙",
+        "当前占用回填",
+        "当前人、货架继续挡",
+        "路",
+        "重新检查路径或探索航点",
+        "探索与普通目标规划使用不同任务节点",
+        "局部自由观测可先修正路线，不必等持续地图完成删除；两者删除条件不能混同。"
+      ],
+      "sources": [
+        "src/static_map_builder.cpp",
+        "src/static_path_planner.cpp",
+        "scripts/warehouse_explorer.py",
+        "scripts/exploration_grid.py",
+        "launch/warehouse_exploration.launch"
+      ],
+      "svg": "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/SVG/13_地图变化与路线更新.svg",
+      "png": "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/PNG/13_地图变化与路线更新.png",
+      "arrows": 5
+    },
+    {
+      "number": 14,
+      "name": "配对时间与更新时刻",
+      "title": "时间错了，删除证据也会错",
+      "text": [
+        "时间错了，删除证据也会错",
+        "刚收到消息，不代表它和当前扫描属于同一个时刻。",
+        "核心规则",
+        "定时重发旧图不是新观测；探索保留最后扫描采集时间。",
+        "现有源码规则 · 所有点云与场景小图为示意 · 非新增实验结果",
+        "14 / 16",
+        "1 扫描坐标一致",
+        "不是改个坐标名字就算对",
+        "齐。",
+        "2 位姿时间接近",
+        "时间差最多0.08秒；否则等",
+        "待最新扫描配对。",
+        "3 外参随姿态旋转",
+        "使用对应位姿构造雷达实际",
+        "起点。",
+        "4 输出保留采集时间",
+        "定时重发旧图，不改称刚采",
+        "集的新图。",
+        "规则限制：最近时间配对不是插值，不等于已经验证真实雷达逐点运动补偿。"
+      ],
+      "sources": [
+        "src/static_map_builder.cpp",
+        "config/static_map.yaml",
+        "launch/perception.launch",
+        "launch/astra_dynamic_avoidance.launch",
+        "launch/warehouse_exploration.launch"
+      ],
+      "svg": "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/SVG/14_配对时间与更新时刻.svg",
+      "png": "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/PNG/14_配对时间与更新时刻.png",
+      "arrows": 6
+    },
+    {
+      "number": 15,
+      "name": "容量与保存规则",
+      "title": "持续地图也要有容量与保存规则",
+      "text": [
+        "持续地图也要有容量与保存规则",
+        "地图删除有两种原因：观测确认失效，或者容量保护淘汰。",
+        "核心规则",
+        "保存的是当前维护图快照，不在导出时额外裁剪人体来制造“零鬼影”。",
+        "现有源码规则 · 所有点云与场景小图为示意 · 非新增实验结果",
+        "15 / 16",
+        "1 约束清理开销",
+        "最多8000条射线、20万个自",
+        "由格。",
+        "2 限制地图容量",
+        "最多50万格；超限淘汰久未",
+        "命中的格。",
+        "3 定时输出视图",
+        "设置每秒2次；重发不增加观",
+        "测证据。",
+        "4 保存真实快照",
+        "有限点、来源、时间、点数",
+        "和校验信息。",
+        "地图缺点不一定都是误删：还可能是未扫到、遮挡、入图筛选或容量淘汰。"
+      ],
+      "sources": [
+        "src/static_map_builder.cpp",
+        "config/static_map.yaml",
+        "scripts/save_navigation_map.py",
+        "scripts/run_dynamic_comparison.py"
+      ],
+      "svg": "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/SVG/15_容量与保存规则.svg",
+      "png": "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/PNG/15_容量与保存规则.png",
+      "arrows": 6
+    },
+    {
+      "number": 16,
+      "name": "规则总览与适用边界",
+      "title": "我们制定的规则：敢更新，也不随意删",
+      "text": [
+        "我们制定的规则：敢更新，也不随意删",
+        "关注人离开后旧占用的恢复，同时保留货架与当前真实障碍。",
+        "核心规则",
+        "这是可追查的地图维护工程层，不是全图零鬼影或完整建图的保证。",
+        "现有源码规则 · 所有点云与场景小图为示意 · 非新增实验结果",
+        "16 / 16",
+        "现有核心规则",
+        "同帧同格只记一次。",
+        "共享存储派生多视图。",
+        "探索不凭轨迹擦除。",
+        "当前返回优先保护。",
+        "删除必须有条件",
+        "射线经过旧点附近。",
+        "距命中至少0.5秒。",
+        "证据间隔不超过1秒。",
+        "普通3次、稳定6次。",
+        "必须保留的边界",
+        "未再观测不保证清除。",
+        "当前人体仍是障碍。",
+        "自由视图不是删除授权。",
+        "不自动改内部匹配树。",
+        "建议成对检验：旧点残留 + 静态保留 + 恢复路线 + 处理开销；本轮没有新飞行实验。"
+      ],
+      "sources": [
+        "src/static_map_builder.cpp",
+        "config/static_map.yaml",
+        "launch/perception.launch",
+        "launch/astra_dynamic_avoidance.launch",
+        "launch/warehouse_exploration.launch"
+      ],
+      "svg": "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/SVG/16_规则总览与适用边界.svg",
+      "png": "/home/a/AstraDroneOpen/docs/功能讲解/2026-10-10/可撤销旧点地图维护_图片版/PNG/16_规则总览与适用边界.png",
+      "arrows": 2
+    }
+  ],
+  "sources_sha256": {
+    "/home/a/下载/fastlio2ppt.pptx": "ff606e6fc9c89b7af2e8b8cc6672e27ef9579e4d058fba89ed9600baa76e2345",
+    "/home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/static_map_builder.cpp": "0331a1851a0daf74e6f62fb363b02fc183e130e6e7e063b4bebd7a0e4b4e56bf",
+    "/home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/static_map.yaml": "fcc5a6bf46ad4c7c1abbc71ac32a1d6838309c7fbcedf0e7e820cdf65b23672e",
+    "/home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/launch/perception.launch": "291a95b937f8d36d90181e7641b42222a8277ef8715296acb0060728814f0c38",
+    "/home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/launch/astra_dynamic_avoidance.launch": "0ae5efd1640dde1c99e6ac042cdc7dcef889efd6b7b8adcf4c4b6e25acacb892",
+    "/home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/launch/warehouse_exploration.launch": "3618006f0dfd19c1ec7075319b397079dbee75c5181398a7d0b3958010f9c659",
+    "/home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/src/static_path_planner.cpp": "027ee688f4eca3276235090d524090edc8a7c23b84fdff1ecb7987a85b488d50",
+    "/home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/config/path_planner.yaml": "0244b2cdbc165e4ea3057fe959aec5a5874468b44bd696f2decbe63d763d8817",
+    "/home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/warehouse_explorer.py": "3effd02691d3597c3411c088ee28a983427a8eff630892c50730444d43ccbcac",
+    "/home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/exploration_grid.py": "45c973760461aa82d2646db03a398ea44a469014ef955e21e8843ec3db295b3c",
+    "/home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/save_navigation_map.py": "88446bc2fe0d67b6c410b9272d428c7a5529c9dc59a58607ed1ea1690bd0c22e",
+    "/home/a/AstraDroneOpen/AstraDrone_ros1_ws/src/SLAM/fastlio_bridge/scripts/run_dynamic_comparison.py": "2b7e154d968fe8cf25f92aae3e3efcc18c3d5d61bb481539a44c29e81df03efd"
+  },
+  "text_bounds": [
+    {
+      "page": 1,
+      "text": "可撤销旧点：让地图能承认环境变化",
+      "x": 60,
+      "y": 34.0,
+      "width": 736.0,
+      "size": 46,
+      "in_page": true
+    },
+    {
+      "page": 1,
+      "text": "新扫描提供现在的事实；旧地图保存历史，但旧占用不是永久结论。",
+      "x": 63,
+      "y": 101.0,
+      "width": 719.53125,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 1,
+      "text": "核心规则",
+      "x": 78,
+      "y": 798.0,
+      "width": 100.0,
+      "size": 25,
+      "in_page": true
+    },
+    {
+      "page": 1,
+      "text": "维护导航地图，不自动回写FAST-LIO内部匹配树。",
+      "x": 210,
+      "y": 798.0,
+      "width": 530.875,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 1,
+      "text": "现有源码规则 · 所有点云与场景小图为示意 · 非新增实验结果",
+      "x": 60,
+      "y": 861.0,
+      "width": 473.765625,
+      "size": 17,
+      "in_page": true
+    },
+    {
+      "page": 1,
+      "text": "01 / 16",
+      "x": 1400,
+      "y": 861.0,
+      "width": 55.046875,
+      "size": 18,
+      "in_page": true
+    },
+    {
+      "page": 1,
+      "text": "输入与观测",
+      "x": 90,
+      "y": 205.0,
+      "width": 134.921875,
+      "size": 27,
+      "in_page": true
+    },
+    {
+      "page": 1,
+      "text": "当前扫描",
+      "x": 98,
+      "y": 274.0,
+      "width": 104.0,
+      "size": 26,
+      "in_page": true
+    },
+    {
+      "page": 1,
+      "text": "同一地图坐标",
+      "x": 100,
+      "y": 312.02,
+      "width": 132.0,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 1,
+      "text": "位姿与时间",
+      "x": 98,
+      "y": 441.0,
+      "width": 130.0,
+      "size": 26,
+      "in_page": true
+    },
+    {
+      "page": 1,
+      "text": "定位、射线起点",
+      "x": 100,
+      "y": 479.02,
+      "width": 154.0,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 1,
+      "text": "运动目标",
+      "x": 98,
+      "y": 608.0,
+      "width": 104.0,
+      "size": 26,
+      "in_page": true
+    },
+    {
+      "page": 1,
+      "text": "仅普通版清理",
+      "x": 100,
+      "y": 646.02,
+      "width": 132.0,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 1,
+      "text": "地图维护核心",
+      "x": 420,
+      "y": 187.0,
+      "width": 161.90625,
+      "size": 27,
+      "in_page": true
+    },
+    {
+      "page": 1,
+      "text": "新点整理与观测证据",
+      "x": 432,
+      "y": 263.0,
+      "width": 252.0,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 1,
+      "text": "小格聚合",
+      "x": 454,
+      "y": 324.0,
+      "width": 104.0,
+      "size": 26,
+      "in_page": true
+    },
+    {
+      "page": 1,
+      "text": "一帧同格算一次",
+      "x": 456,
+      "y": 362.02,
+      "width": 154.0,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 1,
+      "text": "射线与保护",
+      "x": 793,
+      "y": 324.0,
+      "width": 130.0,
+      "size": 26,
+      "in_page": true
+    },
+    {
+      "page": 1,
+      "text": "确认旧位置已空",
+      "x": 795,
+      "y": 362.02,
+      "width": 154.0,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 1,
+      "text": "一份可修改的存储",
+      "x": 432,
+      "y": 512.0,
+      "width": 224.0,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 1,
+      "text": "跨帧命中",
+      "x": 454,
+      "y": 578.0,
+      "width": 104.0,
+      "size": 26,
+      "in_page": true
+    },
+    {
+      "page": 1,
+      "text": "更新代表点与时间",
+      "x": 456,
+      "y": 616.02,
+      "width": 176.0,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 1,
+      "text": "有条件撤销",
+      "x": 793,
+      "y": 578.0,
+      "width": 130.0,
+      "size": 26,
+      "in_page": true
+    },
+    {
+      "page": 1,
+      "text": "删除失效旧格子",
+      "x": 795,
+      "y": 616.02,
+      "width": 154.0,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 1,
+      "text": "结果与使用",
+      "x": 1200,
+      "y": 205.0,
+      "width": 134.921875,
+      "size": 27,
+      "in_page": true
+    },
+    {
+      "page": 1,
+      "text": "多种地图视图",
+      "x": 1209,
+      "y": 275.0,
+      "width": 156.0,
+      "size": 26,
+      "in_page": true
+    },
+    {
+      "page": 1,
+      "text": "共享更新、不同筛选",
+      "x": 1211,
+      "y": 313.02,
+      "width": 198.0,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 1,
+      "text": "规划与探索",
+      "x": 1209,
+      "y": 442.0,
+      "width": 130.0,
+      "size": 26,
+      "in_page": true
+    },
+    {
+      "page": 1,
+      "text": "重新审视可走路线",
+      "x": 1211,
+      "y": 480.02,
+      "width": 176.0,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 1,
+      "text": "显示与保存",
+      "x": 1209,
+      "y": 609.0,
+      "width": 130.0,
+      "size": 26,
+      "in_page": true
+    },
+    {
+      "page": 1,
+      "text": "保存真实维护快照",
+      "x": 1211,
+      "y": 647.02,
+      "width": 176.0,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 1,
+      "text": "仅普通版按轨迹清理；探索版不走这条删除支路",
+      "x": 410,
+      "y": 724.0,
+      "width": 419.671875,
+      "size": 20,
+      "in_page": true
+    },
+    {
+      "page": 2,
+      "text": "为什么只过滤新点还不够？",
+      "x": 60,
+      "y": 34.0,
+      "width": 552.0,
+      "size": 46,
+      "in_page": true
+    },
+    {
+      "page": 2,
+      "text": "人先站着、后来离开：留下的问题在旧地图，不只在当前这一帧。",
+      "x": 63,
+      "y": 101.0,
+      "width": 695.546875,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 2,
+      "text": "核心规则",
+      "x": 78,
+      "y": 798.0,
+      "width": 100.0,
+      "size": 25,
+      "in_page": true
+    },
+    {
+      "page": 2,
+      "text": "不再加入新的人体点，并不等于旧的人体点已经消失。",
+      "x": 210,
+      "y": 798.0,
+      "width": 575.625,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 2,
+      "text": "现有源码规则 · 所有点云与场景小图为示意 · 非新增实验结果",
+      "x": 60,
+      "y": 861.0,
+      "width": 473.765625,
+      "size": 17,
+      "in_page": true
+    },
+    {
+      "page": 2,
+      "text": "02 / 16",
+      "x": 1400,
+      "y": 861.0,
+      "width": 55.046875,
+      "size": 18,
+      "in_page": true
+    },
+    {
+      "page": 2,
+      "text": "1 人原本不动",
+      "x": 76.0,
+      "y": 230.0,
+      "width": 162.828125,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 2,
+      "text": "反复扫到人体，旧位置进入",
+      "x": 78.0,
+      "y": 276.64,
+      "width": 287.8125,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 2,
+      "text": "地图。",
+      "x": 78.0,
+      "y": 309.76,
+      "width": 71.953125,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 2,
+      "text": "2 人已经离开",
+      "x": 455.5,
+      "y": 230.0,
+      "width": 162.828125,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 2,
+      "text": "当前扫描改变，历史点还留",
+      "x": 457.5,
+      "y": 276.64,
+      "width": 287.8125,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 2,
+      "text": "在原处。",
+      "x": 457.5,
+      "y": 309.76,
+      "width": 95.9375,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 2,
+      "text": "3 新观测来核实",
+      "x": 835.0,
+      "y": 230.0,
+      "width": 190.828125,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 2,
+      "text": "不是凭空删除，而是观察旧",
+      "x": 837.0,
+      "y": 276.64,
+      "width": 287.8125,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 2,
+      "text": "位置是否已经空了。",
+      "x": 837.0,
+      "y": 309.76,
+      "width": 215.859375,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 2,
+      "text": "4 地图与路线更新",
+      "x": 1214.5,
+      "y": 230.0,
+      "width": 218.828125,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 2,
+      "text": "撤销满足条件的旧格子，再",
+      "x": 1216.5,
+      "y": 276.64,
+      "width": 287.8125,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 2,
+      "text": "重新评估路线。",
+      "x": 1216.5,
+      "y": 309.76,
+      "width": 167.890625,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 2,
+      "text": "绿点：环境结构    红点：旧占用    空心点：已撤销的位置（示意）",
+      "x": 76,
+      "y": 690.0,
+      "width": 719.75,
+      "size": 25,
+      "in_page": true
+    },
+    {
+      "page": 3,
+      "text": "地图记住的不只是一个点",
+      "x": 60,
+      "y": 34.0,
+      "width": 506.0,
+      "size": 46,
+      "in_page": true
+    },
+    {
+      "page": 3,
+      "text": "把空间分成15厘米小格，每个格子保留代表位置和观测记录。",
+      "x": 63,
+      "y": 101.0,
+      "width": 650.21875,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 3,
+      "text": "核心规则",
+      "x": 78,
+      "y": 798.0,
+      "width": 100.0,
+      "size": 25,
+      "in_page": true
+    },
+    {
+      "page": 3,
+      "text": "同一输入帧的密集点不会把一个格子立刻变成稳定结构。",
+      "x": 210,
+      "y": 798.0,
+      "width": 599.609375,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 3,
+      "text": "现有源码规则 · 所有点云与场景小图为示意 · 非新增实验结果",
+      "x": 60,
+      "y": 861.0,
+      "width": 473.765625,
+      "size": 17,
+      "in_page": true
+    },
+    {
+      "page": 3,
+      "text": "03 / 16",
+      "x": 1400,
+      "y": 861.0,
+      "width": 55.046875,
+      "size": 18,
+      "in_page": true
+    },
+    {
+      "page": 3,
+      "text": "当前一帧",
+      "x": 90,
+      "y": 200.0,
+      "width": 107.9375,
+      "size": 27,
+      "in_page": true
+    },
+    {
+      "page": 3,
+      "text": "许多点落进同一小格",
+      "x": 106,
+      "y": 279.0,
+      "width": 252.0,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 3,
+      "text": "先求本帧代表位置，再更新一次命中。",
+      "x": 108,
+      "y": 325.64,
+      "width": 407.734375,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 3,
+      "text": "格子的记录",
+      "x": 740,
+      "y": 200.0,
+      "width": 134.921875,
+      "size": 27,
+      "in_page": true
+    },
+    {
+      "page": 3,
+      "text": "代表位置",
+      "x": 754,
+      "y": 282.0,
+      "width": 112.0,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 3,
+      "text": "随新观测逐步更新",
+      "x": 756,
+      "y": 328.64,
+      "width": 191.875,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 3,
+      "text": "命中次数",
+      "x": 1156,
+      "y": 282.0,
+      "width": 112.0,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 3,
+      "text": "用于持续与稳定筛选",
+      "x": 1158,
+      "y": 328.64,
+      "width": 215.859375,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 3,
+      "text": "最近命中时间",
+      "x": 754,
+      "y": 502.0,
+      "width": 168.0,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 3,
+      "text": "判断是否刚被重新看到",
+      "x": 756,
+      "y": 548.64,
+      "width": 239.84375,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 3,
+      "text": "已空证据次数",
+      "x": 1156,
+      "y": 502.0,
+      "width": 168.0,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 3,
+      "text": "达到条件才授权撤销",
+      "x": 1158,
+      "y": 548.64,
+      "width": 215.859375,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 4,
+      "text": "地图维护的七步循环工作流程",
+      "x": 60,
+      "y": 34.0,
+      "width": 598.0,
+      "size": 46,
+      "in_page": true
+    },
+    {
+      "page": 4,
+      "text": "沿用参考图的上排前进、下排返回结构；每来一帧，再检查一次。",
+      "x": 63,
+      "y": 101.0,
+      "width": 695.546875,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 4,
+      "text": "核心规则",
+      "x": 78,
+      "y": 798.0,
+      "width": 100.0,
+      "size": 25,
+      "in_page": true
+    },
+    {
+      "page": 4,
+      "text": "先写入当前占用，再判断哪些旧占用与新观测发生矛盾。",
+      "x": 210,
+      "y": 798.0,
+      "width": 599.609375,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 4,
+      "text": "现有源码规则 · 所有点云与场景小图为示意 · 非新增实验结果",
+      "x": 60,
+      "y": 861.0,
+      "width": 473.765625,
+      "size": 17,
+      "in_page": true
+    },
+    {
+      "page": 4,
+      "text": "04 / 16",
+      "x": 1400,
+      "y": 861.0,
+      "width": 55.046875,
+      "size": 18,
+      "in_page": true
+    },
+    {
+      "page": 4,
+      "text": "1 建立小格存储",
+      "x": 76,
+      "y": 246.0,
+      "width": 177.203125,
+      "size": 26,
+      "in_page": true
+    },
+    {
+      "page": 4,
+      "text": "初始合格扫描建立记录",
+      "x": 78,
+      "y": 289.88,
+      "width": 220.0,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 4,
+      "text": "2 检查扫描与位姿",
+      "x": 454,
+      "y": 246.0,
+      "width": 203.203125,
+      "size": 26,
+      "in_page": true
+    },
+    {
+      "page": 4,
+      "text": "探索需时间配对",
+      "x": 456,
+      "y": 289.88,
+      "width": 154.0,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 4,
+      "text": "3 写入当前占用",
+      "x": 832,
+      "y": 246.0,
+      "width": 177.203125,
+      "size": 26,
+      "in_page": true
+    },
+    {
+      "page": 4,
+      "text": "更新命中、重置空证据",
+      "x": 834,
+      "y": 289.88,
+      "width": 220.0,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 4,
+      "text": "4 生成射线证据",
+      "x": 1210,
+      "y": 246.0,
+      "width": 177.203125,
+      "size": 26,
+      "in_page": true
+    },
+    {
+      "page": 4,
+      "text": "近距离真实返回点",
+      "x": 1212,
+      "y": 289.88,
+      "width": 176.0,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 4,
+      "text": "5 检查误删保护",
+      "x": 1076,
+      "y": 531.0,
+      "width": 177.203125,
+      "size": 26,
+      "in_page": true
+    },
+    {
+      "page": 4,
+      "text": "当前回波、点线距离",
+      "x": 1078,
+      "y": 574.88,
+      "width": 198.0,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 4,
+      "text": "6 累积并撤销旧格",
+      "x": 576,
+      "y": 531.0,
+      "width": 203.203125,
+      "size": 26,
+      "in_page": true
+    },
+    {
+      "page": 4,
+      "text": "满足次数与时效才删",
+      "x": 578,
+      "y": 574.88,
+      "width": 198.0,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 4,
+      "text": "7 输出多种地图",
+      "x": 76,
+      "y": 531.0,
+      "width": 177.203125,
+      "size": 26,
+      "in_page": true
+    },
+    {
+      "page": 4,
+      "text": "持续、稳定、局部视图",
+      "x": 78,
+      "y": 574.88,
+      "width": 220.0,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 4,
+      "text": "处理下一帧；首次建立存储之后持续更新",
+      "x": 90,
+      "y": 164.0,
+      "width": 396.0,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 5,
+      "text": "不是四张互不相关的地图",
+      "x": 60,
+      "y": 34.0,
+      "width": 506.0,
+      "size": 46,
+      "in_page": true
+    },
+    {
+      "page": 5,
+      "text": "同一份存储生成三种占用视图；自由观测来自最新一帧射线。",
+      "x": 63,
+      "y": 101.0,
+      "width": 647.578125,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 5,
+      "text": "核心规则",
+      "x": 78,
+      "y": 798.0,
+      "width": 100.0,
+      "size": 25,
+      "in_page": true
+    },
+    {
+      "page": 5,
+      "text": "删除共享存储里的旧格后，下一次发布时各占用视图一起改变。",
+      "x": 210,
+      "y": 798.0,
+      "width": 671.5625,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 5,
+      "text": "现有源码规则 · 所有点云与场景小图为示意 · 非新增实验结果",
+      "x": 60,
+      "y": 861.0,
+      "width": 473.765625,
+      "size": 17,
+      "in_page": true
+    },
+    {
+      "page": 5,
+      "text": "05 / 16",
+      "x": 1400,
+      "y": 861.0,
+      "width": 55.046875,
+      "size": 18,
+      "in_page": true
+    },
+    {
+      "page": 5,
+      "text": "共享地图记忆",
+      "x": 90,
+      "y": 208.0,
+      "width": 161.90625,
+      "size": 27,
+      "in_page": true
+    },
+    {
+      "page": 5,
+      "text": "一份可修改存储",
+      "x": 106,
+      "y": 291.0,
+      "width": 182.0,
+      "size": 26,
+      "in_page": true
+    },
+    {
+      "page": 5,
+      "text": "记录命中、最近观测和空证据。",
+      "x": 108,
+      "y": 334.88,
+      "width": 335.78125,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 5,
+      "text": "删除不是只隐藏显示层。",
+      "x": 108,
+      "y": 368.0,
+      "width": 263.828125,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 5,
+      "text": "不同用途的输出",
+      "x": 610,
+      "y": 208.0,
+      "width": 188.890625,
+      "size": 27,
+      "in_page": true
+    },
+    {
+      "page": 5,
+      "text": "持续地图：至少2次",
+      "x": 624,
+      "y": 283.0,
+      "width": 240.484375,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 5,
+      "text": "显示与保存历史环境",
+      "x": 626,
+      "y": 329.64,
+      "width": 198.0,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 5,
+      "text": "稳定地图：至少8次",
+      "x": 1084,
+      "y": 283.0,
+      "width": 240.484375,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 5,
+      "text": "普通规划与静态支持",
+      "x": 1086,
+      "y": 329.64,
+      "width": 198.0,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 5,
+      "text": "局部占用：至少1次",
+      "x": 624,
+      "y": 502.0,
+      "width": 240.484375,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 5,
+      "text": "6米内、近15帧、无空证据",
+      "x": 626,
+      "y": 548.64,
+      "width": 256.609375,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 5,
+      "text": "当前自由观测",
+      "x": 1084,
+      "y": 502.0,
+      "width": 168.0,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 5,
+      "text": "为规划提供局部修正线索",
+      "x": 1086,
+      "y": 548.64,
+      "width": 242.0,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 6,
+      "text": "普通演示：沿确认运动轨迹回溯清理",
+      "x": 60,
+      "y": 34.0,
+      "width": 736.0,
+      "size": 46,
+      "in_page": true
+    },
+    {
+      "page": 6,
+      "text": "这是保留的普通ours规则，不要混同为探索版的证据删除。",
+      "x": 63,
+      "y": 101.0,
+      "width": 625.125,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 6,
+      "text": "核心规则",
+      "x": 78,
+      "y": 798.0,
+      "width": 100.0,
+      "size": 25,
+      "in_page": true
+    },
+    {
+      "page": 6,
+      "text": "轨迹能够快速清旧点，但误跟踪可能连带擦掉邻近静态结构。",
+      "x": 210,
+      "y": 798.0,
+      "width": 647.578125,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 6,
+      "text": "现有源码规则 · 所有点云与场景小图为示意 · 非新增实验结果",
+      "x": 60,
+      "y": 861.0,
+      "width": 473.765625,
+      "size": 17,
+      "in_page": true
+    },
+    {
+      "page": 6,
+      "text": "06 / 16",
+      "x": 1400,
+      "y": 861.0,
+      "width": 55.046875,
+      "size": 18,
+      "in_page": true
+    },
+    {
+      "page": 6,
+      "text": "1 确认运动目标",
+      "x": 76.0,
+      "y": 230.0,
+      "width": 190.828125,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 6,
+      "text": "读取位置、速度和实际已走",
+      "x": 78.0,
+      "y": 276.64,
+      "width": 287.8125,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 6,
+      "text": "轨迹。",
+      "x": 78.0,
+      "y": 309.76,
+      "width": 71.953125,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 6,
+      "text": "2 形成回溯区域",
+      "x": 455.5,
+      "y": 230.0,
+      "width": 190.828125,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 6,
+      "text": "保留20秒轨迹，另向后回溯1",
+      "x": 457.5,
+      "y": 276.64,
+      "width": 303.765625,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 6,
+      "text": ".5秒。",
+      "x": 457.5,
+      "y": 309.76,
+      "width": 67.953125,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 6,
+      "text": "3 不入图并擦旧点",
+      "x": 835.0,
+      "y": 230.0,
+      "width": 218.828125,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 6,
+      "text": "屏蔽邻近新点，直接删除旧",
+      "x": 837.0,
+      "y": 276.64,
+      "width": 287.8125,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 6,
+      "text": "格。",
+      "x": 837.0,
+      "y": 309.76,
+      "width": 47.96875,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 6,
+      "text": "4 保留模式边界",
+      "x": 1214.5,
+      "y": 230.0,
+      "width": 190.828125,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 6,
+      "text": "清理快，但假动态与轨迹范",
+      "x": 1216.5,
+      "y": 276.64,
+      "width": 287.8125,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 6,
+      "text": "围可能误伤货架。",
+      "x": 1216.5,
+      "y": 309.76,
+      "width": 191.875,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 6,
+      "text": "探索版：不使用这条轨迹圆柱直接删除，也不按轨迹范围禁止新点入图。",
+      "x": 73,
+      "y": 702.0,
+      "width": 800.0,
+      "size": 25,
+      "in_page": true
+    },
+    {
+      "page": 7,
+      "text": "探索演示：删除权交给新的观测证据",
+      "x": 60,
+      "y": 34.0,
+      "width": 736.0,
+      "size": 46,
+      "in_page": true
+    },
+    {
+      "page": 7,
+      "text": "“目标可能在运动”是线索；“旧位置被真实回波射线穿过”才进入删除检查。",
+      "x": 63,
+      "y": 101.0,
+      "width": 839.453125,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 7,
+      "text": "核心规则",
+      "x": 78,
+      "y": 798.0,
+      "width": 100.0,
+      "size": 25,
+      "in_page": true
+    },
+    {
+      "page": 7,
+      "text": "轨迹不是删除许可；没有足够的新观测就保留旧占用。",
+      "x": 210,
+      "y": 798.0,
+      "width": 575.625,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 7,
+      "text": "现有源码规则 · 所有点云与场景小图为示意 · 非新增实验结果",
+      "x": 60,
+      "y": 861.0,
+      "width": 473.765625,
+      "size": 17,
+      "in_page": true
+    },
+    {
+      "page": 7,
+      "text": "07 / 16",
+      "x": 1400,
+      "y": 861.0,
+      "width": 55.046875,
+      "size": 18,
+      "in_page": true
+    },
+    {
+      "page": 7,
+      "text": "输入",
+      "x": 90,
+      "y": 207.0,
+      "width": 53.96875,
+      "size": 27,
+      "in_page": true
+    },
+    {
+      "page": 7,
+      "text": "当前真实返回",
+      "x": 99,
+      "y": 284.0,
+      "width": 156.0,
+      "size": 26,
+      "in_page": true
+    },
+    {
+      "page": 7,
+      "text": "包含当前人体返回",
+      "x": 101,
+      "y": 322.02,
+      "width": 176.0,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 7,
+      "text": "配对位姿与外参",
+      "x": 99,
+      "y": 506.0,
+      "width": 182.0,
+      "size": 26,
+      "in_page": true
+    },
+    {
+      "page": 7,
+      "text": "构造扫描射线起点",
+      "x": 101,
+      "y": 544.02,
+      "width": 176.0,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 7,
+      "text": "证据与撤销",
+      "x": 470,
+      "y": 191.0,
+      "width": 134.921875,
+      "size": 27,
+      "in_page": true
+    },
+    {
+      "page": 7,
+      "text": "近场射线",
+      "x": 504,
+      "y": 296.0,
+      "width": 104.0,
+      "size": 26,
+      "in_page": true
+    },
+    {
+      "page": 7,
+      "text": "只取回波前空间",
+      "x": 506,
+      "y": 334.02,
+      "width": 154.0,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 7,
+      "text": "旧点矛盾检查",
+      "x": 853,
+      "y": 296.0,
+      "width": 156.0,
+      "size": 26,
+      "in_page": true
+    },
+    {
+      "page": 7,
+      "text": "旧点确实靠近射线",
+      "x": 855,
+      "y": 334.02,
+      "width": 176.0,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 7,
+      "text": "当前表面保护",
+      "x": 504,
+      "y": 549.0,
+      "width": 156.0,
+      "size": 26,
+      "in_page": true
+    },
+    {
+      "page": 7,
+      "text": "邻格回波、命中重置",
+      "x": 506,
+      "y": 587.02,
+      "width": 198.0,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 7,
+      "text": "有时效的次数确认",
+      "x": 853,
+      "y": 549.0,
+      "width": 208.0,
+      "size": 26,
+      "in_page": true
+    },
+    {
+      "page": 7,
+      "text": "3次或6次后撤销",
+      "x": 855,
+      "y": 587.02,
+      "width": 156.40625,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 7,
+      "text": "输出",
+      "x": 1260,
+      "y": 207.0,
+      "width": 53.96875,
+      "size": 27,
+      "in_page": true
+    },
+    {
+      "page": 7,
+      "text": "修正后的地图",
+      "x": 1266,
+      "y": 282.0,
+      "width": 156.0,
+      "size": 26,
+      "in_page": true
+    },
+    {
+      "page": 7,
+      "text": "旧格可从多视图撤销",
+      "x": 1268,
+      "y": 320.02,
+      "width": 198.0,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 7,
+      "text": "当前障碍仍有效",
+      "x": 1266,
+      "y": 509.0,
+      "width": 182.0,
+      "size": 26,
+      "in_page": true
+    },
+    {
+      "page": 7,
+      "text": "清图不替代即时避障",
+      "x": 1268,
+      "y": 547.02,
+      "width": 198.0,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 8,
+      "text": "看不到，不等于这里已经空了",
+      "x": 60,
+      "y": 34.0,
+      "width": 598.0,
+      "size": 46,
+      "in_page": true
+    },
+    {
+      "page": 8,
+      "text": "只有回波前、确实经过旧点附近的射线，才能提供撤销线索。",
+      "x": 63,
+      "y": 101.0,
+      "width": 647.578125,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 8,
+      "text": "核心规则",
+      "x": 78,
+      "y": 798.0,
+      "width": 100.0,
+      "size": 25,
+      "in_page": true
+    },
+    {
+      "page": 8,
+      "text": "遮挡后方、偏离射线、没有有效返回：都不能凭缺点删除。",
+      "x": 210,
+      "y": 798.0,
+      "width": 623.59375,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 8,
+      "text": "现有源码规则 · 所有点云与场景小图为示意 · 非新增实验结果",
+      "x": 60,
+      "y": 861.0,
+      "width": 473.765625,
+      "size": 17,
+      "in_page": true
+    },
+    {
+      "page": 8,
+      "text": "08 / 16",
+      "x": 1400,
+      "y": 861.0,
+      "width": 55.046875,
+      "size": 18,
+      "in_page": true
+    },
+    {
+      "page": 8,
+      "text": "三种观测必须区分",
+      "x": 90,
+      "y": 204.0,
+      "width": 215.875,
+      "size": 27,
+      "in_page": true
+    },
+    {
+      "page": 8,
+      "text": "1 支持已经空了",
+      "x": 98,
+      "y": 276.0,
+      "width": 190.828125,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 8,
+      "text": "旧点在有效射线附近",
+      "x": 100,
+      "y": 322.64,
+      "width": 215.859375,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 8,
+      "text": "雷达",
+      "x": 107.015625,
+      "y": 550.0,
+      "width": 39.96875,
+      "size": 20,
+      "in_page": true
+    },
+    {
+      "page": 8,
+      "text": "旧点",
+      "x": 295.015625,
+      "y": 550.0,
+      "width": 39.96875,
+      "size": 20,
+      "in_page": true
+    },
+    {
+      "page": 8,
+      "text": "新回波",
+      "x": 448.0234375,
+      "y": 550.0,
+      "width": 59.953125,
+      "size": 20,
+      "in_page": true
+    },
+    {
+      "page": 8,
+      "text": "2 前方存在遮挡",
+      "x": 590,
+      "y": 276.0,
+      "width": 190.828125,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 8,
+      "text": "回波前就遇到实体",
+      "x": 592,
+      "y": 322.64,
+      "width": 191.875,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 8,
+      "text": "雷达",
+      "x": 599.015625,
+      "y": 550.0,
+      "width": 39.96875,
+      "size": 20,
+      "in_page": true
+    },
+    {
+      "page": 8,
+      "text": "当前障碍",
+      "x": 729.03125,
+      "y": 550.0,
+      "width": 79.9375,
+      "size": 20,
+      "in_page": true
+    },
+    {
+      "page": 8,
+      "text": "遮挡后旧点",
+      "x": 848.0390625,
+      "y": 550.0,
+      "width": 99.921875,
+      "size": 20,
+      "in_page": true
+    },
+    {
+      "page": 8,
+      "text": "3 从旧点旁边扫过",
+      "x": 1082,
+      "y": 276.0,
+      "width": 218.828125,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 8,
+      "text": "同格不代表击穿旧点",
+      "x": 1084,
+      "y": 322.64,
+      "width": 215.859375,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 8,
+      "text": "偏离太远，保留旧点",
+      "x": 1156,
+      "y": 571.0,
+      "width": 198.0,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 9,
+      "text": "一个旧格子，到底能不能删除？",
+      "x": 60,
+      "y": 34.0,
+      "width": 644.0,
+      "size": 46,
+      "in_page": true
+    },
+    {
+      "page": 9,
+      "text": "先过几何与表面保护，再过时间与次数；不满足就保留。",
+      "x": 63,
+      "y": 101.0,
+      "width": 599.609375,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 9,
+      "text": "核心规则",
+      "x": 78,
+      "y": 798.0,
+      "width": 100.0,
+      "size": 25,
+      "in_page": true
+    },
+    {
+      "page": 9,
+      "text": "“当前没扫到”只是缺测，不是直接删除条件。",
+      "x": 210,
+      "y": 798.0,
+      "width": 503.671875,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 9,
+      "text": "现有源码规则 · 所有点云与场景小图为示意 · 非新增实验结果",
+      "x": 60,
+      "y": 861.0,
+      "width": 473.765625,
+      "size": 17,
+      "in_page": true
+    },
+    {
+      "page": 9,
+      "text": "09 / 16",
+      "x": 1400,
+      "y": 861.0,
+      "width": 55.046875,
+      "size": 18,
+      "in_page": true
+    },
+    {
+      "page": 9,
+      "text": "旧格与新射线",
+      "x": 86,
+      "y": 245.0,
+      "width": 156.0,
+      "size": 26,
+      "in_page": true
+    },
+    {
+      "page": 9,
+      "text": "得到候选，不是立即删除",
+      "x": 88,
+      "y": 283.02,
+      "width": 242.0,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 9,
+      "text": "几何和表面",
+      "x": 607.5,
+      "y": 271.0,
+      "width": 125.0,
+      "size": 25,
+      "in_page": true
+    },
+    {
+      "page": 9,
+      "text": "保护通过？",
+      "x": 607.5,
+      "y": 306.0,
+      "width": 125.0,
+      "size": 25,
+      "in_page": true
+    },
+    {
+      "page": 9,
+      "text": "是",
+      "x": 875,
+      "y": 270.0,
+      "width": 22.0,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 9,
+      "text": "检查最近命中与证据间隔",
+      "x": 955,
+      "y": 246.0,
+      "width": 286.0,
+      "size": 26,
+      "in_page": true
+    },
+    {
+      "page": 9,
+      "text": "刚被扫到则不计数；旧证据过期则重算。",
+      "x": 957,
+      "y": 284.02,
+      "width": 396.0,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 9,
+      "text": "次数达到",
+      "x": 1169.0,
+      "y": 537.0,
+      "width": 100.0,
+      "size": 25,
+      "in_page": true
+    },
+    {
+      "page": 9,
+      "text": "3次或6次？",
+      "x": 1154.28125,
+      "y": 572.0,
+      "width": 129.4375,
+      "size": 25,
+      "in_page": true
+    },
+    {
+      "page": 9,
+      "text": "是",
+      "x": 969,
+      "y": 525.0,
+      "width": 22.0,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 9,
+      "text": "撤销共享存储旧格",
+      "x": 571,
+      "y": 503.0,
+      "width": 208.0,
+      "size": 26,
+      "in_page": true
+    },
+    {
+      "page": 9,
+      "text": "下一次地图发布反映删除",
+      "x": 573,
+      "y": 541.02,
+      "width": 242.0,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 9,
+      "text": "保留旧占用",
+      "x": 86,
+      "y": 507.0,
+      "width": 130.0,
+      "size": 26,
+      "in_page": true
+    },
+    {
+      "page": 9,
+      "text": "缺证据、受保护或次数不足",
+      "x": 88,
+      "y": 545.02,
+      "width": 264.0,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 9,
+      "text": "否：保留",
+      "x": 548,
+      "y": 411.0,
+      "width": 88.0,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 9,
+      "text": "否：继续等待",
+      "x": 940,
+      "y": 718.0,
+      "width": 125.90625,
+      "size": 21,
+      "in_page": true
+    },
+    {
+      "page": 10,
+      "text": "稳定点也能撤销，但要更多证据",
+      "x": 60,
+      "y": 34.0,
+      "width": 644.0,
+      "size": 46,
+      "in_page": true
+    },
+    {
+      "page": 10,
+      "text": "稳定只是更难被删除，不代表永久可信，也不是人体类别判定。",
+      "x": 63,
+      "y": 101.0,
+      "width": 671.5625,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 10,
+      "text": "核心规则",
+      "x": 78,
+      "y": 798.0,
+      "width": 100.0,
+      "size": 25,
+      "in_page": true
+    },
+    {
+      "page": 10,
+      "text": "命中就清零；过期证据不能无限拼凑成删除授权。",
+      "x": 210,
+      "y": 798.0,
+      "width": 527.65625,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 10,
+      "text": "现有源码规则 · 所有点云与场景小图为示意 · 非新增实验结果",
+      "x": 60,
+      "y": 861.0,
+      "width": 473.765625,
+      "size": 17,
+      "in_page": true
+    },
+    {
+      "page": 10,
+      "text": "10 / 16",
+      "x": 1400,
+      "y": 861.0,
+      "width": 55.046875,
+      "size": 18,
+      "in_page": true
+    },
+    {
+      "page": 10,
+      "text": "普通旧格：3次有效空证据",
+      "x": 76,
+      "y": 229.0,
+      "width": 324.484375,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 10,
+      "text": "少量观测形成的占用，较早进入撤销。",
+      "x": 78,
+      "y": 275.64,
+      "width": 407.734375,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 10,
+      "text": "稳定旧格：6次有效空证据",
+      "x": 816,
+      "y": 229.0,
+      "width": 324.484375,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 10,
+      "text": "至少8次命中，更谨慎地撤销旧占用。",
+      "x": 818,
+      "y": 275.64,
+      "width": 397.0625,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 10,
+      "text": "稳定格的假设更新序列",
+      "x": 90,
+      "y": 424.0,
+      "width": 269.84375,
+      "size": 27,
+      "in_page": true
+    },
+    {
+      "page": 10,
+      "text": "重新命中",
+      "x": 97,
+      "y": 502.0,
+      "width": 104.0,
+      "size": 26,
+      "in_page": true
+    },
+    {
+      "page": 10,
+      "text": "清零",
+      "x": 99,
+      "y": 540.02,
+      "width": 44.0,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 10,
+      "text": "等待满0.5秒",
+      "x": 278,
+      "y": 502.0,
+      "width": 126.5625,
+      "size": 23,
+      "in_page": true
+    },
+    {
+      "page": 10,
+      "text": "暂不计数",
+      "x": 280,
+      "y": 536.21,
+      "width": 83.9375,
+      "size": 21,
+      "in_page": true
+    },
+    {
+      "page": 10,
+      "text": "空证据1",
+      "x": 459,
+      "y": 502.0,
+      "width": 93.3125,
+      "size": 26,
+      "in_page": true
+    },
+    {
+      "page": 10,
+      "text": "保留",
+      "x": 461,
+      "y": 540.02,
+      "width": 44.0,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 10,
+      "text": "空证据2",
+      "x": 640,
+      "y": 502.0,
+      "width": 93.3125,
+      "size": 26,
+      "in_page": true
+    },
+    {
+      "page": 10,
+      "text": "保留",
+      "x": 642,
+      "y": 540.02,
+      "width": 44.0,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 10,
+      "text": "空证据3",
+      "x": 821,
+      "y": 502.0,
+      "width": 93.3125,
+      "size": 26,
+      "in_page": true
+    },
+    {
+      "page": 10,
+      "text": "保留",
+      "x": 823,
+      "y": 540.02,
+      "width": 44.0,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 10,
+      "text": "空证据4",
+      "x": 1002,
+      "y": 502.0,
+      "width": 93.3125,
+      "size": 26,
+      "in_page": true
+    },
+    {
+      "page": 10,
+      "text": "保留",
+      "x": 1004,
+      "y": 540.02,
+      "width": 44.0,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 10,
+      "text": "空证据5",
+      "x": 1183,
+      "y": 502.0,
+      "width": 93.3125,
+      "size": 26,
+      "in_page": true
+    },
+    {
+      "page": 10,
+      "text": "保留",
+      "x": 1185,
+      "y": 540.02,
+      "width": 44.0,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 10,
+      "text": "空证据6",
+      "x": 1364,
+      "y": 502.0,
+      "width": 93.3125,
+      "size": 26,
+      "in_page": true
+    },
+    {
+      "page": 10,
+      "text": "删除",
+      "x": 1366,
+      "y": 540.02,
+      "width": 44.0,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 10,
+      "text": "若中途再次命中 → 从零开始；若有效证据间隔超过1秒 → 下一次先清零。",
+      "x": 87,
+      "y": 640.0,
+      "width": 811.25,
+      "size": 25,
+      "in_page": true
+    },
+    {
+      "page": 11,
+      "text": "保护货架、薄结构与真实表面",
+      "x": 60,
+      "y": 34.0,
+      "width": 598.0,
+      "size": 46,
+      "in_page": true
+    },
+    {
+      "page": 11,
+      "text": "不因为旁边有人被误判运动，就把一整段货架擦掉。",
+      "x": 63,
+      "y": 101.0,
+      "width": 551.640625,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 11,
+      "text": "核心规则",
+      "x": 78,
+      "y": 798.0,
+      "width": 100.0,
+      "size": 25,
+      "in_page": true
+    },
+    {
+      "page": 11,
+      "text": "先保护当前返回，再要求真实射线矛盾，稳定格使用更高删除门限。",
+      "x": 210,
+      "y": 798.0,
+      "width": 719.53125,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 11,
+      "text": "现有源码规则 · 所有点云与场景小图为示意 · 非新增实验结果",
+      "x": 60,
+      "y": 861.0,
+      "width": 473.765625,
+      "size": 17,
+      "in_page": true
+    },
+    {
+      "page": 11,
+      "text": "11 / 16",
+      "x": 1400,
+      "y": 861.0,
+      "width": 55.046875,
+      "size": 18,
+      "in_page": true
+    },
+    {
+      "page": 11,
+      "text": "1 轨迹不授权擦除",
+      "x": 76.0,
+      "y": 230.0,
+      "width": 218.828125,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 11,
+      "text": "探索不沿目标圆柱直接删除",
+      "x": 78.0,
+      "y": 276.64,
+      "width": 287.8125,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 11,
+      "text": "货架。",
+      "x": 78.0,
+      "y": 309.76,
+      "width": 71.953125,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 11,
+      "text": "2 当前表面优先",
+      "x": 455.5,
+      "y": 230.0,
+      "width": 190.828125,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 11,
+      "text": "旧格周围27个邻格有回波就",
+      "x": 457.5,
+      "y": 276.64,
+      "width": 290.453125,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 11,
+      "text": "保护。",
+      "x": 457.5,
+      "y": 309.76,
+      "width": 71.953125,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 11,
+      "text": "3 射线确实矛盾",
+      "x": 835.0,
+      "y": 230.0,
+      "width": 190.828125,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 11,
+      "text": "旧代表点距离射线不超过6厘",
+      "x": 837.0,
+      "y": 276.64,
+      "width": 301.125,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 11,
+      "text": "米。",
+      "x": 837.0,
+      "y": 309.76,
+      "width": 47.96875,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 11,
+      "text": "4 稳定格更谨慎",
+      "x": 1214.5,
+      "y": 230.0,
+      "width": 190.828125,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 11,
+      "text": "最近命中有等待；稳定格需6",
+      "x": 1216.5,
+      "y": 276.64,
+      "width": 301.125,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 11,
+      "text": "次证据。",
+      "x": 1216.5,
+      "y": 309.76,
+      "width": 95.9375,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 11,
+      "text": "这些是降低误删风险的工程规则，不是“所有静态表面永远不缺点”的保证。",
+      "x": 73,
+      "y": 699.0,
+      "width": 850.0,
+      "size": 25,
+      "in_page": true
+    },
+    {
+      "page": 12,
+      "text": "人从静止到离开，地图如何变化？",
+      "x": 60,
+      "y": 34.0,
+      "width": 690.0,
+      "size": 46,
+      "in_page": true
+    },
+    {
+      "page": 12,
+      "text": "先承认当前占用，再核实旧位置消失；不需要一开始就知道“这是人”。",
+      "x": 63,
+      "y": 101.0,
+      "width": 767.5,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 12,
+      "text": "核心规则",
+      "x": 78,
+      "y": 798.0,
+      "width": 100.0,
+      "size": 25,
+      "in_page": true
+    },
+    {
+      "page": 12,
+      "text": "静止的人仍是障碍；人离开后的旧占用才是要撤销的内容。",
+      "x": 210,
+      "y": 798.0,
+      "width": 623.59375,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 12,
+      "text": "现有源码规则 · 所有点云与场景小图为示意 · 非新增实验结果",
+      "x": 60,
+      "y": 861.0,
+      "width": 473.765625,
+      "size": 17,
+      "in_page": true
+    },
+    {
+      "page": 12,
+      "text": "12 / 16",
+      "x": 1400,
+      "y": 861.0,
+      "width": 55.046875,
+      "size": 18,
+      "in_page": true
+    },
+    {
+      "page": 12,
+      "text": "1 原地站立",
+      "x": 76.0,
+      "y": 230.0,
+      "width": 134.828125,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 12,
+      "text": "当前回波占空间，可以进入",
+      "x": 78.0,
+      "y": 276.64,
+      "width": 287.8125,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 12,
+      "text": "稳定地图。",
+      "x": 78.0,
+      "y": 309.76,
+      "width": 119.921875,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 12,
+      "text": "2 开始移动",
+      "x": 455.5,
+      "y": 230.0,
+      "width": 134.828125,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 12,
+      "text": "新位置仍是障碍，风险保护",
+      "x": 457.5,
+      "y": 276.64,
+      "width": 287.8125,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 12,
+      "text": "继续工作。",
+      "x": 457.5,
+      "y": 309.76,
+      "width": 119.921875,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 12,
+      "text": "3 回看旧位置",
+      "x": 835.0,
+      "y": 230.0,
+      "width": 162.828125,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 12,
+      "text": "有效射线、多次已空证据，",
+      "x": 837.0,
+      "y": 276.64,
+      "width": 287.8125,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 12,
+      "text": "逐步核实。",
+      "x": 837.0,
+      "y": 309.76,
+      "width": 119.921875,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 12,
+      "text": "4 撤销旧格",
+      "x": 1214.5,
+      "y": 230.0,
+      "width": 134.828125,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 12,
+      "text": "原位置不再长期挡路；现有",
+      "x": 1216.5,
+      "y": 276.64,
+      "width": 287.8125,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 12,
+      "text": "人仍不能忽略。",
+      "x": 1216.5,
+      "y": 309.76,
+      "width": 167.890625,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 12,
+      "text": "旧位置被遮挡时：保留未确认占用；需要安全地换视角再观察，而不是强行擦除。",
+      "x": 72,
+      "y": 699.0,
+      "width": 900.0,
+      "size": 25,
+      "in_page": true
+    },
+    {
+      "page": 13,
+      "text": "地图更新，要让路线也重新审视",
+      "x": 60,
+      "y": 34.0,
+      "width": 644.0,
+      "size": 46,
+      "in_page": true
+    },
+    {
+      "page": 13,
+      "text": "地图清得干净只是中间结果；最终目的是不再被历史假墙一直挡住。",
+      "x": 63,
+      "y": 101.0,
+      "width": 719.53125,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 13,
+      "text": "核心规则",
+      "x": 78,
+      "y": 798.0,
+      "width": 100.0,
+      "size": 25,
+      "in_page": true
+    },
+    {
+      "page": 13,
+      "text": "先在三维旧点上用自由证据修正，再膨胀障碍，最后叠加当前占用。",
+      "x": 210,
+      "y": 798.0,
+      "width": 719.53125,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 13,
+      "text": "现有源码规则 · 所有点云与场景小图为示意 · 非新增实验结果",
+      "x": 60,
+      "y": 861.0,
+      "width": 473.765625,
+      "size": 17,
+      "in_page": true
+    },
+    {
+      "page": 13,
+      "text": "13 / 16",
+      "x": 1400,
+      "y": 861.0,
+      "width": 55.046875,
+      "size": 18,
+      "in_page": true
+    },
+    {
+      "page": 13,
+      "text": "长期地图修正",
+      "x": 90,
+      "y": 201.0,
+      "width": 161.90625,
+      "size": 27,
+      "in_page": true
+    },
+    {
+      "page": 13,
+      "text": "满足多次证据再删",
+      "x": 104,
+      "y": 279.0,
+      "width": 176.0,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 13,
+      "text": "共享存储删除旧占用",
+      "x": 106,
+      "y": 317.36,
+      "width": 188.859375,
+      "size": 21,
+      "in_page": true
+    },
+    {
+      "page": 13,
+      "text": "持续与稳定地图更新",
+      "x": 104,
+      "y": 527.0,
+      "width": 252.0,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 13,
+      "text": "历史参考不再永远保留假墙",
+      "x": 106,
+      "y": 573.64,
+      "width": 287.8125,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 13,
+      "text": "局部路线的及时修正",
+      "x": 660,
+      "y": 201.0,
+      "width": 242.859375,
+      "size": 27,
+      "in_page": true
+    },
+    {
+      "page": 13,
+      "text": "旧点三维匹配",
+      "x": 673,
+      "y": 290.0,
+      "width": 168.0,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 13,
+      "text": "仅修正自由证据附近",
+      "x": 675,
+      "y": 336.64,
+      "width": 215.859375,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 13,
+      "text": "原点",
+      "x": 675,
+      "y": 369.76,
+      "width": 47.96875,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 13,
+      "text": "剩余障碍膨胀",
+      "x": 963,
+      "y": 290.0,
+      "width": 168.0,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 13,
+      "text": "保留机体与安全间隙",
+      "x": 965,
+      "y": 336.64,
+      "width": 215.859375,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 13,
+      "text": "当前占用回填",
+      "x": 1253,
+      "y": 290.0,
+      "width": 168.0,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 13,
+      "text": "当前人、货架继续挡",
+      "x": 1255,
+      "y": 336.64,
+      "width": 215.859375,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 13,
+      "text": "路",
+      "x": 1255,
+      "y": 369.76,
+      "width": 23.984375,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 13,
+      "text": "重新检查路径或探索航点",
+      "x": 673,
+      "y": 605.0,
+      "width": 286.0,
+      "size": 26,
+      "in_page": true
+    },
+    {
+      "page": 13,
+      "text": "探索与普通目标规划使用不同任务节点",
+      "x": 675,
+      "y": 643.02,
+      "width": 374.0,
+      "size": 22,
+      "in_page": true
+    },
+    {
+      "page": 13,
+      "text": "局部自由观测可先修正路线，不必等持续地图完成删除；两者删除条件不能混同。",
+      "x": 75,
+      "y": 738.0,
+      "width": 828.0,
+      "size": 23,
+      "in_page": true
+    },
+    {
+      "page": 14,
+      "text": "时间错了，删除证据也会错",
+      "x": 60,
+      "y": 34.0,
+      "width": 552.0,
+      "size": 46,
+      "in_page": true
+    },
+    {
+      "page": 14,
+      "text": "刚收到消息，不代表它和当前扫描属于同一个时刻。",
+      "x": 63,
+      "y": 101.0,
+      "width": 551.640625,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 14,
+      "text": "核心规则",
+      "x": 78,
+      "y": 798.0,
+      "width": 100.0,
+      "size": 25,
+      "in_page": true
+    },
+    {
+      "page": 14,
+      "text": "定时重发旧图不是新观测；探索保留最后扫描采集时间。",
+      "x": 210,
+      "y": 798.0,
+      "width": 599.609375,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 14,
+      "text": "现有源码规则 · 所有点云与场景小图为示意 · 非新增实验结果",
+      "x": 60,
+      "y": 861.0,
+      "width": 473.765625,
+      "size": 17,
+      "in_page": true
+    },
+    {
+      "page": 14,
+      "text": "14 / 16",
+      "x": 1400,
+      "y": 861.0,
+      "width": 55.046875,
+      "size": 18,
+      "in_page": true
+    },
+    {
+      "page": 14,
+      "text": "1 扫描坐标一致",
+      "x": 76.0,
+      "y": 230.0,
+      "width": 190.828125,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 14,
+      "text": "不是改个坐标名字就算对",
+      "x": 78.0,
+      "y": 276.64,
+      "width": 263.828125,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 14,
+      "text": "齐。",
+      "x": 78.0,
+      "y": 309.76,
+      "width": 47.96875,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 14,
+      "text": "2 位姿时间接近",
+      "x": 455.5,
+      "y": 230.0,
+      "width": 190.828125,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 14,
+      "text": "时间差最多0.08秒；否则等",
+      "x": 457.5,
+      "y": 276.64,
+      "width": 286.453125,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 14,
+      "text": "待最新扫描配对。",
+      "x": 457.5,
+      "y": 309.76,
+      "width": 191.875,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 14,
+      "text": "3 外参随姿态旋转",
+      "x": 835.0,
+      "y": 230.0,
+      "width": 218.828125,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 14,
+      "text": "使用对应位姿构造雷达实际",
+      "x": 837.0,
+      "y": 276.64,
+      "width": 287.8125,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 14,
+      "text": "起点。",
+      "x": 837.0,
+      "y": 309.76,
+      "width": 71.953125,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 14,
+      "text": "4 输出保留采集时间",
+      "x": 1214.5,
+      "y": 230.0,
+      "width": 246.828125,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 14,
+      "text": "定时重发旧图，不改称刚采",
+      "x": 1216.5,
+      "y": 276.64,
+      "width": 287.8125,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 14,
+      "text": "集的新图。",
+      "x": 1216.5,
+      "y": 309.76,
+      "width": 119.921875,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 14,
+      "text": "规则限制：最近时间配对不是插值，不等于已经验证真实雷达逐点运动补偿。",
+      "x": 73,
+      "y": 699.0,
+      "width": 850.0,
+      "size": 25,
+      "in_page": true
+    },
+    {
+      "page": 15,
+      "text": "持续地图也要有容量与保存规则",
+      "x": 60,
+      "y": 34.0,
+      "width": 644.0,
+      "size": 46,
+      "in_page": true
+    },
+    {
+      "page": 15,
+      "text": "地图删除有两种原因：观测确认失效，或者容量保护淘汰。",
+      "x": 63,
+      "y": 101.0,
+      "width": 623.59375,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 15,
+      "text": "核心规则",
+      "x": 78,
+      "y": 798.0,
+      "width": 100.0,
+      "size": 25,
+      "in_page": true
+    },
+    {
+      "page": 15,
+      "text": "保存的是当前维护图快照，不在导出时额外裁剪人体来制造“零鬼影”。",
+      "x": 210,
+      "y": 798.0,
+      "width": 767.5,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 15,
+      "text": "现有源码规则 · 所有点云与场景小图为示意 · 非新增实验结果",
+      "x": 60,
+      "y": 861.0,
+      "width": 473.765625,
+      "size": 17,
+      "in_page": true
+    },
+    {
+      "page": 15,
+      "text": "15 / 16",
+      "x": 1400,
+      "y": 861.0,
+      "width": 55.046875,
+      "size": 18,
+      "in_page": true
+    },
+    {
+      "page": 15,
+      "text": "1 约束清理开销",
+      "x": 76.0,
+      "y": 230.0,
+      "width": 190.828125,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 15,
+      "text": "最多8000条射线、20万个自",
+      "x": 78.0,
+      "y": 276.64,
+      "width": 295.734375,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 15,
+      "text": "由格。",
+      "x": 78.0,
+      "y": 309.76,
+      "width": 71.953125,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 15,
+      "text": "2 限制地图容量",
+      "x": 455.5,
+      "y": 230.0,
+      "width": 190.828125,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 15,
+      "text": "最多50万格；超限淘汰久未",
+      "x": 457.5,
+      "y": 276.64,
+      "width": 290.453125,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 15,
+      "text": "命中的格。",
+      "x": 457.5,
+      "y": 309.76,
+      "width": 119.921875,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 15,
+      "text": "3 定时输出视图",
+      "x": 835.0,
+      "y": 230.0,
+      "width": 190.828125,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 15,
+      "text": "设置每秒2次；重发不增加观",
+      "x": 837.0,
+      "y": 276.64,
+      "width": 301.125,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 15,
+      "text": "测证据。",
+      "x": 837.0,
+      "y": 309.76,
+      "width": 95.9375,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 15,
+      "text": "4 保存真实快照",
+      "x": 1214.5,
+      "y": 230.0,
+      "width": 190.828125,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 15,
+      "text": "有限点、来源、时间、点数",
+      "x": 1216.5,
+      "y": 276.64,
+      "width": 287.8125,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 15,
+      "text": "和校验信息。",
+      "x": 1216.5,
+      "y": 309.76,
+      "width": 143.90625,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 15,
+      "text": "地图缺点不一定都是误删：还可能是未扫到、遮挡、入图筛选或容量淘汰。",
+      "x": 73,
+      "y": 699.0,
+      "width": 825.0,
+      "size": 25,
+      "in_page": true
+    },
+    {
+      "page": 16,
+      "text": "我们制定的规则：敢更新，也不随意删",
+      "x": 60,
+      "y": 34.0,
+      "width": 782.0,
+      "size": 46,
+      "in_page": true
+    },
+    {
+      "page": 16,
+      "text": "关注人离开后旧占用的恢复，同时保留货架与当前真实障碍。",
+      "x": 63,
+      "y": 101.0,
+      "width": 647.578125,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 16,
+      "text": "核心规则",
+      "x": 78,
+      "y": 798.0,
+      "width": 100.0,
+      "size": 25,
+      "in_page": true
+    },
+    {
+      "page": 16,
+      "text": "这是可追查的地图维护工程层，不是全图零鬼影或完整建图的保证。",
+      "x": 210,
+      "y": 798.0,
+      "width": 719.53125,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 16,
+      "text": "现有源码规则 · 所有点云与场景小图为示意 · 非新增实验结果",
+      "x": 60,
+      "y": 861.0,
+      "width": 473.765625,
+      "size": 17,
+      "in_page": true
+    },
+    {
+      "page": 16,
+      "text": "16 / 16",
+      "x": 1400,
+      "y": 861.0,
+      "width": 55.046875,
+      "size": 18,
+      "in_page": true
+    },
+    {
+      "page": 16,
+      "text": "现有核心规则",
+      "x": 76.0,
+      "y": 230.0,
+      "width": 168.0,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 16,
+      "text": "同帧同格只记一次。",
+      "x": 78.0,
+      "y": 276.64,
+      "width": 215.859375,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 16,
+      "text": "共享存储派生多视图。",
+      "x": 78.0,
+      "y": 309.76,
+      "width": 239.84375,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 16,
+      "text": "探索不凭轨迹擦除。",
+      "x": 78.0,
+      "y": 342.88,
+      "width": 215.859375,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 16,
+      "text": "当前返回优先保护。",
+      "x": 78.0,
+      "y": 376.0,
+      "width": 215.859375,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 16,
+      "text": "删除必须有条件",
+      "x": 582.0,
+      "y": 230.0,
+      "width": 196.0,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 16,
+      "text": "射线经过旧点附近。",
+      "x": 584.0,
+      "y": 276.64,
+      "width": 215.859375,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 16,
+      "text": "距命中至少0.5秒。",
+      "x": 584.0,
+      "y": 309.76,
+      "width": 201.1875,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 16,
+      "text": "证据间隔不超过1秒。",
+      "x": 584.0,
+      "y": 342.88,
+      "width": 229.171875,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 16,
+      "text": "普通3次、稳定6次。",
+      "x": 584.0,
+      "y": 376.0,
+      "width": 218.5,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 16,
+      "text": "必须保留的边界",
+      "x": 1088.0,
+      "y": 230.0,
+      "width": 196.0,
+      "size": 28,
+      "in_page": true
+    },
+    {
+      "page": 16,
+      "text": "未再观测不保证清除。",
+      "x": 1090.0,
+      "y": 276.64,
+      "width": 239.84375,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 16,
+      "text": "当前人体仍是障碍。",
+      "x": 1090.0,
+      "y": 309.76,
+      "width": 215.859375,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 16,
+      "text": "自由视图不是删除授权。",
+      "x": 1090.0,
+      "y": 342.88,
+      "width": 263.828125,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 16,
+      "text": "不自动改内部匹配树。",
+      "x": 1090.0,
+      "y": 376.0,
+      "width": 239.84375,
+      "size": 24,
+      "in_page": true
+    },
+    {
+      "page": 16,
+      "text": "建议成对检验：旧点残留 + 静态保留 + 恢复路线 + 处理开销；本轮没有新飞行实验。",
+      "x": 72,
+      "y": 726.0,
+      "width": 887.65625,
+      "size": 24,
+      "in_page": true
+    }
+  ],
+  "reference": "/home/a/下载/fastlio2ppt.pptx",
+  "user_reference": "两张会话附件：分区架构图和七步循环流程图；未保存附件副本",
+  "diagram_scope": "纯矢量规则示意，无实验点云伪装"
+}

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect x="0" y="0" width="1600" height="900" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1.5"/>
+<text x="60" y="87.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="47" font-weight="700" fill="#15334C" text-anchor="start">动态风险的处理流程与防抖规则</text>
+<text x="62" y="129.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="24" font-weight="400" fill="#657585" text-anchor="start">输入是已经确认的运动目标，不是把每个新出现的点都当成危险。</text>
+<polyline points="60,151 1540,151" fill="none" stroke="#D5E0E6" stroke-width="1.5"/>
+<rect x="60" y="774" width="1480" height="70" rx="0" fill="#EFF5F8" stroke="none" stroke-width="1.5"/>
+<text x="80" y="818.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="700" fill="#24618A" text-anchor="start">核心规则</text>
+<text x="210" y="818.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">目标锁定与解除保持，减少漏检或边界波动导致的反复变向。</text>
+<text x="60" y="880.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="17" font-weight="400" fill="#657585" text-anchor="start">现有实现讲解 · 参数不是实验结果 · 源码对应见配套说明</text>
+<text x="1400" y="880.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="18" font-weight="400" fill="#657585" text-anchor="start">03 / 10</text>
+<rect x="60" y="212" width="346" height="420" rx="0" fill="#F6FAFC" stroke="#D5E0E6" stroke-width="1.5"/>
+<rect x="60" y="212" width="346" height="69" rx="0" fill="#24618A" stroke="none" stroke-width="1.5"/>
+<text x="78" y="257.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#FFFFFF" text-anchor="start">1  接收目标与位姿</text>
+<text x="83" y="322.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">读取目标的位置和速度。</text>
+<text x="83" y="370.5" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">估计无人机自身速度，并进</text>
+<text x="83" y="405.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">行平滑。</text>
+<text x="83" y="453.5" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">检查目标和位姿消息是否及</text>
+<text x="83" y="488.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">时到达。</text>
+<polyline points="409,425 435,425" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="435.00,425.00 425.00,429.80 425.00,420.20" fill="#24618A"/>
+<rect x="438" y="212" width="346" height="420" rx="0" fill="#F6FAFC" stroke="#D5E0E6" stroke-width="1.5"/>
+<rect x="438" y="212" width="346" height="69" rx="0" fill="#137B7E" stroke="none" stroke-width="1.5"/>
+<text x="456" y="257.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#FFFFFF" text-anchor="start">2  预测接近程度</text>
+<text x="461" y="322.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">判断正在接近还是远离。</text>
+<text x="461" y="370.5" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">计算未来最近距离、到达该</text>
+<text x="461" y="405.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">时刻的时间和高度差。</text>
+<text x="461" y="453.5" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">分别检查普通预警与两种紧</text>
+<text x="461" y="488.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">急条件。</text>
+<polyline points="787,425 813,425" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="813.00,425.00 803.00,429.80 803.00,420.20" fill="#24618A"/>
+<rect x="816" y="212" width="346" height="420" rx="0" fill="#F6FAFC" stroke="#D5E0E6" stroke-width="1.5"/>
+<rect x="816" y="212" width="346" height="69" rx="0" fill="#24618A" stroke="none" stroke-width="1.5"/>
+<text x="834" y="257.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#FFFFFF" text-anchor="start">3  选择主要威胁</text>
+<text x="839" y="322.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">危险程度与时间紧迫度共同</text>
+<text x="839" y="356.5" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">决定优先级。</text>
+<text x="839" y="405.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">尽量继续跟踪同一目标。</text>
+<text x="839" y="453.5" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">新紧急目标可以打断原目标</text>
+<text x="839" y="488.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">锁定。</text>
+<polyline points="1165,425 1191,425" fill="none" stroke="#24618A" stroke-width="2"/>
+<polygon points="1191.00,425.00 1181.00,429.80 1181.00,420.20" fill="#24618A"/>
+<rect x="1194" y="212" width="346" height="420" rx="0" fill="#F6FAFC" stroke="#D5E0E6" stroke-width="1.5"/>
+<rect x="1194" y="212" width="346" height="69" rx="0" fill="#137B7E" stroke="none" stroke-width="1.5"/>
+<text x="1212" y="257.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="27" font-weight="700" fill="#FFFFFF" text-anchor="start">4  输出等级与建议</text>
+<text x="1217" y="322.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">输出 0／1／2 级风险。</text>
+<text x="1217" y="370.5" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">建议向运动方向侧面让开，</text>
+<text x="1217" y="405.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">避免继续冲向交叉点。</text>
+<text x="1217" y="453.5" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">锁定方向、平滑建议速度，</text>
+<text x="1217" y="488.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="25" font-weight="400" fill="#15334C" text-anchor="start">减少左右反复。</text>
+<text x="70" y="692.0" font-family="Noto Sans CJK SC,Microsoft YaHei,sans-serif" font-size="26" font-weight="400" fill="#15334C" text-anchor="start">退出区 1.60 米；短暂漏检保留 0.30 秒；解除保持 0.30 秒；紧急保持 0.25 秒。</text>
+</svg>

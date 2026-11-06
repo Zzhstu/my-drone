@@ -1,0 +1,30 @@
+# Local environments and generated ROS/catkin files
+.envs/
+.venvs/
+**/build/
+**/devel/
+**/install/
+**/__pycache__/
+*.pyc
+
+# Experiment captures, maps, training output and run directories
+/*_runs/
+/evaluation/
+/analysis_outputs/
+/half_gs_plans/
+/backups/
+*.bag
+*.bag.active
+*.pcd
+*.ckpt
+*.pth
+*.pt
+*.onnx
+*.log
+**/Log/
+**/logs/
+
+# Local secrets
+.env
+*.pem
+*.key

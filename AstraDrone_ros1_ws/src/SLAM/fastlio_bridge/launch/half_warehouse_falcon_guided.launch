@@ -1,0 +1,12 @@
+<launch>
+  <arg name="rviz" default="true"/>
+  <arg name="output"/>
+  <arg name="return_after_goals" default="0"/>
+  <!-- Reuse the same sensor, dynamic-risk, controller and return/save chain. -->
+  <include file="$(find fastlio_bridge)/launch/half_warehouse_exploration.launch">
+    <arg name="rviz" value="$(arg rviz)"/>
+    <arg name="output" value="$(arg output)"/>
+    <arg name="return_after_goals" value="$(arg return_after_goals)"/>
+  </include>
+  <rosparam command="load" file="$(find fastlio_bridge)/config/half_warehouse_falcon_guided.yaml"/>
+</launch>

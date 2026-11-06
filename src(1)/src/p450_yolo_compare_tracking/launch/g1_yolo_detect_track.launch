@@ -1,0 +1,60 @@
+<launch>
+  <arg name="uav_id" default="1"/>
+  <arg name="model_name" default="yolo11"/>
+  <arg name="model_path" default="/home/amov/SpireCV/models/yolo11n.pt"/>
+  <arg name="backend" default="auto"/>
+  <arg name="yolov5_repo" default="/home/amov/yolov5"/>
+  <arg name="device" default="0"/>
+  <arg name="imgsz" default="640"/>
+  <arg name="conf" default="0.50"/>
+  <arg name="iou" default="0.45"/>
+  <arg name="classes" default="all"/>
+  <arg name="max_det" default="50"/>
+  <arg name="input_image_topic" default="/uav$(arg uav_id)/gimbal/image_original"/>
+  <arg name="output_image_topic" default="/uav$(arg uav_id)/spirecv/image_det"/>
+  <arg name="target_topic" default="/uav$(arg uav_id)/spirecv/target"/>
+  <arg name="auto_select" default="false"/>
+  <arg name="auto_select_policy" default="highest_score"/>
+  <arg name="enable_ui" default="false"/>
+  <arg name="tracker_type" default="KCF"/>
+  <arg name="lost_threshold" default="5"/>
+  <arg name="strict_click" default="true"/>
+  <arg name="click_bbox_pad" default="0.10"/>
+  <arg name="click_bbox_min_px" default="20"/>
+  <arg name="click_pick_policy" default="nearest"/>
+  <arg name="manual_override_topic" default="/uav1/p450/manual_override"/>
+  <arg name="manual_override_empty_period" default="0.5"/>
+  
+  
+  <param name="class_names" value="pedestrian,people,bicycle,car,van,truck,tricycle,awning-tricycle,bus,motor"/>
+  <param name="strict_click" value="true"/>
+  <param name="publish_empty_on_reset" value="true"/>
+  
+  <node pkg="p450_yolo_compare_tracking" type="yolo_detect_track_node.py" name="yolo_detect_track" output="screen">
+    <param name="uav_id" value="$(arg uav_id)"/>
+    <param name="model_name" value="$(arg model_name)"/>
+    <param name="model_path" value="$(arg model_path)"/>
+    <param name="backend" value="$(arg backend)"/>
+    <param name="yolov5_repo" value="$(arg yolov5_repo)"/>
+    <param name="device" value="$(arg device)"/>
+    <param name="imgsz" value="$(arg imgsz)"/>
+    <param name="conf" value="$(arg conf)"/>
+    <param name="iou" value="$(arg iou)"/>
+    <param name="classes" value="$(arg classes)"/>
+    <param name="max_det" value="$(arg max_det)"/>
+    <param name="input_image_topic" value="$(arg input_image_topic)"/>
+    <param name="output_image_topic" value="$(arg output_image_topic)"/>
+    <param name="target_topic" value="$(arg target_topic)"/>
+    <param name="auto_select" value="$(arg auto_select)"/>
+    <param name="auto_select_policy" value="$(arg auto_select_policy)"/>
+    <param name="enable_ui" value="$(arg enable_ui)"/>
+    <param name="tracker_type" value="$(arg tracker_type)"/>
+    <param name="lost_threshold" value="$(arg lost_threshold)"/>
+    <param name="strict_click" value="$(arg strict_click)"/>
+    <param name="click_bbox_pad" value="$(arg click_bbox_pad)"/>
+    <param name="click_bbox_min_px" value="$(arg click_bbox_min_px)"/>
+    <param name="click_pick_policy" value="$(arg click_pick_policy)"/>
+    <param name="manual_override_topic" value="$(arg manual_override_topic)"/>
+    <param name="manual_override_empty_period" value="$(arg manual_override_empty_period)"/>
+  </node>
+</launch>

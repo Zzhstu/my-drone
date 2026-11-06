@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=3DGS 本地查看器
+Comment=本地GPU窗口查看静态三高度半仓库高斯地图
+Exec=/usr/bin/bash /home/a/AstraDroneOpen/scripts/run_sh/open_static_half_warehouse_gsplat_desktop.sh
+Icon=applications-graphics
+Terminal=false
+Categories=Graphics;Science;
+StartupNotify=false
