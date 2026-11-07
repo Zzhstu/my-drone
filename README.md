@@ -1,441 +1,115 @@
-# AstraDroneOpen 无人机开源系统
+# My Drone：动态环境无人机建图与探索
 
-AstraDroneOpen 是一套完整、模块化、高可拓展性的多旋翼无人机开源系统，结构清晰，目录完整，适用于学术研究、竞赛开发与产业落地。系统集成了视觉感知、定位建图、路径规划、飞行控制、集群通信、任务管理、仿真测试等核心功能，**解决了功能包相互冲突及自定义消息类型依赖问题**，支持 ROS 1 与 ROS 2 双环境。**同时支持仿真、实机**，无需二次移植到实机。
+本项目基于 AstraDroneOpen，面向室内仓库等场景，集成 PX4/Gazebo 仿真、MID360 激光惯性定位、动态环境地图维护、自主探索和离线三维高斯建模（3DGS）。主要用于研究和工程验证：无人机在环境中定位、观察动态物体、维护供规划使用的地图，并保存可复查的实验结果。
 
----
+当前公开仓库是从本机 `/home/a/AstraDroneOpen` 筛选的**源码快照**，不是整个工作目录的备份。实验数据、录包、已训练模型、部分权重、ROS 构建产物和本机环境不在仓库中；本机项目后续修改也不会自动同步到 GitHub。上传范围和可能缺失的资源见 [上传范围说明](UPLOAD_SCOPE_CN.md)。本仓库的启动链主要在已有 ROS 1/PX4/Gazebo SITL 环境中验证，**新机器直接克隆后的完整构建及真机飞行尚未验证**。
 
-2026-10-24更新：[定位误差修复与完整SITL验收](evaluation/loop_tracking_20261024/FINAL_REPORT_20261024.md)。十分钟入口的FAST-LIO前端匹配/内部地图默认从50cm改为20cm，维护图15cm和规划格20cm不变；三份相同原始LiDAR/IMU完整回放均改善。新完整SITL全程定位RMSE约1.19cm、末端定位误差0.89cm、398s预算返航落地，10cm几何贴合99.90%；本次0回环，收益来自前端精度配置，不是已验证的小回环收益。激进小回环分支仍关闭，真机及全部三维/多视角质量未验证。旧档可加`--lio-voxel-size 0.5`复现。下方报告保留其各自历史时间范围。
+## 系统流程
 
-本地半仓库自主探索扩展目前以 PX4/Gazebo SITL 验证。新增原始证据录包、参数/源码指纹、逐输入回执重放、鬼影射线诊断、离线回环一致地图重建和三维扫掠空间检查；完整三维自主飞行与真机验证尚未完成。实现、实验结果及启动命令见[本轮改进与验证](evaluation/IMPLEMENTATION_STATUS_20261021.md)。针对约十分钟续航新增独立[限时建图demo](evaluation/TEN_MINUTE_DEMO_20261021.md)，按解锁时间保留返航和降落预算，地图不足时明确输出部分结果。仿真传感器外参与机体原点的高度偏差修复见[诊断和验证报告](evaluation/SENSOR_ORIGIN_FIX_20261022.md)。
-
-回环后端新增近距离候选、点到平面验证、两帧确认、重力保持图及残差尺度门槛；原录包避免错误微小修正，人工漂移压力测试验证明显漂移的纠正。独立重放及去鬼影地图重建命令、负结果和验收边界见[回环改进报告](evaluation/LOOP_CLOSURE_FIX_20261022.md)。2026-10-23已完成独立在线全局维护图与探索接入，控制航点转换回连续局部坐标，保留原入口；[在线回环demo与十分钟对比报告](evaluation/online_loop/ONLINE_LOOP_DEMO_20261023.md)记录417s返航落地、99.57%几何支持、额外开销及7个待查。上述历史报告当时实际回环为0；后续非零SITL图更新已运行，但小回环导致定位退化，详见[小回环对照及负结果](evaluation/small_loop/FINAL_REPORT_20261023.md)。真机尚未验证。
-
-修改后的[收益、退步、实际回环与建图率核查](evaluation/observation_ghost/REGRESSION_AND_COVERAGE_20261023.md)：该轮实际候选匹配172次、接受回环0次，无实际图校正。统一逐射线观测加最终图10cm支持的参考面覆盖90.35%→90.84%，货架侧面83.52%→82.25%；复扫阶段直接返航且多视角证据下降，不能声称整体建图全面改善。
-
-2026-10-23历史地图的[室内范围参考表面覆盖复算](evaluation/online_loop/MAP_COVERAGE_20261023.md)：5cm参考采样、10cm容差下约91.90%，货架顶面近邻支持31.70%（含顶缘/侧面点影响，不是直接观测率）；该几何覆盖代理排除屋顶外面/外墙等，不等同完整视觉网格或无鬼影证明，与上方99.57%的点云贴合率定义不同。
-
-2026-10-23已完成[直接观测评估与鬼影疑点闭环修复及对比验证](evaluation/observation_ghost/RESULT_20261023.md)：逐射线首交面评估避免将侧面点误计为货架顶面；同4149帧输入的独立正向确认使待查7→0，115616点及PCD哈希保持一致。修复版完整SITL约399s返航落地，最终0待查、115026点；顶面直接观测5.19%，观测且最终地图近邻支持1.89%。这不证明全图零鬼影；多视角证据质量54.61%，地图质量验收仍false。新报告保留中间负结果、额外计算开销和静态/动态真值边界。
-
-新增[回环地图质量与十分钟返航规模检查](evaluation/LOOP_MAPPING_CAPACITY_20261022.md)：补齐非零人工漂移下去鬼影维护地图重建；同输入10cm几何支持率68.04%→99.71%。其中旧十分钟航次验证约680㎡仓库主体结构和413s返航落地，尚未证明最大面积或完整三维覆盖；该报告为2026-10-22历史边界，后续在线接入验证见上方新报告。
-
-下次组会可使用[回环改进与真机接入方案（PDF）](docs/组会报告/2026-10-22_FASTLIO2回环改进/回环改进与真机接入方案_组会报告.pdf)、[可编辑Word](docs/组会报告/2026-10-22_FASTLIO2回环改进/回环改进与真机接入方案_组会报告.docx)或[报告与素材包](docs/组会报告/FASTLIO2回环组会报告与素材_20261022.zip)。正文区分已有仿真录包证据、人工扰动测试和待执行的真机接入计划。
-
----
-
-## 📁 1. 文件结构总览
-
-本项目结构清晰，目录完整，是一个集成 ROS1/ROS2 双工作空间、飞控固件、仿真环境、硬件设计与多种第三方视觉/传感库的完整无人机研发平台，支持任务控制、感知识别、路径规划、SLAM、多机协同及全流程自动化构建运行,如果本项目内为空，请联系我们[微信号：Luli2225893438]。以下是本项目的文件结构：
-
-> 开源项目：AstraDroneOpen, 交流QQ群：1059975794 , 商业合作（微信）：Luli2225893438
-
-```
-AstraDroneOpen/
-├── AstraDrone_ros1_ws/              # ROS 1 工作空间（catkin）
-│   ├── build/                       # 编译产物（git 忽略）
-│   ├── devel/                       # catkin 开发环境（git 忽略）
-│   └── src/                         # ROS1 核心源码（功能包按模块拆分）
-│       ├── Communication/           # 通信接口：串口/UDP/ROS topic 封装
-│       ├── Control/                 # 姿态/位置/速度控制器与参数
-│       ├── Detection/               # 目标检测（视觉/LiDAR 等）
-│       ├── Exploration/             # 自主探索与导航策略
-│       ├── Land/                    # 安全降落/降落场识别
-│       ├── MissionControl/          # 任务编排与状态机（任务切换/容错）
-│       ├── Planner/                 # 路径/轨迹规划（全局+局部）
-│       ├── SLAM/                    # 定位与建图（前端/后端/回环）
-│       ├── Swarm/                   # 多机协同（编队/分布式通信）
-│       ├── Track/                   # 目标跟踪（滤波/数据关联）
-│       └── Utils/                   # 公共工具/消息定义/通用脚本
-│       # 注：src/CMakeLists.txt 为 catkin 顶层符号链接；包内各自维护 CMakeLists.txt。
-│
-├── AstraDrone_ros2_ws/              # ROS 2 工作空间（colcon）
-│   ├── build/                       # 编译产物（git 忽略）
-│   ├── install/                     # 安装结果（git 忽略）
-│   ├── log/                         # 构建与运行日志（git 忽略）
-│   └── src/
-│       ├── MissionControl/          # ROS2 任务控制（组件化/生命周期）
-│       └── readme.md                # ROS2 模块说明（待补充）
-│
-├── docs/                            # 项目文档（中文为主）
-│   ├── 00-AstraDrone开发教程.md      # 新手指南/项目总览/常见问题
-│   ├── 01-安装脚本详解.md             # 一键安装脚本逐行解释与故障排查
-│   ├── 02-仿真源码详细介绍.md         # 仿真工程结构/资源说明/调参
-│   ├── 03-Ros源码详细介绍.md          # ROS 模块设计/接口/消息格式
-│   ├── 04-硬件详细介绍.md             # 硬件组成/接线/调试建议
-│   ├── 05-系统镜像详细介绍.md         # 系统镜像制作/烧录/版本管理
-│   └── kexue.pdf                    # 科研/技术论文资料（只读）
-│
-├── hardware/                        # 硬件设计（占位与逐步开放）
-│   ├── 3D_design/                   # 机械结构与外设装配
-│   ├── BOM/                         # 物料清单（含替代件）
-│   └── PCB_design/                  # 原理图/PCB（版本迭代中）
-│
-├── media/                           # 媒体资源
-│   ├── image/
-│   │   ├── pc_example.png           # PC 端示例界面
-│   │   ├── forest_world.png         # 示例世界截图
-│   │   └── hunter_se.png            # hunter_se演示图
-│   └── video/
-│       └── To_Be_Add                # 演示视频将陆续补充
-│
-├── scripts/                         # 工具与自动化脚本（优先使用 .bin 可执行）
-│   ├── build_AstraDrone_ros1_x86.bin    # ROS1 一键构建（含依赖检查）
-│   ├── build_sim_workspace_x86.bin      # 仿真一键构建
-│   ├── pc_installer_x86.bin             # PC 端环境一键安装器
-│   ├── onboard_installer_x86.bin        # 机载端环境一键安装器
-│   ├── shc.sh                       # shell 可执行封装/加固
-│   ├── env_sh/                      # 环境初始化与依赖管理
-│   │   ├── 00_env_ubuntu_init.sh    # 基础系统/源/工具链
-│   │   ├── 01_env_px4_init.sh       # PX4/FlightStack 相关
-│   │   ├── 02_env_third_party_init.sh # 第三方库批量安装
-│   │   └── ignore_packages.sh       # colcon/catkin 忽略清单生成
-│   └── run_sh/                      # 运行与演示脚本
-│       ├── echo.sh                  # 终端打印示例/环境验证
-│       ├── onboard_example.sh       # 机载端演示启动
-│       ├── pc_example.sh            # PC 端仿真/可视化启动
-│       └── record.sh                # rosbag 录制与数据管理
-│
-├── simulation/                      # 仿真环境（Gazebo + PX4）
-│   ├── astra_gazebo_models/         # 模型库（体量较大，目录不完全展开）
-│   │   └── ...                      # 保留；提交前请确认无需全部跟踪
-│   ├── astra_gazebo_worlds/         # 世界文件（示例/测试场景）
-│   │   ├── forest.world
-│   │   ├── example.world
-│   │   ├── cangku.world
-│   │   └── suv.world
-│   ├── px4_sim_files/               # PX4 SITL 配置与启动
-│   │   ├── px4_iris_params/         # 机体/控制参数
-│   │   ├── px4_iris_sdf/            # 机体模型与传感器
-│   │   └── px4_launch/              # 启动文件（多场景/多机）
-│   └── sim_workspace/               # 仿真用 catkin 工作空间
-│       └── src/
-│
-├── system_images/                   # 系统镜像与工具
-│   └── To_Be_Add
-│
-├── third_party/                     # 内置第三方依赖（固定版本便于复现）
-│   ├── apriltag/                    # AprilTag 算法（含多字典）
-│   ├── GeographicLib/               # 地理/磁场/重力模型
-│   ├── Livox-SDK/                   # Livox 雷达 SDK（v1）
-│   ├── Livox-SDK2/                  # Livox 雷达 SDK（v2）
-│   ├── lulese_aruco3.1.15/          # ArUco 标定/标记库
-│   ├── nlopt/                       # 非线性优化库（轨迹/控制可用）
-│
-├── LICENSE                          # 开源许可证
-├── README.md                        # 顶层说明（快速开始/目录索引/FAQ）
-└── README.pdf                       # PDF 版 README
-
+```text
+MID360 点云 + IMU ──> FAST-LIO 定位/点云 ──> 地图维护 ──> 探索、规划、避障及返航
+                              │                 └──> DUFOMap 同输入双图对照
+单目图像 + 相机参数/位姿 ──────┴──> 数据整理与可选动态 Mask ──> gsplat 离线训练/查看
 ```
 
-## 🚀 2. 快速开始
+## 已实现的功能与当前边界
 
-### 2.1 仿真快速启动
+- **无人机仿真与基本控制**：通过 PX4 SITL、Gazebo 和 ROS 1/MAVROS 组织无人机、雷达、场景和控制；可使用键盘或目标点开展演示。
+- **激光惯性定位与点云建图**：接入 FAST-LIO/MID360 仿真数据，发布定位、轨迹和点云，并提供长走廊等测试场景。定位准确度受场景、标定和时间同步影响。
+- **动态环境地图与路径规划**：集成动态目标检测/跟踪、历史占据维护、局部自由空间证据和路径重规划；支持目标导航及自主探索。动态残影、静态误删和安全余量仍需按场景验证。
+- **自主探索与返航**：提供探索候选点、表面补扫、历史疑点复查、任务预算、返航与落地等演示入口。一次任务结束或地图保存成功不代表完整三维覆盖。
+- **同航次双地图**：并行维护项目地图与原生 DUFOMap 静态背景图，支持按共同输入和截止时间保存、检查和展示。一次半仓库 SITL 航次完成返航及 4332 帧双图保存，但表面质量为 56.82%，未达到该次 70% 门槛；非零回环后的共同重建及重放一致性仍待验证。
+- **回环探索**：提供关键帧、回环候选和地图版本相关的实验入口。已有负面案例，尚不能声称普遍改善定位或地图精度。
+- **LiDAR 与单目辅助的离线 3DGS**：支持采集图像、位姿与点云，利用 gsplat 进行离线训练、导出和查看，并提供动态图像 Mask 接口。已有 G1 仿真基线完成训练，但固定目标严格完整性未通过；图像 Mask 不保证完全消除静止人体。
+- **场景与传感器配置**：提供半仓库、小仓库、办公室、行人等仿真场景，以及 G1、MID360 参数适配入口。G1 仿真使用理想针孔、3 Hz 等近似，不能视为与真实设备完全等效。
 
-#### 2.1.1 克隆项目
+FAST-LIO、DUFOMap、R3LIVE、gsplat 等方法及其第三方代码属于各自作者；本项目的工作主要是工程集成、配置适配及实验验证，不将已有算法表述为本项目原创。
 
-```bash
-cd ~/ && git clone https://github.com/yidrone/AstraDroneOpen.git  #配置px4环境需要配置github上网环境
-```
-> wget https://down.clashchinese.com/soft/clashchinese.com_Clash.for.Windows-0.20.39-x64-linux.tar.gz
->
-#### 2.1.2 编译项目
+## 目录说明
 
-本项目提供了众多编译的脚本，包括`00_env_ubuntu_init.sh`、`01_env_px4_init.sh`、`02_env_third_party_init.sh`为基本环境配置脚本，主要安装了ros noetic，code ，px4 ，编译ros工作空间所需的第三方库。`build_AstraDrone_ros1_x86.bin`、`build_sim_workspace_x86.bin`为工作空间的编译脚本，这两个脚本会删除原有的编译文件，重新编译，所以编译比较费时，推荐在第一次编译时使用。
-
-如果是个全新的环境（刚刚装好ubuntu），可以使用一键配置脚本，脚本会顺序执行上述五个脚本，运行之前首先需要检查网络(能连接到Github)：
-
-```bash 
-cd ~/AstraDroneOpen/ && sudo chmod 777 ~/AstraDroneOpen/scripts/*
-./scripts/pc_installer_x86.bin
-```
-
-> 如果报错了，请定位到报错的步骤，然后单独运行相应脚本，再定位具体的问题，复制报错内容或者截图，发布issue共同解决或者进群咨询。
->
-
-如果想单独编译ros1工作空间，请你单独使用这个脚本来编译：
-
-~~~shell
-cd ~/AstraDroneOpen/AstraDrone_ros1_ws/   #进入工作空间
-./build_AstraDrone_ros1_x86.bin               #编译
-~~~
-
-
-#### 2.1.3 启动程序
-
-编译完成之后，我们仍然提供了一键运行脚本来启动仿真程序，启动fast-lio2, Offboard控制模式, 控制无人机基本飞行。
-
-需要把地面站的虚拟摇杆打开就不会报警告（No manual control input），开启位置在（左上角QGC图标-application settings-常规-虚拟游戏手柄）。
-~~~
-cd ~/AstraDroneOpen/
-./scripts/run_sh/pc_example.sh
-~~~
-
-无人机会自动解锁（需要等待一分钟, 如果没有起飞，可以尝试地面站手动解锁飞机），飞圆形或者正方形，飞两圈自动降落。
-
-![](./media/image/pc_example.png)
-
-### 2.2 机载电脑快速启动（还未完善）
-
-#### 2.1.1 克隆项目
-
-```bash
-cd ~/ && git clone https://github.com/yidrone/AstraDroneOpen.git
-```
-
-#### 2.1.2 编译项目
-
-本项目提供了众多编译的脚本，包括`00_env_ubuntu_init.sh`、`01_env_px4_init.sh`、`02_env_third_party_init.sh`为基本环境配置脚本，主要安装了ros noetic，code ，px4 ，编译ros工作空间所需的第三方库。`build_AstraDrone_ros1_x86.bin`、`build_sim_workspace_x86.bin`为工作空间的编译脚本，这两个脚本会删除原有的编译文件，重新编译，所以编译比较费时，推荐在第一次编译时使用。
-
-如果是个全新的环境（刚刚装好ubuntu），可以使用一键配置脚本，脚本会顺序执行上述五个脚本，运行之前首先需要检查网络(能连接到Github)：
-
-```bash 
-cd ~/AstraDroneOpen/ && sudo chmod 777 ~/AstraDroneOpen/scripts/*
-./scripts/pc_installer_x86.bin
-```
-
-> 如果报错了，请定位到报错的步骤，然后单独运行相应脚本，再定位具体的问题，复制报错内容或者截图，发布issue共同解决或者进群咨询。
->
-
-如果想单独编译ros1工作空间，请你单独使用这个脚本来编译,：
-
-~~~shell
-cd ~/AstraDroneOpen/AstraDrone_ros1_ws/   #进入工作空间
-./build_AstraDrone_ros1_x86.bin               #编译
-~~~
-
-
-#### 2.1.3 启动程序（还未完善）
-
-编译完成之后，我们仍然提供了一键运行脚本来启动仿真程序，控制无人机基本飞行。
-
-~~~
-cd ~/AstraDroneOpen/
-./scripts/run_sh/onboard_example.sh
-~~~
-
-
-## 📦3. 重要模块说明
-
-### 3.1 Ros1源码
-如果本项目内为空，请联系我们[微信号：Luli2225893438]。
-|      模块       |                  描述                          |        现有功能包         |
-| :-------------: | :--------------------------------------------: | :----------------------: |
-| Track/          | 二维码识别与跟踪、YOLO目标检测追踪              | aruco_track、yolo_track |
-| SLAM/           | 实时定位建图（支持激光雷达、深度相机、融合）     | Fast-LIO2、FreeDOM、A-LOAM |
-| Planner/        | 路径搜索与轨迹生成（全局/局部、多种规划策略）    | Fast-Planner、ego-planner |
-| Control/        | 无人机控制器（位置 / 速度 / 姿态级控制）         | px4_controller |
-| Detection/     | 目标检测、深度估计、相机-激光融合               | YOLO、stereo_fusion |
-| Exploration/    | 无人探索、区域遍历、基于前沿的探索策略           | frontier_exploration |
-| Swarm/          | 多机协同、分布式控制、编队飞行                  | swarm_control |
-| MissionControl/ | 起飞、打点、降落、巡逻等任务管理                | astra_mission_control |
-| Land/           | 基于二维码与传感器的精确降落程序                 | pid_land_ctrl、tag_land |
-| Communication/  | 多机通信、遥控信号、串口数据、4G链路、状态转发   | mavros_extend、link_bridge |
-| Utils/          | 常用小工具与通用功能模块（可视化、坐标变换、调试） | rviz_tools、tf_tools |
-
-`Utils` 现有功能包：
-
-| 模块名称            | 功能描述                                                                 |
-| ------------------- | ------------------------------------------------------------------------ |
-| `astra_custom_msgs` | 自定义消息定义包，供其他功能包依赖，编译时需最先构建。                     |
-| `camera_sdk`        | MJPG 单目相机驱动，支持断线重连与长时间稳定运行。                          |
-| `catkin_simple`     | catkin 编译辅助工具，简化 CMake 构建流程。                                |
-| `cv_bridge`         | ROS 与 OpenCV 的图像消息格式转换桥接。                                    |
-| `fake_slam`         | 在仿真中使用真实位姿和点云进行建图，模拟 SLAM 效果。                       |
-| `imu_2_euler`       | 将 IMU 原始姿态数据转换为欧拉角（pitch、roll、yaw）。                      |
-| `lidar_cam_fusion`  | 利用雷达与相机内/外参，实现点云上色与像素坐标对应深度信息服务。              |
-| `livox_ros_driver`  | Livox 雷达 ROS 驱动（旧版）。                                             |
-| `livox_ros_driver2` | Livox 雷达 ROS 驱动（新版，推荐使用）。                                    |
-| `pixel2map`         | 将图像像素结合深度与相机内参，转换为局部坐标系 3D 点。                      |
-| `pointcloudcut`     | 对点云话题进行空间区域裁剪。                                               |
-| `pub_cam_info`      | 发布相机内参 YAML 文件，生成 ROS 相机内参话题。                             |
-| `rc_topic`          | 从遥控器读取指定通道值，并发布为 `bool` 类型 ROS 话题。                     |
-| `rtk2local`         | 将 GPS/RTK 全球坐标系转换为局部 FLU 坐标系，并支持控制指令坐标转换。        |
-| `serial`            | 串口通信功能包，用于与外部设备交互。                                       |
-| `topic_tf_tran`     | ROS 中 pose/odometry 与 tf 坐标变换的互转。                                |
-
----
-
-### 3.2 Ros2源码
-
-目前在ros2 humble中已经测试过.
-
-
-### 3.3 仿真环境介绍
-
-本项目整合了大量gazebo模型，并提供带有mid360，下视摄像头，前视摄像头的飞机模型，可以在本项目中随意搭建环境，运行fast-lio，fast-planner、ego-planner等主流开源程序。
-
-##### 3.3.1 机器人模型
-
-无人机模型，带有平放mid360雷达（带imu），前视深度摄像头，下视单目摄像头: 
-![drone](./media/image/drone_example.png)
-
-松灵的hunter_se模型，带有控制器: 
-![hunter_se](./media/image/hunter_se.png)
-
-##### 3.3.2 静态模型
-静态模型: 
-![静态模型](./media/image/models.png)
-
-##### 3.3.3 世界模型
-
-房屋森林模型: 
-![房屋森林模型](./media/image/forest_world.png)
-
-
-### 3.4 脚本介绍
-
-本项目功能包众多，难免会产生功能包重名冲突的情况，为了便于管理多个功能包，使用`CATKIN_IGNORE`文件来忽略工作空间中重名的功能包，所以`build_AstraDrone_ros1_x86.bin`文件可以指定某个功能包不编译，便于开发者对不同算法性能进行对比，目前脚本提供以下功能：
-
-##### 2.1.2.1 help标签
-
-会输出加入功能包和排除功能包的基本语法：
-
-~~~
-astra2@ubuntu:~/AstraDroneOpen$ ./scripts/build_AstraDrone_ros1_x86.bin --help
-扫描包集合目录...
-用法: ./scripts/build_AstraDrone_ros1_x86.bin [选项]
-选项:
-  --include <集合>    移除集合目录 CATKIN_IGNORE（启用该集合）。支持 'Set' 或 'Cat/Set'
-  --exclude <集合>    在集合目录添加 CATKIN_IGNORE（禁用该集合）。支持 'Set' 或 'Cat/Set'
-  --list              按 两级结构 显示：类别/集合
-  --state             基于集合（两级）递归检测 CATKIN_IGNORE，输出 会编译/不编译（类别/集合）
-  --help              显示此帮助信息
-
-示例：
-  ./scripts/build_AstraDrone_ros1_x86.bin --include Fast-Planner --exclude ego-planner
-  ./scripts/build_AstraDrone_ros1_x86.bin --exclude ego-planner
-~~~
-
-##### 2.1.2.2 list标签
-
-可以查看当前项目可用功能包（目前只有ros1版本）：
-
-~~~
-astra2@ubuntu:~/AstraDroneOpen$ ./scripts/build_AstraDrone_ros1_x86.bin --list
-扫描包集合目录...
-可用集合（两级：类别/集合）：
-  Communication/
-    Communication/serial_tool
-  MissionControl/
-    MissionControl/astra_uavoffbard_frame
-  Perception/
-    Perception/apriltag_ros
-    Perception/aruco_localization
-    Perception/target_prediction
-  Planner/
-    Planner/ego-planner
-~~~
-
-##### 2.1.2.2 state标签
-
-查看当前哪些包会编译，哪些包不会编译
-
-~~~
-astra2@ubuntu:~/AstraDroneOpen$ ./scripts/build_AstraDrone_ros1_x86.bin --state
-扫描包集合目录...
-====== 当前编译状态（集合级，类别/集合） ======
-将会编译（未发现 CATKIN_IGNORE）的集合：
-  Communication/
-    Communication/serial_tool
-  MissionControl/
-    MissionControl/astra_uavoffbard_frame
-  Perception/
-    Perception/apriltag_ros
-    Perception/aruco_localization
-
-不会编译（被 CATKIN_IGNORE 忽略）的集合：
-  Planner/
-    Planner/Fast-Planner
-===========================================
-~~~
-
-##### 2.1.2.2 include和exclude标签
-
-通过`include`和`exclude`来控制某个功能包是否编译，注意区分大小写，一个标签后面只能带一个包名。
-
-~~~
-./scripts/build_AstraDrone_ros1_x86.bin --include Fast-Planner --exclude ego-planner
-~~~
-
-#### 
-
-
-
-## 📄4. 文档导航
-
-| 文档路径 | 内容说明 |
+| 路径 | 内容 |
 | --- | --- |
-| [docs/00-AstraDrone开发教程.md](docs/00-AstraDrone开发教程.md) | 新手入门、项目总览、常见问题（强烈建议先读） |
-| [docs/01-安装脚本详解.md](docs/01-安装脚本详解.md) | 一键安装脚本逐步解析与故障排查 |
-| [docs/02-仿真源码详细介绍.md](docs/02-仿真源码详细介绍.md) | 仿真工程结构、资源说明与调参要点 |
-| [docs/03-Ros源码详细介绍.md](docs/03-Ros源码详细介绍.md) | ROS 源码结构、模块接口、消息与话题规范 |
-| [docs/04-硬件详细介绍.md](docs/04-硬件详细介绍.md) | 硬件组成、接线规范、调试与注意事项 |
-| [docs/05-系统镜像详细介绍.md](docs/05-系统镜像详细介绍.md) | 系统镜像制作流程、烧录步骤与版本管理 |
-| [docs/kexue.pdf](docs/kexue.pdf) | 科研/技术资料（只读） |
+| `AstraDrone_ros1_ws/src/` | ROS 1 定位、地图维护、规划、控制等功能包 |
+| `simulation/` | Gazebo 世界、模型、PX4 启动文件和仿真工作空间 |
+| `scripts/run_sh/` | 仿真、采集、训练、查看和重放脚本 |
+| `integration/` | LiDAR/RGB 数据整理、半仓库采集及 gsplat 训练适配 |
+| `third_party/` | 随快照提供的第三方源码；各组件许可证需分别核对 |
+| `docs/` | 配置、实验方法和使用文档；部分历史文档链接指向未上传的实验目录 |
 
+## 环境与使用前检查
 
----
+以下命令以**本机已有环境**为前提：Ubuntu、ROS Noetic、Gazebo Classic、PX4 SITL、MAVROS、已编译的 ROS 工作空间及相应雷达/行人插件。双图演示还需要 DUFOMap 及其依赖；3DGS 需要匹配的 NVIDIA CUDA、PyTorch、gsplat 和 Python 环境。
 
+仓库没有包含 `build/`、`devel/`、`.envs/`、实验数据及权重，克隆后需自行配置并编译依赖；具体版本、插件及外部资源还没有在干净机器上做完整安装验收。部分脚本仍引用 `/home/a/pedsim_ws` 等本机绝对路径，应先检查并按实际路径调整。部分 catkin `CMakeLists.txt` 是指向本机 ROS 安装的符号链接。运行图形化演示需要桌面环境，建议同一时间只启动一个完整飞行任务。脚本可能产生较大的新录包和实验输出。
 
+```bash
+# 在当前实际工作目录执行；若克隆到别处，请改为克隆目录
+cd /home/a/AstraDroneOpen
+source /opt/ros/noetic/setup.bash
+```
 
-## 🧰 5. 推荐硬件列表
+## 常用启动命令
 
-- **飞控**：Pixhawk6c mini
-- **主控**：Jetson Nano / Orangepi / NUC13
-- **雷达**：Livox / Velodyne / Ouster
-- **相机**：工业相机 / RealSense / 鱼眼相机
-- **通信**：Lora串口板 / 数传 / 4G 模块
-- **电调+电机**：T-Motor / Dji / 微空 等
+以下入口已对照项目中的脚本及现有演示文档检查；本次编写文档没有重新运行它们。每个航次是否成功需查看其实际日志与结果。
 
-详细请查看 `hardware/` 目录。
+### 1. 只查看半仓库场景
 
----
+```bash
+GAZEBO_MODEL_PATH="$PWD/simulation/astra_gazebo_models:${GAZEBO_MODEL_PATH:-}" \
+  gazebo --verbose "$PWD/simulation/astra_gazebo_worlds/cangku_half.world"
+```
 
+只打开场景，不启动无人机飞行、建图或训练。20 平方米单货架场景可运行 `bash scripts/run_sh/warehouse20_preview.sh`。
 
+### 2. 基础飞行与 FAST-LIO 演示
 
-## 💽 6. 系统镜像使用说明
+```bash
+bash scripts/run_sh/pc_example.sh
+```
 
-### 6.1 下载镜像
+该脚本打开多个终端并启动基础仿真链。需要已编译的 PX4 和项目工作空间，并检查脚本内的 PedSim 路径。
 
-镜像文件位于 `system_images/` 目录。
+### 3. 半仓库自主探索
 
-### 6.2 烧录方式
+```bash
+bash scripts/run_sh/half_warehouse_exploration_demo.sh --keep-open
+```
 
-使用以下任意工具将镜像烧录到存储介质：
+用于观察探索、建图、返航和落地流程；保留界面的具体条件以脚本实际行为为准。
 
-- **推荐**：balenaEtcher（图形界面）
-- **命令行**：`dd if=xxx.img of=/dev/sdX bs=4M`
+### 4. 原维护图与 DUFOMap 双图
 
-### 6.3 启动并使用
+```bash
+bash scripts/run_sh/half_warehouse_dual_map_demo.sh --keep-open --keep-evidence-bags 0
+```
 
-1. 插入 TF 卡/U盘 启动设备
-2. 系统将自动加载 ROS 环境与核心模块
+以相同航次输入并行维护两张图，并在满足检查条件后保存。`--keep-evidence-bags 0` 用于保留已有证据录包；本入口默认使用有限时任务设置。需要先安装并配置 DUFOMap，最终还应检查双图报告与覆盖质量，而非只看窗口。
 
----
+### 5. G1 近似参数半仓库：采集与离线 3DGS
 
-## 🤝7. 加入贡献
+```bash
+bash scripts/run_sh/static_half_warehouse_g1_gsplat_demo.sh --gui "g1_$(date +%Y%m%d_%H%M%S)"
+```
 
-欢迎开发者和用户参与到 AstraDroneOpen 的建设中：
+此入口会实际采集、训练并尝试打开查看器，耗时和磁盘占用较大。需要 CUDA/gsplat 环境，并先按 [三高度采集说明](docs/STATIC_HALF_WAREHOUSE_HEIGHT_CN.md) 生成或准备 `half_gs_plans/warehouse_half_static_g1_20261104/inspection.json` 等航线文件；这些航线和旧模型没有随本仓库上传。不要覆盖既有数据集。
 
-- 📌 提交 PR（新功能、优化、修复）
-- 🐞 报告 Bug 与兼容性问题
-- 📖 完善文档或翻译
-- 🔄 推动 ROS2 适配
-- 💻 添加 Jetson / x86 / orangepi 支持
+### 6. 查看已有 G1 模型（仅本地已具备模型时）
 
----
+```bash
+bash scripts/run_sh/open_static_half_warehouse_gsplat_desktop.sh \
+  gsplat_runs/warehouse_half_static_g1_20261104
+```
 
-## 📬8. 联系与反馈
+仓库未包含这个模型；只克隆仓库无法直接查看，需要使用本机保留的模型及对应环境。该命令不启动飞行或重新训练。
 
-- **Issues**：欢迎在 GitHub /Gitee 提交 Bug、功能建议或讨论
-- **邮箱**：luli15291628995@163.com
-- **视频教程**：详见项目主页或 B 站链接
+## 更多文档
 
----
+- [图形化 Demo 与启动命令](docs/演示启动命令/2026-11-05_图形化Demo总览.md)：包含历史配置与实验状态，部分实验报告和数据未随仓库上传；当前具体参数以脚本为准。
+- [G1 与 MID360 仿真适配](docs/G1_MID360_HALF_SIM_CN.md)
+- [FAST-LIO 与 gsplat 数据和训练说明](docs/LIO_GSPLAT_CN.md)
+- [半仓库 3DGS 采集与建模](docs/HALF_WAREHOUSE_GSPLAT_CN.md)
+- [历史 README 存档](docs/README_历史版本.md)：保留原文供查阅，其中安装指引和能力描述可能已经过时。
 
-## 📜9. License
+## 后续工作
 
-本项目采用 MIT License 开源，详见 LICENSE。
-
----
-
-**让无人机飞入科研、竞赛与实际应用场景，AstraDroneOpen 期待与您共同探索未来！**
+继续核对实际相机和雷达的标定、时空同步；改善弱覆盖区域与局部画质；在相同输入和预算下评估动态残影、误删与规划安全性；排查无限时长双图容量等待及 DUFO 重放差异。非零回环双图一致性、干净环境复现、真实设备续航及实机飞行均需要进一步验证。
