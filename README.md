@@ -48,6 +48,21 @@ cd /home/a/AstraDroneOpen
 source /opt/ros/noetic/setup.bash
 ```
 
+## 一键安装常用依赖
+
+当前开发机使用 Ubuntu 20.04.6 amd64、ROS Noetic、Gazebo Classic 11、PX4 v1.15.4；系统和 GPU 组件的实际版本、维护状态及尚需手动配置的部分见[系统与依赖安装说明](docs/环境与依赖安装.md)。
+
+先配置可访问的 ROS Noetic 软件源，再在仓库根目录执行：
+
+```bash
+bash scripts/install_dependencies.sh --check   # 只检查与模拟，不安装
+bash scripts/install_dependencies.sh           # 安装常用 Ubuntu/ROS apt 依赖
+# 如需额外配置独立 DUFOMap Python 环境：
+bash scripts/install_dependencies.sh --dufomap
+```
+
+此入口不安装 PX4、PedSim、NVIDIA 驱动、CUDA 或 gsplat，也不编译工作空间；未在全新系统上完成端到端安装验证。
+
 ## 常用启动命令
 
 以下入口已对照项目中的脚本及现有演示文档检查；本次编写文档没有重新运行它们。每个航次是否成功需查看其实际日志与结果。
